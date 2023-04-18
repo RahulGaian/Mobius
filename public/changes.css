@@ -1,0 +1,387 @@
+#purple{
+    text-align: center;
+    align-items: center;
+    margin-left: 5.5rem;
+
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.slide1{
+    display: flex;
+    flex-flow: column nowrap;
+    transform: translateY(100%);
+    animation:slide-up 4s ease infinite;
+}
+.slides1{
+    display: inline-flex;
+    overflow: hidden;
+    height: 50px;
+
+}
+.slide3{
+  display: flex;
+  flex-flow: column nowrap;
+  
+  transform: translateY(110%);
+  animation:slide-up1 3s ease infinite;
+}
+
+
+.slides3{
+  display: inline-flex;
+  overflow: hidden;
+  
+  height: 60px;
+}
+@keyframes slide-up {
+    10%,33%{
+        transform:translateY(0%)
+    }
+    43%,66%{
+        transform:translateY(-100%)
+    }
+    76%,100%{
+        transform:translateY(-200%)
+    }
+}
+@keyframes slide-up1 {
+  20%,25%{
+      transform:translateY(0%)
+  }
+  25%,50%{
+      transform:translateY(-100%)
+  }
+  50%,75%{
+      transform:translateY(-200%)
+  }
+  75%,100%{
+    transform:translateY(-300%)
+
+  }
+}
+
+.slider{
+    /* width: 800px; */
+    /* height: 500px; */
+    /* border-radius: 10px; */
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    /* height: 500px; */
+    display: flex;
+  }
+
+  .slides2{
+    width: 449%;
+    margin-right: 20px;
+
+    display: flex;
+    
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 1s;
+  }
+  .slide11{
+    width: 20%;
+    transition:1s;
+  }
+
+
+  
+ 
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    /* position: absolute; */
+  
+    /* margin-top: -40px; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid grey;
+    padding: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: grey;
+  }
+  
+  
+  .manual-btn:not(:last-child){
+    margin-right: 10px;
+  }
+  
+  .manual-btn:hover{
+    background: #796EF5;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+
+  #radio1a:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio1a:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2a:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3a:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4a:checked ~ .first{
+    margin-left: -60%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* image */
+
+  #radio11:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio11:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio21:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio31:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio41:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #796EF5;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #796EF5;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #796EF5;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #796EF5;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #796EF5;
+  }
+
+#slider-box{
+  width: 45%;
+  border-radius: 30px;
+  height: 366px;
+  padding: 50px;
+  padding-top: 30px;
+}
+
+#slide_image{
+  width: 100%;height: 527px;   object-fit:cover;
+}
+#blog-content1{
+  width: 60%;
+}
+.under{
+  text-decoration: underline #796EF5 4px ;
+  text-underline-offset: 6px;
+}
+#bg-gradient-multi{
+  background-image: url("../public/images/blog/4116.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+}
+#blog-heading1{
+  width: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  /* background-color: white; */
+}
+#blog-heading2{
+  width: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  /* background-color: white; */
+}
+#case-study-content{
+  width: 60%;
+
+}
+#case-study-form{
+  width:40%;
+  background-color: #EEEEEE;
+}
+
+#values{
+  width: 60%;
+  /* margin: 5px; */
+  margin-bottom: 25px;
+}
+
+
+#platform-features > article{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#platform-features > header > h3{
+  font-size: 2.5rem;
+}
+#platform-resources{
+  background: linear-gradient(277.48deg, #EFEFEF 0%, rgba(234, 234, 234, 0.76) 100%);
+}
+  @media screen and (max-width: 600px) {
+    /* .slide11>h4{
+      font-size: 10px;
+    }
+    .slider-heading{
+      font-size: 12px;
+    }
+    #slider-box{
+      width: 300px;
+      height:220px;
+      padding-top: 20px;
+      padding: 20px;
+
+    }
+    #quotations{
+      width: 20px;
+    }*/
+    .navigation-manual{
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    /* #slide_image{
+      height: 300px;
+    }  */
+
+    #blog-content1{
+      width: 100%;
+      padding: 2px;
+    }
+
+    #blog-heading1{
+      width: 100%;
+      /* background-color:  black; */
+    }
+    #blog-heading2{
+      width: 100%;
+      color: white;
+      /* background-color: white; */
+    }
+    #case-study-content{
+      width: 100%;
+    
+    }
+    #case-study-form{
+      width:100%;
+      padding: 5px;
+      /* margin: 2px; */
+      margin-top: 10px;
+      align-items: center;
+      background-color: #EEEEEE;
+    }
+    #bg-gradient-multi{
+      background-image: url("../public/images/blog/4116.png");
+      background-repeat: no-repeat;
+    
+      background-size: cover;
+      width: 98%;
+      border-radius: 5%;
+    
+    }
+    #case-study-tag{
+      margin-left: 1px;
+    }
+    #values{
+      width: 100%;
+    
+    }
+  }
+

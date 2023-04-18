@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Navigation Menu -->
+    <script src="../config/navigationMenu.js"></script>
+
+    <!-- Animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../public/changes.css" />
+
+    <link rel="stylesheet" href="../public/output.css" />
+    <title>Platfrom | Mobius Marketing Website</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="absolute z-20 top-0 w-full navbar">
+        <nav
+          class="container px-4 mx-auto lg:flex justify-between items-center pt-10 pb-8"
+        >
+          <div class="lg:flex items-center">
+            <div class="flex justify-between items-center">
+              <a href="/">
+                <img
+                  class="w-20"
+                  src="../public/images/brand-logo.svg"
+                  alt="Mobius Brand Logo"
+                />
+              </a>
+              <img
+                class="lg:hidden"
+                src="../public/images/icons/menu.svg"
+                alt="Menu"
+              />
+            </div>
+            <ul class="hidden lg:flex items-center">
+              <li class="ml-14 relative">
+                <span class="nav-link top-nav-link">Solutions</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li class="ml-11 relative">
+                <span class="nav-link top-nav-link">Products</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li class="ml-11 relative">
+                <span class="nav-link top-nav-link">Platform</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li class="ml-11 relative">
+                <span class="nav-link top-nav-link">Company</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li class="ml-11">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="hidden lg:flex items-center">
+            <li>
+              <a
+                class="text-royal-purple-600 text-lg font-medium mr-7"
+                href="tel:+118001231234"
+                >+1 1800 123 1234</a
+              >
+            </li>
+            <li>
+              <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
+            </li>
+            <li>
+              <a class="btn" href="signin">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        id="navbar"
+        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
+      ></div>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Banner -->
+      <section
+        class="banner-bg-pink pt-36 pb-16 lg:pt-48 lg:pb-40 md:pt-44 md:pb-32"
+      >
+        <article
+          class="container mx-auto px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
+        >
+          <div>
+            <!-- <div class="btn btn-filled-light border-0">Monét</div> -->
+            <header class="relative">
+              <h1 class="heading-banner heading-banner-md mt-4 relative z-10">
+                <strong>
+                  Value Creation to Meaningful Alliances
+                                </strong>
+              </h1>
+              <img
+                class="absolute bottom-0 w-20 md:w-auto md:left-2/4"
+                src="../public/images/graphics/highlihter.svg"
+                alt="Curve Line"
+              />
+            </header>
+
+            <p class="body-text mt-5">
+              HolaVerse is a powerful platform that enables organizations to 
+              create value through digital and physical collaboration. 
+              By leveraging the latest technologies, HolaVerse helps businesses 
+              to maximize their potential and drive innovation.
+            </p>
+            <footer
+              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row"
+            >
+              <a
+                class="btn btn-filled text-xl font-bold md:mr-20"
+                href="/signup"
+              >
+                Get Statrted
+              </a>
+              <a class="mt-4 lg:mt-0 text-royal-gray-900" href="/signup">
+                <span class="text-base">Learn more</span>
+                <img
+                  class="inline-block ml-3"
+                  src="../public/images/icons/arrow-right.svg"
+                  alt="Arrow Right"
+                />
+              </a>
+            </footer>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <img
+              class="w-full"
+              src="../public/images/platform/HolaVerse/Teamwork to Achieve Success.svg"
+              alt="Web Development"
+            />
+          </div>
+        </article>
+      </section>
+      <!-- Features-->
+      <section class="mt-11"  >
+        <header class="mb-10 md:mb-24 relative">
+          <h3 class="heading-section text-black text-center relative z-10 " style="  font-size: 2.5rem;">
+            Features
+          </h3>
+          <img
+            class="absolute bottom-1 left-2/4 w-16"
+            src="../public/images/graphics/highlihter.svg"
+            alt="Curve Line"
+          />
+        </header>
+        <article
+          data-aos="fade-up"
+          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+        >
+          <div class="text-center">
+            <img
+              class="inline-block"
+              src="../public/images/platform/HolaVerse/Partnership.svg"
+              alt="Web Development"
+            />
+          </div>
+          <div class="mt-8 md:mt-0">
+            <h2 class="heading-article">Daisy-Chaining Partnerships for Value Chain Complexity</h2>
+            <p class="body-text mt-3">
+              HolaVerse unlockes the power of 
+              collaboration to create a complex value chain that can provide a competitive advantage.
+            </p>
+          </div>
+        </article>
+        <article
+          data-aos="fade-up"
+          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+        >
+          <div class="order-1 md:order-none mt-8 md:mt-0">
+            <h2 class="heading-article">
+              Thousands of Ecosystem Providers across a spectrum of Industries     
+                   </h2>
+            <p class="body-text mt-3">
+              Browse through thousands of Infrastructure, Technology, 
+              Content & Monetisation providers and create meaningful partnerships to expand business horizon
+            </p>
+          </div>
+          <div class="text-center">
+            <img src="../public/images/platform/HolaVerse/Partnership And Collaboration.svg" alt="Dev Ops" />
+          </div>
+        </article>
+        <article
+          data-aos="fade-up"
+          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+        >
+          <div class="text-center">
+            <img
+              class="inline-block"
+              src="../public/images/platform/HolaVerse/Partnership agreement.svg"
+              alt="Gps App Development"
+            />
+          </div>
+          <div class="mt-8 md:mt-0">
+            <h2 class="heading-article">Create Alliances in a Snap</h2>
+            <p class="body-text mt-3">
+              Define your own rules, rate cards easily and manage alliances - all from HolaVerse Dashboard
+            </p>
+          </div>
+        </article>
+
+        <div class="px-4 lg:px-11">
+          <hr class="hr-graphic" />
+        </div>
+        <article
+        data-aos="fade-up"
+        class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+      >
+        <div class="order-1 md:order-none mt-8 md:mt-0">
+          <h2 class="heading-article">Launch Alliances in a Zero Trust Ecosystem</h2>
+          <p class="body-text mt-3">
+            Collaboration and monetization are the keys to success 
+            in today's digital world. With HolaVerse, revenue shares have never been easier!
+          </p>
+        </div>
+        <div class="text-center">
+          <img
+            src="../public/images/platform/HolaVerse/Vector 31.svg"
+            alt="Dev Ops"
+          />
+        </div>
+      </article>
+   
+        <article class="lg:grid grid-cols-5 items-center mb-0 pt-10 " style="background-image: url('../public/images/platform/HolaVerse/bg-art.svg');  background-repeat: no-repeat;
+        background-size:  100%;height: 493px;"  data-aos="fade-up" >
+   
+          <div class="col-span-3 py-16 lg:py-0 px-4 lg:pl-24 lg:pr-44" >
+            <h3 class="heading-section">
+              Empowering Phygital Value Creation
+            </h3>
+            <p class="text-lg mt-4" >
+              HolaVerse is a powerful platform that enables 
+              organizations to create value through digital and physical collaboration. 
+              By leveraging the latest technologies, 
+              HolaVerse helps businesses to maximize their potential and drive innovation.
+            </p>
+          
+          </div>
+          <div class="col-span-2">
+            <img
+
+              src="../public/images/platform/HolaVerse/Rectangle 4015.png"
+              alt="Mobius Enables NextGen TV 
+            Industry Transformation"
+            style="height: 440px"
+            />
+          </div>
+        </article>
+        
+        
+        
+        
+        
+      </section>
+      <!-- Benefits -->
+      <section
+        data-aos="fade-up"
+        class=" bg-gradient-purple py-20 text-white"
+      >
+        <div class="container mx-auto px-4">
+          <header class="mb-10 md:mb-24 relative">
+            <h3 class="heading-section text-white text-center relative z-10">
+              Benefits
+            </h3>
+            <img
+              class="absolute bottom-1 left-2/4 w-16"
+              src="../public/images/graphics/highlihter.svg"
+              alt="Curve Line"
+            />
+          </header>
+          <div class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
+            <article>
+              <img
+                src="../public/images/platform/HolaVerse/Partnership(1).svg"
+                alt="Information Icon"
+              />
+              <h4 class="mt-4 md:mt-8 heading-card">Partnerships for Value Chain Complexity</h4>
+              <p class="opacity-70 text-base mt-2">
+                Monét's intuitive drag-and-drop interface and pre-built
+                   templates allow you to create apps faster than ever before.
+              </p>
+            </article>
+            <article>
+              <img
+                src="../public/images/platform/HolaVerse/Platform.svg"
+                alt="Information Icon"
+              />
+              <h4 class="mt-4 md:mt-8 heading-card">HolaVerse Platform</h4>
+              <p class="opacity-70 text-base mt-2">
+                HolaVerse is a platform that enables collaboration between partners to create a complex value chain.
+              </p>
+            </article>
+            <article>
+              <img
+                src="../public/images/platform/HolaVerse/Chain.svg"
+                alt="Information Icon"
+              />
+              <h4 class="mt-4 md:mt-8 heading-card">Daisy-Chaining Partnerships</h4>
+              <p class="opacity-70 text-base mt-2">
+                Daisy-chaining partnerships allows for the creation
+                 of a complex value chain that can provide a competitive advantage.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Apps Powered -->
+ 
+      <!-- Resources -->
+      <section data-aos="fade-up" class="mt-12" >
+        <div class="container mx-auto px-4">
+          <header class="flex justify-between items-center">
+            <h3 class="heading-section">Resources</h3>
+            <a class="btn btn-sm" href="#">See all</a>
+          </header>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
+            <article class="border border-royal-gray-300 rounded-3xl">
+              <div>
+                <img
+                  class="rounded-t-3xl"
+                  src="../public/images/resources.jpeg"
+                  alt="Resources"
+                />
+              </div>
+              <div class="py-7 px-5">
+                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                  BLOG
+                </h5>
+                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <p class="text-base text-royal-gray-400 font-medium mt-3">
+                  A read about how Mobius DTasS enabled Smart City deployments
+                  in Boston, California
+                  <a class="text-royal-purple-600" href="">(read more)</a>
+                </p>
+              </div>
+            </article>
+            <article class="border border-royal-gray-300 rounded-3xl">
+              <div>
+                <img
+                  class="rounded-t-3xl"
+                  src="../public/images/resources.jpeg"
+                  alt="Resources"
+                />
+              </div>
+              <div class="py-7 px-5">
+                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                  BLOG
+                </h5>
+                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <p class="text-base text-royal-gray-400 font-medium mt-3">
+                  A read about how Mobius DTasS enabled Smart City deployments
+                  in Boston, California
+                  <a class="text-royal-purple-600" href="">(read more)</a>
+                </p>
+              </div>
+            </article>
+            <article class="border border-royal-gray-300 rounded-3xl">
+              <div>
+                <img
+                  class="rounded-t-3xl"
+                  src="../public/images/resources.jpeg"
+                  alt="Resources"
+                />
+              </div>
+              <div class="py-7 px-5">
+                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                  BLOG
+                </h5>
+                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <p class="text-base text-royal-gray-400 font-medium mt-3">
+                  A read about how Mobius DTasS enabled Smart City deployments
+                  in Boston, California
+                  <a class="text-royal-purple-600" href="">(read more)</a>
+                </p>
+              </div>
+            </article>
+            <article class="border border-royal-gray-300 rounded-3xl">
+              <div>
+                <img
+                  class="rounded-t-3xl"
+                  src="../public/images/resources.jpeg"
+                  alt="Resources"
+                />
+              </div>
+              <div class="py-7 px-5">
+                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                  BLOG
+                </h5>
+                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <p class="text-base text-royal-gray-400 font-medium mt-3">
+                  A read about how Mobius DTasS enabled Smart City deployments
+                  in Boston, California
+                  <a class="text-royal-purple-600" href="">(read more)</a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing -->
+      <section data-aos="fade-up" class="py-16 bg-gradient-pink my-24">
+        <div class="container mx-auto px-4">
+          <header class="text-center">
+            <div class="relative inline-block">
+              <h3 class="heading-section text-center relative z-10">Pricing</h3>
+              <img
+                class="absolute bottom-1 -right-2 w-16"
+                src="../public/images/graphics/highlihter.svg"
+                alt="Curve Line"
+              />
+            </div>
+          </header>
+
+          <div
+            class="flex flex-col md:flex-row gap-9 justify-center items-center mt-16"
+          >
+            <article class="bg-white rounded-3xl pricing-card">
+              <header class="text-center p-7 border-b border-royal-gray-300">
+                <h4 class="text-lg font-bold text-royal-gray-400">Basic</h4>
+                <h3 class="mt-3">
+                  <strong class="text-3xl">$29</strong
+                  ><strong class="text-xl text-gray-400 font-medium"
+                    >/month</strong
+                  >
+                </h3>
+              </header>
+              <ul class="py-8 px-6 text-base features">
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li class="item-excluded">Feature Description</li>
+                <li class="item-excluded">Feature Description</li>
+              </ul>
+              <footer class="text-center pb-9">
+                <a class="btn btn-sm" href="/signup">Signup</a>
+              </footer>
+            </article>
+            <article
+              class="bg-gradient-purple rounded-3xl pricing-card pricing-card-pro"
+            >
+              <header class="text-center p-7 border-b border-royal-gray-300">
+                <h4 class="text-lg font-bold text-white">Basic</h4>
+                <h3 class="mt-3">
+                  <strong class="text-3xl text-white">$29</strong
+                  ><strong class="text-xl text-gray-400 font-medium"
+                    >/month</strong
+                  >
+                </h3>
+              </header>
+              <ul class="py-8 px-6 text-base features">
+                <li>All features in Basic Plan</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li class="item-excluded">Feature Description</li>
+                <li class="item-excluded">Feature Description</li>
+                <li class="item-excluded">Feature Description</li>
+              </ul>
+              <footer class="text-center pb-9">
+                <a class="btn btn-sm bg-white" href="/signup">Signup</a>
+              </footer>
+            </article>
+            <article class="bg-white rounded-3xl pricing-card">
+              <header class="text-center p-7 border-b border-royal-gray-300">
+                <h4 class="text-lg font-bold text-royal-gray-400">
+                  Enterprise
+                </h4>
+                <h3 class="mt-3">
+                  <p class="text-base text-royal-gray-400 leading-4">
+                    Contact us for tailored plans <br />
+                    for your organisation
+                  </p>
+                </h3>
+              </header>
+              <ul class="py-8 px-6 text-base features">
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Feature Description</li>
+                <li>Implementation Support</li>
+                <li>24/7 Support</li>
+              </ul>
+              <footer class="text-center pb-9">
+                <a class="btn btn-sm" href="/signup">Enquire</a>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Call to Action Section -->
+      <section data-aos="fade-up" class="px-4 md:px-0">
+        <article
+          class="container mx-auto px-8 text-center cta-wrapper rounded-3xl"
+        >
+          <h3 class="text-4xl font-bold text-royal-purple-500">
+            Say Yes to Meaningful Partnerships          </h3>
+          <p class="text-xl leading-8 mt-4 mb-12 max-w-lg mx-auto">
+            Get in touch with our team to explore usecases with Vinci for your business
+          </p>
+          <button class="btn btn-filled">Contact Us</button>
+        </article>
+      </section>
+      <section data-aos="fade-up" class="bg-royal-gray-100 py-8 my-16 md:my-28">
+        <article class="container px-4 mx-auto text-center">
+          <header>
+            <h5 class="text-base font-normal">See Also</h5>
+          </header>
+          <div class="mt-7">
+            <h3 class="text-2xl font-bold">Monet</h3>
+            <p class="mt-2 max-w-xl mx-auto">
+              Monét is the low-code app development tool that empowers you to 
+              create stunning digital experiences. With Monét's experience modeling capabilities, 
+              you can build custom user journeys that connect with your audience and drive business growth.
+            </p>
+          </div>
+          <footer class="mt-11">
+            <a href="#">
+              <img
+                class="inline-block w-7"
+                src="../public/images/icons/arrow-right.svg"
+                alt="Arrow Right"
+              />
+            </a>
+          </footer>
+        </article>
+      </section>
+      <div class="px-4 lg:px-11">
+        <hr class="hr-graphic" />
+      </div>
+    </main>
+    <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10">
+          <nav>
+            <h4 class="heading-card">Company</h4>
+            <ul class="mt-5 md:mt-9">
+              <li class="mb-4">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Leadership</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h4 class="heading-card">Solutions</h4>
+            <ul class="mt-5 md:mt-9">
+              <li class="mb-4">
+                <a class="nav-link" href="#">Telecom & 5G</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Media & Broadcasting</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Smartcities & Government</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">IT Solutions & Automation</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">HR Tech</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h4 class="heading-card">Product</h4>
+            <ul class="mt-5 md:mt-9">
+              <li class="mb-4">
+                <a class="nav-link" href="#">OpsMax</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">AI Zoom Bot</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Antara</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Slack Bot</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Marketplace</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h4 class="heading-card">Platform</h4>
+            <ul class="mt-5 md:mt-9">
+              <li class="mb-4">
+                <a class="nav-link" href="#">Pascal Intelligence(PI)</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">BoltzmanBot(BOB)</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Monet</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Vinci</a>
+              </li>
+              <li class="mb-4">
+                <a class="nav-link" href="#">Hola Verse</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="text-center mt-12 md:mt-20">
+          <nav>
+            <ul class="flex justify-center items-center">
+              <li class="mx-4">
+                <a href="#">
+                  <img
+                    src="../public/images/icons/linkedin.svg"
+                    alt="Linkedin Icon"
+                  />
+                </a>
+              </li>
+              <li class="mx-4">
+                <a href="#">
+                  <img
+                    src="../public/images/icons/instagram.svg"
+                    alt="Instagram Icon"
+                  />
+                </a>
+              </li>
+              <li class="mx-4">
+                <a href="#">
+                  <img
+                    src="../public/images/icons/twitter.svg"
+                    alt="Twitter Icon"
+                  />
+                </a>
+              </li>
+              <li class="mx-4">
+                <a href="#">
+                  <img
+                    src="../public/images/icons/facebook.svg"
+                    alt="Facebook Icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mt-11">
+            <small class="text-sm"
+              >All Rights Reserved. 2023 Copyright
+              <a class="underline" href="#">Gaian Solutions</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../src/navbar.js"></script>
+    <script src="../src/slider.js"></script>
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+      });
+    </script>
+  </body>
+</html>
