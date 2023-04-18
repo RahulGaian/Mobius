@@ -59,7 +59,7 @@ function renderPlatformMenu(index = 0) {
   </aside>
   <article class="lg:col-span-3 items-center">
     
-    <p class="text-2xl ">
+    <p class="text-xl ">
       ${menu[index].description}
     </p>
   </article>

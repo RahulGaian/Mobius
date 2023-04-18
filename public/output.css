@@ -1295,10 +1295,15 @@ video {
 
 .bg-curved-bg-art {
   background-image: url('../public/images/graphics/bg-art.svg');
+ 
+
 }
 
 .bg-curved-graphics {
   background-image: url('../public/images/graphics/bg-curve-transparent.svg');
+  background-repeat: no-repeat;
+  background-size:  100%;
+
 }
 
 .bg-ellipse-purple {
