@@ -78,6 +78,9 @@ function renderMegaMenu2(menuId) {
     ul.setAttribute("data-id", index);
     item.list.forEach((listItem, i) => {
       const li = document.createElement("li");
+      const atag = document.createElement("a");
+      atag.setAttribute("href",listItem.article.url)
+      console.log(listItem)
       li.classList.add("mega-menu-link");
       li.setAttribute("data-subId", i);
       li.textContent = listItem.name;
@@ -89,7 +92,8 @@ function renderMegaMenu2(menuId) {
       li.addEventListener("click", (e) => {
         columnTwo.classList.add("activate");
       });
-      ul.appendChild(li);
+      atag.appendChild(li)
+      ul.appendChild(atag);
     });
 
     div.appendChild(h5);
@@ -169,6 +173,9 @@ function createColumnTwo(activeMenuId, id = 0, subId = 0) {
   ul.classList.add("pr-12");
   columnTwoData.items.forEach((item, index) => {
     const li = document.createElement("li");
+    const atag = document.createElement("a");
+    atag.setAttribute("href",item.content.url)
+    
     li.classList.add("mega-menu-link");
     li.textContent = item.name;
     if (index === 0) {
@@ -188,8 +195,8 @@ function createColumnTwo(activeMenuId, id = 0, subId = 0) {
     li.addEventListener("click", (e) => {
       columnThree.classList.add("activate");
     });
-
-    ul.appendChild(li);
+    atag.appendChild(li)
+    ul.appendChild(atag);
     div.append(h5, ul);
   });
   columnTwo.appendChild(div);
