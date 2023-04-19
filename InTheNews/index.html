@@ -21,16 +21,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../src/menu.css" />
+
     <link rel="stylesheet" href="../public/changes.css">
     <link rel="stylesheet" href="../public/output.css" />
     <title>Mobius Marketing Website</title>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header>
-      <div class="absolute z-20 top-0 w-full navbar">
+    <header class="sticky top-0 z-50" id="top-navbar">
+      <div class="absolute z-20 top-0 w-full navbar" id="mynav">
         <nav
-          class="container px-4 mx-auto lg:flex justify-between items-center pt-10 pb-8"
+          class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
         >
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
@@ -45,11 +47,72 @@
                 class="lg:hidden"
                 src="../public/images/icons/menu.svg"
                 alt="Menu"
+                id="openmenu"
+              />
+              <img
+                class="hidden"
+                src="public/images/icons/close-outline.svg"
+                alt="Menu"
+                id="close-menu"
               />
             </div>
-            <ul class="hidden lg:flex items-center">
-              <li class="ml-14 relative">
+            <ul class="hidden lg:flex items-center mega-menu-container">
+              <li
+                class="ml-14 relative mega-menu-item mega-menu-one"
+                data-id="0"
+              >
                 <span class="nav-link top-nav-link">Solutions</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+                <!-- <div>
+                  <div>
+                    <h4>EXPERTISE by industry</h4>
+                    <ul>
+                      <li>Government & Public Sector</li>
+                      <li>Private 5G & Telco</li>
+                      <li>Media & Entertainment</li>
+                      <li>Health & Wellness</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Expertise By Business Function</h4>
+                    <ul>
+                      <li>HR & People Tech</li>
+                      <li>IT Automation</li>
+                    </ul>
+                  </div>
+                </div> -->
+              </li>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-one"
+                data-id="1"
+              >
+                <span class="nav-link top-nav-link">Products</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-two"
+                data-id="0"
+              >
+                <span class="nav-link top-nav-link menu2">Platform</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-two"
+                data-id="1"
+              >
+                <span class="nav-link top-nav-link menu2">Company</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
                   src="../public/images/icons/chevron-down.svg"
@@ -57,103 +120,65 @@
                 />
               </li>
               <li class="ml-11">
-                <span class="nav-link top-nav-link">Products</span>
-              </li>
-              <li class="ml-11">
-                <span class="nav-link top-nav-link">Platform</span>
-              </li>
-              <li class="ml-11">
-                <span class="nav-link top-nav-link">Company</span>
-              </li>
-              <li class="ml-11">
                 <a class="nav-link" href="/contact">Contact</a>
               </li>
             </ul>
           </div>
 
-          <ul class="hidden lg:flex items-center">
-            <li>
+          <ul class="hidden lg:flex items-center" id="menu-action">
+            <!-- <li>
               <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
                 href="tel:+118001231234"
                 >+1 1800 123 1234</a
               >
+            </li> -->
+            <li>
+              <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
             </li>
             <li>
-              <a class="btn btn-filled mr-4" href="/singup">Book a Demo</a>
-            </li>
-            <li>
-              <a class="btn" href="signin">Login</a>
+              <a class="btn" href="signin">
+                <span>Login</span>
+              </a>
             </li>
           </ul>
         </nav>
       </div>
+      <!-- Mega Menu One -->
       <div
-        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
+        id="navbar"
+        class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div class="pl-20 grid grid-cols-7">
-            <div class="col-span-2 border-r border-royal-gray-300 py-6 pr-6">
-              <div class="border-b border-royal-gray-300 pb-6">
-                <h5 class="mega-menu-heading">EXPERTISE BY INDUSTRY</h5>
-                <ul class="pr-12">
-                  <li class="mega-menu-link active-mega-menu-link">
-                    Government & Public Sector
-                  </li>
-                  <li class="mega-menu-link">Private 5G & Telco</li>
-                  <li class="mega-menu-link">Media & Entertainment</li>
-                  <li class="mega-menu-link">Health & Wellness</li>
-                </ul>
-              </div>
-              <div class="py-6">
-                <h5 class="mega-menu-heading">
-                  Expertise By Business Function
-                </h5>
-                <ul class="pr-12">
-                  <li class="mega-menu-link">HR & People Tech</li>
-                  <li class="mega-menu-link">IT Automation</li>
-                </ul>
-              </div>
-            </div>
+          <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
+            <div
+              class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+            ></div>
 
-            <div class="col-span-2 border-r border-royal-gray-300 py-6 px-6">
-              <h5 class="mega-menu-heading">Offerings</h5>
-              <ul class="pr-12">
-                <li class="mega-menu-link active-mega-menu-link">
-                  Smart City as a Service
-                </li>
-                <li class="mega-menu-link">Citizen Engagement</li>
-              </ul>
+            <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
+              <div
+                class="border-b border-royal-gray-300 py-6 last:border-0 column-two"
+              ></div>
             </div>
-            <article class="col-span-3 flex flex-col justify-between">
-              <header class="px-11 py-7 mb-9">
-                <div class="text-right">
-                  <img
-                    class="inline-block cursor-pointer close-mega-menu"
-                    src="../public/images/icons/close.svg"
-                    alt="Close Icon"
-                  />
-                </div>
-                <h3 class="text-3xl font-medium">Smart Cities</h3>
-                <p class="text-lg mt-3">
-                  Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh
-                  commodo duis gravida ornare nisi hendrerit Lorem ipsum dolor
-                  sit amet consectetur. Amet diam egestas nibh commodo duis
-                  gravida ornare nisi hendrerit.
-                </p>
-                <a class="flex items-center mt-4" href="">
-                  <span class="text-xl font-medium mr-5">Learn more</span>
-                  <img
-                    src="../public/images/icons/arrow-right.svg"
-                    alt="Arrow Right"
-                  />
-                </a>
-              </header>
-              <img
-                src="../public/images/smart-city-placeholder.png"
-                alt="Smart City Placeholder"
-              />
-            </article>
+            <article
+              class="col-span-3 flex flex-col justify-between column-three"
+            ></article>
+          </div>
+        </nav>
+      </div>
+      <!-- Mega Menu Twp -->
+      <div
+        id="navbar"
+        class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
+      >
+        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+          <div class="lg:pl-20 lg:grid lg:grid-cols-5">
+            <div
+              class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+            ></div>
+            <article
+              class="col-span-2 flex flex-col justify-between column-two"
+            ></article>
           </div>
         </nav>
       </div>
@@ -193,7 +218,7 @@
                         <ul class=" flex items-center " id="nav-clicky">
 
                             <li class="ml-14 relative " onclick="underliner()">
-                                <span class="nav-link">Blogs</span>
+                                <span class="nav-link under">Blogs</span>
                             </li>
                             <li class="ml-11" onclick="underliner()">
                                 <span class="nav-link">Case Studies</span>
@@ -210,9 +235,9 @@
               </div>
         
 
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" >
          
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12" id="content">
             <article class="border border-royal-gray-300 rounded-3xl">
               <div>
                 <img
@@ -566,7 +591,9 @@
     </footer>
     <!-- Navigation Menu -->
     <script src="../config/navigationMenu.js"></script>
+    <script src="../config/navigationMenu2.js"></script>
     <script src="../src/navbar.js"></script>
+    <script src="../src/mobileMenu.js"></script>
     <!-- Slider -->
     <script src="../src/slider.js"></script>
     <script src="./index.js"></script>

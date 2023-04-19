@@ -41,7 +41,9 @@ const generator = (arr) => {
     third_heading=arr[25],
     third_content = arr[26],
     
-    // products_heading=arr[29 - 3]
+    products_heading=arr[27],
+
+    last_heading = arr[28]
   Base_Image_path = "../public/images/products/"
   
   let data ;
@@ -85,6 +87,7 @@ const generator = (arr) => {
             <div class="flex justify-between items-center">
               <a href="/">
                 <img
+                  
                   class="w-20"
                   src="../public/images/brand-logo.svg"
                   alt="Mobius Brand Logo"
@@ -331,6 +334,7 @@ const generator = (arr) => {
           class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
         >
                 <img
+                style="max-height:320px"
                 class="inline-block"
                 src='${Base_Image_path + cap1_img}'
                 alt="Web Development"
@@ -356,6 +360,8 @@ const generator = (arr) => {
             </p>
           </div>
           <img
+          style="max-height:320px"
+
           class="inline-block"
           src='${Base_Image_path + cap2_img}'
           alt="Web Development"
@@ -368,6 +374,8 @@ const generator = (arr) => {
         <img
         class="inline-block"
         src='${Base_Image_path + cap3_img}'
+        style="max-height:320px"
+
         alt="Web Development"
           />
           <div class="mt-8 md:mt-0">
@@ -397,6 +405,8 @@ const generator = (arr) => {
           <img
           class="inline-block"
           src='${Base_Image_path + cap4_img}'
+          style="max-height:320px"
+
           alt="Web Development"
             />
           </article>
@@ -487,7 +497,7 @@ const generator = (arr) => {
         />
         <div class="relative">
           <h3 class="heading-section text-center relative z-10">
-            Mobius 5G Orchestration Products
+            Related Products
           </h3>
           <img
             class="absolute bottom-1 right-2/4 translate-x-2/4 md:translate-x-0 md:-right-2 w-16"
@@ -1084,38 +1094,15 @@ const generator = (arr) => {
           class="container mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >
           <h3 class="text-4xl font-bold text-royal-purple-500">
-            Try Monet Today
+          Explore ${last_heading} for your Organisation
           </h3>
           <p class="text-xl leading-8 mt-4 mb-12 max-w-lg mx-auto">
-            Start with a 30-day free trail to build beautiful visual experiences
-            for Apps
+          Contact our expert team to explore from tons of usecases on how ${last_heading} can  uniquely drive value to your organisation. 
           </p>
           <button class="btn btn-filled">Get Started</button>
         </article>
       </section>
-      <section data-aos="fade-up" class="bg-royal-gray-100 py-8 my-16 md:my-28">
-        <article class="container px-4 mx-auto text-center">
-          <header>
-            <h5 class="text-base font-normal">See Also</h5>
-          </header>
-          <div class="mt-7">
-            <h3 class="text-2xl font-bold">Hola Verse</h3>
-            <p class="mt-2 max-w-xl mx-auto">
-              The innovative low-code multi-tenant SaaS platform that offers a
-              collaborative marketplace as a service
-            </p>
-          </div>
-          <footer class="mt-11">
-            <a href="#">
-              <img
-                class="inline-block w-7"
-                src="../public/images/icons/arrow-right.svg"
-                alt="Arrow Right"
-              />
-            </a>
-          </footer>
-        </article>
-      </section>
+
       <div class="px-4 lg:px-11 mt-28">
         <hr class="hr-graphic" />
       </div>

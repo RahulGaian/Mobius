@@ -400,7 +400,7 @@ const menu = [
                       heading: "Citizen",
                       description:
                         "Citizen Engagement Services harness the power of cutting-edge technologies to create interactive platforms that foster communication and collaboration between citizens, city officials, and service providers.",
-                      url: "",
+                      url: "../generated_products/CitizenGuardian.html",
                       coverImage: "/public/images/smart-city-placeholder.png",
                     },
                   },
@@ -410,7 +410,7 @@ const menu = [
                       heading: "Citizen",
                       description:
                         "Citizen Engagement Services harness the power of cutting-edge technologies to create interactive platforms that foster communication and collaboration between citizens, city officials, and service providers.",
-                      url: "../generated_products/CitizenGuardian.html",
+                      url: "../generated_products/CitizenEngagement.html",
                       coverImage: "/public/images/smart-city-placeholder.png",
                     },
                   },
@@ -461,6 +461,16 @@ const menu = [
                       coverImage: "/public/images/smart-city-placeholder.png",
                     },
                   },
+                  {
+                    name: "Smart City as a Service",
+                    content: {
+                      heading: "Smart City as a Service",
+                      description:
+                        "Experience seamless integration of physical and digital realms, driving industry-wide growth through strategic partnerships, and unlocking new revenue streams in a dynamic, interconnected ecosystem.",
+                      url: "../generated_products/DataMonetization.html",
+                      coverImage: "/public/images/smart-city-placeholder.png",
+                    },
+                  },
 
                 ],
               },
@@ -480,12 +490,12 @@ const menu = [
                 name: "Partners",
                 items: [
                   {
-                    name: "Public Marketplace as a Service (XaaS)",
+                    name: "Public Marketplace as a Service ",
                     content: {
                       heading: "Partners",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
-                      url: "../ComingSoon/index.html",
+                      url: "../generated_products/MarketPlace.html",
                       coverImage: "/public/images/smart-city-placeholder.png",
                     },
                   },
@@ -495,7 +505,7 @@ const menu = [
                       heading: "Partners",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
-                      url: "../ComingSoon/index.html",
+                      url: "../generated_products/PartnerShip.html",
                       coverImage: "/public/images/smart-city-placeholder.png",
                     },
                   },

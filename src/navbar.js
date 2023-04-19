@@ -231,7 +231,7 @@ function createColumnThree2(activeMenuId, id = 0, subId = 0) {
   h3.textContent = articleInfo.heading;
 
   const p = document.createElement("p");
-  p.classList.add("text-lg", "mt-3");
+  p.classList.add("text-md", "mt-3");
   p.textContent = articleInfo.description;
 
   const a = document.createElement("a");
