@@ -467,7 +467,7 @@ const menu = [
                       heading: "Smart City as a Service",
                       description:
                         "Experience seamless integration of physical and digital realms, driving industry-wide growth through strategic partnerships, and unlocking new revenue streams in a dynamic, interconnected ecosystem.",
-                      url: "../generated_products/DataMonetization.html",
+                      url: "../generated_products/SmartCity.html",
                       coverImage: "/public/images/smart-city-placeholder.png",
                     },
                   },

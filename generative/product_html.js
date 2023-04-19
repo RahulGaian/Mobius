@@ -73,8 +73,10 @@ const generator = (arr) => {
 
     <!-- CSS -->
     <link rel="stylesheet" href="../public/output.css" />
+    <link rel="stylesheet" href="../public/changes.css" />
+
     <link rel="stylesheet" href="../src/menu.css" />
-    <title>Mobius Marketing Website</title>
+    <title>${last_heading} - Mobius DTasS</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -328,7 +330,7 @@ const generator = (arr) => {
       </header>
 
       <!-- Features-->
-      <section class="mt-11">
+      <section class="mt-11" id="product_section">
         <article
           data-aos="fade-up"
           class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
