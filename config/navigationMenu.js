@@ -273,41 +273,41 @@ const menu = [
                   {
                     name: "Customer Data Platform",
                     content: {
-                      heading: "Customers",
+                      heading: "Customer Data Platform",
                       description:
                         "Increase customer loyalty and improve your bottom line. Create effortless experiences that bring customers back again and again.",
                       url: "/generated_products/CustomerData.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
                   {
                     name: "Customer Relationship Management",
                     content: {
-                      heading: "Customers",
+                      heading: "Customer Relationship Management",
                       description:
                         "Increase customer loyalty and improve your bottom line. Create effortless experiences that bring customers back again and again.",
                       url: "../generated_products/CustomerRelationship.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
                   {
                     name: "Customer Success Management",
                     content: {
-                      heading: "Customers",
+                      heading: "Customer Success Management",
                       description:
                         "Increase customer loyalty and improve your bottom line. Create effortless experiences that bring customers back again and again.",
                       url: "../generated_products/CustomerSuccess.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
                   {
                     name: "Marketing Automation",
                     content: {
-                      heading: "Customers",
+                      heading: "Marketing Automation",
                       description:
                         "Increase customer loyalty and improve your bottom line. Create effortless experiences that bring customers back again and again.",
                       url: "../generated_products/MarketingAutomation.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
                 ],
@@ -330,51 +330,51 @@ const menu = [
                   {
                     name: "Recruiting",
                     content: {
-                      heading: "Employees",
+                      heading: "Recruiting",
                       description:
                         "Keep your hybrid workforce engaged and productive. Make work easier with a unified experience that brings together people, workplaces, processes, and technology",
                       url: "../generated_products/Recruiting.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
                   {
                     name: "Employee Engagement",
                     content: {
-                      heading: "Employees",
+                      heading: "Employee Engagement",
                       description:
                         "Keep your hybrid workforce engaged and productive. Make work easier with a unified experience that brings together people, workplaces, processes, and technology",
                       url: "../generated_products/EmployeeEngagement.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
                   {
                     name: "Org. Dev & Planning",
                     content: {
-                      heading: "Employees",
+                      heading: "Org. Dev & Planning",
                       description:
                         "Keep your hybrid workforce engaged and productive. Make work easier with a unified experience that brings together people, workplaces, processes, and technology",
                       url: "",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
                   {
                     name: "Learning & Development",
                     content: {
-                      heading: "Employees",
+                      heading: "Learning & Development",
                       description:
                         "Keep your hybrid workforce engaged and productive. Make work easier with a unified experience that brings together people, workplaces, processes, and technology",
                       url: "../generated_products/LearningDevelopment.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
                   {
                     name: "Comp & Benefits",
                     content: {
-                      heading: "Employees",
+                      heading: "Comp & Benefits",
                       description:
                         "Keep your hybrid workforce engaged and productive. Make work easier with a unified experience that brings together people, workplaces, processes, and technology",
                       url: "../generated_products/Compensation.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
                 ],
@@ -397,31 +397,31 @@ const menu = [
                   {
                     name: "Citizen Safety",
                     content: {
-                      heading: "Citizen",
+                      heading: "",
                       description:
                         "Citizen Engagement Services harness the power of cutting-edge technologies to create interactive platforms that foster communication and collaboration between citizens, city officials, and service providers.",
                       url: "../generated_products/CitizenGuardian.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/12.jpg",
                     },
                   },
                   {
                     name: "Citizen Engagements",
                     content: {
-                      heading: "Citizen",
+                      heading: "Citizen Engagements",
                       description:
                         "Citizen Engagement Services harness the power of cutting-edge technologies to create interactive platforms that foster communication and collaboration between citizens, city officials, and service providers.",
                       url: "../generated_products/CitizenEngagement.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/12.jpg",
                     },
                   },
                   {
                     name: "Community Engagements",
                     content: {
-                      heading: "Citizen",
+                      heading: "Community Engagements",
                       description:
                         "Citizen Engagement Services harness the power of cutting-edge technologies to create interactive platforms that foster communication and collaboration between citizens, city officials, and service providers.",
                       url: "../generated_products/CommunityEngagement.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/12.jpg",
                     },
                   },
                 ],
@@ -444,21 +444,21 @@ const menu = [
                   {
                     name: "Phygital Monetization",
                     content: {
-                      heading: "Phygital",
+                      heading: "Phygital Monetization",
                       description:
                         "Experience seamless integration of physical and digital realms, driving industry-wide growth through strategic partnerships, and unlocking new revenue streams in a dynamic, interconnected ecosystem.",
                       url: "../generated_products/PhygitalMonetization.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
                   {
                     name: "Data Monetization",
                     content: {
-                      heading: "Phygital",
+                      heading: "Data Monetization",
                       description:
                         "Experience seamless integration of physical and digital realms, driving industry-wide growth through strategic partnerships, and unlocking new revenue streams in a dynamic, interconnected ecosystem.",
                       url: "../generated_products/DataMonetization.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
                   {
@@ -468,7 +468,7 @@ const menu = [
                       description:
                         "Experience seamless integration of physical and digital realms, driving industry-wide growth through strategic partnerships, and unlocking new revenue streams in a dynamic, interconnected ecosystem.",
                       url: "../generated_products/SmartCity.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
 
@@ -492,21 +492,21 @@ const menu = [
                   {
                     name: "Public Marketplace as a Service ",
                     content: {
-                      heading: "Partners",
+                      heading: "Public Marketplace as a Service ",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
                       url: "../generated_products/MarketPlace.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/14.jpg",
                     },
                   },
                   {
                     name: "Partnership Relationship Management",
                     content: {
-                      heading: "Partners",
+                      heading: "Partnership Relationship Management",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
                       url: "../generated_products/PartnerShip.html",
-                      coverImage: "/public/images/smart-city-placeholder.png",
+                      coverImage: "/public/images/navbar/14.jpg",
                     },
                   },
 
@@ -530,7 +530,7 @@ const menu = [
                   {
                     name: "Automation DevOps",
                     content: {
-                      heading: "Technology",
+                      heading: "Automation DevOps",
                       description:
                         "Unleash the power of cutting-edge technology integration, simplify complex system management, and drive transformative results across your organization's digital landscape.",
                       url: "../generated_products/AutomationDevops.html",
@@ -556,21 +556,56 @@ const menu = [
         items: [
           {
             name: "Zoom Bot",
-            subitems: {
-              different:true,
-              heading:"",
-              description:"",
-              coverImage:""
+            subitems: [
+              {
+                name: "",
+                items: [
+
+
+                ],
+              },
+            ],
+            article: {
+              heading: "ZoomBot",
+              description:
+                " Experience seamless meeting scheduling, reminders, real-time transcription and translation, and customizable controls with our Zoom Bot powered by Mobius DTasS.",
+              url: "../generated_products/ZoomBot.html",
+              coverImage: "/public/images/navbar/9.jpg",
             },
-            url:"www.google.com"
+
           },
           {
             name: "Dashboard as a Service",
-            subitems: [],
+            subitems: [{  
+            name: "",
+            items: [
+
+
+            ],}],
+            article: {
+              heading: "Dashboard as a Service",
+              description:
+                " Unlock real-time insights with our customizable dashboards, seamless integrations, and collaborative tools. Join the revolution of intelligent business decision making with Mobius DTasS.",
+              url: "../generated_products/Dashboard.html",
+              coverImage: "/public/images/navbar/9.jpg",
+            },
           },
           {
-            name: "ESOPs as a Service",
-            subitems: [],
+            name: "OpsMax",
+            subitems: [{           
+             name: "",
+            items: [
+
+
+            ],}
+          ],
+            article: {
+              heading: "OpsMax",
+              description:
+                "  OpsMax is a futuristic ESOP management tool that simplifies the process of managing employee stock options. With automated management, comprehensive reporting, and robust security, OpsMax helps you future-proof your ESOPs.",
+              url: "../generated_products/OpsMax.html",
+              coverImage: "/public/images/navbar/9.jpg",
+            },
           },
 
 

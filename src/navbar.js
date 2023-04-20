@@ -13,16 +13,39 @@ const megaMenuOne = document.querySelector(".mega-menu");
 const megaMenuTwo = document.querySelector(".mega-menu2");
 const navbar = document.getElementById("mynav");
 const columnTwo = document.querySelector(".column-two");
+const megaMenu2columnTwo = document.querySelector(".mega-menu2 .column-two");
 const columnThree = document.querySelector(".column-three");
 
-
-
-
-
-
+const megaMenu2columnThree = document.querySelector(".mega-menu2 .column-two");
 
 function getImageUrl(url) {
   return window.location.origin + url;
+}
+
+function createBackButton(column, megaMenuType = 1) {
+  const megaMenuElm = megaMenuType === 1 ? megaMenuOne : megaMenuTwo;
+  const columnTwoElm = megaMenuType === 1 ? columnTwo : megaMenu2columnTwo;
+  const columnThreeElm =
+    megaMenuType === 1 ? columnThree : megaMenu2columnThree;
+  const backButton = document.createElement("button");
+  backButton.textContent = "< Back";
+  backButton.classList.add("back");
+  backButton.addEventListener("click", (e) => {
+    switch (column) {
+      case "one":
+        megaMenuElm.style.display = "none";
+        break;
+      case "two":
+        columnTwoElm.classList.remove("activate");
+        break;
+      case "three":
+        columnThreeElm.classList.remove("activate");
+        break;
+      default:
+        return;
+    }
+  });
+  return backButton;
 }
 
 menuItemsOne.forEach((navMenuItem) => {
@@ -55,11 +78,14 @@ menuItemsTwo.forEach((navMenuItem) => {
   });
 });
 
+// Mega menu 2
 function renderMegaMenu2(menuId) {
   const data = menu2[menuId].menuItems;
   const columnOne = document.querySelector(".mega-menu2 .column-one");
   const columnTwo = document.querySelector(".mega-menu2 .column-two");
   columnOne.innerHTML = "";
+  const backButton = createBackButton("one", megaMenuTwo);
+  columnOne.append(backButton);
   data.forEach((item, index) => {
     const div = document.createElement("div");
     div.classList.add(
@@ -104,14 +130,17 @@ function renderMegaMenu2(menuId) {
 }
 
 function renderMegaMenu(id) {
+  if (!id) return;
   createColumnOne(id);
 }
-
+// Mega menu column one
 function createColumnOne(activeMenuId) {
   const columnOneData = menu[activeMenuId].menus;
 
   const columnOne = document.querySelector(".mega-menu .column-one");
   columnOne.innerHTML = "";
+  const backButton = createBackButton("one");
+  columnOne.append(backButton);
   columnOneData.forEach((item, id) => {
     const div = document.createElement("div");
     div.classList.add(
@@ -159,12 +188,13 @@ function createColumnOne(activeMenuId) {
   });
   createColumnTwo(activeMenuId);
 }
-
+// Mega menu column two
 function createColumnTwo(activeMenuId, id = 0, subId = 0) {
   const columnTwoData = menu[activeMenuId].menus[id].items[subId].subitems[0];
   const columnTwo = document.querySelector(".mega-menu .column-two");
   columnTwo.innerHTML = "";
-
+  const backButton = createBackButton("two");
+  columnTwo.append(backButton);
   const div = document.createElement("div");
   const h5 = document.createElement("h5");
   h5.classList.add("mega-menu-heading");
@@ -203,12 +233,14 @@ function createColumnTwo(activeMenuId, id = 0, subId = 0) {
   createColumnThree(activeMenuId, id, subId, 0, true);
 }
 
+// Mega Menu 2 Column two
 function createColumnThree2(activeMenuId, id = 0, subId = 0) {
-  console.log({ activeMenuId, id, subId });
   const articleInfo = menu2[activeMenuId].menuItems[id].list[subId].article;
   const columnThree = document.querySelector(".mega-menu2 .column-two");
   const megaMenuLinks = document.querySelectorAll(".mega-menu-two");
   columnThree.innerHTML = "";
+  const backButton = createBackButton("two", megaMenuTwo);
+  columnThree.append(backButton);
   const div = document.createElement("div");
   const header = document.createElement("header");
   header.classList.add("px-11", "py-7", "mb-9");
@@ -258,6 +290,7 @@ function createColumnThree2(activeMenuId, id = 0, subId = 0) {
   div.append(header, img2);
   columnThree.appendChild(div);
 }
+
 function createColumnThree(
   activeMenuId,
   id = 0,
@@ -272,6 +305,8 @@ function createColumnThree(
   const columnThree = document.querySelector(".mega-menu .column-three");
   const megaMenuLinks = document.querySelectorAll(".mega-menu-one");
   columnThree.innerHTML = "";
+  const backButton = createBackButton("three");
+  columnThree.append(backButton);
   const div = document.createElement("div");
   const header = document.createElement("header");
   header.classList.add("px-11", "py-7", "mb-9");

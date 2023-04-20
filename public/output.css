@@ -1737,13 +1737,23 @@ body {
   color: rgb(45 34 170 / var(--tw-text-opacity));
 }
 
+.btn:hover{
+  background-color: rgb(45 34 170 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  color: white;
+
+}
+
 .btn-filled {
   --tw-bg-opacity: 1;
   background-color: rgb(45 34 170 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.btn-filled:hover{
+  background-color: #180E83;
 
+}
 .btn-filled-dark {
   border-width: 0px;
   --tw-bg-opacity: 1;
