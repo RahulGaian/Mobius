@@ -495,7 +495,7 @@ const menu = [
                       heading: "Public Marketplace as a Service ",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
-                      url: "../generated_products/MarketPlace.html",
+                      url: "../ComingSoon/index.html",
                       coverImage: "/public/images/navbar/14.jpg",
                     },
                   },
@@ -505,8 +505,8 @@ const menu = [
                       heading: "Partnership Relationship Management",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
-                      url: "../generated_products/PartnerShip.html",
-                      coverImage: "/public/images/navbar/14.jpg",
+                        url: "../ComingSoon/index.html",
+                        coverImage: "/public/images/navbar/14.jpg",
                     },
                   },
 
@@ -517,8 +517,8 @@ const menu = [
               heading: "Partners",
               description:
                 "Mobius Networks offers robust NoCode solutions to streamline partnerships and alliances, enabling businesses to forge and manage strategic collaborations with ease. Our user-friendly platform allows organizations to create and deploy customized applications, ensuring seamless communication, resource sharing, and growth opportunities with partners and affiliates.",
-              url: "",
-              coverImage: "/public/images/navbar/14.jpg",
+                url: "../ComingSoon/index.html",
+                coverImage: "/public/images/navbar/14.jpg",
             },
           },
           {

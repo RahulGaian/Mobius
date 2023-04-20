@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Family -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -21,8 +22,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../public/output.css" />
-    <link rel="stylesheet" href="../src/menu.css" />
+    <link rel="stylesheet" href="public/output.css" />
+    <link rel="stylesheet" href="./src/menu.css" />
     <title>Mobius Marketing Website</title>
   </head>
   <body>
@@ -37,19 +38,19 @@
               <a href="/">
                 <img
                   class="w-20"
-                  src="../public/images/brand-logo.svg"
+                  src="public/images/brand-logo.svg"
                   alt="Mobius Brand Logo"
                 />
               </a>
               <img
                 class="lg:hidden"
-                src="../public/images/icons/menu.svg"
+                src="public/images/icons/menu.svg"
                 alt="Menu"
                 id="openmenu"
               />
               <img
                 class="hidden"
-                src="../public/images/icons/close-outline.svg"
+                src="public/images/icons/close-outline.svg"
                 alt="Menu"
                 id="close-menu"
               />
@@ -62,7 +63,7 @@
                 <span class="nav-link top-nav-link">Solutions</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
                 <!-- <div>
@@ -91,7 +92,7 @@
                 <span class="nav-link top-nav-link">Products</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
               </li>
@@ -102,7 +103,7 @@
                 <span class="nav-link top-nav-link menu2">Platform</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
               </li>
@@ -113,7 +114,7 @@
                 <span class="nav-link top-nav-link menu2">Company</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
               </li>
@@ -145,17 +146,17 @@
       <!-- Mega Menu One -->
       <div
         id="navbar"
-        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
+        class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
+          <div class="lg:pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
             <div
-              class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+              class="col-span-2 border-r border-royal-gray-300 py-2 lg:py-2 lg:pr-6 column-one"
             ></div>
 
             <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
               <div
-                class="border-b border-royal-gray-300 py-6 last:border-0 column-two"
+                class="border-b border-royal-gray-300 py-2 py-6 last:border-0 column-two"
               ></div>
             </div>
             <article
@@ -164,10 +165,10 @@
           </div>
         </nav>
       </div>
-      <!-- Mega Menu Twp -->
+      <!-- Mega Menu Two -->
       <div
         id="navbar"
-        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
+        class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
           <div class="lg:pl-20 lg:grid lg:grid-cols-5">
@@ -184,40 +185,25 @@
     <!-- Main Content -->
     <main>
       <!-- Banner -->
-      <section class="banner-bg-pink pb-16 md:pb-16 pt-36">
+      <section class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
         <article
           class="container ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
         >
-          <div class="px-4 lg:pl-4 lg:px-0">
-            <header class="relative">
-              <div class="body-text">
-                <a class="text-royal-pink-700 opacity-70" href="/">Home</a>
-                <span class="text-royal-pink-700 opacity-70">/</span>
-                <a class="text-royal-pink-700 opacity-70" href="/solutions"
-                  >Solutions</a
-                >
-                <span class="text-royal-pink-700 opacity-70">/</span>
-                <a class="text-royal-pink-700 opacity-70" href="#"
-                  >Smart Cities as a Service</a
-                >
-              </div>
-              <h1 class="heading-banner heading-banner-md mt-12 relative z-10">
-                <strong>
-                  Empowering Cities to Innovate and Grow with Mobius DTaaS
-                </strong>
+          <div class="px-4 lg:px-0">
+            <header class="relative inline-block">
+              <h1 class="heading-banner heading-banner-md mt-4 relative z-10">
+                <strong> Tomorrow, Delivered </strong>
               </h1>
               <img
-                class="absolute bottom-0 w-20 md:w-auto md:left-2/4"
-                src="../public/images/graphics/highlihter.svg"
+                class="absolute bottom-0 w-20 md:w-auto -right-4"
+                src="public/images/graphics/highlihter.svg"
                 alt="Curve Line"
               />
             </header>
 
             <p class="body-text mt-5">
-              With Smart City as a Service, you can leverage the power of Mobius
-              DTaaS to unlock the full potential of your city's infrastructure
-              and resources, creating a thriving ecosystem that drives
-              innovation and growth.
+              Simplify your digital transformation journey and achieve your
+              goals with our user-friendly digital transformation software.
             </p>
             <footer
               class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row"
@@ -233,14 +219,16 @@
           <div class="mt-12 md:mt-0 pl-4 sm:pl-0">
             <img
               class="w-full"
-              src="../public/images/banner/smart-city.png"
-              alt="Smart City"
+              src="public/images/banner/digital-transformation-journey.png"
+              alt="Digital Transformation Journey"
             />
           </div>
         </article>
         <!-- Custome Stripe -->
         <footer class="container mx-auto mt-32 px-4">
-          <h4 class="text-xl font-medium text-center mb-7">Happy Customers</h4>
+          <h4 class="text-xl font-medium text-center mb-7">
+            Our Customer Relationships
+          </h4>
           <div class="swiper" id="strip-slider">
             <div class="swiper-wrapper">
               <div class="bg-white h-14 swiper-slide"></div>
@@ -261,53 +249,32 @@
           </div>
         </footer>
       </section>
-      <!-- Smart City Features -->
-      <header class="sticky-header bg-royal-purple-300">
-        <nav
-          class="flex justify-between items-center bg-royal-purple-300 lg:pb-0"
-        >
-          <ul class="flex bg-royal-purple-300 px-4 lg:px-24">
-            <li class="mr-16">
-              <a
-                class="nav-link text-royal-gray-900 py-6 active-feature relative"
-                href="#"
-              >
-                Problem Statement
-              </a>
-            </li>
-            <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6" href="#"
-                >Capabilities</a
-              >
-            </li>
-            <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6" href="#">Products</a>
-            </li>
-            <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6" href="#"
-                >You may also like</a
-              >
-            </li>
-            <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6" href="#"
-                >Resources</a
-              >
-            </li>
-          </ul>
-          <a
-            class="nav-link px-4 lg:px-12 py-6 text-royal-gray-700 lg:text-white sticky-header-btn"
-            href="#"
-          >
-            Speak to an Expert
-          </a>
-        </nav>
-      </header>
-      <section
-        data-aos="fade-up"
-        class="bg-gradient-purple-graphics pb-10 text-white smart-city feature"
-      >
-        <article class="container ml-auto lg:flex items-center mt-11">
-          <div class="lg:mr-24 px-4 lg:pl-4 lg:px-0 max-w-3xl">
+      <!-- The Platform-->
+      <section class="mt-11">
+        <div class="container mx-auto px-4">
+          <header data-aos="fade-up" class="mb-10 md:mb-24 text-center">
+            <div class="inline-block relative">
+              <h3 class="heading-section text-center relative z-10">
+                The Platform of Platforms
+              </h3>
+              <img
+                class="absolute bottom-1 right-2/4 sm:right-0 w-16"
+                src="public/images/graphics/highlihter.svg"
+                alt="Curve Line"
+              />
+            </div>
+          </header>
+          <div
+            class="grid lg:grid-cols-5 gap-14 lg:gap-24 items-center"
+            id="platform-menu"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Mobius Data -->
+      <section class="mt-16 bg-gradient-purple-graphics py-10 text-white">
+        <article class="container ml-auto lg:flex justify-between items-center">
+          <div data-aos="fade-up" class="lg:mr-24 px-4 lg:px-0 max-w-xl">
             <h3 class="heading-section !text-white">
               Innovate and disrupt with Mobius DTaaS
             </h3>
@@ -321,132 +288,162 @@
             </p>
             <a class="btn btn-filled-dark mt-12" href="#">Contact Sales</a>
           </div>
-          <div class="pl-4 lg:pl-0 mt-12 lg:mt-0 text-right">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            class="pl-4 lg:pl-0 mt-12 lg:mt-0 text-right"
+          >
             <img
-              class="inline-block"
-              src="../public/images/digital-smart-city.png"
-              alt="Smart City"
+              class="inline-block w-full"
+              src="public/images/digital-brain.png"
+              alt="Digital Brain"
             />
           </div>
+        </article>
+      </section>
+      <!-- Digital Platform Transformation -->
+      <section class="py-12 bg-gradient-pink">
+        <div class="container mx-auto px-4">
+          <header class="mb-10 lg:mb-24 text-center">
+            <div data-aos="fade-up" class="inline-block relative">
+              <h3 class="heading-section text-center relative z-10">
+                The One Platform for End-to-End <br />
+                Digital Transformation
+              </h3>
+              <img
+                class="absolute top-4 right-0 w-40"
+                src="public/images/graphics/highlihter.svg"
+                alt="Curve Line"
+              />
+            </div>
+          </header>
+          <div
+            class="grid lg:grid-cols-11 gap-16 lg:gap-24 items-center"
+            id="digital-platform-menu"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Apps Supported -->
+      <section class="py-28 bg-apps">
+        <article class="container mx-auto px-4">
+          <header class="max-w-xl">
+            <h2 data-aos="fade-up" class="heading-article">
+              Prebuilt Integrations with thousands of Apps & Workflows
+            </h2>
+            <p data-aos="fade-up" class="body-text mt-4">
+              Mobius Suite integrates with thousands of Apps, APIs, Content, IT
+              & Infrasturcture providers across various domains throughout the
+              globe
+            </p>
+          </header>
+          <footer class="mt-8">
+            <div class="swiper" id="strip-slider-2">
+              <div class="swiper-wrapper flex items-center">
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img src="public/images/apps/zoom.svg" alt="Zoom Logo" />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img src="public/images/apps/slack.svg" alt="Slack Logo" />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/drive.svg"
+                    alt="Google Drive Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/appstore.svg"
+                    alt="Appstore Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/playstore.svg"
+                    alt="Playstore Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    data-aos="fade-up"
+                    src="public/images/apps/zoom.svg"
+                    alt="Zoom Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img src="public/images/apps/slack.svg" alt="Slack Logo" />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/drive.svg"
+                    alt="Google Drive Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/appstore.svg"
+                    alt="Appstore Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/playstore.svg"
+                    alt="Playstore Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img src="public/images/apps/zoom.svg" alt="Zoom Logo" />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img src="public/images/apps/slack.svg" alt="Slack Logo" />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/drive.svg"
+                    alt="Google Drive Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/appstore.svg"
+                    alt="Appstore Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/playstore.svg"
+                    alt="Playstore Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/appstore.svg"
+                    alt="Appstore Logo"
+                  />
+                </figure>
+                <figure data-aos="fade-up" class="swiper-slide text-center">
+                  <img
+                    src="public/images/apps/playstore.svg"
+                    alt="Playstore Logo"
+                  />
+                </figure>
+              </div>
+            </div>
+          </footer>
         </article>
       </section>
 
-      <!-- Capablities -->
-      <section data-aos="fade-up" class="mt-16 py-20">
-        <div class="container mx-auto px-4">
-          <header class="mb-10 md:mb-16 relative inline-block">
-            <h3 class="heading-section relative z-10">Capabilities</h3>
-            <img
-              class="absolute bottom-1 left-2/4 w-16"
-              src="../public/images/graphics/highlihter.svg"
-              alt="Curve Line"
-            />
-          </header>
-          <div class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
-            <article>
-              <img
-                src="../public/images/icons/info.svg"
-                alt="Information Icon"
-              />
-              <h4 class="mt-4 md:mt-8 heading-card">
-                Low-code application development
-              </h4>
-              <p class="opacity-70 text-base mt-2">
-                Allow cities to create and deploy smart city applications
-                quickly and easily
-              </p>
-            </article>
-            <article>
-              <img
-                src="../public/images/icons/info.svg"
-                alt="Information Icon"
-              />
-              <h4 class="mt-4 md:mt-8 heading-card">Digital marketplace</h4>
-              <p class="opacity-70 text-base mt-2">
-                Access a variety of digital raw materials and collaborate with
-                different partners
-              </p>
-            </article>
-            <article>
-              <img
-                src="../public/images/icons/info.svg"
-                alt="Information Icon"
-              />
-              <h4 class="mt-4 md:mt-8 heading-card">
-                Metered usage and pricing
-              </h4>
-              <p class="opacity-70 text-base mt-2">
-                Enable micro-transactions and metered SaaS pricing, allowing
-                cities to exchange value with other tenants
-              </p>
-            </article>
-            <article>
-              <img
-                src="../public/images/icons/info.svg"
-                alt="Information Icon"
-              />
-              <h4 class="mt-4 md:mt-8 heading-card">
-                Built-in analytics and reporting
-              </h4>
-              <p class="opacity-70 text-base mt-2">
-                Enable cities to measure and analyze the effectiveness of their
-                smart city applications through data-driven decisions
-              </p>
-            </article>
-            <article>
-              <img
-                src="../public/images/icons/info.svg"
-                alt="Information Icon"
-              />
-              <h4 class="mt-4 md:mt-8 heading-card">Powerful API automation</h4>
-              <p class="opacity-70 text-base mt-2">
-                Create streamlined workflows through API orchestration and
-                automation
-              </p>
-            </article>
-            <article>
-              <img
-                src="../public/images/icons/info.svg"
-                alt="Information Icon"
-              />
-              <h4 class="mt-4 md:mt-8 heading-card">Omnichannel engagement</h4>
-              <p class="opacity-70 text-base mt-2">
-                Deliver real-time citizen delights over any platform seamlessly
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <!-- Enterprise -->
-      <section data-aos="fade-up" class="bg-gradient-pink my-12 lg:my-20">
-        <article class="container grid lg:grid-cols-2 gap-6 items-center">
-          <div>
-            <img src="../public/images/bg-art-2.svg" alt="" />
-          </div>
-          <div class="lg:max-w-lg px-4 lg:px-0 py-12 lg:py-0">
-            <h2 class="heading-section">
-              Accelerate Your Smart City Transformation with Mobius DTaaS
-            </h2>
-            <p class="body-text mt-3">
-              Learn how Mobius DTaaS helped a city reduce traffic congestion and
-              improve traffic flow by leveraging a low-code approach to digital
-              transformation. With the help of Mobius, the city was able to
-              deploy a smart traffic management system quickly and easily,
-              without the need for CapEx-intensive hardware and a team of
-              developers.
-            </p>
-            <a class="btn btn-outlined mt-12" href="#">
-              <span>Contact Us</span>
-            </a>
-          </div>
-        </article>
-      </section>
       <!-- Apps Powered -->
-      <section data-aos="fade-up" class="py-16">
-        <header class="flex justify-between items-center px-4 mb-16">
+      <section class="py-16 bg-gradient-pink">
+        <header
+          data-aos="fade-up"
+          class="flex justify-between items-center px-4 mb-16"
+        >
           <img
             id="nav-left"
-            src="../public/images/icons/arrow-left-circled.svg"
+            src="public/images/icons/arrow-left-circled.svg"
             alt="Arrow Left"
           />
           <div class="relative">
@@ -455,18 +452,18 @@
             </h3>
             <img
               class="absolute bottom-1 right-2/4 translate-x-2/4 md:translate-x-0 md:-right-2 w-16"
-              src="../public/images/graphics/highlihter.svg"
+              src="public/images/graphics/highlihter.svg"
               alt="Curve Line"
             />
           </div>
 
           <img
             id="nav-right"
-            src="../public/images/icons/arrow-right-circled.svg"
+            src="public/images/icons/arrow-right-circled.svg"
             alt="Arrow Right"
           />
         </header>
-        <div class="swiper px-4 md:px-0" id="app-swiper">
+        <div data-aos="fade-up" class="swiper px-4 md:px-0" id="app-swiper">
           <div class="swiper-wrapper">
             <!-- slider 1 -->
             <a class="swiper-slide" href="#">
@@ -481,7 +478,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -514,7 +511,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -536,7 +533,7 @@
                     <h4 class="heading-card">Live Maps</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -569,7 +566,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -591,7 +588,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -624,7 +621,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -646,7 +643,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -679,7 +676,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -701,7 +698,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -734,7 +731,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -756,7 +753,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -789,7 +786,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -811,7 +808,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -844,7 +841,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -866,7 +863,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -899,7 +896,7 @@
                 <footer class="border-t border-royal-gray-300 py-4 text-center">
                   <img
                     class="inline-block"
-                    src="../public/images/icons/preview.svg"
+                    src="public/images/icons/preview.svg"
                     alt="Preview Icon"
                   />
                   <strong class="text-base font-medium text-royal-gray-700"
@@ -921,7 +918,7 @@
                     <h4 class="heading-card">Boston 311</h4>
                     <div class="flex items-center mt-3">
                       <img
-                        src="../public/images/icons/building.svg"
+                        src="public/images/icons/building.svg"
                         alt="Building Icon"
                       />
                       <strong
@@ -966,59 +963,6 @@
           </div>
         </div>
       </section>
-      <!-- Related Products -->
-      <section data-aos="fade-up" class="py-16 bg-royal-gray-100">
-        <div class="container mx-auto px-4">
-          <header>
-            <h3 class="text-2xl font-bold mb-3">You may also like..</h3>
-            <p class="text-lg">
-              Related products to Mobius Smart City Solutions
-            </p>
-          </header>
-          <div class="mt-12 grid lg:grid-cols-3 gap-8">
-            <article class="bg-white p-6 rounded-3xl flex items-center gap-x-6">
-              <div>
-                <figure
-                  class="w-20 h-20 bg-royal-gray-100 rounded-full"
-                ></figure>
-              </div>
-
-              <div class="">
-                <h4 class="heading-card">Dashboards as a Service</h4>
-                <p class="text-base text-royal-gray-400">
-                  Lorem ipsum dolor sit amet consectetur. Amet diam
-                </p>
-              </div>
-            </article>
-            <article class="bg-white p-6 rounded-3xl flex items-center gap-x-6">
-              <div>
-                <figure
-                  class="w-20 h-20 bg-royal-gray-100 rounded-full"
-                ></figure>
-              </div>
-              <div class="">
-                <h4 class="heading-card">Dashboards as a Service</h4>
-                <p class="text-base text-royal-gray-400">
-                  Lorem ipsum dolor sit amet consectetur. Amet diam
-                </p>
-              </div>
-            </article>
-            <article class="bg-white p-6 rounded-3xl flex items-center gap-x-6">
-              <div>
-                <figure
-                  class="w-20 h-20 bg-royal-gray-100 rounded-full"
-                ></figure>
-              </div>
-              <div class="">
-                <h4 class="heading-card">Dashboards as a Service</h4>
-                <p class="text-base text-royal-gray-400">
-                  Lorem ipsum dolor sit amet consectetur. Amet diam
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
       <!-- Resources -->
       <section data-aos="fade-up" class="mt-20">
         <div class="container mx-auto px-4">
@@ -1027,11 +971,17 @@
             <a class="btn btn-sm" href="#">See all</a>
           </header>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
-            <article class="border border-royal-gray-300 rounded-3xl">
+            <article
+              data-aos="fade-up"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="500"
+              class="border border-royal-gray-300 rounded-3xl"
+            >
               <div>
                 <img
                   class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
+                  src="public/images/resources.jpeg"
                   alt="Resources"
                 />
               </div>
@@ -1047,11 +997,17 @@
                 </p>
               </div>
             </article>
-            <article class="border border-royal-gray-300 rounded-3xl">
+            <article
+              data-aos="fade-up"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="800"
+              class="border border-royal-gray-300 rounded-3xl"
+            >
               <div>
                 <img
                   class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
+                  src="public/images/resources.jpeg"
                   alt="Resources"
                 />
               </div>
@@ -1067,11 +1023,17 @@
                 </p>
               </div>
             </article>
-            <article class="border border-royal-gray-300 rounded-3xl">
+            <article
+              data-aos="fade-up"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              class="border border-royal-gray-300 rounded-3xl"
+            >
               <div>
                 <img
                   class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
+                  src="public/images/resources.jpeg"
                   alt="Resources"
                 />
               </div>
@@ -1087,11 +1049,17 @@
                 </p>
               </div>
             </article>
-            <article class="border border-royal-gray-300 rounded-3xl">
+            <article
+              data-aos="fade-up"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1500"
+              class="border border-royal-gray-300 rounded-3xl"
+            >
               <div>
                 <img
                   class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
+                  src="public/images/resources.jpeg"
                   alt="Resources"
                 />
               </div>
@@ -1110,41 +1078,66 @@
           </div>
         </div>
       </section>
-      <!-- Expert -->
+      <!-- Enterprise -->
       <section
-        data-aos="fade-up"
-        class="my-20 bg-yellow-graphics pt-12 lg:pt-0"
+        class="bg-royal-gray-100 my-20 py-14 lg:bg-bg-enterprise bg-no-repeat bg-right"
       >
-        <article
-          class="container mx-auto px-4 lg:pl-4 lg:px-0 grid lg:grid-cols-3 items-center"
-        >
-          <div class="lg:col-span-2">
-            <h2 class="heading-section">
-              Get in touch with our Certified Solutions Expert
-            </h2>
+        <article class="container ml-auto px-4 lg:px-0">
+          <div data-aos="fade-up" class="max-w-lg">
+            <h2 class="heading-section">Enterprise grade Trust & Security</h2>
             <p class="body-text mt-3">
-              Get expert assistance on Custom Solutions and Enquiries
+              Lorem ipsum dolor sit amet consectetur. Eget arcu fringilla
+              tincidunt magna sit aliquam sed.
             </p>
-            <a class="btn btn-filled mt-12" href="#"> Book a Call </a>
           </div>
-          <div class="md:col-span-1 mt-8 md:mt-0">
+          <div data-aos="fade-up" class="flex items-center mt-10">
             <img
-              class="w-full"
-              src="../public/images/group.png"
-              alt="Expert Group"
+              class="mr-8"
+              src="public/images/badges/gdpr.svg"
+              alt="Gdpr Badge"
             />
+            <img src="public/images/badges/aicpa.svg" alt="Aicpa Badge" />
           </div>
+
+          <a data-aos="fade-up" class="flex items-center mt-12" href="#">
+            <span>Read More</span>
+            <img
+              class="ml-5"
+              src="public/images/icons/arrow-right.svg"
+              alt="Arrow Right"
+            />
+          </a>
         </article>
       </section>
-      <div class="px-4 lg:px-11 mt-28">
+      <!-- Call to Action Section -->
+      <section data-aos="fade-up" class="px-4 lg:px-0">
+        <article
+          class="container mx-auto px-8 text-center cta-wrapper rounded-3xl"
+        >
+          <h3
+            data-aos="fade-up"
+            class="text-4xl font-bold text-royal-purple-500"
+          >
+            Try Monet Today
+          </h3>
+          <p
+            data-aos="fade-up"
+            class="text-xl leading-8 mt-4 mb-12 max-w-lg mx-auto"
+          >
+            Start with a 30-day free trail to build beautiful visual experiences
+            for Apps
+          </p>
+          <button data-aos="fade-up" class="btn btn-filled">Get Started</button>
+        </article>
+      </section>
+      <div data-aos="fade-up" class="px-4 lg:px-11 mt-28">
         <hr class="hr-graphic" />
       </div>
     </main>
-    <!-- Footer -->
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
       <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10">
-          <nav>
+          <nav data-aos="fade-up">
             <h4 class="heading-card">Company</h4>
             <ul class="mt-5 md:mt-9">
               <li class="mb-4">
@@ -1167,7 +1160,7 @@
               </li>
             </ul>
           </nav>
-          <nav>
+          <nav data-aos="fade-up">
             <h4 class="heading-card">Solutions</h4>
             <ul class="mt-5 md:mt-9">
               <li class="mb-4">
@@ -1187,7 +1180,7 @@
               </li>
             </ul>
           </nav>
-          <nav>
+          <nav data-aos="fade-up">
             <h4 class="heading-card">Product</h4>
             <ul class="mt-5 md:mt-9">
               <li class="mb-4">
@@ -1207,7 +1200,7 @@
               </li>
             </ul>
           </nav>
-          <nav>
+          <nav data-aos="fade-up">
             <h4 class="heading-card">Platform</h4>
             <ul class="mt-5 md:mt-9">
               <li class="mb-4">
@@ -1230,11 +1223,11 @@
         </div>
         <div class="text-center mt-12 md:mt-20">
           <nav>
-            <ul class="flex justify-center items-center">
+            <ul data-aos="fade-up" class="flex justify-center items-center">
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/linkedin.svg"
+                    src="public/images/icons/linkedin.svg"
                     alt="Linkedin Icon"
                   />
                 </a>
@@ -1242,7 +1235,7 @@
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/instagram.svg"
+                    src="public/images/icons/instagram.svg"
                     alt="Instagram Icon"
                   />
                 </a>
@@ -1250,7 +1243,7 @@
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/twitter.svg"
+                    src="public/images/icons/twitter.svg"
                     alt="Twitter Icon"
                   />
                 </a>
@@ -1258,7 +1251,7 @@
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/facebook.svg"
+                    src="public/images/icons/facebook.svg"
                     alt="Facebook Icon"
                   />
                 </a>
@@ -1275,15 +1268,15 @@
       </div>
     </footer>
     <!-- Navigation Menu -->
-    <script src="../config/navigationMenu.js"></script>
-    <script src="../config/navigationMenu2.js"></script>
-    <script src="../src/navbar.js"></script>
-    <script src="../src/mobileMenu.js"></script>
+    <script src="config/navigationMenu.js"></script>
+    <script src="config/navigationMenu2.js"></script>
+    <script src="src/navbar.js"></script>
+    <script src="src/mobileMenu.js"></script>
     <!-- Slider -->
-    <script src="../src/slider.js"></script>
+    <script src="src/slider.js"></script>
     <!-- Platfrom menu -->
-    <script src="../src/digitalPlatformMenu.js"></script>
-    <script src="../src/platformsMenu.js"></script>
+    <script src="src/digitalPlatformMenu.js"></script>
+    <script src="src/platformsMenu.js"></script>
     <!-- Animate on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -1294,7 +1287,6 @@
     </script>
     <script>
       var myNav = document.getElementById("mynav");
-      var topNav = document.getElementById("top-navbar");
       window.onscroll = function () {
         if (window.scrollY >= 40) {
           myNav.classList.add("nav-colored");
@@ -1302,11 +1294,6 @@
         } else {
           myNav.classList.add("nav-transparent");
           myNav.classList.remove("nav-colored");
-        }
-        if (window.scrollY >= 1110) {
-          topNav.classList.remove("sticky");
-        } else {
-          topNav.classList.add("sticky");
         }
       };
     </script>
