@@ -290,27 +290,27 @@ const generator = (arr) => {
             <li class="mr-16">
               <a
                 class="nav-link text-royal-gray-900 py-6 inline-block active-feature relative"
-                href="#"
+                href="#product_section"
                 >Features</a
               >
             </li>
             <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#"
+              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#ben"
                 >Benefits</a
               >
             </li>
             <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#"
+              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#cases"
                 >Usecases</a
               >
             </li>
             <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#"
+              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#app-swiper"
                 >You may also like</a
               >
             </li>
             <li class="mr-16">
-              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#"
+              <a class="nav-link text-royal-gray-900 py-6 inline-block" href="#res"
                 >Resources</a
               >
             </li>
@@ -325,7 +325,7 @@ const generator = (arr) => {
       </header>
 
       <!-- Features-->
-      <section class="mt-11" id="product_section">
+      <section class="mt-11" id="product_section" >
         <article
           data-aos="fade-up"
           class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
@@ -412,7 +412,7 @@ const generator = (arr) => {
       <!-- Benefits -->
       <section
         data-aos="fade-up"
-        class="mt-16 bg-gradient-purple py-20 text-white"
+        class="mt-16 bg-gradient-purple py-20 text-white" id="ben"
       >
         <div class="container mx-auto px-4">
           <header class="mb-10 md:mb-24 relative">
@@ -466,7 +466,7 @@ const generator = (arr) => {
         </div>
       </section>
 
-      <section data-aos="fade-up" class="mt-16 bg-gradient-pink py-10">
+      <section data-aos="fade-up" class="mt-16 bg-gradient-pink py-10" id="cases">
         <article class="container ml-auto lg:flex items-center">
           <div class="lg:mr-24 px-4 lg:px-0 max-w-xl">
             <h3 class="heading-section"> ${third_heading} </h3>
@@ -995,7 +995,7 @@ const generator = (arr) => {
     </section>
 
       <!-- Resources -->
-      <section data-aos="fade-up" class="my-20">
+      <section data-aos="fade-up" class="my-20" id="res">
         <div class="container mx-auto px-4">
           <header class="flex justify-between items-center">
             <h3 class="heading-section">Resources</h3>
