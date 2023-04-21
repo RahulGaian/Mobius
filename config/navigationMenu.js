@@ -119,7 +119,7 @@ const menu = [
               },
             ],
             article: {
-              heading: "Media & Entertainment",
+              heading: "Citizen",
               description:
                 "Mobius Networks delivers innovative NoCode solutions for the media and entertainment industry, empowering creators, producers, and distributors to craft immersive, interactive experiences that captivate audiences across the globe. Our versatile platform simplifies the development and deployment of tailor-made digital applications and services, streamlining content management, distribution, and monetization.",
               url: "",
@@ -397,7 +397,7 @@ const menu = [
                   {
                     name: "Citizen Safety",
                     content: {
-                      heading: "",
+                      heading: "Citizen Safety",
                       description:
                         "Citizen Engagement Services harness the power of cutting-edge technologies to create interactive platforms that foster communication and collaboration between citizens, city officials, and service providers.",
                       url: "../generated_products/CitizenGuardian.html",
@@ -428,7 +428,7 @@ const menu = [
               },
             ],
             article: {
-              heading: "Media & Entertainment",
+              heading: "Citizen",
               description:
                 "Mobius Networks offers powerful NoCode solutions designed to help governments effectively manage and engage with citizens, promoting transparency, accessibility, and safety. Our user-friendly platform enables the creation and deployment of customized applications tailored to the unique needs of government agencies and public sector organizations, seamlessly integrating with existing processes and systems.",
               url: "",

@@ -1,6 +1,10 @@
 /* Navbar */
+#top-navbar {
+  z-index: 9999;
+}
 .mega-menu {
   top: 104px;
+  z-index: 99999 !important;
 }
 .active-mega-link {
   --tw-bg-opacity: 1;

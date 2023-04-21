@@ -323,6 +323,13 @@
   background: linear-gradient(277.48deg, #EFEFEF 0%, rgba(234, 234, 234, 0.76) 100%);
 }
 
+#product_section >article > img {
+  
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+
 #product_section > article:not(:first-child){
   padding-top: 0rem;
   margin-top: 0px;

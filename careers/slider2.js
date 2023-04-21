@@ -1,12 +1,11 @@
+first_slider = document.getElementsByClassName('first');
+second_slider =  document.getElementsByClassName("images");
 let counter = 0;
 let z = setInterval(function(){
-  first_slider = document.getElementsByClassName('first');
-  second_slider =  document.getElementsByClassName("images");
+
   intervals = ["0px","-20%","-40%","-60%"]
-  first_slider[0].style.marginLeft = intervals[counter]
-  second_slider[0].style.marginLeft = intervals[counter]
-  first_slider[3].style.marginLeft = intervals[counter]
-  second_slider[1].style.marginLeft = intervals[counter]
+  content_changer()
+  content_changer2()
 
   counter++;
   if(counter > 3){
@@ -16,44 +15,30 @@ let z = setInterval(function(){
 
 function call(){
   console.log("hello")
-  button = event.target.getAttribute("for")
-  radio = document.getElementById(button + "1")
-  radio.checked = true
-  console.log(button+"1")
-  console.log(radio,radio.checked)
-  first_ele = document.getElementsByClassName("images")
-  first_slider = document.getElementsByClassName('first');
 
-  console.log(first_ele[0])
-  if(button == "radio1"){
-    first_slider[0].style.marginLeft = "0px"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[0].style.marginLeft = "0px"
-  }, 500);
-  }
-  else if(button == "radio2"){
-    first_slider[0].style.marginLeft = "-20%"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[0].style.marginLeft = "-20%"
-  }, 500);
+  button = event.target;
+  button_id = button.getAttribute("id")
+  console.log(button.style)
+  
+ button.style = "color:white;background-color:white ;"
 
-  }
-  else if(button == "radio3"){
-    first_slider[0].style.marginLeft = "-40%"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[0].style.marginLeft = "-40%"
-    }, 500);
+ first_slider = document.getElementsByClassName('first');
+ second_slider = document.getElementsByClassName("images")
 
+  
+  if(button_id == "1"){
+      content_changer();
   }
-  else if(button == "radio4"){
-    first_slider[0].style.marginLeft = "-60%"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[0].style.marginLeft = "-60%"
-  }, 500);
+  else if(button_id == "2"){
+    content_changer()
+  }
+  else if(button_id == "3"){
+
+    content_changer()
+  }
+  else if(button_id == "4"){
+
+    content_changer();
 
   }
   clearInterval(z)
@@ -62,50 +47,78 @@ function call(){
 
 
 function call2(){
+
+  button = event.target;
+  button_id = button.getAttribute("id")
   console.log("hello")
-  button = event.target.getAttribute("for")
-  radio = document.getElementById(button + "1a")
-  radio.checked = true
-  console.log(button+"1a")
-  console.log(radio,radio.checked)
-  first_ele = document.getElementsByClassName("images")
-  first_slider = document.getElementsByClassName('first');
 
-  console.log(first_ele[1])
-  if(button == "radio1a"){
-    first_slider[3].style.marginLeft = "0px"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[1].style.marginLeft = "0px"
-    }, 500);
+  if(button_id == "1a"){
+    content_changer2()
     
   }
-  else if(button == "radio2a"){
-    first_slider[3].style.marginLeft = "-20%"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[1].style.marginLeft = "-20%"
-    }, 500);
-    
+  else if(button_id == "2a"){
+    content_changer2()
+
 
   }
-  else if(button == "radio3a"){
-    first_slider[3].style.marginLeft = "-40%"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[1].style.marginLeft = "-40%"
-    }, 500);
-    
+  else if(button_id == "3a"){
+
+    content_changer2()
+
 
   }
-  else if(button == "radio4a"){
-    first_slider[3].style.marginLeft = "-60%"
-    setTimeout(function(){
-      console.log("THIS IS");
-      first_ele[1].style.marginLeft = "-60%"    }, 500);
+  else if(button_id == "4a"){
+
     
-   
+    content_changer2()
+
 
   }
   clearInterval(z)
+}
+
+
+
+function content_changer () {
+  first_slider[0].innerHTML = `
+  <div data-aos="fade-up">
+ <h3 class="heading-section">Customized Mindfulness and Wellness programs</h3>
+ <p class="body-text !text-lg mt-4">
+   Specialised workshops and health check-ups are conducted by various health and wellness organizations to promote a healthy lifestyle among the employees
+   </p>
+
+</div>
+  
+  
+  `
+  second_slider[0].innerHTML = `            
+  <div data-aos="fade-left">
+
+   <img
+   class="inline-block fade"
+   src="../public/images/city.svg"
+   alt="Emergency Ambulance Service"
+   />
+   </div>`
+}
+
+
+
+function content_changer2(){
+  first_slider[2].innerHTML = `
+  <div data-aos="fade-up"
+
+  data-aos-offset="0">
+
+  <h1 class="text-3xl">"Testimonial Title"</h1>
+  <h2 class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente rem, dicta quisquam sequi, dolore enim facilis nisi quasi quos laborum dignissimos voluptate atque, excepturi illo error ullam totam officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est esse pariatur quibusdam beatae, voluptates repudiandae cumque tempora delectus facilis laudantium possimus error dolorem. Magnam odio dolorum illo excepturi. Molestiae, ut!</h2>
+</div>`
+  second_slider[1].innerHTML = `              
+  <div data-aos="fade-left"
+  
+  
+  data-aos-offset="0">
+  <img  src="../public/images/values/106.png" alt="">
+</div>`
+
 }

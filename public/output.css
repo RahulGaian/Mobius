@@ -2076,8 +2076,130 @@ body {
   right: 0;
   bottom: 0;
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+ 
+}
+
+.modal-content {
+  
+  margin-top: 25%;
+  transform: translateY(-50%);
+    background-color: #fefefe;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    height: 800px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    
+    
+}
+.calendly-inline-widget{
+  min-width:320px;
+  height:630px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 768px) {
+
+
+
+  .calendly-inline-widget{
+    min-width:100px;
+  
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+  
+    margin-top: 110%;
+    transform: translateY(-50%);
+      background-color: #fefefe;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 98%;
+      max-width: 800px;
+      height: 800px;
+      text-align: center;
+      border-radius: 20px;
+      padding: 10px;
+      
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .media-wrapper {
     padding-bottom: 64%;
   }
@@ -2129,7 +2251,43 @@ body {
   justify-content: flex-end;
   
 }
+
+
+
+
+
 @media (min-width: 640px) {
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .sm\:right-0 {
     right: 0px;
   }

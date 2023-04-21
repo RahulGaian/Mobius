@@ -6,6 +6,22 @@
 //   classList.forEach((className) => element.classList.add(className));
 //   return element;
 // }
+var myNav = document.getElementById("mynav");
+var topNav = document.getElementById("top-navbar");
+window.onscroll = function () {
+  if (window.scrollY >= 40) {
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
+  } else {
+    myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
+  }
+  if (window.scrollY >= 1110) {
+    topNav.classList.remove("sticky");
+  } else {
+    topNav.classList.add("sticky");
+  }
+};
 
 const menuItemsOne = document.querySelectorAll(".mega-menu-one");
 const menuItemsTwo = document.querySelectorAll(".mega-menu-two");
@@ -58,7 +74,9 @@ menuItemsOne.forEach((navMenuItem) => {
     const id = e.target.parentElement.getAttribute("data-id");
     megaMenuTwo.style.display = "none";
     megaMenuOne.style.display = "block";
-    navbar.style.backgroundColor = "white";
+    document.body.style.overflow = "hidden";
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
     renderMegaMenu(id);
   });
 });
@@ -73,7 +91,9 @@ menuItemsTwo.forEach((navMenuItem) => {
     const id = e.target.parentElement.getAttribute("data-id");
     megaMenuOne.style.display = "none";
     megaMenuTwo.style.display = "block";
-    navbar.style.backgroundColor = "white";
+    document.body.style.overflow = "hidden";
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
     renderMegaMenu2(id);
   });
 });
@@ -252,7 +272,9 @@ function createColumnThree2(activeMenuId, id = 0, subId = 0) {
   img.setAttribute("alt", "Close Icon");
   img.addEventListener("click", () => {
     megaMenuTwo.style.display = "none";
-    navbar.style.backgroundColor = "transparent";
+    navbar.classList.add("nav-transparent");
+    navbar.classList.remove("nav-colored");
+    document.body.style.overflow = "auto";
     megaMenuLinks.forEach((item) => {
       item.classList.remove("nav-active");
     });
@@ -318,7 +340,9 @@ function createColumnThree(
   img.setAttribute("alt", "Close Icon");
   img.addEventListener("click", () => {
     megaMenuOne.style.display = "none";
-    navbar.style.backgroundColor = "transparent";
+    navbar.classList.add("nav-transparent");
+    navbar.classList.remove("nav-colored");
+    document.body.style.overflow = "auto";
     megaMenuLinks.forEach((item) => {
       item.classList.remove("nav-active");
     });
@@ -330,7 +354,7 @@ function createColumnThree(
 
   const p = document.createElement("p");
   p.classList.add("text-lg", "mt-3");
-  p.textContent = articleInfo.description;
+  p.textContent = menu[activeMenuId].menus[id].items[subId].article.description;
 
   const a = document.createElement("a");
   a.classList.add("flex", "items-center", "mt-4");
@@ -355,3 +379,9 @@ function createColumnThree(
   div.append(header, img2);
   columnThree.appendChild(div);
 }
+
+
+
+
+
+

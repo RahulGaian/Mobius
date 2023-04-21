@@ -809,6 +809,7 @@
     </script>
     <script>
       var myNav = document.getElementById("mynav");
+      var topNav = document.getElementById("top-navbar");
       window.onscroll = function () {
         if (window.scrollY >= 40) {
           myNav.classList.add("nav-colored");
@@ -816,6 +817,11 @@
         } else {
           myNav.classList.add("nav-transparent");
           myNav.classList.remove("nav-colored");
+        }
+        if (window.scrollY >= 820) {
+          topNav.classList.remove("sticky");
+        } else {
+          topNav.classList.add("sticky");
         }
       };
     </script>
