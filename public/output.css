@@ -2134,8 +2134,8 @@ body {
 
 
   .calendly-inline-widget{
-    min-width:100px;
-  
+    min-width:95%;
+    margin: auto;
   }
 
   .modal {
