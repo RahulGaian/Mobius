@@ -50,7 +50,7 @@ function renderDigitalPlatformMenu(index = 0) {
         index == i
           ? "lg:border-l-4 border-b-4 lg:border-b-0 !border-royal-purple-600 text-royal-purple-600"
           : ""
-      }" onclick="changedigitalPlatformMenu(${i})">${item.name}</li>`;
+      }" onclick="changedigitalPlatformMenu(${i})" onMouseOver="this.style.cursor='pointer'">${item.name}</li>`;
     })
     .join("");
 

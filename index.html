@@ -36,8 +36,8 @@
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50" id="top-navbar">
       <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-        <nav
-          class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
+        <nav id="nav-bar"
+          class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
         >
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
@@ -130,14 +130,17 @@
             </ul>
           </div>
 
-          <ul class="hidden lg:flex items-center" id="menu-action">
-            <!-- <li>
-              <a
+          <div>
+
+            
+            <ul class="hidden lg:flex items-center" id="menu-action">
+              <!-- <li>
+                <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
                 href="tel:+118001231234"
                 >+1 1800 123 1234</a
-              >
-            </li> -->
+                >
+              </li> -->
             <li>
               <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
             </li>
@@ -146,6 +149,7 @@
                 <span>Login</span>
               </a>
             </li>
+          </div>
           </ul>
         </nav>
       </div>
@@ -191,13 +195,18 @@
     <!-- Main Content -->
     <main>
       <!-- Banner -->
-      <section class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
+      <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
         <article
-          class="container ml-auto  items-center md:gap-20 lg:gap-32"
+          class="container   items-center md:gap-20 lg:gap-32"
         >
-          <div class="px-4 lg:px-0">
+          <div id="header-text" class="px-4 mt-32 lg:px-0">
             <header class="relative inline-block">
-              <h1 class=" !text-5xl mt-5 relative z-10" >
+              <h1 class="!text-6xl text-darkblue-600"><strong>
+
+                Tomorrow, Delivered
+              </strong>
+              </h1>
+              <h2 id="main_header" class=" !text-5xl mt-5 relative z-10" >
                 <strong> Digital Transformation,
                   <span class="slides1">
 
@@ -215,7 +224,7 @@
                     </span>
                   </span>
                 </strong>
-              </h1>
+              </h2>
               <!-- <img
                 class="absolute bottom-0 w-20 md:w-auto -right-4"
                 src="public/images/graphics/highlihter.svg"
@@ -227,14 +236,14 @@
               Simplify your digital transformation journey and achieve your
               goals with our user-friendly digital transformation software.
             </p>
-            <footer
+            <footer id="main-footer"
               class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-10"
             >
               <a
                 class="btn btn-filled text-xl font-bold "
                 href="/signup"
               >
-                Get Statrted
+                Get Started
               </a>
               <a
               class="btn  text-xl font-bold md:mr-20"
@@ -253,58 +262,7 @@
           </div> -->
         </article>
         <!-- Custome Stripe -->
-        <footer class=" w-full mt-32 px-4" style="width: 100%;">
-          <h4 class="text-xl font-medium text-center mb-7">
-            Our Customer Relationships
-          </h4>
-          <div class="swiper flex flex-col " id="strip-slider">
-            <div class="swiper-wrapper ">
-              <div class="  swiper-slide items-center flex " > 
-                <img src="../public/images/Landing_logos/abp.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/channei7.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/dfc.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l11.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l12.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l14.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l17.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l22.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/incois-min.jpg" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/Logo-whut-min.jpg"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/WKAR-min.jpg" class="h-14" alt="">
-              </div>
-
-            </div>
-          </div>
-        </footer>
+       
       </section>
       <!-- The Platform-->
       <section class="mt-11">
@@ -1125,7 +1083,58 @@
 
 
 
+ <footer class=" w-full mt-32 px-4" style="width: 100%;">
+          <h4 class="text-xxl font-bold text-center mb-7">
+            Our Customer Relationships
+          </h4>
+          <div class="swiper flex flex-col " id="strip-slider">
+            <div class="swiper-wrapper ">
+              <div class="  swiper-slide items-center flex " > 
+                <img src="../public/images/Landing_logos/abp.png" style="aspect-ratio: 3/1;"  class="h-14   " alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/channei7.png" style="aspect-ratio: 3/1;" class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/dfc.png" style="aspect-ratio: 3/1"  class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide flex"> 
+                <img src="../public/images/Landing_logos/l11.png"  class="h-14   " alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/l12.png" class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide flex"> 
+                <img src="../public/images/Landing_logos/l14.png"  class="h-14   " alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide flex"> 
+                <img src="../public/images/Landing_logos/l17.png"  class="h-14   " alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/l22.png" class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/incois-min.jpg" class="h-14" alt="">
+              </div>
+              <div class="  swiper-slide flex"> 
+                <img src="../public/images/Landing_logos/Logo-whut-min.jpg"  class="h-14   " alt="">
+              </div>
+              <div class="  swiper-slide items-center flex">
+                <img src="../public/images/Landing_logos/WKAR-min.jpg" class="h-14" alt="">
+              </div>
 
+            </div>
+          </div>
+        </footer>
 
 
 
