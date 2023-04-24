@@ -83,4 +83,9 @@ for(let i of a_tags){
 
 
   }
+  if(i.innerText == "Get Started"){
+    i.innerText = "Sign Up for a Free Trail"
+    i.href = "../contact/ContactForDemo.html"
+
+  }
 }

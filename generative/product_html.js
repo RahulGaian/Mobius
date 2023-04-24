@@ -1,53 +1,39 @@
-
 const generator = (arr) => {
-    console.log(arr[0])
-    Main_heading =arr[0],
-    Main_heading_content=arr[1],
-    Main_image=arr[2],
+  console.log(arr[0]);
+  (Main_heading = arr[0]),
+    (Main_heading_content = arr[1]),
+    (Main_image = arr[2]),
+    (cap1_img = arr[3]),
+    console.log(cap1_img);
+  (cap1_heading = arr[4]),
+    (cap1_content = arr[5]),
+    (cap2_img = arr[6]),
+    (cap2_heading = arr[7]),
+    (cap2_content = arr[8]),
+    (cap3_img = arr[9]),
+    (cap3_heading = arr[10]),
+    (cap3_content = arr[11]),
+    (cap4_img = arr[12]),
+    (cap4_heading = arr[13]),
+    (cap4_content = arr[14]),
+    (ben1_img = arr[15]),
+    (ben1_heading = arr[16]),
+    (ben1_content = arr[17]),
+    (ben2_img = arr[18]),
+    (ben2_heading = arr[19]),
+    (ben2_content = arr[20]),
+    (ben3_img = arr[21]),
+    (ben3_heading = arr[22]),
+    (ben3_content = arr[23]),
+    (third_img = arr[24]),
+    (third_heading = arr[25]),
+    (third_content = arr[26]),
+    (products_heading = arr[27]),
+    (last_heading = arr[28]);
+  Base_Image_path = "../public/images/products/";
 
+  let data;
 
-    
-    cap1_img=arr[3],
-    console.log(cap1_img)
-    cap1_heading=arr[4],
-    cap1_content=arr[5],
-    
-    cap2_img=arr[6],
-    cap2_heading=arr[7 ],
-    cap2_content=arr[8 ],
-    
-    cap3_img=arr[9 ],
-    cap3_heading=arr[ 10],
-    cap3_content=arr[ 11],
-    
-    cap4_img=arr[ 12],
-    cap4_heading=arr[ 13],
-    cap4_content=arr[14 ],
-    
-    ben1_img = arr[15 ],
-    ben1_heading = arr[ 16],
-    ben1_content = arr[17 ],
-
-    ben2_img = arr[ 18],
-    ben2_heading = arr[19 ],
-    ben2_content = arr[ 20 ],
-
-    ben3_img = arr[21],
-    ben3_heading = arr[22],
-    ben3_content = arr[23 ],
-    
-    
-    third_img=arr[24],
-    third_heading=arr[25],
-    third_content = arr[26],
-    
-    products_heading=arr[27],
-
-    last_heading = arr[28]
-  Base_Image_path = "../public/images/products/"
-  
-  let data ;
-  
   data = `
   <!DOCTYPE html>
 <html lang="en">
@@ -277,7 +263,9 @@ const generator = (arr) => {
             </footer>
           </div>
           <div class="mt-12 md:mt-0">
-            <img class="w-full" src='${Base_Image_path +   Main_image}' alt="Map" />
+            <img class="w-full" src='${
+              Base_Image_path + Main_image
+            }' alt="Map" />
           </div>
         </article>
       </section>
@@ -1264,11 +1252,10 @@ const generator = (arr) => {
   
   `;
   return data;
-      }
-  
-  // export default generator;
-  
-  module.exports = {
-    gen: generator,
-  
-  };
+};
+
+// export default generator;
+
+module.exports = {
+  gen: generator,
+};

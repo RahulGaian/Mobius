@@ -21,52 +21,52 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../public/changes.css">
+    <link rel="stylesheet" href="../public/changes.css" />
     <link rel="stylesheet" href="../public/output.css" />
-    <link rel="stylesheet" href="../src//menu.css">
+    <link rel="stylesheet" href="../src//menu.css" />
     <title>Mobius Marketing Website</title>
   </head>
-  <body class=" banner-bg-pink">
+  <body class="banner-bg-pink">
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50" id="top-navbar">
-        <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-          <nav
-            class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
-          >
-            <div class="lg:flex items-center">
-              <div class="flex justify-between items-center">
-                <a href="/">
-                  <img
-                    class="w-20"
-                    src="../public/images/brand-logo.svg"
-                    alt="Mobius Brand Logo"
-                  />
-                </a>
+      <div class="absolute z-20 top-0 w-full navbar" id="mynav">
+        <nav
+          class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
+        >
+          <div class="lg:flex items-center">
+            <div class="flex justify-between items-center">
+              <a href="/">
                 <img
-                  class="lg:hidden"
-                  src="../public/images/icons/menu.svg"
-                  alt="Menu"
-                  id="openmenu"
+                  class="w-20"
+                  src="../public/images/brand-logo.svg"
+                  alt="Mobius Brand Logo"
                 />
+              </a>
+              <img
+                class="lg:hidden"
+                src="../public/images/icons/menu.svg"
+                alt="Menu"
+                id="openmenu"
+              />
+              <img
+                class="hidden"
+                src="public/images/icons/close-outline.svg"
+                alt="Menu"
+                id="close-menu"
+              />
+            </div>
+            <ul class="hidden lg:flex items-center mega-menu-container">
+              <li
+                class="ml-14 relative mega-menu-item mega-menu-one"
+                data-id="0"
+              >
+                <span class="nav-link top-nav-link">Solutions</span>
                 <img
-                  class="hidden"
-                  src="public/images/icons/close-outline.svg"
-                  alt="Menu"
-                  id="close-menu"
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
                 />
-              </div>
-              <ul class="hidden lg:flex items-center mega-menu-container">
-                <li
-                  class="ml-14 relative mega-menu-item mega-menu-one"
-                  data-id="0"
-                >
-                  <span class="nav-link top-nav-link">Solutions</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                  <!-- <div>
+                <!-- <div>
                     <div>
                       <h4>EXPERTISE by industry</h4>
                       <ul>
@@ -84,199 +84,253 @@
                       </ul>
                     </div>
                   </div> -->
-                </li>
-                <li
-                  class="ml-11 relative mega-menu-item mega-menu-one"
-                  data-id="1"
-                >
-                  <span class="nav-link top-nav-link">Products</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                </li>
-                <li
-                  class="ml-11 relative mega-menu-item mega-menu-two"
-                  data-id="0"
-                >
-                  <span class="nav-link top-nav-link menu2">Platform</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                </li>
-                <li
-                  class="ml-11 relative mega-menu-item mega-menu-two"
-                  data-id="1"
-                >
-                  <span class="nav-link top-nav-link menu2">Company</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                </li>
-                <li class="ml-11">
-                  <a class="nav-link" href="/contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-  
-            <ul class="hidden lg:flex items-center" id="menu-action">
-              <!-- <li>
+              </li>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-one"
+                data-id="1"
+              >
+                <span class="nav-link top-nav-link">Products</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-two"
+                data-id="0"
+              >
+                <span class="nav-link top-nav-link menu2">Platform</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-two"
+                data-id="1"
+              >
+                <span class="nav-link top-nav-link menu2">Company</span>
+                <img
+                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg"
+                  alt="Arrow Down Icon"
+                />
+              </li>
+              <li class="ml-11">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="hidden lg:flex items-center" id="menu-action">
+            <!-- <li>
                 <a
                   class="text-royal-purple-600 text-lg font-medium mr-7"
                   href="tel:+118001231234"
                   >+1 1800 123 1234</a
                 >
               </li> -->
-              <li>
-                <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
-              </li>
-              <li>
-                <a class="btn" href="signin">
-                  <span>Login</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- Mega Menu One -->
-        <div
-          id="navbar"
-          class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
-        >
-          <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-            <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
+            <li>
+              <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
+            </li>
+            <li>
+              <a class="btn" href="signin">
+                <span>Login</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Mega Menu One -->
+      <div
+        id="navbar"
+        class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
+      >
+        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+          <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
+            <div
+              class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+            ></div>
+
+            <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
               <div
-                class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+                class="border-b border-royal-gray-300 py-6 last:border-0 column-two"
               ></div>
-  
-              <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
-                <div
-                  class="border-b border-royal-gray-300 py-6 last:border-0 column-two"
-                ></div>
-              </div>
-              <article
-                class="col-span-3 flex flex-col justify-between column-three"
-              ></article>
             </div>
-          </nav>
-        </div>
-        <!-- Mega Menu Twp -->
-        <div
-          id="navbar"
-          class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
-        >
-          <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-            <div class="lg:pl-20 lg:grid lg:grid-cols-5">
-              <div
-                class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
-              ></div>
-              <article
-                class="col-span-2 flex flex-col justify-between column-two"
-              ></article>
-            </div>
-          </nav>
-        </div>
-      </header>
+            <article
+              class="col-span-3 flex flex-col justify-between column-three"
+            ></article>
+          </div>
+        </nav>
+      </div>
+      <!-- Mega Menu Twp -->
+      <div
+        id="navbar"
+        class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
+      >
+        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+          <div class="lg:pl-20 lg:grid lg:grid-cols-5">
+            <div
+              class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+            ></div>
+            <article
+              class="col-span-2 flex flex-col justify-between column-two"
+            ></article>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- Main Content -->
-    <main> 
+    <main>
       <!-- Banner -->
 
-<section class="  pb-16  lg:pb-48  md:pb-32  " style="width: 100%; ">
-
-        <div class=" lg:flex relative flex-row container items-start  mx-auto w-full lg:mx-4 lg:px-11 gap-7" >
-            <div class="mr-7 lg:pt-55 md:pt-44 pr-6 " id="contact-demo" style="width: 75%;" >
-              <h2 class="heading-article mb-10">
-                Start a free trail of <span>  Mobius Suite  </span> for your Organisation
+      <section class="pb-16 lg:pb-48 md:pb-32" style="width: 100%">
+        <div
+          class="lg:flex relative flex-row container items-start mx-auto w-full lg:mx-4 lg:px-11 gap-7"
+        >
+          <div
+            class="mr-7 lg:pt-55 md:pt-44 pr-6"
+            id="contact-demo"
+            style="width: 75%"
+          >
+            <h2 class="heading-article mb-10">
+              Start a free trail of <span> Mobius Suite </span> for your
+              Organisation
             </h2>
-                <h1 class="body-text">Unlock the full potential of your data with our enterprise data solution. Sign up for a free trial today and gain access to our powerful platform, featuring advanced analytics, real-time insights, and seamless integration. Start exploring and transforming your business with our data-driven approach. </h1>
-               <br>
-               <br>
-                <hr style="background-color: #E4A8A8;" >
+            <h1 class="body-text">
+              Unlock the full potential of your data with our enterprise data
+              solution. Sign up for a free trial today and gain access to our
+              powerful platform, featuring advanced analytics, real-time
+              insights, and seamless integration. Start exploring and
+              transforming your business with our data-driven approach.
+            </h1>
+            <br />
+            <br />
+            <hr style="background-color: #e4a8a8" />
 
-                <div class="mt-5 ">
-                    <h1 class="body-text   pb-8" >Trusted By Leading Companies worldwide</h1>
-                  <div class="grid grid-cols-3 gap-10 items-start justify-between" id="contact-demo2"  >
-                    <img src="../public/images/Landing_logos/l15.png"  alt="">
-                    <img src="../public/images/Landing_logos/i16.svg" alt="">
-                    <img src="../public/images/Landing_logos/abp.png" alt="">
-                    <img src="../public/images/Landing_logos/l12.png" alt="">
-                    <img src="../public/images/Landing_logos/l13.png" alt="">
-                    <img src="../public/images/Landing_logos/l14.png" alt="">
-                    
-                  </div>
-                </div>
+            <div class="mt-5">
+              <h1 class="body-text pb-8">
+                Trusted By Leading Companies worldwide
+              </h1>
+              <div
+                class="grid grid-cols-3 gap-10 items-start justify-between"
+                id="contact-demo2"
+              >
+                <img src="../public/images/Landing_logos/l15.png" alt="" />
+                <img src="../public/images/Landing_logos/i16.svg" alt="" />
+                <img src="../public/images/Landing_logos/abp.png" alt="" />
+                <img src="../public/images/Landing_logos/l12.png" alt="" />
+                <img src="../public/images/Landing_logos/l13.png" alt="" />
+                <img src="../public/images/Landing_logos/l14.png" alt="" />
+              </div>
             </div>
-            <div class="rounded-3xl"  id="case-study-form1">
-     
-                <div class="mt-11  mx-auto">
-                    <form class="flex flex-col gap-7 px-11"  action="">
-                        <div>
-
-                            <p class="mb-1">First Name*</p>
-                            <input  class="mx-auto w-full rounded-3xl pl-4 h-14 ele"  type="text" id="text" placeholder="Enter your fullname">
-                        </div>
-                        <div class="container mx-auto">
-                            <p class="mb-1"> Last Name*</p>
-                            <input  class="mx-auto ele w-full rounded-3xl pl-4 h-14" type="email" id="email" placeholder="Enter your Business Email">
-                        </div>
-                        <div class="container mx-auto">
-                          <p class="mb-1"> Job Title*</p>
-                          <input  class="mx-auto ele w-full rounded-3xl pl-4 h-14" type="email" id="email" placeholder="Enter your Business Email">
-                      </div>
-                      <div class="container mx-auto">
-                        <p class="mb-1">Company Name*</p>
-                        <input  class="mx-auto ele w-full rounded-3xl pl-4 h-14" type="email" id="email" placeholder="Enter your Business Email">
-                    </div>
-                    <div class="container mx-auto">
-                      <p class="mb-1"> Business Email*</p>
-                      <input  class="mx-auto ele w-full rounded-3xl pl-4 h-14" type="email" id="email" placeholder="Enter your Business Email">
-                  </div>
-                  <div class="container mx-auto">
-                    <p class="mb-1">Phone*</p>
-                    <input  class="mx-auto ele w-full rounded-3xl pl-4 h-14" type="email" id="email" placeholder="Enter your Business Email">
+          </div>
+          <div class="rounded-3xl" id="case-study-form1">
+            <div class="mt-11 mx-auto">
+              <form class="flex flex-col gap-7 px-11" action="">
+                <div>
+                  <p class="mb-1">First Name*</p>
+                  <input
+                    class="mx-auto w-full rounded-3xl pl-4 h-14 ele"
+                    type="text"
+                    id="text"
+                    placeholder="Enter your fullname"
+                  />
                 </div>
-       
-
-                        <div class="container mx-auto text-center mb-16">
-                            <input type="button" class="btn btn-filled mr-4" onclick="run()" value="Submit">
-                        </div>
-                    </form>
+                <div class="container mx-auto">
+                  <p class="mb-1">Last Name*</p>
+                  <input
+                    class="mx-auto ele w-full rounded-3xl pl-4 h-14"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your Business Email"
+                  />
+                </div>
+                <div class="container mx-auto">
+                  <p class="mb-1">Job Title*</p>
+                  <input
+                    class="mx-auto ele w-full rounded-3xl pl-4 h-14"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your Business Email"
+                  />
+                </div>
+                <div class="container mx-auto">
+                  <p class="mb-1">Company Name*</p>
+                  <input
+                    class="mx-auto ele w-full rounded-3xl pl-4 h-14"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your Business Email"
+                  />
+                </div>
+                <div class="container mx-auto">
+                  <p class="mb-1">Business Email*</p>
+                  <input
+                    class="mx-auto ele w-full rounded-3xl pl-4 h-14"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your Business Email"
+                  />
+                </div>
+                <div class="container mx-auto">
+                  <p class="mb-1">Phone*</p>
+                  <input
+                    class="mx-auto ele w-full rounded-3xl pl-4 h-14"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your Business Email"
+                  />
                 </div>
 
+                <div class="container mx-auto text-center mb-16">
+                  <input
+                    type="button"
+                    class="btn btn-filled mr-4"
+                    onclick="run()"
+                    value="Submit"
+                  />
+                </div>
+              </form>
             </div>
-
+          </div>
         </div>
-
-</section>
-<div class="px-4 lg:px-11 ">
-    <hr class="hr-graphic" />
-  </div>
-<section data-aos="fade-up" class="mt-32">
-  <div class=" lg:flex  flex-row container mx-auto w-full lg:mx-4 lg:px-11 gap-7" >
-    <div class="" id="demo-section" >
+      </section>
+      <div class="px-4 lg:px-11">
+        <hr class="hr-graphic" />
+      </div>
+      <section data-aos="fade-up" class="mt-32">
+        <div
+          class="lg:flex flex-row container mx-auto w-full lg:mx-4 lg:px-11 gap-7"
+        >
+          <div class="" id="demo-section">
             <h2 class="heading-article mb-10">
               Schedule a Demo with our Platform Experts
             </h2>
-              <h1 class="body-text">Experience the power of our enterprise data solution first-hand with a personalized demo. Book a demo today and discover how our platform can help streamline your operations, increase efficiency, and drive business success. </h1>
-            <br>
-            <br>
+            <h1 class="body-text">
+              Experience the power of our enterprise data solution first-hand
+              with a personalized demo. Book a demo today and discover how our
+              platform can help streamline your operations, increase efficiency,
+              and drive business success.
+            </h1>
+            <br />
+            <br />
+          </div>
+
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/srivatsamudumby/30min"
+            style="width: 60%; height: 630px; border-radius: 10px"
+          ></div>
         </div>
-    
-        <div class="calendly-inline-widget " data-url="https://calendly.com/srivatsamudumby/30min" style="width: 60%;height:630px;border-radius: 10px;"></div>
-
-</div>
-</section>
-
+      </section>
     </main>
     <div class="px-4 lg:px-11 mt-28">
-        <hr class="hr-graphic" />
-      </div>
-    
+      <hr class="hr-graphic" />
+    </div>
+
     <!-- Footer -->
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
       <div class="container mx-auto px-4">
@@ -413,7 +467,7 @@
     </footer>
     <script src="./index.js"></script>
     <!-- Navigation Menu -->
-    
+
     <script src="../config/navigationMenu.js"></script>
     <script src="../config/navigationMenu2.js"></script>
     <script src="../src/navbar.js"></script>
@@ -433,6 +487,10 @@
         easing: "ease-in-out",
       });
     </script>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
   </body>
 </html>

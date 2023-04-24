@@ -1333,6 +1333,9 @@ video {
 .bg-multicolor-banner {
   background-image: url('../public/images/banner/multicolor-bg.svg');
 }
+.bg-cover {
+  background-size: cover;
+}
 
 .bg-contain {
   background-size: contain;
@@ -1793,6 +1796,7 @@ body {
 
 .btn-filled:hover {
   background-color: #180E83;
+  color: white;
 
 }
 
@@ -2408,39 +2412,41 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 640px) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .sm\:right-0 {
     right: 0px;

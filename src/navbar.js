@@ -354,7 +354,7 @@ function createColumnThree(
 
   const p = document.createElement("p");
   p.classList.add("text-lg", "mt-3");
-  p.textContent = menu[activeMenuId].menus[id].items[subId].article.description;
+  p.textContent = articleInfo.description;
 
   const a = document.createElement("a");
   a.classList.add("flex", "items-center", "mt-4");

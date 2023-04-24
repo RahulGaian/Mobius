@@ -328,8 +328,6 @@
   margin-left: 50%;
   transform: translateX(-50%);
 }
-
-
 #product_section > article:not(:first-child){
   padding-top: 0rem;
   margin-top: 0px;
@@ -363,6 +361,7 @@
 
 
   @media screen and (max-width: 600px) {
+
     #demo-section{
       width: 75%;
       margin-top: 10px;
@@ -462,7 +461,3 @@
     }
   }
 
-  .btn-filled:hover{
-    color:black;
-
-  }
