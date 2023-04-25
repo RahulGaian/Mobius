@@ -19,7 +19,6 @@
 
     <!-- Animate on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../public/changes.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="../public/output.css" />
@@ -31,8 +30,8 @@
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50" id="top-navbar">
       <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-        <nav id="nav-bar"
-          class="mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
+        <nav
+          class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
         >
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
@@ -51,7 +50,7 @@
               />
               <img
                 class="hidden"
-                src="public/images/icons/close-outline.svg"
+                src="../public/images/icons/close-outline.svg"
                 alt="Menu"
                 id="close-menu"
               />
@@ -147,7 +146,7 @@
       <!-- Mega Menu One -->
       <div
         id="navbar"
-        class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
+        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
           <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
@@ -169,7 +168,7 @@
       <!-- Mega Menu Twp -->
       <div
         id="navbar"
-        class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
+        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
           <div class="lg:pl-20 lg:grid lg:grid-cols-5">
@@ -186,11 +185,11 @@
     <!-- Main Content -->
     <main>
       <!-- Banner -->
-      <section  id="banner-section"
+      <section
         class="banner-bg-pink pt-36 pb-16 lg:pt-48 lg:pb-40 md:pt-44 md:pb-32"
       >
         <article
-          class="container  px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
+          class="container mx-auto px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
         >
           <div>
             <div class="btn btn-filled-light border-0">Monét</div>
@@ -214,16 +213,21 @@
               connect with your audience and drive business growth.
             </p>
             <footer
-              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-8" 
+              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row"
             >
               <a
-                class="btn btn-filled text-xl font-bold "
+                class="btn btn-filled text-xl font-bold md:mr-20"
                 href="/signup"
               >
                 Get Statrted
               </a>
-                    <a class="btn" href="../contact/ContactForDemo.html">
-                <span>Book a Demo</span>
+              <a class="mt-4 lg:mt-0 text-royal-gray-900" href="/signup">
+                <span class="text-base">Learn more</span>
+                <img
+                  class="inline-block ml-3"
+                  src="../public/images/icons/arrow-right.svg"
+                  alt="Arrow Right"
+                />
               </a>
             </footer>
           </div>
@@ -237,7 +241,7 @@
         </article>
       </section>
       <!-- Features-->
-      <section class="mt-11"  id="platform-features">
+      <section class="mt-11">
         <header class="mb-10 md:mb-24 relative">
           <h3 class="heading-section text-black text-center relative z-10">
             Features
@@ -344,7 +348,7 @@
           <div class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
             <article>
               <img
-                src="../public/images/platform/Speed.svg"
+                src="../public/images/icons/info.svg"
                 alt="Information Icon"
               />
               <h4 class="mt-4 md:mt-8 heading-card">Speed</h4>
@@ -355,7 +359,7 @@
             </article>
             <article>
               <img
-                src="../public/images/platform/Speed(1).svg"
+                src="../public/images/icons/info.svg"
                 alt="Information Icon"
               />
               <h4 class="mt-4 md:mt-8 heading-card">Business Agility</h4>
@@ -366,7 +370,7 @@
             </article>
             <article>
               <img
-                src="../public/images/platform/Money.svg"
+                src="../public/images/icons/info.svg"
                 alt="Information Icon"
               />
               <h4 class="mt-4 md:mt-8 heading-card">Quicker revenues</h4>

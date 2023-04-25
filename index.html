@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,10 +23,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../public/output.css" />
+    <link rel="stylesheet" href="public/output.css" />
     
     <!-- Changes to the css -->
-    <link rel="stylesheet" href="../public/changes.css">
+    <link rel="stylesheet" href="public/changes.css">
     
     <link rel="stylesheet" href="./src/menu.css" />
     <title>Mobius Marketing Website</title>
@@ -36,21 +35,21 @@
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50" id="top-navbar">
       <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-        <nav id="nav-bar"
-          class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
+        <nav
+          class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
         >
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
               <a href="/">
                 <img
                   class="w-20"
-                  src="../public/images/brand-logo.svg"
+                  src="public/images/brand-logo.svg"
                   alt="Mobius Brand Logo"
                 />
               </a>
               <img
                 class="lg:hidden"
-                src="../public/images/icons/menu.svg"
+                src="public/images/icons/menu.svg"
                 alt="Menu"
                 id="openmenu"
               />
@@ -69,7 +68,7 @@
                 <span class="nav-link top-nav-link">Solutions</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
                 <!-- <div>
@@ -98,7 +97,7 @@
                 <span class="nav-link top-nav-link">Products</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
               </li>
@@ -109,7 +108,7 @@
                 <span class="nav-link top-nav-link menu2">Platform</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
               </li>
@@ -120,7 +119,7 @@
                 <span class="nav-link top-nav-link menu2">Company</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
+                  src="public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
               </li>
@@ -130,17 +129,14 @@
             </ul>
           </div>
 
-          <div>
-
-            
-            <ul class="hidden lg:flex items-center" id="menu-action">
-              <!-- <li>
-                <a
+          <ul class="hidden lg:flex items-center" id="menu-action">
+            <!-- <li>
+              <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
                 href="tel:+118001231234"
                 >+1 1800 123 1234</a
-                >
-              </li> -->
+              >
+            </li> -->
             <li>
               <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
             </li>
@@ -149,7 +145,6 @@
                 <span>Login</span>
               </a>
             </li>
-          </div>
           </ul>
         </nav>
       </div>
@@ -195,18 +190,13 @@
     <!-- Main Content -->
     <main>
       <!-- Banner -->
-      <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
+      <section class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
         <article
-          class="container   items-center md:gap-20 lg:gap-32"
+          class="container ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
         >
-          <div id="header-text" class="px-4 mt-32 lg:px-0">
+          <div class="px-4 lg:px-0">
             <header class="relative inline-block">
-              <h1 class="!text-6xl text-darkblue-600"><strong>
-
-                Tomorrow, Delivered
-              </strong>
-              </h1>
-              <h2 id="main_header" class=" !text-5xl mt-5 relative z-10" >
+              <h1 class="heading-banner heading-banner-md mt-5 relative z-10">
                 <strong> Digital Transformation,
                   <span class="slides1">
 
@@ -224,33 +214,27 @@
                     </span>
                   </span>
                 </strong>
-              </h2>
-              <!-- <img
+              </h1>
+              <img
                 class="absolute bottom-0 w-20 md:w-auto -right-4"
                 src="public/images/graphics/highlihter.svg"
                 alt="Curve Line"
-              /> -->
+              />
             </header>
 
             <p class="body-text mt-5">
               Simplify your digital transformation journey and achieve your
               goals with our user-friendly digital transformation software.
             </p>
-            <footer id="main-footer"
-              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-10"
+            <footer
+              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row"
             >
               <a
-                class="btn btn-filled text-xl font-bold "
+                class="btn btn-filled text-xl font-bold md:mr-20"
                 href="/signup"
               >
-                Get Started
+                Get Statrted
               </a>
-              <a
-              class="btn  text-xl font-bold md:mr-20"
-              href="./contact/ContactForDemo.html"
-            >
-              Book a Demo
-            </a>
             </footer>
           </div>
           <!-- <div class="mt-12 md:mt-0 pl-4 sm:pl-0">
@@ -262,7 +246,29 @@
           </div> -->
         </article>
         <!-- Custome Stripe -->
-       
+        <footer class="container mx-auto mt-32 px-4">
+          <h4 class="text-xl font-medium text-center mb-7">
+            Our Customer Relationships
+          </h4>
+          <div class="swiper" id="strip-slider">
+            <div class="swiper-wrapper">
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+              <div class="bg-white h-14 swiper-slide"></div>
+            </div>
+          </div>
+        </footer>
       </section>
       <!-- The Platform-->
       <section class="mt-11">
@@ -275,7 +281,7 @@
           
               <img
                 class="absolute bottom-1 right-2/4 sm:right-0 w-16"
-                src="../public/images/graphics/highlihter.svg"
+                src="public/images/graphics/highlihter.svg"
                 alt="Curve Line"
               />
             </div>
@@ -288,8 +294,8 @@
       </section>
 
       <!-- Mobius Data -->
-      <section class="mt-16 bg-gradient-purple-graphics py-20 h-500 flex items-center justify-center ">
-        <article class="container  lg:flex flex-col flex-wrap justify-center items-center ">
+      <section class="mt-16 bg-gradient-purple-graphics py-10 h-500">
+        <article class="container  lg:flex flex-col justify-center items-center ">
 
           <div class="container mx-auto px-4">
             <header class="mb-10 md:mb-24 text-center">
@@ -300,7 +306,7 @@
             
                 <img
                   class="absolute bottom-1 right-2/4 sm:right-0 w-16"
-                  src="../public/images/graphics/highlihter.svg"
+                  src="public/images/graphics/highlihter.svg"
                   alt="Curve Line"
                 />
               </div>
@@ -308,20 +314,20 @@
           </div>
 
           <div class="grid lg:grid-cols-3 px-11 gap-7 text-center ">
-            <div class="container flex flex-col items-center "> 
+            <div class="container flex flex-col items-center"> 
                     <img
-                    class="w-16 pb-6"
-                    src="../public/images/icons/Plug.svg"
+                    class="w-16"
+                    src="public/images/icons/Plug.svg"
                     alt="Curve Line"
                   />
-                  <h2 class="text-xl text-white">Faster Time to Value</h2>
+                  <h2 class="text-xl text-white">faster time to value</h2>
                   <p style="color: #AEA7F8;">Save time with a pure low code platform. Integrate,
                     test & deploy applications at lightning speed</p>
             </div>
             <div class="container flex flex-col items-center">
                     <img
-                    class="  w-16 pb-6"
-                    src="../public/images/icons/Software.svg"
+                    class="  w-16"
+                    src="public/images/icons/Software.svg"
                     alt="Curve Line"
                   />
                   <p class="text-xl text-white">Save IT Operational Costs</p>
@@ -329,8 +335,8 @@
             </div>
             <div class="container flex flex-col items-center">
                     <img
-                    class="  w-16 pb-6"
-                    src="../public/images/icons/Quick.svg"
+                    class="  w-16"
+                    src="public/images/icons/Quick.svg"
                     alt="Curve Line"
                   />
                   <p class="text-xl text-white">A Marketplace of Connectors</p>
@@ -385,7 +391,7 @@
               </h3>
               <img
                 class="absolute top-4 right-0 w-40"
-                src="../public/images/graphics/highlihter.svg"
+                src="public/images/graphics/highlihter.svg"
                 alt="Curve Line"
               />
             </div>
@@ -421,26 +427,26 @@
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/drive.svg"
+                    src="public/images/apps/drive.svg"
                     alt="Google Drive Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/appstore.svg"
+                    src="public/images/apps/appstore.svg"
                     alt="Appstore Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/playstore.svg"
+                    src="public/images/apps/playstore.svg"
                     alt="Playstore Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
                     data-aos="fade-up"
-                    src="public/images/apps/12.svg"
+                    src="public/images/apps/zoom.svg"
                     alt="Zoom Logo"
                   />
                 </figure>
@@ -449,19 +455,19 @@
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/13.svg"
+                    src="public/images/apps/drive.svg"
                     alt="Google Drive Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/14.svg"
+                    src="public/images/apps/appstore.svg"
                     alt="Appstore Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/Twilio.svg"
+                    src="public/images/apps/playstore.svg"
                     alt="Playstore Logo"
                   />
                 </figure>
@@ -473,31 +479,31 @@
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/drive.svg"
+                    src="public/images/apps/drive.svg"
                     alt="Google Drive Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/appstore.svg"
+                    src="public/images/apps/appstore.svg"
                     alt="Appstore Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/playstore.svg"
+                    src="public/images/apps/playstore.svg"
                     alt="Playstore Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/appstore.svg"
+                    src="public/images/apps/appstore.svg"
                     alt="Appstore Logo"
                   />
                 </figure>
                 <figure data-aos="fade-up" class="swiper-slide text-center">
                   <img
-                    src="../public/images/apps/playstore.svg"
+                    src="public/images/apps/playstore.svg"
                     alt="Playstore Logo"
                   />
                 </figure>
@@ -515,473 +521,530 @@
         >
           <img
             id="nav-left"
-            src="../public/images/icons/arrow-left-circled.svg"
+            src="public/images/icons/arrow-left-circled.svg"
             alt="Arrow Left"
           />
           <div class="relative">
             <h3 class="heading-section text-center relative z-10">
-              Mobius Intelligent Apps
+              Apps powered by Monet
             </h3>
             <img
               class="absolute bottom-1 right-2/4 translate-x-2/4 md:translate-x-0 md:-right-2 w-16"
-              src="../public/images/graphics/highlihter.svg"
+              src="public/images/graphics/highlihter.svg"
               alt="Curve Line"
             />
           </div>
 
           <img
             id="nav-right"
-            src="../public/images/icons/arrow-right-circled.svg"
+            src="public/images/icons/arrow-right-circled.svg"
             alt="Arrow Right"
           />
         </header>
         <div data-aos="fade-up" class="swiper px-4 md:px-0" id="app-swiper">
           <div class="swiper-wrapper">
-            <!-- slider -->
+            <!-- slider 1 -->
             <a class="swiper-slide" href="#">
               <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
+                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl"
               >
                 <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/1.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
                   <header>
-                    <h4 class="heading-card">311</h4>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
                   </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      311 citizen engagement app is a mobile application that allows citizens to report non-emergency issues to their local government and receive updates on the status of their requests.
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
+
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
                     </p>
                   </div>
                 </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
-
-       
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
                 </footer>
               </article>
             </a>
-            <!-- slide  -->
+            <!-- slide 2 -->
             <a class="swiper-slide" href="#">
               <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
               >
                 <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/5058.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
                   <header>
                     <h4 class="heading-card">Live Maps</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
                   </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      Live maps citizen engagement app provides real-time information on community events, public services, and local news, enabling citizens to stay informed and engaged in their neighborhoods.
-                    </p>
-                  </div>
-                </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
 
-       
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
+                    </p>
+                  </div>
+                </div>
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
                 </footer>
               </article>
             </a>
-            <!-- slide  -->
+            <!-- slide 3 -->
             <a class="swiper-slide" href="#">
               <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
               >
                 <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/5052.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
                   <header>
-                    <h4 class="heading-card">First Responder</h4>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
                   </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      First Responder enables citizens to report emergencies and receive immediate assistance from local first responders, providing a crucial link between citizens and emergency services.
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
 
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
                     </p>
                   </div>
                 </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
+                </footer>
+              </article>
+            </a>
+            <!-- slide 4 -->
+            <a class="swiper-slide" href="#">
+              <article
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
+              >
+                <div
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
+                  <header>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
+                  </header>
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
 
-       
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/5053.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Digital Signage</h4>
-                  </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      Digital Signage provides businesses with the ability to create dynamic, interactive digital signage experiences that engage customers and drive sales.
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
                     </p>
                   </div>
                 </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
+                </footer>
+              </article>
+            </a>
+            <!-- slide 5 -->
+            <a class="swiper-slide" href="#">
+              <article
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
+              >
+                <div
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
+                  <header>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
+                  </header>
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
 
-       
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/5054.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Interview Experience </h4>
-                  </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      With automated candidate screening and interview scheduling, your team can focus on engaging with qualified candidates and making the best hiring decisions possible.
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
                     </p>
                   </div>
                 </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
-    
-       
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
                 </footer>
               </article>
             </a>
-            <!-- slide  -->
+            <!-- slide 6 -->
             <a class="swiper-slide" href="#">
               <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
               >
                 <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/5055.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
                   <header>
-                    <h4 class="heading-card">Offer Journey</h4>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
                   </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      With Offer Journey, recruiters can automate offer letter generation, get real-time visibility into the offer acceptance status, and track the offer journey. This leads to faster offer acceptance and improved candidate experience.
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
+
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
                     </p>
                   </div>
                 </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
-    
-       
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
                 </footer>
               </article>
             </a>
-            <!-- slide  -->
+            <!-- slide 7 -->
             <a class="swiper-slide" href="#">
               <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
               >
                 <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/5056.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
                   <header>
-                    <h4 class="heading-card">Onboarding</h4>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
                   </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      With Candidate Onboarding, employers can create customized onboarding workflows, including paperwork, training, and orientation, and track progress to ensure new employees feel welcomed and are fully prepared for their new role.
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
+
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
                     </p>
                   </div>
                 </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
-    
-       
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
                 </footer>
               </article>
             </a>
-            <!-- slide  -->
+            <!-- slide 8 -->
             <a class="swiper-slide" href="#">
               <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
               >
                 <div
-                  class=" bg-opacity-20 h-40 rounded-t-3xl"
-                  style="background-image: url('../public/images/solutions/5057.png') ;background-size: cover;width: 100%;"
-                  >
-                  
-              </div>
-                <div class=" bg-white px-8 py-5">
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
                   <header>
-                    <h4 class="heading-card">Resume Processing</h4>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
                   </header>
-                  <div class="mt-2 ">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      Leverages AI to identify top talent quickly and efficiently, saving you time and money. 
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
+
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
                     </p>
                   </div>
                 </div>
-                <footer class=" border-t border-royal-gray-300 rounded-full "style=";">
-                  <table class="table-auto border-collapse w-full   h-14  border-gray-500 mt-0" style="margin: 0px;">
-                  <tbody>
-                    <tr class="">
-                      <td class="border-r px-4 py-4 text-center" style="border-right-width:2px">
-                        <img
-                        class="inline-block"
-                        src="../public/images/icons/preview.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Preview</strong
-                        >
-                      </td>
-                      <td class="px-4 py-2 text-center">
-                        <img
-                        class="inline-block"
-                        src="../public/images/solutions/External.svg"
-                        alt="Preview Icon"
-                        />
-                        <strong class="text-base font-medium text-royal-gray-700"
-                        >Details</strong
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                  </table>
-    
-       
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
                 </footer>
               </article>
             </a>
-           
-           
+            <!-- slide 9 -->
+            <a class="swiper-slide" href="#">
+              <article
+                class="border border-royal-gray-300 min-w-96 rounded-3xl"
+              >
+                <div
+                  class="bg-royal-pink-700 bg-opacity-20 h-40 rounded-t-3xl"
+                ></div>
+                <div class="px-8 py-5">
+                  <header>
+                    <h4 class="heading-card">Boston 311</h4>
+                    <div class="flex items-center mt-3">
+                      <img
+                        src="public/images/icons/building.svg"
+                        alt="Building Icon"
+                      />
+                      <strong
+                        class="inline-block ml-2 font-normal text-base text-royal-purple-600"
+                        >Smart Cities</strong
+                      >
+                    </div>
+                  </header>
+                  <div class="mt-6">
+                    <h5 class="font-bold text-sm text-royal-gray-600 mb-1">
+                      TOOLS USED
+                    </h5>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Marketplace,
+                    </strong>
+                    <strong
+                      class="inline-block font-normal text-base text-royal-purple-600 underline leading-6"
+                    >
+                      Orchestrator
+                    </strong>
+
+                    <p class="text-base mt-6 text-royal-gray-500">
+                      Lorem ipsum dolor sit amet consectetur. Eget arcu
+                      fringilla.
+                    </p>
+                  </div>
+                </div>
+                <footer class="border-t border-royal-gray-300 py-4 text-center">
+                  <img
+                    class="inline-block"
+                    src="public/images/icons/preview.svg"
+                    alt="Preview Icon"
+                  />
+                  <strong class="text-base font-medium text-royal-gray-700"
+                    >Preview</strong
+                  >
+                </footer>
+              </article>
+            </a>
           </div>
         </div>
       </section>
 
       <section class="mt-20 relative py-28" >
-        <div class="border  absolute h-40  bg-white flex flex-col gap-6 filter top-0 ml-14  " id="slider-box"
-         > 
-        
-        
-        <div class="container flex  flex-col mb-0 ">
-          <div class="flex  justify-between">
-            <h4 class="text-2xl sm:text-sm font-bold slider-heading"> Customer Stories </h4>
-            <img src="../public/images/icons/Quote Right.svg" id="quotations" alt="">
-          </div>
-          <div class="mt-0">
-            <p class="body-text mt-0">Title</p>
-          </div>
-        </div>
+        <div class="border  absolute h-40  bg-white flex flex-col gap-14 filter top-0 ml-14  "
+        style="width: 495px;border-radius: 30px;height: 366px;padding: 50px;box-shadow:10px -10px rgba(128, 128, 128, 0.038);overflow: hidden;" > 
         
         
         <div class="slider"> 
@@ -992,26 +1055,46 @@
           <input type="radio" name="radio-btn" id="radio4">
 
                     <div class="slide11 first">
-                      <h4 class="body-text  md:text-sm  ">How WHUT is leveraging 
+                      <div class="container flex justify-between items-center">
+                        <h4 class="heading-section"> Customer Services</h4>
+                        <img src="public/images/icons/Quote Right.svg"  alt="">
+                      </div>
+                      <br>
+                      <h4 class="text-2xl ">How WHUT is leveraging 
                         Mobius Platform to enable Citizen Alerting & Safety</h4>
                     </div>
                     <div class="slide11 ">
-                
-                      <h4 class="body-text "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum fugit eveniet vel animi nemo voluptatem ducimus ipsam quia, aut culpa obcaecati, hic mollitia quisquam optio sequi dignissimos. </h4>
+                      <div class="container flex justify-between items-center">
+                        <h4 class="heading-section"> Customer Services</h4>
+                        <img src="public/images/icons/Quote Right.svg"  alt="">
+                      </div>
+                      <br>
+                      <h4 class="text-2xl ">How WHUT is leveraging 
+                        Mobius Platform to enable Citizen Alerting & Safety</h4>
                     </div>
                     <div class="slide11">
-                  
-                      <h4 class="body-text ">amet consectetur adipisicing elit. Repellendus delectusinventore tempore dolor voluptatem iste voluptatibus exercitationem voluptas! Animi.</h4>
+                      <div class="container flex justify-between items-center">
+                        <h4 class="heading-section"> Customer Services</h4>
+                        <img src="public/images/icons/Quote Right.svg"  alt="">
+                      </div>
+                      <br>
+                      <h4 class="text-2xl ">How WHUT is leveraging 
+                        Mobius Platform to enable Citizen Alerting & Safety</h4>
                     </div>
                     <div class="slide11 ">
-                 
-                      <h4 class="body-text "> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed maiores nobis quasi aut recusandae dignissimos expedita praesentium ipsam voluptate animi quibusdam aperiam qui,</h4>
+                      <div class="container flex justify-between items-center">
+                        <h4 class="heading-section"> Customer Services</h4>
+                        <img src="public/images/icons/Quote Right.svg"  alt="">
+                      </div>
+                      <br>
+                      <h4 class="text-2xl ">How WHUT is leveraging 
+                        Mobius Platform to enable Citizen Alerting & Safety</h4>
                     </div>
         </div>
         </div>
         
-        <br>
-        <div class=" flex justify-between" style="width: 20px;z-index: 0;">
+        
+        <div class="container flex justify-between w-full " style="width: 82px;">
           <div class="navigation-manual">
             <label for="radio1" onclick="call()" class="manual-btn"></label>
             <label for="radio2" onclick="call()" class="manual-btn"></label>
@@ -1035,18 +1118,18 @@
             <input type="radio" name="radio-btn" id="radio41">
             <!--radio buttons end-->
             <!--slide images start-->
-            <div class="slide first images " >
+            <div class="slide first images">
               
-              <img class="w-full" id="slide_image"  src="../public/images/city.svg" alt="">
+              <img class="w-full"  style="width: 100%;height: 527px;   object-fit:cover;" src="public/images/city.svg" alt="">
             </div>
             <div class="slide">
-              <img class="w-full" id="slide_image"  src="../public/images/city2.jpg" alt="">
+              <img class="w-full"  style="width: 100%;height: 527px;   object-fit:cover;" src="public/images/city.svg" alt="">
             </div>
             <div class="slide">
-              <img class="w-full" id="slide_image"  src="../public/images/city3.jpg" alt="">
+              <img class="w-full"  style="width: 100%;height: 527px;   object-fit:cover;" src="public/images/city.svg" alt="">
             </div>
             <div class="slide">
-              <img class="w-full" id="slide_image"  src="../public/images/digital-smart-city.png" alt="">
+              <img class="w-full"  style="width: 100%;height: 527px;   object-fit:cover;" src="public/images/city.svg" alt="">
             </div>
             <!--slide images end-->
             <!--automatic navigation start-->
@@ -1078,58 +1161,7 @@
 
 
 
- <footer class=" w-full mt-32 px-4" style="width: 100%;">
-          <h4 class="text-xxl font-bold text-center mb-7">
-            Our Customer Relationships
-          </h4>
-          <div class="swiper flex flex-col " id="strip-slider">
-            <div class="swiper-wrapper ">
-              <div class="  swiper-slide items-center flex " > 
-                <img src="../public/images/Landing_logos/abp.png" style="aspect-ratio: 3/1;"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/channei7.png" style="aspect-ratio: 3/1;" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/dfc.png" style="aspect-ratio: 3/1"  class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l11.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l12.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l14.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l17.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l22.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/incois-min.jpg" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/Logo-whut-min.jpg"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/WKAR-min.jpg" class="h-14" alt="">
-              </div>
 
-            </div>
-          </div>
-        </footer>
 
 
 
@@ -1159,7 +1191,7 @@
                 <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
                   BLOG
                 </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <h4 class="heading-card mt-2">Boston 311</h4>
                 <p class="text-base text-royal-gray-400 font-medium mt-3">
                   A read about how Mobius DTasS enabled Smart City deployments
                   in Boston, California
@@ -1185,7 +1217,7 @@
                 <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
                   BLOG
                 </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <h4 class="heading-card mt-2">Boston 311</h4>
                 <p class="text-base text-royal-gray-400 font-medium mt-3">
                   A read about how Mobius DTasS enabled Smart City deployments
                   in Boston, California
@@ -1211,7 +1243,7 @@
                 <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
                   BLOG
                 </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <h4 class="heading-card mt-2">Boston 311</h4>
                 <p class="text-base text-royal-gray-400 font-medium mt-3">
                   A read about how Mobius DTasS enabled Smart City deployments
                   in Boston, California
@@ -1237,7 +1269,7 @@
                 <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
                   BLOG
                 </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
+                <h4 class="heading-card mt-2">Boston 311</h4>
                 <p class="text-base text-royal-gray-400 font-medium mt-3">
                   A read about how Mobius DTasS enabled Smart City deployments
                   in Boston, California
@@ -1263,17 +1295,17 @@
           <div data-aos="fade-up" class="flex items-center mt-10">
             <img
               class="mr-8"
-              src="../public/images/badges/gdpr.svg"
+              src="public/images/badges/gdpr.svg"
               alt="Gdpr Badge"
             />
-            <img src="../public/images/badges/aicpa.svg" alt="Aicpa Badge" />
+            <img src="public/images/badges/aicpa.svg" alt="Aicpa Badge" />
           </div>
 
           <a data-aos="fade-up" class="flex items-center mt-12" href="#">
             <span>Read More</span>
             <img
               class="ml-5"
-              src="../public/images/icons/arrow-right.svg"
+              src="public/images/icons/arrow-right.svg"
               alt="Arrow Right"
             />
           </a>
@@ -1284,19 +1316,20 @@
         <article
           class="container mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >
-          <h3 class="text-4xl  font-bold text-royal-purple-500">
-            Discover Mobius DTaaS,
+          <h3
+            data-aos="fade-up"
+            class="text-4xl font-bold text-royal-purple-500"
+          >
+            Try Monet Today
           </h3>
-          <h2 class="text-4xl font-bold text-royal-purple-500">
-            Your Ultimate Accelerator for Business Success!
-          </h2>
-          <p class="text-xl leading-8 mx-auto mt-4 mb-12" style="width: 70%;">
-            Revolutionize your business with Mobius DTaaS, the all-in-one platform for rapid digital transformation. 
-              Harness the synergy of five cutting-edge tools to drive innovation, efficiency, and growth
+          <p
+            data-aos="fade-up"
+            class="text-xl leading-8 mt-4 mb-12 max-w-lg mx-auto"
+          >
+            Start with a 30-day free trail to build beautiful visual experiences
+            for Apps
           </p>
           <button data-aos="fade-up" class="btn btn-filled">Get Started</button>
-       
-
         </article>
       </section>
       <div data-aos="fade-up" class="px-4 lg:px-11 mt-28">
@@ -1396,7 +1429,7 @@
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/linkedin.svg"
+                    src="public/images/icons/linkedin.svg"
                     alt="Linkedin Icon"
                   />
                 </a>
@@ -1404,7 +1437,7 @@
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/instagram.svg"
+                    src="public/images/icons/instagram.svg"
                     alt="Instagram Icon"
                   />
                 </a>
@@ -1412,7 +1445,7 @@
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/twitter.svg"
+                    src="public/images/icons/twitter.svg"
                     alt="Twitter Icon"
                   />
                 </a>
@@ -1420,7 +1453,7 @@
               <li class="mx-4">
                 <a href="#">
                   <img
-                    src="../public/images/icons/facebook.svg"
+                    src="public/images/icons/facebook.svg"
                     alt="Facebook Icon"
                   />
                 </a>
