@@ -46,7 +46,7 @@ function renderJourneyMenu(index = 0) {
     .join("");
 
   var html = `
-  <aside class="!w-2 h-96">
+        <aside data-aos="fade-up" class="w-2 h-96">
               <div
                 class="h-full !w-2 bg-royal-purple-700 bg-opacity-60 rounded-3xl relative flex"
               >
@@ -76,7 +76,7 @@ function renderJourneyMenu(index = 0) {
               </div>
             </aside>
 
-            <article class="grid md:grid-cols-2 gap-16 items-center">
+            <article data-aos="fade-up" class="grid md:grid-cols-2 gap-16 items-center">
               <div class="">
                 <h2 class="heading-section">${menu[index].heading}</h2>
                 <p class="body-text mt-2">
