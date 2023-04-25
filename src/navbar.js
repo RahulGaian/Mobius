@@ -6,6 +6,22 @@
 //   classList.forEach((className) => element.classList.add(className));
 //   return element;
 // }
+var myNav = document.getElementById("mynav");
+var topNav = document.getElementById("top-navbar");
+window.onscroll = function () {
+  if (window.scrollY >= 40) {
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
+  } else {
+    myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
+  }
+  if (window.scrollY >= 1110) {
+    topNav.classList.remove("sticky");
+  } else {
+    topNav.classList.add("sticky");
+  }
+};
 
 const menuItemsOne = document.querySelectorAll(".mega-menu-one");
 const menuItemsTwo = document.querySelectorAll(".mega-menu-two");
@@ -13,10 +29,39 @@ const megaMenuOne = document.querySelector(".mega-menu");
 const megaMenuTwo = document.querySelector(".mega-menu2");
 const navbar = document.getElementById("mynav");
 const columnTwo = document.querySelector(".column-two");
+const megaMenu2columnTwo = document.querySelector(".mega-menu2 .column-two");
 const columnThree = document.querySelector(".column-three");
+
+const megaMenu2columnThree = document.querySelector(".mega-menu2 .column-two");
 
 function getImageUrl(url) {
   return window.location.origin + url;
+}
+
+function createBackButton(column, megaMenuType = 1) {
+  const megaMenuElm = megaMenuType === 1 ? megaMenuOne : megaMenuTwo;
+  const columnTwoElm = megaMenuType === 1 ? columnTwo : megaMenu2columnTwo;
+  const columnThreeElm =
+    megaMenuType === 1 ? columnThree : megaMenu2columnThree;
+  const backButton = document.createElement("button");
+  backButton.textContent = "< Back";
+  backButton.classList.add("back");
+  backButton.addEventListener("click", (e) => {
+    switch (column) {
+      case "one":
+        megaMenuElm.style.display = "none";
+        break;
+      case "two":
+        columnTwoElm.classList.remove("activate");
+        break;
+      case "three":
+        columnThreeElm.classList.remove("activate");
+        break;
+      default:
+        return;
+    }
+  });
+  return backButton;
 }
 
 menuItemsOne.forEach((navMenuItem) => {
@@ -53,13 +98,24 @@ menuItemsTwo.forEach((navMenuItem) => {
   });
 });
 
+// Mega menu 2
 function renderMegaMenu2(menuId) {
   const data = menu2[menuId].menuItems;
   const columnOne = document.querySelector(".mega-menu2 .column-one");
   const columnTwo = document.querySelector(".mega-menu2 .column-two");
   columnOne.innerHTML = "";
+  const backButton = createBackButton("one", megaMenuTwo);
+  columnOne.append(backButton);
   data.forEach((item, index) => {
     const div = document.createElement("div");
+    div.classList.add(
+      "border-b",
+      "border-royal-gray-300",
+      "py-6",
+      "pl-4",
+      "last:border-0",
+      "column-one"
+    );
     const h5 = document.createElement("h5");
     h5.classList.add("mega-menu-heading");
     h5.textContent = item.name;
@@ -68,6 +124,8 @@ function renderMegaMenu2(menuId) {
     ul.setAttribute("data-id", index);
     item.list.forEach((listItem, i) => {
       const li = document.createElement("li");
+      const atag = document.createElement("a");
+      atag.setAttribute("href", listItem.article.url)
       li.classList.add("mega-menu-link");
       li.setAttribute("data-subId", i);
       li.textContent = listItem.name;
@@ -79,7 +137,8 @@ function renderMegaMenu2(menuId) {
       li.addEventListener("click", (e) => {
         columnTwo.classList.add("activate");
       });
-      ul.appendChild(li);
+      atag.appendChild(li)
+      ul.appendChild(atag);
     });
 
     div.appendChild(h5);
@@ -90,14 +149,17 @@ function renderMegaMenu2(menuId) {
 }
 
 function renderMegaMenu(id) {
+  if (!id) return;
   createColumnOne(id);
 }
-
+// Mega menu column one
 function createColumnOne(activeMenuId) {
   const columnOneData = menu[activeMenuId].menus;
 
   const columnOne = document.querySelector(".mega-menu .column-one");
   columnOne.innerHTML = "";
+  const backButton = createBackButton("one");
+  columnOne.append(backButton);
   columnOneData.forEach((item, id) => {
     const div = document.createElement("div");
     div.classList.add(
@@ -145,12 +207,13 @@ function createColumnOne(activeMenuId) {
   });
   createColumnTwo(activeMenuId);
 }
-
+// Mega menu column two
 function createColumnTwo(activeMenuId, id = 0, subId = 0) {
   const columnTwoData = menu[activeMenuId].menus[id].items[subId].subitems[0];
   const columnTwo = document.querySelector(".mega-menu .column-two");
   columnTwo.innerHTML = "";
-
+  const backButton = createBackButton("two");
+  columnTwo.append(backButton);
   const div = document.createElement("div");
   const h5 = document.createElement("h5");
   h5.classList.add("mega-menu-heading");
@@ -159,6 +222,9 @@ function createColumnTwo(activeMenuId, id = 0, subId = 0) {
   ul.classList.add("pr-12");
   columnTwoData.items.forEach((item, index) => {
     const li = document.createElement("li");
+    const atag = document.createElement("a");
+    atag.setAttribute("href", item.content.url)
+
     li.classList.add("mega-menu-link");
     li.textContent = item.name;
     if (index === 0) {
@@ -178,20 +244,22 @@ function createColumnTwo(activeMenuId, id = 0, subId = 0) {
     li.addEventListener("click", (e) => {
       columnThree.classList.add("activate");
     });
-
-    ul.appendChild(li);
+    atag.appendChild(li)
+    ul.appendChild(atag);
     div.append(h5, ul);
   });
   columnTwo.appendChild(div);
   createColumnThree(activeMenuId, id, subId, 0, true);
 }
 
+// Mega Menu 2 Column two
 function createColumnThree2(activeMenuId, id = 0, subId = 0) {
-  console.log({ activeMenuId, id, subId });
   const articleInfo = menu2[activeMenuId].menuItems[id].list[subId].article;
   const columnThree = document.querySelector(".mega-menu2 .column-two");
   const megaMenuLinks = document.querySelectorAll(".mega-menu-two");
   columnThree.innerHTML = "";
+  const backButton = createBackButton("two", megaMenuTwo);
+  columnThree.append(backButton);
   const div = document.createElement("div");
   const header = document.createElement("header");
   header.classList.add("px-11", "py-7", "mb-9");
@@ -216,12 +284,12 @@ function createColumnThree2(activeMenuId, id = 0, subId = 0) {
   h3.textContent = articleInfo.heading;
 
   const p = document.createElement("p");
-  p.classList.add("text-lg", "mt-3");
+  p.classList.add("text-md", "mt-3");
   p.textContent = articleInfo.description;
 
   const a = document.createElement("a");
   a.classList.add("flex", "items-center", "mt-4");
-  a.setAttribute("href", articleInfo.link);
+  a.setAttribute("href", articleInfo.url);
 
   const span = document.createElement("span");
   span.classList.add("text-xl", "font-medium", "mr-5");
@@ -243,6 +311,7 @@ function createColumnThree2(activeMenuId, id = 0, subId = 0) {
   div.append(header, img2);
   columnThree.appendChild(div);
 }
+
 function createColumnThree(
   activeMenuId,
   id = 0,
@@ -253,10 +322,12 @@ function createColumnThree(
   const articleInfo = showDefault
     ? menu[activeMenuId].menus[id].items[subId].article
     : menu[activeMenuId].menus[id].items[subId].subitems[0].items[articleId]
-        .content;
+      .content;
   const columnThree = document.querySelector(".mega-menu .column-three");
   const megaMenuLinks = document.querySelectorAll(".mega-menu-one");
   columnThree.innerHTML = "";
+  const backButton = createBackButton("three");
+  columnThree.append(backButton);
   const div = document.createElement("div");
   const header = document.createElement("header");
   header.classList.add("px-11", "py-7", "mb-9");
@@ -284,9 +355,13 @@ function createColumnThree(
   p.classList.add("text-lg", "mt-3");
   p.textContent = articleInfo.description;
 
+
+
   const a = document.createElement("a");
   a.classList.add("flex", "items-center", "mt-4");
-  a.setAttribute("href", articleInfo.link);
+  a.setAttribute("href", articleInfo.url);
+
+
 
   const span = document.createElement("span");
   span.classList.add("text-xl", "font-medium", "mr-5");
@@ -301,9 +376,41 @@ function createColumnThree(
   img2.setAttribute("src", getImageUrl(articleInfo.coverImage));
   img2.setAttribute("alt", "Smart City Placeholder");
 
+  const div3 = document.createElement("div")
+
+
+
+  if (articleInfo.heading == "Community Engagements") {
+
+
+
+    const related = document.createElement("h3")
+    related.textContent = "RELATED PRODUCTS"
+    related.classList.add("py-6", "font-medium", "mega-menu-heading")
+    related.style.margin = 0
+    related.style.paddingLeft = 0
+    div3.appendChild(related)
+
+
+
+
+    menu[activeMenuId].menus[id].items[subId].subitems[0].items[2].content.extra.forEach(item => {
+      // console.log(item);
+      const p = document.createElement("p")
+      p.textContent = item;
+      div3.appendChild(p)
+    })
+  }
+
   div1.appendChild(img);
-  header.append(div1, h3, p, a);
+  header.append(div1, h3, p, a, div3);
   a.append(span, img1);
   div.append(header, img2);
   columnThree.appendChild(div);
 }
+
+
+
+
+
+

@@ -29,9 +29,7 @@
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50" id="top-navbar">
       <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-        <nav
-          class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
-        >
+        <nav id="nav-bar" class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8">
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
               <a href="/">
@@ -148,7 +146,7 @@
         class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
+          <div id="mega-menu-one-container"  class="px-custom lg:pl-20 lg:grid lg:grid-cols-7">
             <div
               class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
             ></div>
@@ -170,8 +168,7 @@
         class="absolute z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div class="lg:pl-20 lg:grid lg:grid-cols-5">
-            <div
+          <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-5">            <div
               class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
             ></div>
             <article
@@ -184,7 +181,8 @@
     <!-- Main Content -->
     <main>
       <!-- Banner -->
-      <section class="banner-bg-pink pb-16 md:pb-16 pt-36">
+      <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
+
         <article
           class="container ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
         >
@@ -342,7 +340,7 @@
               alt="Curve Line"
             />
           </header>
-          <div class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
+          <div id="benifits" class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
             <article>
               <img
                 src="../public/images/icons/info.svg"
@@ -1020,7 +1018,7 @@
         </div>
       </section>
       <!-- Resources -->
-      <section data-aos="fade-up" class="mt-20">
+      <!-- <section data-aos="fade-up" class="mt-20">
         <div class="container mx-auto px-4">
           <header class="flex justify-between items-center">
             <h3 class="heading-section">Resources</h3>
@@ -1109,7 +1107,7 @@
             </article>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Expert -->
       <section
         data-aos="fade-up"

@@ -22,15 +22,18 @@
     <!-- Animate on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="stylesheet" href="../public/changes.css" />
+    <link rel="stylesheet" href="../src/menu.css" />
+
     <link rel="stylesheet" href="../public/output.css" />
     <title>Platfrom | Mobius Marketing Website</title>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header>
-      <div class="absolute z-20 top-0 w-full navbar">
-        <nav
-          class="container px-4 mx-auto lg:flex justify-between items-center pt-10 pb-8"
+    <header class="sticky top-0 z-50" id="top-navbar">
+      <div class="absolute z-20 top-0 w-full navbar" id="mynav">
+        <nav id="nav-bar"
+          class="mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
         >
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
@@ -45,18 +48,49 @@
                 class="lg:hidden"
                 src="../public/images/icons/menu.svg"
                 alt="Menu"
+                id="openmenu"
+              />
+              <img
+                class="hidden"
+                src="public/images/icons/close-outline.svg"
+                alt="Menu"
+                id="close-menu"
               />
             </div>
-            <ul class="hidden lg:flex items-center">
-              <li class="ml-14 relative">
+            <ul class="hidden lg:flex items-center mega-menu-container">
+              <li
+                class="ml-14 relative mega-menu-item mega-menu-one"
+                data-id="0"
+              >
                 <span class="nav-link top-nav-link">Solutions</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
                   src="../public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
+                <!-- <div>
+                  <div>
+                    <h4>EXPERTISE by industry</h4>
+                    <ul>
+                      <li>Government & Public Sector</li>
+                      <li>Private 5G & Telco</li>
+                      <li>Media & Entertainment</li>
+                      <li>Health & Wellness</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Expertise By Business Function</h4>
+                    <ul>
+                      <li>HR & People Tech</li>
+                      <li>IT Automation</li>
+                    </ul>
+                  </div>
+                </div> -->
               </li>
-              <li class="ml-11 relative">
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-one"
+                data-id="1"
+              >
                 <span class="nav-link top-nav-link">Products</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
@@ -64,16 +98,22 @@
                   alt="Arrow Down Icon"
                 />
               </li>
-              <li class="ml-11 relative">
-                <span class="nav-link top-nav-link">Platform</span>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-two"
+                data-id="0"
+              >
+                <span class="nav-link top-nav-link menu2">Platform</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
                   src="../public/images/icons/chevron-down.svg"
                   alt="Arrow Down Icon"
                 />
               </li>
-              <li class="ml-11 relative">
-                <span class="nav-link top-nav-link">Company</span>
+              <li
+                class="ml-11 relative mega-menu-item mega-menu-two"
+                data-id="1"
+              >
+                <span class="nav-link top-nav-link menu2">Company</span>
                 <img
                   class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
                   src="../public/images/icons/chevron-down.svg"
@@ -86,36 +126,72 @@
             </ul>
           </div>
 
-          <ul class="hidden lg:flex items-center">
-            <li>
+          <ul class="hidden lg:flex items-center" id="menu-action">
+            <!-- <li>
               <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
                 href="tel:+118001231234"
                 >+1 1800 123 1234</a
               >
-            </li>
+            </li> -->
             <li>
               <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
             </li>
             <li>
-              <a class="btn" href="signin">Login</a>
+              <a class="btn" href="signin">
+                <span>Login</span>
+              </a>
             </li>
           </ul>
         </nav>
       </div>
+      <!-- Mega Menu One -->
       <div
         id="navbar"
-        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
-      ></div>
+        class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
+      >
+        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+          <div id="mega-menu-one-container"  class="px-custom lg:pl-20 lg:grid lg:grid-cols-7">
+            <div
+              class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+            ></div>
+
+            <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
+              <div
+                class="border-b border-royal-gray-300 py-6 last:border-0 column-two"
+              ></div>
+            </div>
+            <article
+              class="col-span-3 flex flex-col justify-between column-three"
+            ></article>
+          </div>
+        </nav>
+      </div>
+      <!-- Mega Menu Twp -->
+      <div
+        id="navbar"
+        class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
+      >
+        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+          <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-5">            <div
+              class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
+            ></div>
+            <article
+              class="col-span-2 flex flex-col justify-between column-two"
+            ></article>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Main Content -->
     <main>
       <!-- Banner -->
       <section
+      id="banner-section"
         class="banner-bg-pink pt-36 pb-16 lg:pt-48 lg:pb-40 md:pt-44 md:pb-32"
       >
         <article
-          class="container mx-auto px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
+          class="container  px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
         >
           <div>
             <!-- <div class="btn btn-filled-light borde r-0">Monét</div> -->
@@ -139,21 +215,16 @@
               decisions and drive growth.
             </p>
             <footer
-              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row"
+              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-8" 
             >
               <a
-                class="btn btn-filled text-xl font-bold md:mr-20"
+                class="btn btn-filled text-xl font-bold "
                 href="/signup"
               >
                 Get Statrted
               </a>
-              <a class="mt-4 lg:mt-0 text-royal-gray-900" href="/signup">
-                <span class="text-base">Learn more</span>
-                <img
-                  class="inline-block ml-3"
-                  src="../public/images/icons/arrow-right.svg"
-                  alt="Arrow Right"
-                />
+                    <a class="btn" href="../contact/ContactForDemo.html">
+                <span>Book a Demo</span>
               </a>
             </footer>
           </div>
@@ -167,7 +238,7 @@
         </article>
       </section>
       <!-- Features-->
-      <section class="mt-11">
+      <section class="mt-11"  id="platform-features">
         <header class="mb-10 md:mb-24 relative">
           <h3 class="heading-section text-black text-center relative z-10">
             Features
@@ -271,7 +342,7 @@
               alt="Curve Line"
             />
           </header>
-          <div class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
+          <div id="benifits" class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
             <article>
               <img
                 src="../public/images/platform/PascalIntelligence/Artificial Intelligence Agent.svg"
@@ -337,7 +408,7 @@
       <!-- Apps Powered -->
 
       <!-- Resources -->
-      <section data-aos="fade-up" class="mt-12">
+      <!-- <section data-aos="fade-up" class="mt-12">
         <div class="container mx-auto px-4">
           <header class="flex justify-between items-center">
             <h3 class="heading-section">Resources</h3>
@@ -426,7 +497,7 @@
             </article>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Pricing -->
       <section data-aos="fade-up" class="py-16 bg-gradient-pink my-24">
         <div class="container mx-auto px-4">
@@ -697,7 +768,10 @@
         </div>
       </div>
     </footer>
-    <script src="../src/navbar.js"></script>
+    <script src="../config/navigationMenu.js"></script>
+    <script src="../config/navigationMenu2.js"></script>
+    <!-- <script src="../src/navbar.js"></script> -->
+    <script src="../src/mobileMenu.js"></script>
     <script src="../src/slider.js"></script>
     <!-- Animate on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -707,5 +781,17 @@
         easing: "ease-in-out",
       });
     </script>
+      <script>
+        var myNav = document.getElementById("mynav");
+        window.onscroll = function () {
+          if (window.scrollY >= 40) {
+            myNav.classList.add("nav-colored");
+            myNav.classList.remove("nav-transparent");
+          } else {
+            myNav.classList.add("nav-transparent");
+            myNav.classList.remove("nav-colored");
+          }
+        };
+      </script>
   </body>
 </html>

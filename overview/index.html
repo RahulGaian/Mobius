@@ -1,72 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!-- Animate on scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../public/output.css" />
-    <link rel="stylesheet" href="../src/menu.css" />
-    <title>Mobius Marketing Website</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50" id="top-navbar">
-      <div class="absolute z-20 top-0 w-full navbar nav-colored" id="mynav">
-        <div class="nav-colored">
-          <nav
-            class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
-          >
-            <div class="lg:flex items-center">
-              <div class="flex justify-between items-center">
-                <a href="/">
-                  <img
-                    class="w-20"
-                    src="../public/images/brand-logo.svg"
-                    alt="Mobius Brand Logo"
-                  />
-                </a>
-                <img
-                  class="lg:hidden"
-                  src="../public/images/icons/menu.svg"
-                  alt="Menu"
-                  id="openmenu"
-                />
-                <img
-                  class="hidden"
-                  src="../public/images/icons/close-outline.svg"
-                  alt="Menu"
-                  id="close-menu"
-                />
-              </div>
-              <ul class="hidden lg:flex items-center mega-menu-container">
-                <li
-                  class="ml-14 relative mega-menu-item mega-menu-one"
-                  data-id="0"
-                >
-                  <span class="nav-link top-nav-link">Solutions</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                  <!-- <div>
+  <!-- Animate on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../public/output.css" />
+  <link rel="stylesheet" href="../src/menu.css" />
+  <title>Mobius Marketing Website</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50" id="top-navbar">
+    <div class="absolute z-20 top-0 w-full navbar nav-colored" id="mynav">
+      <div class="nav-colored">
+        <nav id="nav-bar" class=" px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8">
+          <div class="lg:flex items-center">
+            <div class="flex justify-between items-center">
+              <a href="/">
+                <img class="w-20" src="../public/images/brand-logo.svg" alt="Mobius Brand Logo" />
+              </a>
+              <img class="lg:hidden" src="../public/images/icons/menu.svg" alt="Menu" id="openmenu" />
+              <img class="hidden" src="../public/images/icons/close-outline.svg" alt="Menu" id="close-menu" />
+            </div>
+            <ul class="hidden lg:flex items-center mega-menu-container">
+              <li class="ml-14 relative mega-menu-item mega-menu-one" data-id="0">
+                <span class="nav-link top-nav-link">Solutions</span>
+                <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+                <!-- <div>
                   <div>
                     <h4>EXPERTISE by industry</h4>
                     <ul>
@@ -84,815 +60,647 @@
                     </ul>
                   </div>
                 </div> -->
-                </li>
-                <li
-                  class="ml-11 relative mega-menu-item mega-menu-one"
-                  data-id="1"
-                >
-                  <span class="nav-link top-nav-link">Products</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                </li>
-                <li
-                  class="ml-11 relative mega-menu-item mega-menu-two"
-                  data-id="0"
-                >
-                  <span class="nav-link top-nav-link menu2">Platform</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                </li>
-                <li
-                  class="ml-11 relative mega-menu-item mega-menu-two"
-                  data-id="1"
-                >
-                  <span class="nav-link top-nav-link menu2">Company</span>
-                  <img
-                    class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                    src="../public/images/icons/chevron-down.svg"
-                    alt="Arrow Down Icon"
-                  />
-                </li>
-                <li class="ml-11">
-                  <a class="nav-link" href="/contact">Contact</a>
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li class="ml-11 relative mega-menu-item mega-menu-one" data-id="1">
+                <span class="nav-link top-nav-link">Products</span>
+                <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+              </li>
+              <li class="ml-11 relative mega-menu-item mega-menu-two" data-id="0">
+                <span class="nav-link top-nav-link menu2">Platform</span>
+                <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+              </li>
+              <li class="ml-11 relative mega-menu-item mega-menu-two" data-id="1">
+                <span class="nav-link top-nav-link menu2">Company</span>
+                <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                  src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+              </li>
+              <li class="ml-11">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-            <ul class="hidden lg:flex items-center" id="menu-action">
-              <!-- <li>
+          <ul class="hidden lg:flex items-center" id="menu-action">
+            <!-- <li>
               <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
                 href="tel:+118001231234"
                 >+1 1800 123 1234</a
               >
             </li> -->
+            <li>
+              <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
+            </li>
+            <li>
+              <a class="btn" href="signin">
+                <span>Login</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Mega Menu One -->
+    <div id="navbar" class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu">
+      <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+        <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-7">
+          <div class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"></div>
+
+          <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
+            <div class="border-b border-royal-gray-300 py-6 last:border-0 column-two"></div>
+          </div>
+          <article class="col-span-3 flex flex-col justify-between column-three"></article>
+        </div>
+      </nav>
+    </div>
+    <!-- Mega Menu Twp -->
+    <div id="navbar" class="absolute z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2">
+      <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+        <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-5">
+          <div class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"></div>
+          <article class="col-span-2 flex flex-col justify-between column-two"></article>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main>
+    <!-- Banner -->
+    <section id="banner-section-overview" class="bg-gradient-purple pt-44 pb-16 md:pb-16 pe-0">
+      <article id="banner-article" class="items-center md:gap-20 lg:gap-20">
+        <div id="head-content" class="px-4 lg:px-0">
+          <header class="relative">
+            <h1 class="heading-banner heading-banner-md mt-4 relative z-10 !text-white">
+              <strong>
+                The only problems worth solving are the really big ones!
+              </strong>
+            </h1>
+            <img class="absolute bottom-0 w-20 md:w-auto" src="../public/images/graphics/highlihter.svg"
+              alt="Curve Line" />
+          </header>
+
+          <p class="body-text mt-5 !text-white">
+            Lorem ipsum dolor sit amet consectetur. Mollis platea tellus
+            sagittis amet viverra vulputate. Elit purus pellentesque eget
+            euismod. Consequat varius ac condimentum urna ullamcorper sit eget
+            imperdiet blandit. Augue eu elementum vulputate id convallis
+            tortor sed. Massa quisque laoreet sem velit massa. Eu ornare sed
+            suscipit tempor nec blandit nullam leo. Bibendum arcu tortor in
+            elementum pellentesque.
+          </p>
+          <footer class="bg-curved-graphics bg-no-repeat bg-contain py-2 md:py-16 mt-12 mx-auto !text-white ">
+            <ul class="grid grid-cols-4 mx-auto text-center">
+
               <li>
-                <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
+                <h2 class="text-2xl font">15</h2>
+
+                <h4>Glorious years and counting</h4>
               </li>
               <li>
-                <a class="btn" href="signin">
-                  <span>Login</span>
-                </a>
+                <h2 class="text-2xl font">200+</h2>
+                <h4>Talented Minds</h4>
               </li>
+              <li>
+                <h2 class="text-2xl font">24</h2>
+                <h4>Patents in process</h4>
+              </li>
+              <li>
+                <h2 class="text-2xl font">6+</h2>
+                <h4>Years of average customer loyalty</h4>
+              </li>
+
             </ul>
-          </nav>
-        </div>
-      </div>
-      <!-- Mega Menu One -->
-      <div
-        id="navbar"
-        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
-      >
-        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
-            <div
-              class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
-            ></div>
-
-            <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
-              <div
-                class="border-b border-royal-gray-300 py-6 last:border-0 column-two"
-              ></div>
-            </div>
-            <article
-              class="col-span-3 flex flex-col justify-between column-three"
-            ></article>
-          </div>
-        </nav>
-      </div>
-      <!-- Mega Menu Twp -->
-      <div
-        id="navbar"
-        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
-      >
-        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div class="lg:pl-20 lg:grid lg:grid-cols-5">
-            <div
-              class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
-            ></div>
-            <article
-              class="col-span-2 flex flex-col justify-between column-two"
-            ></article>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- Main Content -->
-    <main>
-      <!-- Banner -->
-      <section class="bg-gradient-purple pt-44 pb-16 md:pb-16">
-        <article
-          class="container ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-20"
-        >
-          <div class="px-4 lg:px-0">
-            <header class="relative">
-              <h1
-                class="heading-banner heading-banner-md mt-4 relative z-10 !text-white"
-              >
-                <strong>
-                  The only problems worth solving are the really big ones!
-                </strong>
-              </h1>
-              <img
-                class="absolute bottom-0 w-20 md:w-auto"
-                src="../public/images/graphics/highlihter.svg"
-                alt="Curve Line"
-              />
-            </header>
-
-            <p class="body-text mt-5 !text-white">
-              Lorem ipsum dolor sit amet consectetur. Mollis platea tellus
-              sagittis amet viverra vulputate. Elit purus pellentesque eget
-              euismod. Consequat varius ac condimentum urna ullamcorper sit eget
-              imperdiet blandit. Augue eu elementum vulputate id convallis
-              tortor sed. Massa quisque laoreet sem velit massa. Eu ornare sed
-              suscipit tempor nec blandit nullam leo. Bibendum arcu tortor in
-              elementum pellentesque.
-            </p>
-            <footer
-              class="bg-curved-graphics bg-no-repeat bg-contain py-2 md:py-16 mt-12 px-4 !text-white"
-            >
-              <ul class="grid grid-cols-3 md:gap-9 text-center">
-                <li>
-                  <h5>24</h5>
-                  <h4>Patents in process</h4>
-                </li>
-                <li>
-                  <h5>15</h5>
-                  <h4>Glorious years and counting</h4>
-                </li>
-                <li>
-                  <h5>6+</h5>
-                  <h4>Years of average customer loyalty</h4>
-                </li>
-              </ul>
-            </footer>
-          </div>
-          <div class="mt-12 md:mt-0 pl-4 sm:pl-0">
-            <img
-              class="w-full"
-              src="../public/images/banner/banner-astronaut.svg"
-              alt="Digital Transformation Journey"
-            />
-          </div>
-        </article>
-      </section>
-      <!-- The Journey-->
-      <section class="py-20 bg-curved-bg-art bg-no-repeat bg-right">
-        <div class="container mx-auto px-4">
-          <header class="mb-10 md:mb-24">
-            <div class="inline-block relative">
-              <h3 class="heading-section !text-5xl relative z-10">
-                Our Journey
-              </h3>
-              <img
-                class="absolute bottom-1 right-2/4 sm:right-0 w-16"
-                src="../public/images/graphics/highlihter.svg"
-                alt="Curve Line"
-              />
-            </div>
-          </header>
-          <div id="journey" class="flex gap-x-32">
-            <!-- <aside class="!w-2 h-96">
-              <div
-                class="h-full !w-2 bg-royal-purple-700 bg-opacity-60 rounded-3xl relative flex"
-              >
-                <div
-                  class="h-full !w-2 max-w-min flex flex-col justify-between items-center"
-                >
-                  <figure class="">
-                    <div class="w-4 h-4 bg-royal-purple-500 rounded-full"></div>
-                  </figure>
-                  <figure class="">
-                    <div class="w-2 h-2 bg-white rounded-full"></div>
-                  </figure>
-                  <figure class="">
-                    <div class="w-2 h-2 bg-white rounded-full"></div>
-                  </figure>
-                  <figure class="">
-                    <div class="w-2 h-2 bg-white rounded-full"></div>
-                  </figure>
-                </div>
-                <div
-                  class="h-full !w-2 max-w-min flex flex-col justify-between ml-8"
-                >
-                  <figure class="">
-                    <h4 class="text-base text-royal-purple-600 font-bold">
-                      2023
-                    </h4>
-                  </figure>
-                  <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2020</h4>
-                  </figure>
-                  <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2010</h4>
-                  </figure>
-                  <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2006</h4>
-                  </figure>
-                </div>
-              </div>
-            </aside>
-
-            <article class="grid md:grid-cols-2 gap-16 items-center">
-              <div class="">
-                <h2 class="heading-section">Mobius DTasS Platform Launch</h2>
-                <p class="body-text mt-2">
-                  Lorem ipsum dolor sit amet consectetur. Vitae cras egestas
-                  posuere integer at viverra imperdiet tellus eleifend
-                </p>
-              </div>
-              <div class="bg-royal-gray-100 h-96 rounded-3xl"></div>
-            </article> -->
-          </div>
-        </div>
-      </section>
-      <!-- Values -->
-      <section class="bg-gradient-pink py-16">
-        <div class="container mx-auto px-4">
-          <header class="mb-10 md:mb-24">
-            <div class="inline-block relative">
-              <h3 class="heading-section !text-5xl relative z-10">
-                Our Values
-              </h3>
-              <img
-                class="absolute bottom-1 right-2/4 sm:right-0 w-16"
-                src="../public/images/graphics/highlihter.svg"
-                alt="Curve Line"
-              />
-            </div>
-          </header>
-          <article class="grid md:grid-cols-5 gap-24 justify-between">
-            <div>
-              <h5 class="text-2xl">Innovation</h5>
-            </div>
-            <div>
-              <h5 class="text-2xl">Perseverance</h5>
-            </div>
-            <div>
-              <h5 class="text-2xl">Compassion</h5>
-            </div>
-            <div>
-              <h5 class="text-2xl">Ownership</h5>
-            </div>
-            <div>
-              <h5 class="text-2xl">Value Creation</h5>
-            </div>
-          </article>
-        </div>
-      </section>
-      <!-- Leaders -->
-      <section class="py-20 bg-gradient-black-graphics">
-        <div class="max-w-5xl mx-auto px-4">
-          <header>
-            <h2 class="heading-section text-center text-white">
-              Our Leadership
-            </h2>
-          </header>
-          <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-x-12 md:gap-x-24 gap-y-16 mt-24"
-          >
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/01.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/02.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/03.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/04.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/05.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/06.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/07.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                class="rounded-tr-4xl rounded-bl-3xl"
-                src="../public/images/leaders/08.png"
-                alt="Leader"
-              />
-              <figcaption class="text-white mt-5">
-                <h4 class="heading-card">Lorem Ipsum Dolor</h4>
-                <strong
-                  class="font-normal text-royal-gray-600 text-base inline-block mt-1"
-                  >Designation</strong
-                >
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Awards -->
-      <section
-        class="bg-ellipse-purple bg-right bg-no-repeat py-20 bg-royal-gray-100"
-      >
-        <article class="container mx-auto px-4">
-          <h3 class="heading-article">Awards & Recognition</h3>
-          <div
-            class="grid grid-cols-2 md:grid-cols-5 gap-8 justify-between mt-20"
-          >
-            <figure class="text-center">
-              <div
-                class="w-44 h-44 bg-royal-gray-600 rounded-full inline-block"
-              ></div>
-              <figcaption>
-                <h3 class="font-bold text-2xl">Title</h3>
-                <p class="text-base text-royal-gray-600">Awarded year</p>
-              </figcaption>
-            </figure>
-            <figure class="text-center">
-              <div
-                class="w-44 h-44 bg-royal-gray-600 rounded-full inline-block"
-              ></div>
-              <figcaption>
-                <h3 class="font-bold text-2xl">Title</h3>
-                <p class="text-base text-royal-gray-400">Awarded year</p>
-              </figcaption>
-            </figure>
-            <figure class="text-center">
-              <div
-                class="w-44 h-44 bg-royal-gray-600 rounded-full inline-block"
-              ></div>
-              <figcaption>
-                <h3 class="font-bold text-2xl">Title</h3>
-                <p class="text-base text-royal-gray-600">Awarded year</p>
-              </figcaption>
-            </figure>
-            <figure class="text-center">
-              <div
-                class="w-44 h-44 bg-royal-gray-600 rounded-full inline-block"
-              ></div>
-              <figcaption>
-                <h3 class="font-bold text-2xl">Title</h3>
-                <p class="text-base text-royal-gray-600">Awarded year</p>
-              </figcaption>
-            </figure>
-            <figure class="text-center">
-              <div
-                class="w-44 h-44 bg-royal-gray-600 rounded-full inline-block"
-              ></div>
-              <figcaption>
-                <h3 class="font-bold text-2xl">Title</h3>
-                <p class="text-base text-royal-gray-600">Awarded year</p>
-              </figcaption>
-            </figure>
-          </div>
-        </article>
-      </section>
-      <!-- Partners -->
-      <section class="bg-gradient-purple-graphics py-10 text-white">
-        <article class="container mx-auto px-4">
-          <div class="max-w-3xl mx-auto text-center">
-            <h3 class="heading-section !text-white">
-              Innovate and disrupt with Mobius DTaaS
-            </h3>
-            <p
-              class="body-text !text-lg !text-white mt-4 !opacity-60 max-w-xl mx-auto"
-            >
-              Lorem ipsum dolor sit amet consectetur. Vitae cras egestas posuere
-              integer at viverra imperdiet tellus eleifend. Proin elit habitasse
-              sapien odio amet consectetur dui diam hendrerit. Vitae vitae
-              turpis faucibus at.
-            </p>
-          </div>
-          <footer
-            class="grid items-center grid-cols-4 gap-10 lg:grid-cols-7 mt-8 sm:mt-0"
-          >
-            <img src="../public/images/apps/zoom.svg" alt="Zoom Logo" />
-            <img src="../public/images/apps/slack.svg" alt="Slack Logo" />
-            <img
-              src="../public/images/apps/drive.svg"
-              alt="Google Drive Logo"
-            />
-            <img src="../public/images/apps/appstore.svg" alt="Appstore Logo" />
-            <img
-              src="../public/images/apps/playstore.svg"
-              alt="Playstore Logo"
-            />
-            <img src="../public/images/apps/zoom.svg" alt="Zoom Logo" />
-            <img src="../public/images/apps/slack.svg" alt="Slack Logo" />
           </footer>
-        </article>
-      </section>
+        </div>
+        <div id="img-container" class="right-0 mt-12 md:mt-0 pl-4 sm:pl-0">
+          <img class=" right-0" src="../public/images/banner/banner-astronaut.svg"
+            alt="Digital Transformation Journey" />
+        </div>
+      </article>
+    </section>
+    <!-- The Journey-->
+    <section class="py-20 bg-curved-bg-art bg-right">
+      <div class="container mx-auto px-4">
+        <header class="mb-10 md:mb-24">
+          <div class="inline-block relative">
+            <h3 class="heading-section !text-5xl relative z-10">
+              Our Journey
+            </h3>
+            <img class="absolute bottom-1 right-2/4 sm:right-0 w-16" src="../public/images/graphics/highlihter.svg"
+              alt="Curve Line" />
+          </div>
+        </header>
 
-      <!-- The Team-->
-      <section class="pt-20 mb-20 bg-curved-bg-art bg-no-repeat bg-right">
-        <article class="container mx-auto px-4">
-          <div class="max-w-xl">
-            <header class="">
-              <div class="inline-block relative">
-                <h3 class="heading-section !text-5xl relative z-10">
-                  Build for the World?
-                </h3>
-                <!-- <img
+        <div id="journey" class="flex gap-x-32">
+          <aside class="!w-2 h-96">
+
+            <div class="flex gap-x-32">
+              <aside class="!w-16 h-96">
+                <div class="h-full !w-2 bg-royal-purple-700 bg-opacity-60 rounded-3xl relative flex px-4 py-4">
+                  <div class="h-full !w-2 max-w-min flex flex-col justify-between items-center">
+                    <figure class="">
+                      <div class="w-4 h-4 bg-royal-purple-500 rounded-full"></div>
+                    </figure>
+                    <figure class="">
+                      <div class="w-2 h-2 bg-white rounded-full"></div>
+                    </figure>
+                    <figure class="">
+                      <div class="w-2 h-2 bg-white rounded-full"></div>
+                    </figure>
+                    <figure class="">
+                      <div class="w-2 h-2 bg-white rounded-full"></div>
+                    </figure>
+                  </div>
+                  <div class="h-full !w-2 max-w-min flex flex-col justify-between ml-8">
+                    <figure class="">
+                      <h4 class="text-base text-royal-purple-600 font-bold">
+                        2023
+                      </h4>
+                    </figure>
+                    <figure class="">
+                      <h4 class="text-base text-royal-gray-400">2020</h4>
+                    </figure>
+                    <figure class="">
+                      <h4 class="text-base text-royal-gray-400">2010</h4>
+                    </figure>
+                    <figure class="">
+                      <h4 class="text-base text-royal-gray-400">2006</h4>
+                    </figure>
+                  </div>
+                </div>
+              </aside>
+
+              <article class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="">
+                  <h2 class="heading-section">Mobius DTasS Platform Launch</h2>
+                  <p class="body-text mt-2">
+                    Lorem ipsum dolor sit amet consectetur. Vitae cras egestas
+                    posuere integer at viverra imperdiet tellus eleifend
+                  </p>
+                </div>
+                <div class="bg-royal-gray-100 h-96 rounded-3xl"></div>
+              </article>
+            </div>
+        </div>
+    </section>
+    <!-- Values -->
+    <section class="bg-gradient-pink py-16">
+      <div class="container mx-auto px-4">
+        <header class="mb-10 md:mb-24">
+          <div class="inline-block relative">
+            <h3 class="heading-section !text-5xl relative z-10">
+              Our Values
+            </h3>
+            <img class="absolute bottom-1 right-2/4 sm:right-0 w-16" src="../public/images/graphics/highlihter.svg"
+              alt="Curve Line" />
+          </div>
+        </header>
+        <article class="grid md:grid-cols-5 gap-24 justify-between">
+          <div>
+            <img src="../public/images/overview/Innovate.svg" alt="">
+            <h5 class="text-2xl">Innovation</h5>
+          </div>
+          <div>
+            <img style="height: 95px;" src="../public/images/overview/determination.svg" alt="">
+            <h5 class="text-2xl">Perseverance</h5>
+          </div>
+          <div>
+            <img src="../public/images/overview/Love.svg" alt="">
+            <h5 class="text-2xl">Compassion</h5>
+          </div>
+          <div>
+            <img src="../public/images/overview/Keys.svg" alt="">
+            <h5 class="text-2xl">Ownership</h5>
+          </div>
+          <div>
+            <img src="../public/images/overview/Value.svg" alt="">
+            <h5 class="text-2xl">Value Creation</h5>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Leaders -->
+    <section class="py-20 bg-gradient-black-graphics">
+      <div class="max-w-5xl mx-auto px-4">
+        <header>
+          <h2 class="heading-section text-center text-white">
+            Our Leadership
+          </h2>
+        </header>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-12 md:gap-x-24 gap-y-16 mt-24">
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/01.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/02.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/03.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/04.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/05.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/06.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/07.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="rounded-tr-4xl rounded-bl-3xl" src="../public/images/leaders/08.png" alt="Leader" />
+            <figcaption class="text-white mt-5">
+              <h4 class="heading-card">Lorem Ipsum Dolor</h4>
+              <strong class="font-normal text-royal-gray-600 text-base inline-block mt-1">Designation</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="bg-ellipse-purple bg-right bg-no-repeat py-20 ">
+      <article class="container item mx-auto px-4">
+        <h3 class="heading-article">Awards & Recognition</h3>
+        <div class="grid grid-cols-3 gap-8 justify-between mt-20 ">
+          <figure class="text-center mx-auto h-96 ">
+            <img src="../public/images/overview/9.png" style="height: 100px;" class="mx-auto" alt="">
+            <figcaption>
+              <h3 class="font-bold text-2xl py-2">Product of the Year - NAB Show</h3>
+              <p class="text-base text-royal-gray-600">2022</p>
+            </figcaption>
+          </figure>
+          <figure class="text-center mx-auto h-96">
+            <img src="../public/images/overview/10.png" style="height: 100px;" class="mx-auto" alt="">
+
+            <figcaption>
+              <h3 class="font-bold text-2xl py-2">National Marketplace platform for the broadcasters in USA</h3>
+              <p class="text-base text-royal-gray-400">2019</p>
+            </figcaption>
+          </figure>
+          <figure class="text-center mx-auto h-96">
+            <img src="../public/images/overview/11.png" style="height: 100px;  " class="mx-auto" alt="">
+
+            <figcaption>
+              <h3 class="font-bold text-2xl py-2">Certified as CMMI Level 3 Company</h3>
+              <p class="text-base text-royal-gray-600">2017</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </article>
+    </section>
+    <!-- Partners -->
+    <section class="bg-gradient-purple-graphics py-10 text-white">
+      <article class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h3 class="heading-section !text-white">
+            Embracing Meaningful Partnerships
+          </h3>
+          <p class="body-text !text-lg !text-white mt-4 !opacity-60 max-w-xl mx-auto">
+            Lorem ipsum dolor sit amet consectetur. Vitae cras egestas posuere
+            integer at viverra imperdiet tellus eleifend. Proin elit habitasse
+            sapien odio amet consectetur dui diam hendrerit. Vitae vitae
+            turpis faucibus at.
+          </p>
+        </div>
+        <footer class="grid items-center grid-cols-4 gap-10 lg:grid-cols-7 mt-8 sm:mt-0">
+          <img src="../public/images/apps/zoom.svg" alt="Zoom Logo" />
+          <img src="../public/images/apps/slack.svg" alt="Slack Logo" />
+          <img src="../public/images/apps/drive.svg" alt="Google Drive Logo" />
+          <img src="../public/images/apps/appstore.svg" alt="Appstore Logo" />
+          <img src="../public/images/apps/playstore.svg" alt="Playstore Logo" />
+          <img src="../public/images/apps/zoom.svg" alt="Zoom Logo" />
+          <img src="../public/images/apps/slack.svg" alt="Slack Logo" />
+        </footer>
+      </article>
+    </section>
+
+    <!-- The Team-->
+    <section class="pt-20 mb-20 bg-curved-bg-art bg-no-repeat bg-right">
+      <article class="container mx-auto px-4">
+        <div class="max-w-xl">
+          <header class="">
+            <div class="inline-block relative">
+              <h3 class="heading-section !text-5xl relative z-10">
+                Build for the World?
+              </h3>
+              <!-- <img
                   class="absolute bottom-1 right-2/4 sm:right-0 w-16"
                   src="../public/images/graphics/highlihter.svg"
                   alt="Curve Line"
                 /> -->
-                <h4
-                  class="heading-section !text-6xl mt-3 !text-royal-purple-600 relative z-10 text"
-                >
-                  Join us
-                </h4>
-              </div>
-            </header>
-            <div>
-              <p class="body-text mt-4">
-                Join our talented team of artists, hackers & visionaries
-                building world-changing products from India
-              </p>
-              <a class="btn btn-filled mt-14" href="#">View Openings</a>
+              <h4 class="heading-section !text-6xl mt-3 !text-royal-purple-600 relative z-10 text">
+                Join us
+              </h4>
             </div>
-          </div>
-        </article>
-        <div
-          class="flex justify-center items-center overflow-hidden mt-20 bg-white"
-        >
-          <a class="mx-6" href="#">
-            <article class="min-w-96 rounded-3xl text-right">
-              <img class="w-full" src="../public/images/teams/01.png" alt="" />
-            </article>
-          </a>
-          <a class="mx-6" href="#">
-            <article class="min-w-96 rounded-3xl">
-              <img class="w-full" src="../public/images/teams/02.png" alt="" />
-            </article>
-          </a>
-          <a class="mx-6" href="#">
-            <article class="min-w-96 rounded-3xl">
-              <img class="w-full" src="../public/images/teams/03.png" alt="" />
-            </article>
-          </a>
-          <a class="mx-6" href="#">
-            <article class="min-w-96 rounded-3xl">
-              <img class="w-full" src="../public/images/teams/04.png" alt="" />
-            </article>
-          </a>
-        </div>
-      </section>
-
-      <!-- Resources -->
-      <section class="mb-20 bg-gradient-pink py-16">
-        <div class="container mx-auto px-4">
-          <header class="flex justify-between items-center">
-            <h3 class="heading-section">Resources</h3>
-            <a class="btn btn-sm" href="#">See all</a>
           </header>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
-            <article class="border border-royal-gray-300 rounded-3xl">
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Boston 311</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
-            <article class="border border-royal-gray-300 rounded-3xl">
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Boston 311</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
-            <article class="border border-royal-gray-300 rounded-3xl">
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Boston 311</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
-            <article class="border border-royal-gray-300 rounded-3xl">
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="../public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Boston 311</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
+          <div>
+            <p class="body-text mt-4">
+              Join our talented team of artists, hackers & visionaries
+              building world-changing products from India
+            </p>
+            <a class="btn btn-filled mt-14" href="https://www.gaiansolutions.com/careers.aspx" target="_blank">View
+              Openings</a>
           </div>
         </div>
-      </section>
+      </article>
+      <div class="flex justify-center items-center overflow-hidden mt-20 bg-white">
+        <a class="mx-6" href="#">
+          <article class="min-w-96 rounded-3xl text-right">
+            <img class="w-full" src="../public/images/teams/01.png" alt="" />
+          </article>
+        </a>
+        <a class="mx-6" href="#">
+          <article class="min-w-96 rounded-3xl">
+            <img class="w-full" src="../public/images/teams/02.png" alt="" />
+          </article>
+        </a>
+        <a class="mx-6" href="#">
+          <article class="min-w-96 rounded-3xl">
+            <img class="w-full" src="../public/images/teams/03.png" alt="" />
+          </article>
+        </a>
+        <a class="mx-6" href="#">
+          <article class="min-w-96 rounded-3xl">
+            <img class="w-full" src="../public/images/teams/04.png" alt="" />
+          </article>
+        </a>
+      </div>
+    </section>
 
-      <!-- Call to Action Section -->
-      <section class="px-4 lg:px-0">
-        <article
-          class="container mx-auto px-8 text-center cta-wrapper rounded-3xl"
-        >
-          <h3 class="text-4xl font-bold text-royal-purple-500">
-            Try Monet Today
-          </h3>
-          <p class="text-xl leading-8 mt-4 mb-12 max-w-lg mx-auto">
-            Start with a 30-day free trail to build beautiful visual experiences
-            for Apps
-          </p>
-          <button class="btn btn-filled">Get Started</button>
-        </article>
-      </section>
-      <div class="px-4 lg:px-11 mt-28">
-        <hr class="hr-graphic" />
-      </div>
-    </main>
-    <footer class="mt-16 md:mt-20 pb-14">
+    <!-- Resources -->
+    <section class="mb-20 bg-gradient-pink py-16">
       <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10">
-          <nav>
-            <h4 class="heading-card">Company</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Leadership</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Terms & Conditions</a>
-              </li>
-            </ul>
-          </nav>
-          <nav>
-            <h4 class="heading-card">Solutions</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">Telecom & 5G</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Media & Broadcasting</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Smartcities & Government</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">IT Solutions & Automation</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">HR Tech</a>
-              </li>
-            </ul>
-          </nav>
-          <nav>
-            <h4 class="heading-card">Product</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">OpsMax</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">AI Zoom Bot</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Antara</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Slack Bot</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Marketplace</a>
-              </li>
-            </ul>
-          </nav>
-          <nav>
-            <h4 class="heading-card">Platform</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">Pascal Intelligence(PI)</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">BoltzmanBot(BOB)</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Monet</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Vinci</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Hola Verse</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="text-center mt-12 md:mt-20">
-          <nav>
-            <ul class="flex justify-center items-center">
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/linkedin.svg"
-                    alt="Linkedin Icon"
-                  />
-                </a>
-              </li>
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/instagram.svg"
-                    alt="Instagram Icon"
-                  />
-                </a>
-              </li>
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/twitter.svg"
-                    alt="Twitter Icon"
-                  />
-                </a>
-              </li>
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/facebook.svg"
-                    alt="Facebook Icon"
-                  />
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="mt-11">
-            <small class="text-sm"
-              >All Rights Reserved. 2023 Copyright
-              <a class="underline" href="#">Gaian Solutions</a>
-            </small>
-          </div>
+        <header class="flex justify-between items-center">
+          <h3 class="heading-section">Resources</h3>
+          <a class="btn btn-sm" href="#">See all</a>
+        </header>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
+          <article class="border border-royal-gray-300 rounded-3xl">
+            <div>
+              <img class="rounded-t-3xl" src="../public/images/resources.jpeg" alt="Resources" />
+            </div>
+            <div class="py-7 px-5">
+              <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                BLOG
+              </h5>
+              <h4 class="heading-card mt-2">Boston 311</h4>
+              <p class="text-base text-royal-gray-400 font-medium mt-3">
+                A read about how Mobius DTasS enabled Smart City deployments
+                in Boston, California
+                <a class="text-royal-purple-600" href="">(read more)</a>
+              </p>
+            </div>
+          </article>
+          <article class="border border-royal-gray-300 rounded-3xl">
+            <div>
+              <img class="rounded-t-3xl" src="../public/images/resources.jpeg" alt="Resources" />
+            </div>
+            <div class="py-7 px-5">
+              <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                BLOG
+              </h5>
+              <h4 class="heading-card mt-2">Boston 311</h4>
+              <p class="text-base text-royal-gray-400 font-medium mt-3">
+                A read about how Mobius DTasS enabled Smart City deployments
+                in Boston, California
+                <a class="text-royal-purple-600" href="">(read more)</a>
+              </p>
+            </div>
+          </article>
+          <article class="border border-royal-gray-300 rounded-3xl">
+            <div>
+              <img class="rounded-t-3xl" src="../public/images/resources.jpeg" alt="Resources" />
+            </div>
+            <div class="py-7 px-5">
+              <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                BLOG
+              </h5>
+              <h4 class="heading-card mt-2">Boston 311</h4>
+              <p class="text-base text-royal-gray-400 font-medium mt-3">
+                A read about how Mobius DTasS enabled Smart City deployments
+                in Boston, California
+                <a class="text-royal-purple-600" href="">(read more)</a>
+              </p>
+            </div>
+          </article>
+          <article class="border border-royal-gray-300 rounded-3xl">
+            <div>
+              <img class="rounded-t-3xl" src="../public/images/resources.jpeg" alt="Resources" />
+            </div>
+            <div class="py-7 px-5">
+              <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
+                BLOG
+              </h5>
+              <h4 class="heading-card mt-2">Boston 311</h4>
+              <p class="text-base text-royal-gray-400 font-medium mt-3">
+                A read about how Mobius DTasS enabled Smart City deployments
+                in Boston, California
+                <a class="text-royal-purple-600" href="">(read more)</a>
+              </p>
+            </div>
+          </article>
         </div>
       </div>
-    </footer>
-    <!-- Navigation Menu -->
-    <script src="../config/navigationMenu.js"></script>
-    <script src="../config/navigationMenu2.js"></script>
-    <script src="../src/navbar.js"></script>
-    <script src="../src/mobileMenu.js"></script>
-    <script src="../src/journey.js"></script>
-    <!-- Slider -->
-    <script src="../src/slider.js"></script>
-    <!-- Platfrom menu -->
-    <script src="../src/digitalPlatformMenu.js"></script>
-    <script src="../src/platformsMenu.js"></script>
-    <!-- Animate on scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        easing: "ease-in-out",
-      });
-    </script>
-    <script>
-      var myNav = document.getElementById("mynav");
-      window.onscroll = function () {
-        if (window.scrollY >= 40) {
-          myNav.classList.add("nav-colored");
-        }
-      };
-    </script>
-  </body>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="px-4 lg:px-0">
+      <article class="container mx-auto px-8 text-center cta-wrapper rounded-3xl">
+        <h3 class="text-4xl font-bold text-royal-purple-500">
+          Your Trusted Digital Transformation Partner
+        </h3>
+        <p class="text-xl leading-8 mt-4 mb-12 max-w-lg mx-auto">
+          Get in touch with our expert team to understand how Mobius Platform can accelerate your digital transformation
+          journey
+        </p>
+        <button class="btn btn-filled">Contact Us</button>
+      </article>
+    </section>
+    <div class="px-4 lg:px-11 mt-28">
+      <hr class="hr-graphic" />
+    </div>
+  </main>
+  <footer class="mt-16 md:mt-20 pb-14">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10">
+        <nav>
+          <h4 class="heading-card">Company</h4>
+          <ul class="mt-5 md:mt-9">
+            <li class="mb-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Leadership</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4 class="heading-card">Solutions</h4>
+          <ul class="mt-5 md:mt-9">
+            <li class="mb-4">
+              <a class="nav-link" href="#">Telecom & 5G</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Media & Broadcasting</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Smartcities & Government</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">IT Solutions & Automation</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">HR Tech</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4 class="heading-card">Product</h4>
+          <ul class="mt-5 md:mt-9">
+            <li class="mb-4">
+              <a class="nav-link" href="#">OpsMax</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">AI Zoom Bot</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Antara</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Slack Bot</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Marketplace</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4 class="heading-card">Platform</h4>
+          <ul class="mt-5 md:mt-9">
+            <li class="mb-4">
+              <a class="nav-link" href="#">Pascal Intelligence(PI)</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">BoltzmanBot(BOB)</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Monet</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Vinci</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Hola Verse</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text-center mt-12 md:mt-20">
+        <nav>
+          <ul class="flex justify-center items-center">
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/linkedin.svg" alt="Linkedin Icon" />
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/instagram.svg" alt="Instagram Icon" />
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/twitter.svg" alt="Twitter Icon" />
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/facebook.svg" alt="Facebook Icon" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mt-11">
+          <small class="text-sm">All Rights Reserved. 2023 Copyright
+            <a class="underline" href="#">Gaian Solutions</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Navigation Menu -->
+  <script src="../config/navigationMenu.js"></script>
+  <script src="../config/navigationMenu2.js"></script>
+  <script src="../src/navbar.js"></script>
+  <script src="../src/mobileMenu.js"></script>
+  <script src="../src/journey.js"></script>
+  <!-- Slider -->
+  <script src="../src/slider.js"></script>
+  <!-- Platfrom menu -->
+  <script src="../src/digitalPlatformMenu.js"></script>
+  <script src="../src/platformsMenu.js"></script>
+  <!-- Animate on scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+  </script>
+  <script>
+    var myNav = document.getElementById("mynav");
+    window.onscroll = function () {
+      if (window.scrollY >= 40) {
+        myNav.classList.add("nav-colored");
+      }
+    };
+  </script>
+</body>
+
 </html>
