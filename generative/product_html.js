@@ -223,6 +223,7 @@ const generator = (arr) => {
       <!-- Banner -->
       <section
         class="banner-bg-pink pt-36 pb-16 lg:pt-60 lg:pb-48 md:pt-44 md:pb-32"
+        
       >
         <article
           class="container mx-auto px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"

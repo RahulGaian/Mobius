@@ -45,11 +45,10 @@ function renderPlatformMenu(index = 0) {
       return `
       <div class="accordion-item">
       <div class="d-flex justfy-between mr-8">
-       <li  class="accordion-button ${i != 0 ? ' collapsed ': ''}" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne${i}" aria-expanded="true" aria-controls="collapseOne" class="text-lg ${index == i ? " text-royal-purple-600" : "" } "> ${item.name}
+       <li id="collapseOne0${i}" onClick="removeInterval(${i})" class="accordion-button ${i != 0 ? ' collapsed ': ''}" type="button" data-delayed-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#collapseOne${i}" aria-expanded="true" aria-controls="collapseOne" class="text-lg ${index == i ? " text-royal-purple-600" : "" } "> ${item.name}
         </li>
-        <img class="inline-block" src="../public/images/solutions/External.svg"  alt="Preview Icon"/>
          </div>
-      <div id="collapseOne${i}" class="accordion-collapse collapse ${i == 0 ? ' show ': ''}" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div  id="collapseOne${i}" class="accordion-collapse collapse ${i == 0 ? ' show ': ''}" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
          <div class="accordion-body default-font">
            ${menu[i]['description']}
         </div>
@@ -76,7 +75,7 @@ function renderPlatformMenu(index = 0) {
   var html = `
   <aside
   
-  data-aos-duration="1000"
+  data-aos-duration="10000"
   class="aside-width lg:col-span-2 border-royal-gray-300 rounded-3xl"
   >
   <ul class="platform-features " id="accordionExample">
@@ -88,11 +87,83 @@ function renderPlatformMenu(index = 0) {
 }
 
 
-// setInterval(
-//   () => {
-//     renderPlatformMenu();
-//   },2000)
+let setinterval = setInterval(
+  () => {
+    // renderPlatformMenu();
+
+    toggleClass(1);
+    index4 = (index4 +1)%5;
+  },2000)
+
+
+  function removeInterval(i) {
+
+    // let liClassName='collapseOne0'+i;
+   
+    // setTimeout(() => {
+      // let descClassName = 'collapseOne'+i;
+      // const ele = document.getElementById(descClassName);
+      // if(ele.classList.contains('show')) {
+      //   ele.classList.remove('border-class')
+      // }
+      // else {
+      //   ele.classList.add('border-class')
+
+      // }
+     
+    // }, 400);
+   
+    clearInterval(setinterval);
+  }
+
+
 
 
 renderPlatformMenu();
+
+var index4 = 0;
+
+
+function removeclasses() {
+  
+  for(let i=0;i<5;i++) {
+    let liClassName='collapseOne0'+i;
+    let descClassName = 'collapseOne'+i;
+    const ele = document.getElementById(descClassName);
+    const ele2 = document.getElementById(liClassName);
+    if(ele.classList.contains('show')) {
+      ele.classList.remove('show');
+      ele2.classList.add('collapsed');
+    }
+
+  } 
+
+
+}
+
+
+function toggleClass(i) {
+  i =index4;
+  removeclasses();
+  let liClassName='collapseOne0'+i;
+  let descClassName = 'collapseOne'+i;
+  const ele = document.getElementById(descClassName);
+  const ele2 = document.getElementById(liClassName);
+
+  
+
+  if(ele.classList.contains('show')) {
+    ele.classList.remove('show');
+    ele2.classList.add('collapsed');
+  }
+  else {
+    ele.classList.add('show');
+    ele2.classList.remove('collapsed');
+  }
+  
+}
+
+
+
+
 

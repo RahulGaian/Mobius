@@ -88,4 +88,94 @@ for(let i of a_tags){
     i.href = "../contact/ContactForDemo.html"
 
   }
+
 }
+
+function footer_changer (){
+  let footer_tags = document.querySelectorAll("footer li a");
+  for(let i of footer_tags){
+    switch(i.innerText){
+
+      //Company
+
+      case "About":           { i.innerText ="Overview"
+                                 i.href = "../overview/index.html";
+                                                break; }
+
+      case "Services":        {           i.parentElement.remove(i)
+                                                break; }  
+
+      case "Leadership":      {   i.innerText = "People"
+                                  i.href = "../people/index.html";
+                                    break; }      
+
+      case "Careers":         { i.href = "../careers/index.html";
+                                        break; }   
+
+      case "Contact":        { i.href = "../contact/index.html";
+                                        break; } 
+
+     case "Terms & Conditions":        { i.href = "../platform/Holaverse.html";
+                                        break; } 
+
+
+
+
+
+
+      /// Solutions
+
+      case "Telecom & 5G":   { i.innerText="5G Network Orchestration"; 
+                               i.href = "../solutions/5gMarketPlace.html";
+                               break; } 
+
+      case "Media & Broadcasting":   { i.innerText="NextGen TV"; 
+                               i.href = "../solutions/NextGenTv.html";
+                               break; } 
+
+      case "Smartcities & Government":   { i.innerText="Smart City"; 
+                               i.href = "../solutions/SmartCity.html";
+                               break; } 
+
+      case "IT Solutions & Automation":   { i.innerText="DevOps"; 
+                               i.href = "../solutions/DevOps.html";
+                               break; } 
+
+      case "HR Tech":         { i.innerText="Smart Recruiting"; 
+                               i.href = "../solutions/SmartRecruiting.html";
+                               break; }   
+                               
+      // Products 
+                               
+      case "OpsMax":        { i.href = "../generated_products/OpsMax.html";
+                               break; }
+      case "AI Zoom Bot":        { i.href = "../generated_products/ZoomBot.html";
+                               break; }  
+      case "Antara":        { i.href = "../generated_products/OpsMax.html";
+                               break; }      
+      case "Slack Bot":        { i.href = "../generated_products/OpsMax.html";
+                               break; }     
+      case "Marketplace":        { i.href = "../generated_products/MarketPlace.html";
+                               break; } 
+
+
+
+      //Platform
+
+      case "Pascal Intelligence(PI)":        { i.href = "../platform/Pascal Intelligence.html";
+                               break; }
+      case "BoltzmanBot(BOB)":        { i.href = "../platform/BoltzmanBot.html";
+                               break; }  
+      case "Monet":        { i.href = "../platform/monet.html";
+                               break; }      
+      case "Vinci":        { i.href = "../platform/vinci.html";
+                               break; }     
+      case "Hola Verse":        { i.href = "../platform/Holaverse.html";
+                               break; } 
+
+        
+    }
+  }
+}
+
+footer_changer();

@@ -365,7 +365,8 @@
   margin-left: 50%;
   transform: translateX(-50%);
 }
-#product_section > article:not(:first-child){
+
+#product_section>article:not(:first-child) {
   padding-top: 0rem;
   margin-top: 0px;
 }
@@ -400,26 +401,27 @@
 
 
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
-    #demo-section{
-      width: 75%;
-      margin-top: 10px;
-      transform: translateY(0px);
-      margin: auto;
-    }
-    /* .slide11>h4{
+  #demo-section {
+    width: 75%;
+    margin-top: 10px;
+    transform: translateY(0px);
+    margin: auto;
+  }
+
+  /* .slide11>h4{
       font-size: 10px;
     } */
-    /* .slider-heading{
+  /* .slider-heading{
       font-size: 12px;
     } */
-    #slider-box{
-      width: 350px;
-      height:auto;
-      padding-top: 20px;
-      padding: 20px;
-      margin: auto;
+  #slider-box {
+    width: 350px;
+    height: auto;
+    padding-top: 20px;
+    padding: 20px;
+    margin: auto;
 
   }
 
@@ -649,7 +651,7 @@ top: 978px; */
 }
 
 
-.accordion-collapse:after {
+.border-class:after {
   content: "";
   position: absolute;
   /* left: 25px;
@@ -657,7 +659,7 @@ top: 978px; */
   height: 15px; */
   width: 70%;
   border-bottom: 5px solid #9A92F9;
-  transition: all 5s;
+  /* transition: all 5s; */
 }
 
 
@@ -667,7 +669,7 @@ top: 978px; */
 
 
 
-.aside-width{
+.aside-width {
   width: 33rem;
 }
 
@@ -711,19 +713,51 @@ top: 978px; */
 
  } */
 
- .add-padding{
+.add-padding {
   padding: 6rem;
- }
 
 
- @media all and (min-width:300px) and (max-width:1200px) {
-  .aside-width{
+}
+
+.add-gap {
+  gap: 1rem;
+}
+
+.add-padding img {
+  width: 10rem;
+}
+
+
+.add-padding h2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.add-apdding p {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  /* or 119% */
+
+  text-align: center;
+}
+
+
+
+
+@media all and (min-width:300px) and (max-width:1200px) {
+  .aside-width {
     /* width: 100%; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 
-  .header-div{
+  .header-div {
     /* height: 100vh; */
     display: flex;
     flex-direction: column;
@@ -736,34 +770,81 @@ top: 978px; */
   }
 
 
-  .header-class h1{
+  .header-class h1 {
     font-size: 2.5rem;
     text-align: center;
   }
+
   .header-class p {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .addMargin{
+  .addMargin {
     margin-top: 1rem !important;
+  }
+
+  .add-padding{
+    padding: 3rem !important;
   }
 
 
   @media all and (min-width:300px) and (max-width:500px) {
-    .aside-width{
+    .aside-width {
       width: 100% !important;
+    }
+
+    .main-footer{
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+
+    .wave_logo{
+      left: 11rem;
+      width: 5rem;
     }
 
     .accordion-item .collapsed {
       padding: 1rem !important;
 
     }
+    
+    .heading-section{
+      font-size: 1rem;
+    }
+    
+    .add-padding{
+      padding: 1rem !important;
+    }
+    .remove-margin {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
 
-    .remove-margin{
-      margin-left:0px !important ;
-      margin-right:0px !important ;
+
+    .add-padding h2{
+     font-size: 1.5rem !important;
+    }
+
+    .add-padding p{
+      font-size: 0.8rem !important;
      }
+
+
+
+    .add-padding img {
+      width: 4rem;
+    }
+
+    .header-class h1 {
+      font-size: 1.5rem !important;
+      text-align: center;
+    }
+  
+    .header-class p {
+      font-size: 1rem !important;
+      text-align: center;
+    }
 
   }
 
@@ -771,12 +852,12 @@ top: 978px; */
 }
 
 
-.addMargin{
+.addMargin {
   margin-left: 1rem !important;
 }
 
 
-.bg-dtash{
+.bg-dtash {
   /* overflow-y: scroll; */
   padding-bottom: 2rem;
 }
@@ -786,10 +867,43 @@ top: 978px; */
 } */
 
 
-#collapseOne4 .accordion-body:last-child{
+#collapseOne4 .accordion-body:last-child {
   padding-bottom: 1rem;
 }
 
-#collapseOne4:after{
+#collapseOne4:after {
   border-bottom: none !important;
+}
+
+
+.wave_logo{
+  left: 20rem;
+}
+
+@media all and (max-width:900px){
+  .wave_logo{
+    left: 11rem;
+    width: 5rem;
+  }
+}
+
+
+
+@media all and (min-width:501px) and (max-width:899px) {
+ 
+  .wave_logo{
+    left: 25rem;
+    width: 9rem;
+    top: 1.5rem;
+  }
+
+}
+
+
+.accordion-item{
+  transition: all 10s;
+}
+
+.slide01{
+  font-size: 2rem;
 }

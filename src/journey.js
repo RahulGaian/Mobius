@@ -8,45 +8,67 @@ function renderJourneyMenu(index = 0) {
   // Data
   const menu = [
     {
-      name: "2023",
+      name: "2019",
       image: "",
-      heading: "Mobius DTasS Platform Launch",
+      heading: "Launched Gaitav3.0 in US Market",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae cras egestas posuere integer at viverra imperdiet tellus eleifend",
+        "",
     },
     {
-      name: "2020",
+      name: "2016",
       image: "",
-      heading: "Mobius DTasS Platform Launch 01",
+      heading: "Entered US Broadcast Market",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae cras egestas posuere integer at viverra imperdiet tellus eleifend",
+        "",
+    },
+    {
+      name: "2016",
+      image: "",
+      heading: "Selection in Indian Railway Project",
+      description:
+        "",
+    },
+    {
+      name: "2015",
+      image: "",
+      heading: "7 Patents Filed",
+      description:
+        "",
+    },
+    {
+      name: "2012",
+      image: "",
+      heading: "Founded Seelamsetty Ramaroa Foundation & Trained 5000 people",
+      description:
+        "",
+    },
+    {
+      name: "2011",
+      image: "",
+      heading: "100 Employees in the Team",
+      description:
+        "",
     },
     {
       name: "2010",
       image: "",
-      heading: "Mobius DTasS Platform Launch 02",
+      heading: "Foundation and Office Establishment in LA",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae cras egestas posuere integer at viverra imperdiet tellus eleifend",
-    },
-    {
-      name: "2006",
-      image: "",
-      heading: "Mobius DTasS Platform Launch 03",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae cras egestas posuere integer at viverra imperdiet tellus eleifend",
+        "",
     },
   ];
 
   const listItems = menu
     .map((item, i) => {
-      return `<figure class=""><div class="w-4 h-4 bg-white rounded-full  ${
-        index == i ? "bg-royal-purple-500" : ""
+      console.log(i)
+      return `<figure class=""><div class="w-4 h-4  rounded-full  ${
+        index == i ? "bg-royal-purple-500" : "bg-white"
       }" onclick="changeJourneyMenu(${i})"></div></figure>`;
     })
     .join("");
 
   var html = `
-        <aside data-aos="fade-up" class="w-2 h-96">
+        <aside  class="w-2 h-96">
               <div
                 class="h-full !w-2 bg-royal-purple-700 bg-opacity-60 rounded-3xl relative flex"
               >
@@ -60,18 +82,27 @@ function renderJourneyMenu(index = 0) {
                 >
                   <figure class="">
                     <h4 class="text-base text-royal-purple-600 font-bold">
-                      2023
+                      2019
                     </h4>
                   </figure>
                   <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2020</h4>
+                    <h4 class="text-base text-royal-gray-400">2016</h4>
                   </figure>
                   <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2010</h4>
+                    <h4 class="text-base text-royal-gray-400">2016</h4>
                   </figure>
                   <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2006</h4>
+                    <h4 class="text-base text-royal-gray-400">2015</h4>
                   </figure>
+                  <figure class="">
+                  <h4 class="text-base text-royal-gray-400">2012</h4>
+                </figure>
+                <figure class="">
+                  <h4 class="text-base text-royal-gray-400">2011</h4>
+                </figure>
+                <figure class="">
+                  <h4 class="text-base text-royal-gray-400">2010</h4>
+                </figure>
                 </div>
               </div>
             </aside>

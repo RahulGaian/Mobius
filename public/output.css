@@ -2260,6 +2260,16 @@ body {
 
 
 
+  .banner-bg-pink{
+    height: auto;
+  }
+
+  .banner-bg-pink article div img {
+    height: auto;
+width: 70%;
+margin: auto;
+  }
+
   .calendly-inline-widget {
     min-width: 95%;
     margin: auto;
@@ -2562,6 +2572,7 @@ body {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     margin: 0px;
+    
   }
 
   #img-container {
@@ -3038,6 +3049,7 @@ body {
   padding-left: 6rem;
   padding-right: 6rem;
   margin: 0px;
+  width: 100%;
 }
 
 

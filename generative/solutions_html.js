@@ -241,7 +241,7 @@ let data = `
              ${Main_heading_content}
             </p>
             <footer
-              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row"
+              class="mt-16 mb-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row"
             >
               <a
                 class="btn btn-filled text-xl font-bold md:mr-20"
