@@ -56,17 +56,27 @@ let z = setInterval(function () {
   intervals = ["0px", "-20%", "-40%", "-60%"];
 
 
-  counter++;
+  
   counter1++;
-  if (counter > 3) {
-    counter = 0;
-  }
+ 
   if(counter1 > 5 ){
     counter1 = 0
   }
   content_changer(counter1);
-  content_changer2(counter);
+  
 }, 5000);
+let p = setInterval(function () {
+  intervals = ["0px", "-20%", "-40%", "-60%"];
+
+
+  counter++;
+  if (counter > 3) {
+    counter = 0;
+  }
+
+  
+  content_changer2(counter);
+}, 5500);
 
 function call() {
   console.log("hello");
@@ -127,15 +137,21 @@ function content_changer(index) {
   
   
   `;
-  second_slider[0].innerHTML = `            
-  <div data-aos="fade-left">
+  
+  let a = setTimeout(function (){
+    second_slider[0].innerHTML = `            
+    <div data-aos="fade-left">
+  
+     <img
+     class="inline-block fade"
+     src="../public/images/careers/${perks[index][2]}"
+     alt="Emergency Ambulance Service"
+     />
+     </div>`;
+  },500)
 
-   <img
-   class="inline-block fade"
-   src="../public/images/careers/${perks[index][2]}"
-   alt="Emergency Ambulance Service"
-   />
-   </div>`;
+  
+
 }
 
 function content_changer2(index) {
