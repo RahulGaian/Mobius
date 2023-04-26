@@ -86,42 +86,34 @@ function renderPlatformMenu(index = 0) {
   platformMenu.innerHTML = html;
 }
 
+var flag = false;
+var index4 = 0;
 
 let setinterval = setInterval(
   () => {
     // renderPlatformMenu();
 
-    toggleClass(1);
+    // toggleClass(1);
+
     index4 = (index4 +1)%5;
+    let descClassName = 'collapseOne0'+index4;
+    flag = true;
+   document.getElementById(descClassName).click();
+   flag = false;
   },2000)
 
 
+ 
+
   function removeInterval(i) {
-
-    // let liClassName='collapseOne0'+i;
-   
-    // setTimeout(() => {
-      // let descClassName = 'collapseOne'+i;
-      // const ele = document.getElementById(descClassName);
-      // if(ele.classList.contains('show')) {
-      //   ele.classList.remove('border-class')
-      // }
-      // else {
-      //   ele.classList.add('border-class')
-
-      // }
-     
-    // }, 400);
-   
-    clearInterval(setinterval);
+    if(!flag) {
+      clearInterval(setinterval);
+    }
   }
-
-
 
 
 renderPlatformMenu();
 
-var index4 = 0;
 
 
 function removeclasses() {
