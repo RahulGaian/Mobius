@@ -601,59 +601,7 @@ const menu = [
           },
         ],
       },
-      {
-        name: "Mobius Intelligent Apps",
-        items: [
-          {
-            name: "Zoom Bot",
-            subitems: [
-              {
-                name: "",
-                items: [],
-              },
-            ],
-            article: {
-              heading: "ZoomBot",
-              description:
-                " Experience seamless meeting scheduling, reminders, real-time transcription and translation, and customizable controls with our Zoom Bot powered by Mobius DTasS.",
-              url: "../generated_products/ZoomBot.html",
-              coverImage: "/public/images/navbar/9.jpg",
-            },
-          },
-          {
-            name: "Dashboard as a Service",
-            subitems: [
-              {
-                name: "",
-                items: [],
-              },
-            ],
-            article: {
-              heading: "Dashboard as a Service",
-              description:
-                " Unlock real-time insights with our customizable dashboards, seamless integrations, and collaborative tools. Join the revolution of intelligent business decision making with Mobius DTasS.",
-              url: "../generated_products/Dashboard.html",
-              coverImage: "/public/images/navbar/9.jpg",
-            },
-          },
-          {
-            name: "OpsMax",
-            subitems: [
-              {
-                name: "",
-                items: [],
-              },
-            ],
-            article: {
-              heading: "OpsMax",
-              description:
-                "  OpsMax is a futuristic ESOP management tool that simplifies the process of managing employee stock options. With automated management, comprehensive reporting, and robust security, OpsMax helps you future-proof your ESOPs.",
-              url: "../generated_products/OpsMax.html",
-              coverImage: "/public/images/navbar/9.jpg",
-            },
-          },
-        ],
-      },
+
     ],
   },
 

@@ -111,7 +111,7 @@ const menu2 = [
               description:
                 "Our success at Mobius is built on strong partnerships with leading businesses and organizations worldwide. We work closely with our partners to deliver the best possible enterprise data solutions, leveraging our combined expertise and resources to help businesses optimize their operations and drive growth. Explore our partnerships and learn how working with Mobius can help take your business to the next level.",
               coverImage: "/public/images/contact/partners-min.jpg",
-              url:""
+              url:"../ComingSoon/index.html"
             },
           },
           {
