@@ -56,15 +56,15 @@ function renderDigitalPlatformMenu(index = 0) {
 
   var html = `
 
-  <aside data-aos="fade-up"  class="lg:col-span-3">
+  <aside data-aos="fade-up"  class=" constructs lg:col-span-3">
     <ul class="w-full">
       ${listItems}
     </ul>
   </aside>
   <article
-
+    
   data-aos="fade-up"
-    class="lg:col-span-8 grid lg:grid-cols-3 justify-between py-8 lg:py-12 lg:pl-12 lg:border-l border-t lg:border-t-0 border-royal-gray-300"
+    class="large-screens lg:col-span-8 grid lg:grid-cols-3 justify-between py-8 lg:py-12 lg:pl-12 lg:border-l border-t lg:border-t-0 border-royal-gray-300"
   >
   <div class="col-span-1 mt-6 lg:mt-0">
   <img

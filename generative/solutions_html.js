@@ -285,7 +285,7 @@ let data = `
       <!-- Smart City Features -->
       <header class="sticky-header">
         <nav
-          class="flex justify-between items-center bg-royal-purple-300 pb-6 lg:pb-0"
+          class="flex justify-between items-center bg-royal-purple-300 lg:pb-0"
         >
           <ul class="flex bg-royal-purple-300 px-4 lg:px-24">
             <li class="mr-16">
@@ -1266,7 +1266,7 @@ let data = `
         <article
           class=" mx-auto px-4 lg:pl-4 lg:px-0 grid lg:grid-cols-3 items-center"
         >
-          <div class="lg:col-span-2">
+          <div class="px-8 lg:col-span-2">
             <h2 class="heading-section">
               Get in touch with our Certified Solutions Expert
             </h2>
@@ -1290,7 +1290,7 @@ let data = `
     </main>
     <!-- Footer -->
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
-      <div class="container mx-auto px-11">
+      <div class="container mx-auto px-4">
                <div id="footer"  class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-10">
 
           <nav>

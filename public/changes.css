@@ -581,7 +581,7 @@
 .header-class {
   display: flex;
   flex-direction: column;
-
+  gap: 0.4rem;
 }
 
 .header-class h1 {
@@ -771,8 +771,39 @@ top: 978px; */
 
 .add-padding {
   padding: 6rem;
+  border-radius: 20px;
+
+}
+
+.accordian-div{
+  border-radius: none !important;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  width: 100%;
+ 
+}
+
+#select-accordian option[selected]{
+  /* background: red; */
+}
+
+#select-accordian{
+  min-height: 3rem;
+    border: none !important;
+    width: 100%;
+    padding: 1rem;
+    background:none;
+}
+
+.accordian-div p{
+  border-top: 1px solid rgb(192, 186, 186);
+  padding: 1rem;
+}
 
 
+.aside-style{
+  background: white;
 }
 
 .add-gap {
@@ -780,7 +811,7 @@ top: 978px; */
 }
 
 .add-padding img {
-  width: 10rem;
+  width: 7rem;
 }
 
 
@@ -801,6 +832,17 @@ top: 978px; */
   /* or 119% */
 
   text-align: center;
+}
+
+
+.text-base-padding {
+     
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
 }
 
 
@@ -836,6 +878,11 @@ top: 978px; */
     text-align: center;
   }
 
+
+  .header-class{
+    gap: 0px;
+  }
+
   .header-class p {
     font-size: 1.5rem;
     text-align: center;
@@ -845,24 +892,31 @@ top: 978px; */
     margin-top: 1rem !important;
   }
 
-  .add-padding{
+  .add-padding {
     padding: 3rem !important;
   }
 
+  
+
+  .bg-dtash{
+    min-height: 90rem !important;
+  }
 
   @media all and (min-width:300px) and (max-width:500px) {
-     
-    .main-footer{
+
+    .main-footer {
       margin-top: 2rem;
       gap: 1rem;
     }
 
-    .text-base-padding{
-       /* padding-top: 1rem !important; */
-       padding-bottom: 2rem !important;
+    .slide01{
+      font-size: 1.2rem !important;
     }
 
-    .wave_logo{
+   
+
+   
+    .wave_logo {
       left: 11rem;
       width: 5rem;
     }
@@ -871,23 +925,23 @@ top: 978px; */
       padding: 1rem !important;
 
     }
-    
-    .heading-section{
+
+    .heading-section {
       font-size: 1rem;
     }
-    
-    .add-padding{
+
+    .add-padding {
       padding: 1rem !important;
     }
-   
 
-    .add-padding h2{
-     font-size: 1.5rem !important;
+
+    .add-padding h2 {
+      font-size: 1.5rem !important;
     }
 
-    .add-padding p{
+    .add-padding p {
       font-size: 0.8rem !important;
-     }
+    }
 
 
 
@@ -895,17 +949,17 @@ top: 978px; */
       width: 4rem;
     }
 
-    .header-class h1 {
-      font-size: 1.5rem !important;
+    /* .header-class h1 {
+      font-size: 2.5rem !important;
       text-align: center;
-    }
-  
+    } */
+
     .header-class p {
-      font-size: 1rem !important;
+      font-size: 1.2rem !important;
       text-align: center;
     }
 
-    .accordion-button{
+    .accordion-button {
       padding-right: 1rem !important;
     }
 
@@ -939,26 +993,28 @@ top: 978px; */
 }
 
 
-.wave_logo{
+.wave_logo {
   left: 20rem;
 }
 
-@media all and (max-width:900px){
-  .wave_logo{
+@media all and (max-width:900px) {
+  .wave_logo {
     left: 11rem;
     width: 5rem;
   }
 }
 
 
-@media all and (max-width:1023px){
-  
+@media all and (max-width:1023px) {
+
   .remove-margin {
     margin: 0px !important;
     /* margin-right: 0px !important; */
   }
-  .add-gap{
+
+  .add-gap {
     gap: 0.2rem;
+    padding-top: 0.2rem;
   }
 
 }
@@ -966,8 +1022,8 @@ top: 978px; */
 
 
 @media all and (min-width:501px) and (max-width:899px) {
- 
-  .wave_logo{
+
+  .wave_logo {
     left: 20rem;
     width: 9rem;
     top: 1.5rem;
@@ -976,11 +1032,11 @@ top: 978px; */
 }
 
 
-.accordion-item{
+.accordion-item {
   transition: all 10s;
 }
 
-.slide01{
+.slide01 {
   font-size: 2rem;
 }
 
@@ -1009,8 +1065,152 @@ top: 978px; */
 
 }
 
+@media all and (max-width:1018px) {
+  .set-height {
+    min-height: 320vh !important;
+  }
+}
 
-.bg-pink2{
-  background-image: url("../public/images/4048.svg");
-  background-size: 100%;
+
+.set-height {
+  min-height: 200vh;
+}
+
+
+
+@media all and (min-width:1550px) {
+  .large-screens {
+    display: flex !important;
+    justify-content: start;
+    width: 100%;
+    padding-top: 0px;
+    border-left: none !important;
+  }
+
+  #digital-platform-menu {
+    display: flex !important;
+    gap:0px
+  }
+
+  #digital-platform-menu div img {
+    width: 35rem;
+  }
+
+  .constructs {
+    min-width: 14rem;
+  }
+
+  .constructs ul{
+    border-right: 1px solid #E4A8A8;
+  }
+
+
+  .addMargin {
+    width: 35rem;
+    margin-left: 3rem !important;
+    margin-top: 3rem !important;
+  }
+
+  .change-container {
+    min-width: 1549px !important;
+    padding-right: 2rem;
+  }
+
+  #digital-platform-menu aside {
+    margin-top: 3rem;
+    width: 22rem
+  }
+
+
+  .swiper-slide {
+    min-width: 10vw !important;
+  }
+}
+
+
+
+/* #select-accordian {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#select-accordian option{
+  width: 10px;
+} */
+
+.rotate-icon{
+  transform: rotate(180deg);
+}
+
+.display-icon{
+  display: none !important;
+}
+
+
+
+.add-padding-a{
+  padding: 1rem 4.4rem !important;
+}
+
+
+
+.aside-link{
+  /* max-width: 296px; */
+  position: absolute; 
+    /* top: 105px;
+    /* right: 90px;  */
+    top: 7rem;
+    right: 3rem;
+}
+
+
+.login-links{
+  /* width: 100%; */
+  display: flex;
+    justify-content: space-between;
+    /* padding: 0 1rem; */
+    padding-right: 1.5rem;
+    border-bottom: 1px solid #C8C8C8;
+   
+
+}
+
+
+
+.hide_popup{
+  display: none;
+}
+
+.login-links a li{
+          border-bottom: none;
+}
+
+/* 
+.change-color{
+  fill: red;
+  stroke: blueviolet;
+} */
+
+
+.login_class{
+  display: flex;
+    /* justify-content: start; */
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-links a li:hover{
+  color: #796EF5;
+}
+
+
+.login-links a{
+  width: 100% !important;
+}
+
+#login_select_toggle{
+  transition: all 0.5s;
 }

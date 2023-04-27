@@ -33,8 +33,8 @@
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50" id="top-navbar">
       <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-        <nav
-          class="container px-4 mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
+        <nav id="nav-bar"
+          class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
         >
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
@@ -152,7 +152,7 @@
         class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div class="pl-4 lg:pl-20 lg:grid lg:grid-cols-7">
+          <div id="mega-menu-one-container"  class="px-custom lg:pl-20 lg:grid lg:grid-cols-7">
             <div
               class="col-span-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
             ></div>
@@ -189,7 +189,7 @@
     <main>
       <!-- Banner -->
 
-      <section class="pb-16 lg:pb-48 md:pb-32 bg-curved-bg-art bg-right" style="background-repeat: no-repeat; background-position: 80% 0%;">
+      <section style="height: auto; padding: 0; padding-bottom: 1rem;" id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
         <div
           class="lg:flex relative flex-row container items-start mx-auto w-full lg:mx-4 lg:px-11 gap-7"
         >
@@ -300,11 +300,12 @@
             </div>
           </div>
         </div>
+        <br>
       </section>
       <div class="px-4 lg:px-11">
-        <hr class="hr-graphic" />
+        <!-- <hr class="hr-graphic" /> -->
       </div>
-      <section data-aos="fade-up" class="mt-32">
+      <!-- <section data-aos="fade-up" class="mt-32">
         <div
           class="lg:flex flex-row container mx-auto w-full lg:mx-4 lg:px-11 gap-7"
         >
@@ -328,7 +329,7 @@
             style="width: 60%; height: 630px; border-radius: 10px"
           ></div>
         </div>
-      </section>
+      </section> -->
     </main>
     <div class="px-4 lg:px-11 mt-28">
       <hr class="hr-graphic" />
@@ -336,7 +337,7 @@
 
     <!-- Footer -->
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
-      <div class="container mx-auto px-11">
+      <div class="container mx-auto px-4">
                <div id="footer"  class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-10">
 
           <nav>

@@ -1,86 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
 
-    <meta name="description" content="Personalized content, intelligent surveys, dynamic rewards, and seamless
-    communication channels, all combined in one platform. Keep your employees
-    happy, engaged, and loyal.">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Font Family -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Font Family -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <script src="https://kit.fontawesome.com/b4f86e4cfd.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 
-    <!-- Animate on scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../public/output.css" />
+  <!-- Animate on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- Changes to the css -->
-    <link rel="stylesheet" href="../public/changes.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../public/output.css" />
 
-    <link rel="stylesheet" href="./src/menu.css" />
-    <title>Mobius Marketing Website</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50" id="top-navbar">
-      <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-        <nav id="nav-bar"
-          class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
-        >
-          <div class="lg:flex items-center">
-            <div class="flex justify-between items-center">
-              <a href="/">
-                <img
-                  class="w-20"
-                  src="../public/images/brand-logo.svg"
-                  alt="Mobius Brand Logo"
-                />
-              </a>
-              <img
-                class="lg:hidden"
-                src="../public/images/icons/menu.svg"
-                alt="Menu"
-                id="openmenu"
-              />
-              <img
-                class="hidden"
-                src="public/images/icons/close-outline.svg"
-                alt="Menu"
-                id="close-menu"
-              />
-            </div>
-            <ul class="hidden lg:flex items-center mega-menu-container">
-              <li
-                class="ml-14 relative mega-menu-item mega-menu-one"
-                data-id="0"
-              >
-                <span class="nav-link top-nav-link">Solutions</span>
-                <img
-                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
-                  alt="Arrow Down Icon"
-                />
-                <!-- <div>
+  <!-- Changes to the css -->
+  <link rel="stylesheet" href="../public/changes.css" />
+
+  <link rel="stylesheet" href="./src/menu.css" />
+  <title>Mobius Marketing Website</title>
+</head>
+
+<body id="main_body">
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50" id="top-navbar">
+    <div class="absolute z-20 top-0 w-full navbar" id="mynav">
+      <nav id="nav-bar" class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8">
+        <div class="lg:flex items-center">
+          <div class="flex justify-between items-center">
+            <a href="/">
+              <img class="w-20" src="../public/images/brand-logo.svg" alt="Mobius Brand Logo" />
+            </a>
+            <img class="lg:hidden" src="../public/images/icons/menu.svg" alt="Menu" id="openmenu" />
+            <img class="hidden" src="public/images/icons/close-outline.svg" alt="Menu" id="close-menu" />
+          </div>
+          <ul class="hidden lg:flex items-center mega-menu-container">
+            <li class="ml-14 relative mega-menu-item mega-menu-one" data-id="0">
+              <span class="nav-link top-nav-link">Solutions</span>
+              <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+              <!-- <div>
                   <div>
                     <h4>EXPERTISE by industry</h4>
                     <ul>
@@ -98,51 +74,33 @@
                     </ul>
                   </div>
                 </div> -->
-              </li>
-              <li
-                class="ml-11 relative mega-menu-item mega-menu-one"
-                data-id="1"
-              >
-                <span class="nav-link top-nav-link">Products</span>
-                <img
-                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
-                  alt="Arrow Down Icon"
-                />
-              </li>
-              <li
-                class="ml-11 relative mega-menu-item mega-menu-two"
-                data-id="0"
-              >
-                <span class="nav-link top-nav-link menu2">Platform</span>
-                <img
-                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
-                  alt="Arrow Down Icon"
-                />
-              </li>
-              <li
-                class="ml-11 relative mega-menu-item mega-menu-two"
-                data-id="1"
-              >
-                <span class="nav-link top-nav-link menu2">Company</span>
-                <img
-                  class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
-                  src="../public/images/icons/chevron-down.svg"
-                  alt="Arrow Down Icon"
-                />
-              </li>
-              <li class="ml-11">
-                <a class="nav-link" href="/contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+            </li>
+            <li class="ml-11 relative mega-menu-item mega-menu-one" data-id="1">
+              <span class="nav-link top-nav-link">Products</span>
+              <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+            </li>
+            <li class="ml-11 relative mega-menu-item mega-menu-two" data-id="0">
+              <span class="nav-link top-nav-link menu2">Platform</span>
+              <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+            </li>
+            <li class="ml-11 relative mega-menu-item mega-menu-two" data-id="1">
+              <span class="nav-link top-nav-link menu2">Company</span>
+              <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+                src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+            </li>
+            <li class="ml-11">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-          <div>
+        <div>
 
-            
-            <ul class="hidden lg:flex items-center" id="menu-action">
-              <!-- <li>
+
+          <ul class="hidden lg:flex items-center" id="menu-action">
+            <!-- <li>
                 <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
                 href="tel:+118001231234"
@@ -153,128 +111,154 @@
               <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
             </li>
             <li>
-              <a class="btn" href="signin">
+              <a class="btn login_class" onClick="loginEvent(event)">
                 <span>Login</span>
+                <i id="login_select_toggle" class="fa fa-chevron-down" aria-hidden="true"></i>
               </a>
-            </li>
-          </div>
-          </ul>
-        </nav>
-      </div>
-      <!-- Mega Menu One -->
-      <div
-        id="navbar"Solutions
-        class=" fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
-      >
-        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div id="mega-menu-one-container"  class="px-custom lg:pl-20 lg:grid lg:grid-cols-7">
-            <div
-              class="col-span-2 border-r border-royal-gray-300 py-2 lg:py-2 lg:pr-6 column-one"
-            ></div>
 
-            <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
-              <div
-                class="border-b border-royal-gray-300 py-2 py-6 last:border-0 column-two"
-              ></div>
-            </div>
-            <article
-              class="col-span-3 flex flex-col justify-between column-three"
-            ></article>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+
+
+
+      </nav>
+
+
+      <aside id="login_popup" class="aside-link hide_popup" data-aos-duration="10000"
+        class="lg:col-span-2 border-royal-gray-300 rounded-3xl">
+        <ul class="platform-features ">
+          <!-- <div class="login-links">
+            <li  class="" type="button" class="text-lg"> aaaaaaaa
+            </li>
+            <a class="d-flex"  href="https://pi.gaiansolutions.com/" target="_blank" > <img src="../public/images/Landing_logos/link-icon.svg"
+              alt="select dropdown" /></a> 
+          </div> -->
+          <div class="login-links">
+            <a class="d-flex" href="https://pi.gaiansolutions.com/" target="_blank">
+              <li style="width: 100%;" class="" type="button" class="text-lg"> Pascal Intelligence
+              </li>
+              <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+            </a>
           </div>
-        </nav>
-      </div>
-      <!-- Mega Menu Two -->
-      <div
-        id="navbar"
-        class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
-      >
-        <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
-          <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-5">
-            <div
-              class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"
-            ></div>
-            <article
-              class="col-span-2 flex flex-col justify-between column-two"
-            ></article>
+          <div class="login-links">
+            <a  class="d-flex" href="http://bob.gaiansolutions.com/" target="_blank">
+              <li style="width: 100%;" class="" type="button" class="text-lg"> BoltzmanBot
+              </li>
+              <img class="change-color" src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+            </a>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- Main Content -->
-    <main>
-      <!-- Banner -->
-      <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
-        <article
-          class="container   items-center md:gap-20 lg:gap-32"
-        >
-          <div id="header-text" class="px-4 mt-32 lg:px-0">
-            <header class="relative inline-block">
-              <h1 class="!text-6xl text-darkblue-600"><strong>
+          <div class="login-links">
+            <a class="d-flex" href="http://monet.gaiansolutions.com/" target="_blank">
+              <li style="width: 100%;" class="" type="button" class="text-lg"> Monet
+              </li>
+              <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+            </a>
+          </div>
+          <div class="login-links">
+            <a class="d-flex" href="https://marketplace.gaiansolutions.com/" target="_blank">
+              <li style="width: 100%;" class="" type="button" class="text-lg"> Holacracy
+              </li>
+              <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+            </a>
+          </div>
+        </ul>
+      </aside>
+    </div>
+    <!-- Mega Menu One -->
+    <div id="navbar" class=" fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu">
+      <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+        <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-7">
+          <div class="col-span-2 border-r border-royal-gray-300 py-2 lg:py-2 lg:pr-6 column-one"></div>
+
+          <div class="col-span-2 border-r border-royal-gray-300 py-2 px-6">
+            <div class="border-b border-royal-gray-300 py-2 py-6 last:border-0 column-two"></div>
+          </div>
+          <article class="col-span-3 flex flex-col justify-between column-three"></article>
+        </div>
+      </nav>
+    </div>
+    <!-- Mega Menu Two -->
+    <div id="navbar" class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2">
+      <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
+        <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-5">
+          <div class="col-span-3 lg:grid grid-cols-2 border-r border-royal-gray-300 py-2 pr-6 column-one"></div>
+          <article class="col-span-2 flex flex-col justify-between column-two"></article>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main>
+    <!-- Banner -->
+    <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
+      <article style="padding-left:0px" class="container   items-center md:gap-20 lg:gap-32">
+        <div id="header-text" class="mt-32 lg:px-0">
+          <header class="relative inline-block">
+            <h1 class="!text-6xl text-darkblue-600"><strong>
 
                 Tomorrow, Delivered
               </strong>
-              </h1>
-              <h2 id="main_header" class=" !text-5xl mt-2 relative z-10" >
-                <strong>
-                  <span class="slides1">
-                    <span class="slide1">
-                      
-                      <span>
-                        Composable Business Re-Engineering through low-code AI 
-                      </span> 
-                      <span>
-                        Extra-Org Digital Transformation
-                      </span>
-                      <span>
-                        Extra-Org Digital Transformation
-                      </span>
+            </h1>
+            <h2 id="main_header" class=" !text-5xl mt-2 relative z-10">
+              <strong>
+                <span class="slides1">
+                  <span class=" slide01 slide1">
+
+                    <span>
+                      Composable Business Re-Engineering through low-code AI
                     </span>
+                    <span>
+                      Extra-Org Digital Transformation through low-code AI
+                    </span>
+                    <span>
+                      Phygital Transformation through Marketplace Innovation </span>
                   </span>
-                </strong>
-              </h2>
-              <!-- <img
+                </span>
+              </strong>
+            </h2>
+            <!-- <img
                 class="absolute bottom-0 w-20 md:w-auto -right-4"
                 src="public/images/graphics/highlihter.svg"
                 alt="Curve Line"
-              />  -->
-            </header>
+              /> -->
+          </header>
 
-            <p class="body-text mt-2">
+          <!-- <p class="body-text mt-2">
               Simplify your digital transformation journey and achieve your
               goals with our user-friendly digital transformation software.
-            </p>
-            <footer id="main-footer"
-              class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-10"
-            >
-              <a
-                class="btn btn-filled text-xl font-bold "
-                href="/signup"
-              >
-                Get Started
-              </a>
-              <a
-                class="btn text-xl font-bold md:mr-20"
-                href="./contact/ContactForDemo.html"
-              >
-                Book a Demo
-              </a>
-            </footer>
-          </div>
-          <!-- <div class="mt-12 md:mt-0 pl-4 sm:pl-0">
+            </p> -->
+          <footer id="main-footer"
+            class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-10">
+            <a class="btn btn-filled text-xl font-bold " href="/signup">
+              Get Started
+            </a>
+            <a style=" padding: 1rem 4.4rem;" class="btn text-xl add-paddng-a font-bold md:mr-20"
+              href="./contact/ContactForDemo.html">
+              Book a Demo
+            </a>
+          </footer>
+        </div>
+        <!-- <div class="mt-12 md:mt-0 pl-4 sm:pl-0">
             <img
               class="w-full"
               src="public/images/banner/digital-transformation-journey.png"
               alt="Digital Transformation Journey"
             />
           </div> -->
-        </article>
-        <!-- Custome Stripe -->
-       
-      </section>
-      <!-- The Platform-->
-      <section class="bg-dtash">
-        <div class="px-4 header-div">
-          <!-- <header data-aos="fade-up" class="mb-10 md:mb-24 text-center">
+      </article>
+      <!-- Custome Stripe -->
+
+    </section>
+    <!-- The Platform-->
+    <section class="bg-dtash">
+      <div class="px-4 header-div">
+        <!-- <header data-aos="fade-up" class="mb-10 md:mb-24 text-center">
             <div class="inline-block relative">
               <h3 class="heading-section text-center relative z-10">
                 The Platform of Platforms
@@ -287,27 +271,23 @@
               />
             </div>
           </header> -->
-          <div class="header-class">
-             <h1>Mobius DTaaS</h1>
-             <p>The Platform of Platforms</p>
-          </div>
-          <div
-            class="d-flex grid lg:grid-cols-5 gap-14 lg:gap-24 accordian"
-            id="platform-menu"
-          >
-        
-        
-        
-        
-        
+        <div class="header-class">
+          <h1>Mobius DTaaS</h1>
+          <p>The Platform of Platforms</p>
         </div>
-        </div>
-      </section>
 
-      <!-- Mobius Data -->
-      <section class="m-1 h-500 items-center justify-center remove-margin ">
-        <article class="lg:flex flex-col flex-wrap justify-center items-center ">
-<!-- 
+        <div class="d-flex grid lg:grid-cols-5 gap-14 lg:gap-24 accordian" id="platform-menu">
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobius Data -->
+    <section class="m-1 h-500 items-center justify-center remove-margin ">
+      <article class="lg:flex flex-col flex-wrap justify-center items-center ">
+        <!-- 
           <div class="container mx-auto px-4">
             <header class="mb-10 md:mb-24 text-center">
               <div data-aos="fade-up" class="inline-block relative">
@@ -326,39 +306,25 @@
             </header>
           </div> -->
 
-          <div class="grid lg:grid-cols-3 gap-6 text-center ">
-            <div  class="add-padding bg-gradient-purple-graphics flex flex-col items-center justify-center"> 
-                    <img
-                    class="w-16 pb-6"
-                    src="../public/images/icons/Plug.svg"
-                    alt="Curve Line"
-                  />
-                  <h2 class="text-xl text-white">Faster Time to Value</h2>
-                  <p style="color: #AEA7F8;">Save time with a pure low code platform. Integrate,
-                    test & deploy applications at lightning speed</p>
-            </div>
-            <div class=" add-padding bg-gradient-purple-graphics flex flex-col items-center justify-center">
-                    <img
-                    class="  w-16 pb-6"
-                    src="../public/images/icons/Software.svg"
-                    alt="Curve Line"
-                  />
-                  <p class="text-xl text-white">Save IT Operational Costs</p>
-                  <p style="color: #AEA7F8;">Build, test & deploy applications at lightning speed</p>
-            </div>
-            <div class=" add-padding bg-gradient-purple-graphics flex flex-col items-center justify-center">
-                    <img
-                    class="  w-16 pb-6"
-                    src="../public/images/icons/Quick.svg"
-                    alt="Curve Line"
-                  />
-                  <p class="text-xl text-white">A Marketplace of Connectors</p>
-                  <p style="color: #AEA7F8;">Mobius Suite offers an integrated marketplace
-                    to form new alliances & expand to new verticals</p>
-            </div>
+        <div class="grid add-gap lg:grid-cols-3  text-center ">
+          <div class="add-padding bg-gradient-purple-graphics flex flex-col items-center justify-center">
+            <img class="w-16 pb-6" src="../public/images/icons/Quick.svg" alt="Curve Line" />
+            <h2 class="text-xl text-white">Faster Time to Value</h2>
+            <!-- <p style="color: #AEA7F8;">Save time with a pure low code platform. Integrate, test & deploy applications at lightning speed</p> -->
           </div>
+          <div class=" add-padding bg-gradient-purple-graphics flex flex-col items-center justify-center">
+            <img class="  w-16 pb-6" src="../public/images/icons/Software.svg" alt="Curve Line" />
+            <h2 class="text-xl text-white">Build Businesses of Future</h2>
+            <!-- <p style="color: #AEA7F8;">Bringing into light re-engineered composable businesses of the future</p> -->
+          </div>
+          <div class=" add-padding bg-gradient-purple-graphics flex flex-col items-center justify-center">
+            <img class="  w-16 pb-6" src="../public/images/icons/Plug.svg" alt="Curve Line" />
+            <h2 class="text-xl text-white">A Marketplace of Connectors</h2>
+            <!-- <p style="color: #AEA7F8;">Mobius Suite offers an integrated marketplace to form new alliances & expand to new verticals</p> -->
+          </div>
+        </div>
 
-          <!-- <div class="lg:mr-24 px-4 lg:px-0 max-w-xl">
+        <!-- <div class="lg:mr-24 px-4 lg:px-0 max-w-xl">
       <section class="mt-16 bg-gradient-purple-graphics py-10 text-white">
         <article class="container ml-auto lg:flex justify-between items-center">
           <div data-aos="fade-up" class="lg:mr-24 px-4 lg:px-0 max-w-xl">
@@ -375,7 +341,7 @@
             </p>
             <a class="btn btn-filled-dark mt-12" href="#">Contact Sales</a>
           </div> -->
-          <!-- <div class="pl-4 lg:pl-0 mt-12 lg:mt-0 text-right">
+        <!-- <div class="pl-4 lg:pl-0 mt-12 lg:mt-0 text-right">
           </div>
           <div
             data-aos="fade-up"
@@ -389,745 +355,580 @@
               alt="Digital Brain"
             />
           </div> -->
-        </article>
-      </section>
-      <!-- Digital Platform Transformation -->
-      <section class="py-12 bg-gradient-pink">
-        <div class="container mx-auto px-4">
-          <header class="mb-10 lg:mb-24 text-center">
-            <div data-aos="fade-up" class="inline-block relative">
-              <h3 class="heading-section text-center relative z-10">
-                The One Platform for End-to-End
-                Digital Transformation
-              </h3>
-              <!-- <img
-                class="absolute top-4 right-0 w-40"
-                src="../public/images/graphics/highlihter.svg"
-                alt="Curve Line"
-              /> -->
-            </div>
-          </header>
-          <div
-            class="grid lg:grid-cols-11 gap-16 lg:gap-24 items-center"
-            id="digital-platform-menu"
-          ></div>
-        </div>
-      </section>
-
-      <!-- Apps Supported -->
-      <section data-aos="fade-up" class="py-28 bg-apps">
-        <article class="container mx-auto px-4">
-          <header class="max-w-xl">
-            <h2 data-aos="fade-up" class="heading-article">
-              Prebuilt Integrations with thousands of Apps & Workflows
-            </h2>
-            <p data-aos="fade-up" class="body-text mt-4">
-              Mobius Suite integrates with thousands of Apps, APIs, Content, IT
-              & Infrasturcture providers across various domains throughout the
-              globe
-            </p>
-          </header>
-          <footer class="mt-8">
-            <div class="swiper" id="strip-slider-2">
-              <div class="swiper-wrapper flex items-center">
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img src="public/images/apps/zoom.svg" alt="Zoom Logo" />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img src="public/images/apps/slack.svg" alt="Slack Logo" />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/drive.svg"
-                    alt="Google Drive Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/appstore.svg"
-                    alt="Appstore Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/playstore.svg"
-                    alt="Playstore Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    data-aos="fade-up"
-                    src="public/images/apps/12.svg"
-                    alt="Zoom Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img src="public/images/apps/slack.svg" alt="Slack Logo" />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/13.svg"
-                    alt="Google Drive Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img src="../public/images/apps/14.svg" alt="Appstore Logo" />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/Twilio.svg"
-                    alt="Playstore Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img src="public/images/apps/zoom.svg" alt="Zoom Logo" />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img src="public/images/apps/slack.svg" alt="Slack Logo" />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/drive.svg"
-                    alt="Google Drive Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/appstore.svg"
-                    alt="Appstore Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/playstore.svg"
-                    alt="Playstore Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/appstore.svg"
-                    alt="Appstore Logo"
-                  />
-                </figure>
-                <figure data-aos="fade-up" class="swiper-slide text-center">
-                  <img
-                    src="../public/images/apps/playstore.svg"
-                    alt="Playstore Logo"
-                  />
-                </figure>
-              </div>
-            </div>
-          </footer>
-        </article>
-      </section>
-
-      <!-- Apps Powered -->
-      <section data-aos="fade-up" class="py-16 bg-gradient-pink">
-        <header
-          data-aos="fade-up"
-          class="flex justify-between items-center px-4 mb-16"
-        >
-          <img
-            id="nav-left"
-            src="../public/images/icons/arrow-left-circled.svg"
-            alt="Arrow Left"
-          />
-          <div class="relative">
+      </article>
+    </section>
+    <!-- Digital Platform Transformation -->
+    <section class="py-12 bg-gradient-pink">
+      <div class="container change-container mx-auto px-4">
+        <header class="text-center mb-10 lg:mb-24">
+          <div data-aos="fade-up" class="inline-block relative">
             <h3 class="heading-section text-center relative z-10">
-              Mobius Intelligent Apps
+              The One Platform for End-to-End
+              Digital Transformation
             </h3>
-            <img
-              class="absolute bottom-1 right-2/4 translate-x-2/4 md:translate-x-0 md:-right-2 w-16"
-              src="../public/images/graphics/highlihter.svg"
-              alt="Curve Line"
-            />
+            <img class="absolute wave_logo top-4 right-0 w-40" src="../public/images/graphics/highlihter.svg"
+              alt="Curve Line" />
           </div>
-
-          <img
-            id="nav-right"
-            src="../public/images/icons/arrow-right-circled.svg"
-            alt="Arrow Right"
-          />
         </header>
-        <div data-aos="fade-up" class="swiper px-4 md:px-0" id="app-swiper">
-          <div class="swiper-wrapper">
-            <!-- slider -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+        <div class="grid lg:grid-cols-11 gap-16 lg:gap-24 " id="digital-platform-menu"></div>
+      </div>
+    </section>
+
+    <!-- Apps Supported -->
+    <section data-aos="fade-up" class="py-28 bg-apps">
+      <article class="container mx-auto px-4">
+        <header class="max-w-xl">
+          <h2 data-aos="fade-up" class="heading-article">
+            Prebuilt Integrations with thousands of Apps & Workflows
+          </h2>
+          <p data-aos="fade-up" class="body-text mt-4">
+            Mobius Suite integrates with thousands of Apps, APIs, Content, IT
+            & Infrasturcture providers across various domains throughout the
+            globe
+          </p>
+        </header>
+        <footer class="mt-8">
+          <div class="swiper" id="strip-slider-2">
+            <div class="swiper-wrapper flex items-center">
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="public/images/apps/zoom.svg" alt="Zoom Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="public/images/apps/slack.svg" alt="Slack Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/drive.svg" alt="Google Drive Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/appstore.svg" alt="Appstore Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/playstore.svg" alt="Playstore Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img data-aos="fade-up" src="public/images/apps/12.svg" alt="Zoom Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="public/images/apps/slack.svg" alt="Slack Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide text-center">
+                <img src="../public/images/apps/13.svg" alt="Google Drive Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/14.svg" alt="Appstore Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/Twilio.svg" alt="Playstore Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="public/images/apps/zoom.svg" alt="Zoom Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="public/images/apps/slack.svg" alt="Slack Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/drive.svg" alt="Google Drive Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/appstore.svg" alt="Appstore Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/playstore.svg" alt="Playstore Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/appstore.svg" alt="Appstore Logo" />
+              </figure>
+              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
+                <img src="../public/images/apps/playstore.svg" alt="Playstore Logo" />
+              </figure>
+            </div>
+          </div>
+        </footer>
+      </article>
+    </section>
+
+    <!-- Apps Powered -->
+    <section data-aos="fade-up" class="py-16 bg-gradient-pink">
+      <header data-aos="fade-up" class="flex justify-between items-center px-4 mb-16">
+        <img id="nav-left" src="../public/images/icons/arrow-left-circled.svg" alt="Arrow Left" />
+        <div class="relative">
+          <h3 class="heading-section text-center relative z-10">
+            Apps powered by Mobius
+          </h3>
+          <img class="absolute bottom-1 right-2/4 translate-x-2/4 md:translate-x-0 md:-right-2 w-16"
+            src="../public/images/graphics/highlihter.svg" alt="Curve Line" />
+        </div>
+
+        <img id="nav-right" src="../public/images/icons/arrow-right-circled.svg" alt="Arrow Right" />
+      </header>
+      <div data-aos="fade-up" class="swiper px-4 md:px-0" id="app-swiper">
+        <div class="swiper-wrapper">
+          <!-- slider -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/1.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">311</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      311 citizen engagement app is a mobile application that
-                      allows citizens to report non-emergency issues to their
-                      local government and receive updates on the status of
-                      their requests.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">311</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding mt-2 text-royal-gray-500">
+                    311 citizen engagement app is a mobile application that
+                    allows citizens to report non-emergency issues to their
+                    local government and receive updates on the status of
+                    their requests.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+          <!-- slide  -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/5058.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Live Maps</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      Live maps citizen engagement app provides real-time
-                      information on community events, public services, and
-                      local news, enabling citizens to stay informed and engaged
-                      in their neighborhoods.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">Live Maps</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding mt-2 text-royal-gray-500">
+                    Live maps citizen engagement app provides real-time
+                    information on community events, public services, and
+                    local news, enabling citizens to stay informed and engaged
+                    in their neighborhoods.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+          <!-- slide  -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/5052.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">First Responder</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      First Responder enables citizens to report emergencies and
-                      receive immediate assistance from local first responders,
-                      providing a crucial link between citizens and emergency
-                      services.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">First Responder</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding mt-2 text-royal-gray-500">
+                    First Responder enables citizens to report emergencies and
+                    receive immediate assistance from local first responders,
+                    providing a crucial link between citizens and emergency
+                    services.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+          <!-- slide  -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/5053.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Digital Signage</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      Digital Signage provides businesses with the ability to
-                      create dynamic, interactive digital signage experiences
-                      that engage customers and drive sales.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">Digital Signage</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding mt-2 text-royal-gray-500">
+                    Digital Signage provides businesses with the ability to
+                    create dynamic, interactive digital signage experiences
+                    that engage customers and drive sales.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+          <!-- slide  -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/5054.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Interview Experience</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      With automated candidate screening and interview
-                      scheduling, your team can focus on engaging with qualified
-                      candidates and making the best hiring decisions possible.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">Interview Experience</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding mt-2 text-royal-gray-500">
+                    With automated candidate screening and interview
+                    scheduling, your team can focus on engaging with qualified
+                    candidates and making the best hiring decisions possible.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+          <!-- slide  -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/5055.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Offer Journey</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      With Offer Journey, recruiters can automate offer letter
-                      generation, get real-time visibility into the offer
-                      acceptance status, and track the offer journey. This leads
-                      to faster offer acceptance and improved candidate
-                      experience.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">Offer Journey</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding  mt-2 text-royal-gray-500">
+                    With Offer Journey, recruiters can automate offer letter
+                    generation, get real-time visibility into the offer
+                    acceptance status, and track the offer journey. This leads
+                    to faster offer acceptance and improved candidate
+                    experience.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+          <!-- slide  -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/5056.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Onboarding</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      With Candidate Onboarding, employers can create customized
-                      onboarding workflows, including paperwork, training, and
-                      orientation, and track progress to ensure new employees
-                      feel welcomed and are fully prepared for their new role.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">Onboarding</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding mt-2 text-royal-gray-500">
+                    With Candidate Onboarding, employers can create customized
+                    onboarding workflows, including paperwork, training, and
+                    orientation, and track progress to ensure new employees
+                    feel welcomed and are fully prepared for their new role.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-            <!-- slide  -->
-            <a class="swiper-slide" href="#">
-              <article
-                class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white"
-              >
-                <div
-                  class="bg-opacity-20 h-40 rounded-t-3xl"
-                  style="
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+          <!-- slide  -->
+          <a class="swiper-slide" href="#">
+            <article class="border border-royal-gray-300 min-w-min md:min-w-96 rounded-3xl bg-white">
+              <div class="bg-opacity-20 h-40 rounded-t-3xl" style="
                     background-image: url('../public/images/solutions/5057.png');
                     background-size: cover;
                     width: 100%;
-                  "
-                ></div>
-                <div class="bg-white px-8 py-5">
-                  <header>
-                    <h4 class="heading-card">Resume Processing</h4>
-                  </header>
-                  <div class="mt-2">
-                    <p class="text-base mt-2 text-royal-gray-500">
-                      Leverages AI to identify top talent quickly and
-                      efficiently, saving you time and money.
-                    </p>
-                  </div>
+                  "></div>
+              <div class="bg-white px-8 py-5">
+                <header>
+                  <h4 class="heading-card">Resume Processing</h4>
+                </header>
+                <div class="mt-2">
+                  <p class="text-base text-base-padding mt-2 text-royal-gray-500">
+                    Leverages AI to identify top talent quickly and
+                    efficiently, saving you time and money.
+                  </p>
                 </div>
-                <footer class="border-t border-royal-gray-300 rounded-full">
-                  <table
-                    class="table-auto border-collapse w-full h-14 border-gray-500 mt-0"
-                    style="margin: 0px"
-                  >
-                    <tbody>
-                      <tr class="">
-                        <td
-                          class="border-r px-4 py-4 text-center"
-                          style="border-right-width: 2px"
-                        >
-                          <img
-                            class="inline-block"
-                            src="../public/images/icons/preview.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Preview</strong
-                          >
-                        </td>
-                        <td class="px-4 py-2 text-center">
-                          <img
-                            class="inline-block"
-                            src="../public/images/solutions/External.svg"
-                            alt="Preview Icon"
-                          />
-                          <strong
-                            class="text-base font-medium text-royal-gray-700"
-                            >Details</strong
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </footer>
-              </article>
-            </a>
-           
-           
-          </div>
+              </div>
+              <footer class="border-t border-royal-gray-300 rounded-full">
+                <table class="table-auto border-collapse w-full h-14 border-gray-500 mt-0" style="margin: 0px">
+                  <tbody>
+                    <tr class="">
+                      <td class="border-r px-4 py-4 text-center" style="border-right-width: 2px">
+                        <img class="inline-block" src="../public/images/icons/preview.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Preview</strong>
+                      </td>
+                      <td class="px-4 py-2 text-center">
+                        <img class="inline-block" src="../public/images/solutions/External.svg" alt="Preview Icon" />
+                        <strong class="text-base font-medium text-royal-gray-700">Details</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </footer>
+            </article>
+          </a>
+
+
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- 
+      <section data-aos="fade-up" class="mt-20 relative py-28">
+        <div
+          data-aos="fade-up"
+          class="border absolute h-40 bg-white flex flex-col gap-6 filter top-0 ml-14"
+          id="slider-box"
+        >
+          <div data-aos="fade-up" class="container flex flex-col mb-0">
+            <div class="flex justify-between">
+              <h4 class="text-2xl sm:text-sm font-bold slider-heading">
+                Customer Stories
+              </h4>
+              <img
+                src="../public/images/icons/Quote Right.svg"
+                id="quotations"
+                alt=""
+              />
+            </div>
+            <div data-aos="fade-up" class="mt-0">
+              <p class="body-text mt-0">Title</p>
+            </div>
+          </div>
 
       <!-- Slider -->
 
 
 
-
- <footer class=" w-full mt-32 px-4" style="width: 100%;">
-          <h4 class="text-xxl font-bold text-center mb-7">
-            Our Customer Relationships
-          </h4>
-          <div class="swiper flex flex-col " id="strip-slider">
-            <div class="swiper-wrapper ">
-              <div class="  swiper-slide items-center flex " > 
-                <img src="../public/images/Landing_logos/abp.png" style="aspect-ratio: 3/1;"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/channei7.png" style="aspect-ratio: 3/1;" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/dfc.png" style="aspect-ratio: 3/1"  class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l11.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l12.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l14.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/l17.png"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/l22.png" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/incois-min.jpg" class="h-14" alt="">
-              </div>
-              <div class="  swiper-slide flex"> 
-                <img src="../public/images/Landing_logos/Logo-whut-min.jpg"  class="h-14   " alt="">
-              </div>
-              <div class="  swiper-slide items-center flex">
-                <img src="../public/images/Landing_logos/WKAR-min.jpg" class="h-14" alt="">
-              </div>
-
+        <div class="slider">
+          <div class="slides">
+            <!-- radio buttons start
+            <input type="radio" name="radio-btn" id="radio11" />
+            <input type="radio" name="radio-btn" id="radio21" />
+            <input type="radio" name="radio-btn" id="radio31" />
+            <input type="radio" name="radio-btn" id="radio41" />
+            <!--radio buttons end-->
+    <!--slide images start-->
+    <!-- <div class="slide first images">
+              <img
+                class="w-full"
+                id="slide_image"
+                src="../public/images/city.svg"
+                alt=""
+              />
             </div>
+            <div class="slide">
+              <img
+                class="w-full"
+                id="slide_image"
+                src="../public/images/city2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="w-full"
+                id="slide_image"
+                src="../public/images/city3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="w-full"
+                id="slide_image"
+                src="../public/images/digital-smart-city.png"
+                alt=""
+              />
+            </div> -->
+    <!--slide images end-->
+    <!--automatic navigation start-->
+    <!-- <div class="navigation-auto">
+              <div hidden class="auto-btn1"></div>
+              <div hidden class="auto-btn2"></div>
+              <div hidden class="auto-btn3"></div>
+              <div hidden class="auto-btn4"></div>
+            </div> -->
+    <!--automatic navigation end-->
+    <!-- </div> -->
+    <!--manual navigation start-->
+    <!-- <div
+            class="container flex justify-between w-full"
+            style="width: 82px"
+          > -->
+    <!-- <div class="navigation-manual">
+              <label for="radio11" class="manual-btn"></label>
+              <label for="radio21" class="manual-btn"></label>
+              <label for="radio31" class="manual-btn"></label>
+              <label for="radio41" class="manual-btn"></label>
+            </div>
+          </div> -->
+    <!--manual navigation end-->
+    <!-- </div>
+        </div>
+      </section>  -->
+
+    <footer class=" w-full mt-32 px-4" style="width: 100%;">
+      <h4 class="text-xxl font-bold text-center mb-7">
+        Our Customer Relationships
+      </h4>
+      <div class="swiper flex flex-col " id="strip-slider">
+        <div class="swiper-wrapper ">
+          <div class="  swiper-slide items-center flex ">
+            <img src="../public/images/Landing_logos/abp.png" style="aspect-ratio: 3/1;" class="h-14   " alt="">
           </div>
-        </footer>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/channei7.png" style="aspect-ratio: 3/1;" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/dfc.png" style="aspect-ratio: 3/1" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide flex">
+            <img src="../public/images/Landing_logos/l11.png" class="h-14   " alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/l12.png" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide flex">
+            <img src="../public/images/Landing_logos/l14.png" class="h-14   " alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide flex">
+            <img src="../public/images/Landing_logos/l17.png" class="h-14   " alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/l22.png" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/incois-min.jpg" class="h-14" alt="">
+          </div>
+          <div class="  swiper-slide flex">
+            <img src="../public/images/Landing_logos/Logo-whut-min.jpg" class="h-14   " alt="">
+          </div>
+          <div class="  swiper-slide items-center flex">
+            <img src="../public/images/Landing_logos/WKAR-min.jpg" class="h-14" alt="">
+          </div>
+
+        </div>
+      </div>
+    </footer>
 
 
 
-      <!-- Resources -->
-      <!-- <section data-aos="fade-up" class="mt-20">
+    <!-- Resources -->
+    <!-- <section data-aos="fade-up" class="mt-20">
         <div class="container mx-auto px-4">
           <header class="flex justify-between items-center">
             <h3 class="heading-section">Resources</h3>
@@ -1241,224 +1042,200 @@
           </div>
         </div>
       </section> -->
-      <!-- Enterprise -->
-      <section
-        class="bg-royal-gray-100 my-20 py-14 lg:bg-bg-enterprise bg-no-repeat bg-right"
-      >
-        <article class="container ml-auto px-4 lg:px-0">
-          <div data-aos="fade-up" class="max-w-lg">
-            <h2 class="heading-section">Enterprise grade Trust & Security</h2>
-            <p class="body-text mt-3">
-              Lorem ipsum dolor sit amet consectetur. Eget arcu fringilla
-              tincidunt magna sit aliquam sed.
-            </p>
-          </div>
-          <div data-aos="fade-up" class="flex items-center mt-10">
-            <img
-              class="mr-8"
-              src="../public/images/badges/gdpr.svg"
-              alt="Gdpr Badge"
-            />
-            <img src="../public/images/badges/aicpa.svg" alt="Aicpa Badge" />
-          </div>
-
-          <a data-aos="fade-up" class="flex items-center mt-12" href="#">
-            <span>Read More</span>
-            <img
-              class="ml-5"
-              src="../public/images/icons/arrow-right.svg"
-              alt="Arrow Right"
-            />
-          </a>
-        </article>
-      </section>
-      <!-- Call to Action Section -->
-      <section data-aos="fade-up" class="px-4 lg:px-0">
-        <article
-          class="container mx-auto px-8 text-center cta-wrapper rounded-3xl"
-        >
-          <h3 class="text-4xl font-bold text-royal-purple-500">
-            Discover Mobius DTaaS,
-          </h3>
-          <h2 class="text-4xl font-bold text-royal-purple-500">
-            Your Ultimate Accelerator for Business Success!
-          </h2>
-          <p class="text-xl leading-8 mx-auto mt-4 mb-12" style="width: 70%">
-            Revolutionize your business with Mobius DTaaS, the all-in-one
-            platform for rapid digital transformation. Harness the synergy of
-            five cutting-edge tools to drive innovation, efficiency, and growth
+    <!-- Enterprise -->
+    <section class="bg-royal-gray-100 my-20 py-14 lg:bg-bg-enterprise bg-no-repeat bg-right">
+      <article class="container ml-auto px-4 lg:px-0">
+        <div data-aos="fade-up" class="max-w-lg">
+          <h2 class="heading-section">Enterprise grade Trust & Security</h2>
+          <p class="body-text mt-3">
+            Lorem ipsum dolor sit amet consectetur. Eget arcu fringilla
+            tincidunt magna sit aliquam sed.
           </p>
-          <button data-aos="fade-up" class="btn btn-filled">Get Started</button>
-        </article>
-      </section>
-      <div data-aos="fade-up" class="px-4 lg:px-11 mt-28">
-        <hr class="hr-graphic" />
-      </div>
-    </main>
-    <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
-      <div class="container mx-auto px-11">
-        <div id="footer"  class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-10">
-          <nav data-aos="fade-up">
-            <h4 class="heading-card">Company</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Leadership</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Terms & Conditions</a>
-              </li>
-            </ul>
-          </nav>
-          <nav data-aos="fade-up">
-            <h4 class="heading-card">Solutions</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">Telecom & 5G</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Media & Broadcasting</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Smartcities & Government</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">IT Solutions & Automation</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">HR Tech</a>
-              </li>
-            </ul>
-          </nav>
-          <nav data-aos="fade-up">
-            <h4 class="heading-card">Product</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">OpsMax</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">AI Zoom Bot</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Antara</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Slack Bot</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Marketplace</a>
-              </li>
-            </ul>
-          </nav>
-          <nav data-aos="fade-up">
-            <h4 class="heading-card">Platform</h4>
-            <ul class="mt-5 md:mt-9">
-              <li class="mb-4">
-                <a class="nav-link" href="#">Pascal Intelligence(PI)</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">BoltzmanBot(BOB)</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Monet</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Vinci</a>
-              </li>
-              <li class="mb-4">
-                <a class="nav-link" href="#">Hola Verse</a>
-              </li>
-            </ul>
-          </nav>
         </div>
-        <div class="text-center mt-12 md:mt-20">
-          <nav>
-            <ul data-aos="fade-up" class="flex justify-center items-center">
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/linkedin.svg"
-                    alt="Linkedin Icon"
-                  />
-                </a>
-              </li>
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/instagram.svg"
-                    alt="Instagram Icon"
-                  />
-                </a>
-              </li>
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/twitter.svg"
-                    alt="Twitter Icon"
-                  />
-                </a>
-              </li>
-              <li class="mx-4">
-                <a href="#">
-                  <img
-                    src="../public/images/icons/facebook.svg"
-                    alt="Facebook Icon"
-                  />
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="mt-11">
-            <small class="text-sm"
-              >All Rights Reserved. 2023 Copyright
-              <a class="underline" href="#">Gaian Solutions</a>
-            </small>
-          </div>
+        <div data-aos="fade-up" class="flex items-center mt-10">
+          <img class="mr-8" src="../public/images/badges/gdpr.svg" alt="Gdpr Badge" />
+          <img src="../public/images/badges/aicpa.svg" alt="Aicpa Badge" />
+        </div>
+
+        <a data-aos="fade-up" class="flex items-center mt-12" href="#">
+          <span>Read More</span>
+          <img class="ml-5" src="../public/images/icons/arrow-right.svg" alt="Arrow Right" />
+        </a>
+      </article>
+    </section>
+    <!-- Call to Action Section -->
+    <section data-aos="fade-up" class="px-4 lg:px-0">
+      <article class="container mx-auto px-8 text-center cta-wrapper rounded-3xl">
+        <h3 class="text-4xl font-bold text-royal-purple-500">
+          Discover Mobius DTaaS,
+        </h3>
+        <h2 class="text-4xl font-bold text-royal-purple-500">
+          Your Ultimate Accelerator for Business Success!
+        </h2>
+        <p class="text-xl leading-8 mx-auto mt-4 mb-12" style="width: 70%">
+          Revolutionize your business with Mobius DTaaS, the all-in-one
+          platform for rapid digital transformation. Harness the synergy of
+          five cutting-edge tools to drive innovation, efficiency, and growth
+        </p>
+        <button data-aos="fade-up" class="btn btn-filled">Get Started</button>
+      </article>
+    </section>
+    <div data-aos="fade-up" class="px-4 lg:px-11 mt-28">
+      <hr class="hr-graphic" />
+    </div>
+  </main>
+  <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
+    <div class="container mx-auto px-4">
+      <div id="footer-flex"">
+          <nav data-aos=" fade-up">
+        <h4 class="heading-card">Company</h4>
+        <ul class="mt-5 md:mt-9">
+          <li class="mb-4">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="mb-4">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="mb-4">
+            <a class="nav-link" href="#">Leadership</a>
+          </li>
+          <li class="mb-4">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="mb-4">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="mb-4">
+            <a class="nav-link" href="#">Terms & Conditions</a>
+          </li>
+        </ul>
+        </nav>
+        <nav data-aos="fade-up">
+          <h4 class="heading-card">Solutions</h4>
+          <ul class="mt-5 md:mt-9">
+            <li class="mb-4">
+              <a class="nav-link" href="#">Telecom & 5G</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Media & Broadcasting</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Smartcities & Government</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">IT Solutions & Automation</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">HR Tech</a>
+            </li>
+          </ul>
+        </nav>
+        <nav data-aos="fade-up">
+          <h4 class="heading-card">Product</h4>
+          <ul class="mt-5 md:mt-9">
+            <li class="mb-4">
+              <a class="nav-link" href="#">OpsMax</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">AI Zoom Bot</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Antara</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Slack Bot</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Marketplace</a>
+            </li>
+          </ul>
+        </nav>
+        <nav data-aos="fade-up">
+          <h4 class="heading-card">Platform</h4>
+          <ul class="mt-5 md:mt-9">
+            <li class="mb-4">
+              <a class="nav-link" href="#">Pascal Intelligence(PI)</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">BoltzmanBot(BOB)</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Monet</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Vinci</a>
+            </li>
+            <li class="mb-4">
+              <a class="nav-link" href="#">Hola Verse</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text-center mt-12 md:mt-20">
+        <nav>
+          <ul data-aos="fade-up" class="flex justify-center items-center">
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/linkedin.svg" alt="Linkedin Icon" />
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/instagram.svg" alt="Instagram Icon" />
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/twitter.svg" alt="Twitter Icon" />
+              </a>
+            </li>
+            <li class="mx-4">
+              <a href="#">
+                <img src="../public/images/icons/facebook.svg" alt="Facebook Icon" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mt-11">
+          <small class="text-sm">All Rights Reserved. 2023 Copyright
+            <a class="underline" href="#">Gaian Solutions</a>
+          </small>
         </div>
       </div>
-    </footer>
-    <!-- Image slider -->
-    <script src="src/slider2.js"></script>
-    <!-- Navigation Menu -->
-    <script src="config/navigationMenu.js"></script>
-    <script src="config/navigationMenu2.js"></script>
-    <script src="src/navbar.js"></script>
-    <script src="src/mobileMenu.js"></script>
-    <!-- Slider -->
-    <script src="src/slider.js"></script>
-    <!-- Platfrom menu -->
-    <script src="src/digitalPlatformMenu.js"></script>
-    <script src="src/platformsMenu.js"></script>
-    <!-- Animate on scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        easing: "ease-in-out",
-      });
-    </script>
-    <script>
-      var myNav = document.getElementById("mynav");
-      window.onscroll = function () {
-        if (window.scrollY >= 40) {
-          myNav.classList.add("nav-colored");
-          myNav.classList.remove("nav-transparent");
-        } else {
-          myNav.classList.add("nav-transparent");
-          myNav.classList.remove("nav-colored");
-        }
-      };
-    </script>
-  </body>
+    </div>
+  </footer>
+  <!-- Image slider -->
+  <script src="src/slider2.js"></script>
+  <!-- Navigation Menu -->
+  <script src="config/navigationMenu.js"></script>
+  <script src="config/navigationMenu2.js"></script>
+  <script src="src/navbar.js"></script>
+  <script src="src/mobileMenu.js"></script>
+  <!-- Slider -->
+  <script src="src/slider.js"></script>
+  <!-- Platfrom menu -->
+  <script src="src/digitalPlatformMenu.js"></script>
+  <script src="src/platformsMenu.js"></script>
+  <!-- Animate on scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+  </script>
+  <script>
+    var myNav = document.getElementById("mynav");
+    window.onscroll = function () {
+      if (window.scrollY >= 40) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+      } else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+      }
+    };
+  </script>
+</body>
+
 </html>

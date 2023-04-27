@@ -270,7 +270,7 @@ const generator = (arr) => {
       <!-- Smart City Features -->
       <header class="sticky-header">
         <nav
-          class="flex justify-between items-center bg-royal-purple-300 pb-6 lg:pb-0"
+          class="flex justify-between items-center bg-royal-purple-300 lg:pb-0"
         >
           <ul class="flex bg-royal-purple-300 px-4 lg:px-24">
             <li class="mr-16">
@@ -1072,7 +1072,7 @@ const generator = (arr) => {
         </div>
       </section>
       <!-- Call to Action Section -->
-      <section data-aos="fade-up" class="px-4 md:px-0">
+      <section data-aos="fade-up" class="px-custom md:px-0">
         <article
           class=" mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >
@@ -1092,7 +1092,7 @@ const generator = (arr) => {
     </main>
     <!-- Footer -->
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
-      <div class="container mx-auto px-11">
+      <div class="container mx-auto px-4">
                <div id="footer"  class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-10">
 
           <nav>

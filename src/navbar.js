@@ -16,7 +16,7 @@ window.onscroll = function () {
     myNav.classList.add("nav-transparent");
     myNav.classList.remove("nav-colored");
   }
-  if (window.scrollY >= 1110) {
+  if (window.scrollY >= 1000) {
     topNav.classList.remove("sticky");
   } else {
     topNav.classList.add("sticky");
@@ -396,9 +396,13 @@ function createColumnThree(
 
     menu[activeMenuId].menus[id].items[subId].subitems[0].items[2].content.extra.forEach(item => {
       // console.log(item);
-      const p = document.createElement("p")
-      p.textContent = item;
-      div3.appendChild(p)
+      const a = document.createElement("a")
+      a.textContent = item;
+      a.style.textDecoration = "none"
+      a.style.cursor = "pointer"
+      a.style.display = "block"
+      a.setAttribute("href" ,"../ComingSoon/index.html")
+      div3.appendChild(a)
     })
   }
 

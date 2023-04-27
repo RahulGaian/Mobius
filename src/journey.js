@@ -8,6 +8,20 @@ function renderJourneyMenu(index = 0) {
   // Data
   const menu = [
     {
+      name: "2023 April 23",
+      image: "12.jpg",
+      heading: "Won Product of the year award at NAB Show",
+      description:
+        "",
+    },
+    {
+      name: "2023 Jan 22",
+      image: "",
+      heading: "Presented Mobius Products at CES 2023",
+      description:
+        "",
+    },
+    {
       name: "2019",
       image: "",
       heading: "Launched Gaitav3.0 in US Market",
@@ -78,10 +92,16 @@ function renderJourneyMenu(index = 0) {
                   ${listItems}
                 </div>
                 <div
-                  class="h-full !w-2 max-w-min flex flex-col justify-between ml-8"
+                  class="h-full  max-w-min flex flex-col justify-between ml-8"
                 >
+                <figure class="">
+                <h4 class="text-base  text-royal-purple-600 font-bold">2023 </h4>
+              </figure>
+              <figure class="">
+                <h4 class="text-base text-royal-gray-400">2023 </h4>
+              </figure>
                   <figure class="">
-                    <h4 class="text-base text-royal-purple-600 font-bold">
+                    <h4 class="text-base text-royal-gray-400 ">
                       2019
                     </h4>
                   </figure>
@@ -114,7 +134,8 @@ function renderJourneyMenu(index = 0) {
                 ${menu[index].description}
                 </p>
               </div>
-              <div class="bg-royal-gray-100 h-96 rounded-3xl"></div>
+              ${menu[index].image != "" ? `<div class=" h-96 rounded-3xl"><img style="height:auto;width:300px;" src="../public/images/Overview/${menu[index].image }"></img></div>`:`<div class="bg-royal-gray-100 h-96 rounded-3xl"></div>` }
+              
             </article>
 `;
   journeyMenu.innerHTML = html;

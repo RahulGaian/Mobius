@@ -34,9 +34,7 @@
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50" id="top-navbar">
       <div class="absolute z-20 top-0 w-full navbar" id="mynav">
-        <nav id="nav-bar"
-          class="mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8"
-        >
+        <nav id="nav-bar" class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8">
           <div class="lg:flex items-center">
             <div class="flex justify-between items-center">
               <a href="/">
@@ -54,7 +52,7 @@
               />
               <img
                 class="hidden"
-                src="public/images/icons/close-outline.svg"
+                src="../public/images/icons/close-outline.svg"
                 alt="Menu"
                 id="close-menu"
               />
@@ -137,9 +135,10 @@
               >
             </li> -->
             <li>
-              <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
+              <a class="btn btn-filled mr-4" 
+               href="../contact/ContactForDemo.html"
+              >Book a Demo</a>
             </li>
-
             <li>
               <a class="btn" href="signin">
                 <span>Login</span>
@@ -150,8 +149,8 @@
       </div>
       <!-- Mega Menu One -->
       <div
-        id="navbar"
-        class="fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
+      id="navbar"
+        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 h-screen hidden mega-menu"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
           <div id="mega-menu-one-container"  class="px-custom lg:pl-20 lg:grid lg:grid-cols-7">
@@ -173,7 +172,7 @@
       <!-- Mega Menu Twp -->
       <div
         id="navbar"
-        class="fixed z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
+        class="absolute z-20 top-32 w-full bg-black bg-opacity-30 hidden h-screen mega-menu mega-menu2"
       >
         <nav class="bg-gradient-pink-opacity-9 border-t border-royal-gray-300">
           <div id="mega-menu-one-container" class="px-custom lg:pl-20 lg:grid lg:grid-cols-5">            <div
@@ -222,9 +221,9 @@
                 class="btn btn-filled text-xl font-bold "
                 href="/signup"
               >
-                Get Statrted
+                Get Started
               </a>
-                    <a class="btn" href="../contact/ContactForDemo.html">
+                    <a class="btn add-padding-a" href="../contact/ContactForDemo.html">
                 <span>Book a Demo</span>
               </a>
             </footer>
@@ -637,7 +636,7 @@ class="container  mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-1 items
         </div>
       </section> -->
       <!-- Call to Action Section -->
-      <section data-aos="fade-up" class="px-4 md:px-0">
+      <section data-aos="fade-up" class="px-custom md:px-0">
         <article
           class=" mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >
@@ -677,7 +676,7 @@ class="container  mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-1 items
       </div>
     </main>
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
-      <div class="container mx-auto px-11">
+      <div class="container mx-auto px-4">
                <div id="footer"  class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-10">
 
           <nav>
@@ -812,7 +811,7 @@ class="container  mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-1 items
     </footer>
     <script src="../config/navigationMenu.js"></script>
     <script src="../config/navigationMenu2.js"></script>
-    <!-- <script src="../src/navbar.js"></script> -->
+    <script src="../src/navbar.js"></script>
     <script src="../src/mobileMenu.js"></script>
     <!-- <script src="../src/slider.js"></script> -->
     <!-- Animate on scroll -->
