@@ -58,6 +58,7 @@ document.head.appendChild(script);
 const modal = document.getElementById("modal");
 
 a_tags = document.getElementsByTagName("a")
+button_tags = document.getElementsByTagName("button")
 
 let span = document.getElementById("close1");
 span.onclick = function () {
@@ -89,6 +90,17 @@ for(let i of a_tags){
 
   }
 
+}
+
+
+for(let j of button_tags){
+  if(j.innerText = "Get Started"){
+    j.onclick =   function() {location.href='../contact/ContactForDemo.html'}
+    
+    
+    
+    // console.log(j,j.onClick)
+  }
 }
 
 function footer_changer (){

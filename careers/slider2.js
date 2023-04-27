@@ -38,18 +38,17 @@ let perks = [
 
 let testimonails = [
   ["",
-   " At Gaian apart from my usual work, I have also been included in the company's ‘Change Management’ team. This is what I love most about the company–the level of inclusion that it offers even for a new joinee. I also appreciate the transparency between us and the administration, where ideas are welcomed and discussed! It all makes me feel as though I am part of a large and loving family! People that I work with on a daily basis are amazing and that is one of the great reasons why I love working here.",
+   "At Gaian apart from my usual work, I have also been included in the company's ‘Change Management’ team. This is what I love most about the company–the level of inclusion that it offers even for a new joinee. I also appreciate the transparency between us and the administration, where ideas are welcomed and discussed! It all makes me feel as though I am part of a large and loving family! People that I work with on a daily basis are amazing and that is one of the great reasons why I love working here.",
    "deepthi.png"],
    ["",
-    " Gaian offers an excellent working experience which supports you to widen your learning scope.I really appreciate that recognition is given when it’s deserved, and help offered when needed. I feel like I’ve been kept on track with the right amount of supervision from talented and knowledgeable people. I have been encouraged to develop the skills and access the support I need to take on a number challenging roles and projects.",
+    "Gaian offers an excellent working experience which supports you to widen your learning scope.I really appreciate that recognition is given when it’s deserved, and help offered when needed. I feel like I’ve been kept on track with the right amount of supervision from talented and knowledgeable people. I have been encouraged to develop the skills and access the support I need to take on a number challenging roles and projects.",
     "Jose.jpg"
   ],
     ["",
-    " Ever since I joined GAIAN, it has been a learning session each day. It has created extremely rewarding experience in terms of knowledge enhancement and skills acquisition. Its pleasant work environment allows me to contribute to the best of my abilities. ",
+    "Ever since I joined GAIAN, it has been a learning session each day. It has created extremely rewarding experience in terms of knowledge enhancement and skills acquisition. Its pleasant work environment allows me to contribute to the best of my abilities. ",
     "Manjusha.jpg"],
     ["",
-    " Ever since I joined GAIAN, it has been a learning session each day. It has created extremely rewarding experience in terms of knowledge enhancement and skills acquisition. Its pleasant work environment allows me to contribute to the best of my abilities. ",
-  "syed-mudassir-ahmed.png"]
+    "At Gaian, I believe I have climbed the ladder of success that has taken me higher in my career. A flexible, friendly and helpful environment is what I have enjoyed here... Looking forward to continuing this wonderful journey "]
 
 ]
 
