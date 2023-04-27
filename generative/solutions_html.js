@@ -206,7 +206,7 @@ let data = `
       <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
 
         <article
-          class="container ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
+          class=" ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
         >
           <div class="px-4 lg:pl-4 lg:px-0">
             <header class="relative">
@@ -230,11 +230,11 @@ let data = `
                   ${Main_heading}
                                   </strong>
               </h1>
-              <img
+              <!-- <img
                 class="absolute bottom-0 w-20 md:w-auto md:left-2/4"
                 src="../public/images/graphics/highlihter.svg"
                 alt="Curve Line"
-              />
+              /> -->
             </header>
 
             <p class="body-text mt-5">
@@ -1264,7 +1264,7 @@ let data = `
         class="my-20 bg-yellow-graphics pt-12 lg:pt-0"
       >
         <article
-          class="container mx-auto px-4 lg:pl-4 lg:px-0 grid lg:grid-cols-3 items-center"
+          class=" mx-auto px-4 lg:pl-4 lg:px-0 grid lg:grid-cols-3 items-center"
         >
           <div class="lg:col-span-2">
             <h2 class="heading-section">
@@ -1290,8 +1290,9 @@ let data = `
     </main>
     <!-- Footer -->
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10">
+      <div class="container mx-auto px-11">
+               <div id="footer"  class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-10">
+
           <nav>
             <h4 class="heading-card">Company</h4>
             <ul class="mt-5 md:mt-9">

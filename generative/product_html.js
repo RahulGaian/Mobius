@@ -226,7 +226,7 @@ const generator = (arr) => {
         
       >
         <article
-          class="container mx-auto px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
+          class=" mx-auto px-4 md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
         >
           <div>
             <header class="relative">
@@ -236,11 +236,11 @@ const generator = (arr) => {
                   ${Main_heading}
                 </strong>
               </h1>
-              <img
+              <!-- <img
                 class="absolute bottom-0 w-20 md:w-auto md:left-2/4"
                 src="../public/images/graphics/highlihter.svg"
                 alt="Curve Line"
-              />
+              /> -->
             </header>
 
             <p class="body-text mt-5">
@@ -1074,7 +1074,7 @@ const generator = (arr) => {
       <!-- Call to Action Section -->
       <section data-aos="fade-up" class="px-4 md:px-0">
         <article
-          class="container mx-auto px-8 text-center cta-wrapper rounded-3xl"
+          class=" mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >
           <h3 class="text-4xl font-bold text-royal-purple-500">
           Explore ${last_heading} for your Organisation
@@ -1092,8 +1092,9 @@ const generator = (arr) => {
     </main>
     <!-- Footer -->
     <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10">
+      <div class="container mx-auto px-11">
+               <div id="footer"  class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-10">
+
           <nav>
             <h4 class="heading-card">Company</h4>
             <ul class="mt-5 md:mt-9">
