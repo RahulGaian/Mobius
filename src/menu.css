@@ -224,6 +224,13 @@
   #journey > aside > div > div:last-child {
     margin-left: 0.5rem;
   }
+  #journey {
+    align-items: start !important;
+    padding-left: 1rem !important;
+  }
+  .add-padding-1{
+      padding-left: 1rem !important;
+  }
   
 }
 
@@ -249,6 +256,8 @@
     #journey > article > div:last-child  {
      justify-self: end;
     }
+
+    /* .change-font-size{} */
   
   }
 

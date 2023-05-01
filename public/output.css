@@ -1835,7 +1835,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
-
+  width: 250px;
   --tw-text-opacity: 1;
   color: rgb(45 34 170 / var(--tw-text-opacity));
 }
@@ -2442,6 +2442,10 @@ body {
     margin-top: 0 !important;
   }
 
+  #banner-section > article > div:last-child {
+    margin-top:3rem !important;
+  }
+  
 
 }
 
@@ -2535,6 +2539,7 @@ body {
 }
 
 
+
 @media all and (min-width: 300px) and (max-width:767px) {
   #banner-section-pe-0 {
     padding-left: 6rem !important;
@@ -2550,6 +2555,8 @@ body {
   .px-6-custom {
     padding: 0 1rem !important;
   }
+
+
 
   .mx-6 {
     margin-left: 1rem !important;
@@ -2732,16 +2739,24 @@ body {
   max-width: 400px;
 }
 
-.max-W-400 > img {
-  min-width: 106px !important;
-}
 
-.max-W-400 > h4 {
-   font-size: 1.5rem !important;
-}
+@media all and (min-width:800px) {
 
-.max-W-400 > p {
-  font-size: 1rem !important;
+  .max-W-400 > img {
+    min-width: 106px !important;
+  }
+  
+  
+  
+  .max-W-400 > h4 {
+     font-size: 1.5rem !important;
+  }
+  
+  .max-W-400 > p {
+    font-size: 1rem !important;
+  }
+  
+  
 }
 
 
@@ -3238,6 +3253,12 @@ body {
 .px-custom {
   padding: 0 6rem !important;
 }
+.px-custom1 {
+  padding: 0 6rem !important;
+}
+
+
+
 
 #support-container {
   padding: 0 6rem;
@@ -3467,3 +3488,23 @@ body {
 .pb-0{
   padding-bottom: 0 !important;
 }
+
+
+@media  (max-width:400px){
+  .px-custom1 {
+    padding: 20px  !important;
+  }
+  #main_body > main > section.px-4.lg\:px-0.px-custom1.aos-init.aos-animate > article > p{
+    width: 100% !important;
+  }
+}
+@media all and (max-width:500px) {
+  .add-padding-a{
+    /* width: 224px; */
+  }
+
+ #caseStudy > div:nth-child(1) > p{
+   padding-right: 0.5rem !important;
+ }
+}
+

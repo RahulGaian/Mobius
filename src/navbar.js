@@ -120,7 +120,7 @@ function renderMegaMenu2(menuId) {
     h5.classList.add("mega-menu-heading");
     h5.textContent = item.name;
     const ul = document.createElement("ul");
-    ul.classList.add("pr-12");
+    ul.classList.add("md:pr-12");
     ul.setAttribute("data-id", index);
     item.list.forEach((listItem, i) => {
       const li = document.createElement("li");
@@ -174,7 +174,7 @@ function createColumnOne(activeMenuId) {
     h5.classList.add("mega-menu-heading");
     h5.textContent = item.name;
     const ul = document.createElement("ul");
-    ul.classList.add("pr-12");
+    ul.classList.add("md:pr-12");
     ul.setAttribute("data-id", id);
     item.items.forEach((item, subId) => {
       const li = document.createElement("li");

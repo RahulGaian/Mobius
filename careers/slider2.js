@@ -11,7 +11,7 @@ let perks = [
   ],
   [
     "Professional development opportunities",
-    "nvest in your employees' personal and professional growth by offering training, workshops, and conferences. This can help them stay ahead of the curve and increase their value to the company.",
+    "Invest in your employees' personal and professional growth by offering training, workshops, and conferences. This can help them stay ahead of the curve and increase their value to the company.",
     "2.svg"
   ],
   [

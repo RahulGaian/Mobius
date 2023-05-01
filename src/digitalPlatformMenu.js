@@ -36,7 +36,7 @@ function renderDigitalPlatformMenu(index = 0) {
         "Vinci is a cloud-native, multi-tenant SaaS tool that provides omnichannel engagement as a service. The platform empowers users to create real-time engagements that connect them with customers, employees, partners, and stakeholders in real-time, driving unbeatable ROI.",
     },
     {
-      name: "Hola Verse",
+      name: "HolaCracy",
       heading: "Hola Verse",
       image: "../public/images/Landing_logos/marketplace.svg",
       description:

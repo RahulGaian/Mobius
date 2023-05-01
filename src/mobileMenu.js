@@ -234,7 +234,7 @@ function footer_changer() {
         i.href = "/platform/vinci.html";
         break;
       }
-      case "Hola Verse": {
+      case "Hola Cracy": {
 
         i.href = "../../platform/Holacracy.html";
 
@@ -583,7 +583,41 @@ function init() {
     problems_article.children[1].classList.remove('lg:mt-0');
   }
 
+  window_resizing();
+ 
+
 }
 
 init();
+
+
+window.addEventListener('resize',function(){
+  window_resizing();
+  
+});
+
+
+function window_resizing(){
+  var widerScreenWidth4 = window.matchMedia("(max-width: 500px)");
+  const product_section_articles = document.querySelectorAll("#product_section > article");
+  if(widerScreenWidth4.matches) {
+   product_section_articles?product_section_articles.forEach(ele => {
+         ele.classList.remove('px-6-custom');
+         ele.classList.contains('px-4')?'':ele.classList.add('px-4');
+        }):'';
+  }
+  else {
+   product_section_articles?product_section_articles.forEach(ele => {
+     ele.classList.contains('px-6-custom')?'':ele.classList.add('px-6-custom');
+     ele.classList.remove('px-4');}):'';
+  }
+}
+
+
+// function addheight(id) {
+//   const ele = document.getElementById(id)
+//   ele ? ele.style.height = "100px":'';
+//   ele ? ele.setAttribute('width','100px'):'';
+
+// }
 

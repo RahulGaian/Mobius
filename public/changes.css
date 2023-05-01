@@ -66,7 +66,7 @@
 
 @keyframes slide-up1 {
 
-  20%,
+  5%,
   25% {
     transform: translateY(0%)
   }
@@ -351,7 +351,7 @@ form div input {
 
 
 #values {
-  width: 50%;
+  /* width: 50%; */
   /* margin: 5px; */
   margin-bottom: 15px;
 }
@@ -1166,7 +1166,7 @@ top: 978px; */
   /* top: 105px;
     /* right: 90px;  */
   top: 3rem;
-  right: -29rem;
+  right: -22rem;
   z-index: 1000;
 }
 
@@ -1296,12 +1296,37 @@ top: 978px; */
   text-align: left;
 }
 
+a.swiper-slide > article > div > div > p:nth-child(1){
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+}
+
+
+#seealso:hover{
+  cursor: pointer;
+  background-color: #c0c0c0ca;
+}
+
+
 
 @media all and (max-width:400px) {
   .small-size .login-links {
     /* border: none; */
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  #perks1{
+    height: 300px !important;
+  }
+
+  #perkimg >div> img {
+    height: 350px !important;
+    margin: auto;
   }
 }
 
@@ -1430,4 +1455,15 @@ top: 978px; */
   padding-bottom: 0px !important;
 } */
 
+
+figcaption > h3{
+  font-weight: 500 !important;
+  font-size: 1.2rem !important;
+}
+
+figcaption > p{
+  /* font-weight: 500 !important; */
+  font-size: 1.1rem !important;
+  color: #545454 !important;
+}
 
