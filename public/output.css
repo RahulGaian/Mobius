@@ -584,12 +584,7 @@ video {
 
 }
 
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
 
-}
 
 
 
@@ -607,6 +602,8 @@ video {
   #banner-section-overview {
     padding-left: 0 !important;
   }
+
+
 }
 
 .fixed {
@@ -1066,6 +1063,10 @@ video {
   max-width: 36rem;
 }
 
+.max-w-xxl {
+  max-width: 54rem;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
@@ -1120,6 +1121,7 @@ video {
   align-items: center;
 }
 
+
 .justify-center {
   justify-content: center;
 }
@@ -1128,6 +1130,12 @@ video {
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-items: end;
+}
+.justify-items-center{
+  justify-items: center;
+}
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1358,6 +1366,7 @@ video {
 
 .bg-curved-bg-art {
   background-image: url('../public/images/graphics/bg-art.svg');
+  background-repeat: no-repeat;
 
 
 }
@@ -1821,11 +1830,12 @@ body {
   padding-bottom: 0.75rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem; */
-  padding: 1rem 2rem;
+  padding: 1rem;
   text-align: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
+
   --tw-text-opacity: 1;
   color: rgb(45 34 170 / var(--tw-text-opacity));
 }
@@ -2016,7 +2026,7 @@ body {
   background-repeat: no-repeat;
   /* background-position-x: 100%;
   background-position-y: 97%; */
-  min-height: 120vh;
+  min-height: 90vh;
   background-size: cover;
   padding-top: 3.5rem;
 }
@@ -2273,6 +2283,11 @@ body {
 @media screen and (max-width: 768px) {
 
 
+  #banner-section{
+    height: auto;
+  }
+
+
 
   .banner-bg-pink {
     height: auto;
@@ -2350,6 +2365,10 @@ body {
 
   .media-wrapper {
     padding-bottom: 64%;
+  }
+
+  .ps-6 {
+    padding: 0 !important;
   }
 }
 
@@ -2499,6 +2518,18 @@ body {
   }
 
 
+  #caseStudy {
+    flex-direction: column;
+    align-items: flex-end !important;
+  }
+
+  #caseStudy div:first-child {
+    padding-left: 1rem !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+
 
 
 }
@@ -2508,15 +2539,36 @@ body {
   #banner-section-pe-0 {
     padding-left: 6rem !important;
     padding-right: 6rem !important;
+    padding-bottom: 0 !important;
+
   }
 
   #contact-banner {
     padding: 0 1rem !important;
   }
 
-  .px-6-custom{
+  .px-6-custom {
     padding: 0 1rem !important;
   }
+
+  .mx-6 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  #banner-section-contact{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #contact-form {
+    
+    padding: 2rem;
+  }
+
 }
 
 
@@ -2570,7 +2622,7 @@ body {
 
   #offerings figure {
     width: 40vw;
-    border: 1px solid gray;
+    border: 0.5px solid gray;
   }
 
   #perks {
@@ -2611,12 +2663,23 @@ body {
     margin: 0 !important;
   }
 
+  #caseStudy {
+    flex-direction: column;
+    align-items: flex-end !important;
+  }
+
+  #caseStudy div:first-child {
+    padding-left: 1rem !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+  }
 
 }
 
 
 #footer>nav>ul>li>a {
-  font-size: 0.9rem ;
+  font-size: 0.9rem;
   margin: 0 !important;
 }
 
@@ -2660,6 +2723,28 @@ body {
 
 }
 
+.font-size-l{
+   font-size: 2.5rem !important;
+}
+
+
+.max-W-400{
+  max-width: 400px;
+}
+
+.max-W-400 > img {
+  min-width: 106px !important;
+}
+
+.max-W-400 > h4 {
+   font-size: 1.5rem !important;
+}
+
+.max-W-400 > p {
+  font-size: 1rem !important;
+}
+
+
 
 
 
@@ -2690,8 +2775,7 @@ body {
 
 
 #banner-section-pe-0 {
-  height: auto;
-  padding-bottom: 0 !important;
+  height: auto
 
 }
 
@@ -3189,6 +3273,8 @@ body {
 #banner-article-overview {
   display: flex;
   justify-content: center;
+  height: auto;
+  padding-top: 2rem;
 }
 
 
@@ -3207,17 +3293,25 @@ body {
 #values {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   column-gap: 4rem;
   row-gap: 4rem;
 
 }
 
+.ps-6 {
+  padding-left: 6rem;
+}
+
+#values>div {
+  text-align: center;
+}
 
 
 #values>div img {
-  aspect-ratio: 4/4;
-  height: 100px;
+  aspect-ratio: 1/1;
+  min-height: 100px;
   width: 100px;
 }
 
@@ -3235,10 +3329,10 @@ body {
 
 #support article {
   max-width: 500px;
-  min-width:100px;
+  min-width: 100px;
 }
 
-.px-6-custom{
+.px-6-custom {
   padding: 0 6rem;
 }
 
@@ -3268,24 +3362,24 @@ body {
 
 
 @media all and (max-width:800px) {
-  
-  .awards-group-flex{
+
+  .awards-group-flex {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center;
     /* margin-top: 1rem; */
     /* flex-direction: column; */
-     /* justify-content: space-around; */
+    /* justify-content: space-around; */
   }
 
-  
-  .award-width{
-    max-width: 19rem;
-  /* height: auto !important; */
-  /* margin:0px */
-}
 
-/* @media all and (max-width:500px) {
+  .award-width {
+    max-width: 19rem;
+    /* height: auto !important; */
+    /* margin:0px */
+  }
+
+  /* @media all and (max-width:500px) {
   
   .awards-group-flex{
     
@@ -3295,18 +3389,81 @@ body {
   
 }
    */
-   
-  }
 
-  @media all and (width>1800px){
+}
 
-    
-    #fixed-footer{
-      max-width: 40vw !important;
-    }
-  }
+@media all and (width>1800px) {
 
-  #fixed-footer{
-    max-width: 80vw !important ;
+
+  #fixed-footer {
+    max-width: 40vw !important;
   }
-    
+}
+
+#fixed-footer {
+  max-width: 80vw !important;
+}
+
+
+
+#caseStudy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+#caseStudy div {
+  flex: 1;
+}
+
+#caseStudy div:first-child {
+  padding-left: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#caseStudy div img {
+  width: 100%;
+}
+
+
+.mx-6 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.custom-padding {
+  padding-top: 2rem !important;
+  padding-bottom: 3rem !important;
+}
+
+#terms {
+  text-align: center;
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
+  color: rgba(138, 138, 138, 1);
+  
+}
+
+#banner-section-contact{
+  /* border: 1px solid red; */
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+
+
+
+#contact-form{
+  padding: 1rem;
+}
+
+.max-W-533{
+  max-width: 533px;
+}
+
+
+.pb-0{
+  padding-bottom: 0 !important;
+}

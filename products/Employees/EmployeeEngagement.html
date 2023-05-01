@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <!-- Swiper -->
+    <script src="https://kit.fontawesome.com/b4f86e4cfd.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -57,7 +58,7 @@
                 id="close-menu"
               />
             </div>
-            <ul class="hidden lg:flex items-center mega-menu-container">
+            <ul class="hidden lg:flex items-center mega-menu-container" id="menu-action2">
               <li
                 class="ml-14 relative mega-menu-item mega-menu-one"
                 data-id="0"
@@ -126,7 +127,7 @@
             </ul>
           </div>
 
-          <ul class="hidden lg:flex items-center" id="menu-action">
+          <ul class="hidden lg:flex items-center small-view-padding" id="menu-action">
             <!-- <li>
               <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
@@ -134,12 +135,53 @@
                 >+1 1800 123 1234</a
               >
             </li> -->
+            <div style="position: relative;">
+              <aside id="login_popup" class="aside-link hide_popup small-size " data-aos-duration="10000"
+              class="lg:col-span-2 border-royal-gray-300 rounded-3xl">
+              <ul class="platform-features ">
+                <div id="small-screen-view-header" class="login-links display-icon">
+                  <li  class="login_text" type="button" class="text-lg"> Login
+                  </li>
+                  <img onClick="closeLogin()" style="cursor: pointer;"  class="" src="../../public/images/icons/close-outline.svg" alt="Menu" id="close-menu" />
+                </div>
+                <div class="login-links">
+                  <a style="display: flex;" class="d-flex" href="https://pi.gaiansolutions.com/" target="_blank">
+                    <li style="width: 100%;" class="" type="button" class="text-lg"> Pascal Intelligence
+                    </li>
+                    <img  alt="select dropdown" />
+                  </a>
+                </div>
+                <div class="login-links">
+                  <a style="display: flex;" class="d-flex" href="http://bob.gaiansolutions.com/" target="_blank">
+                    <li style="width: 100%;" class="" type="button" class="text-lg"> BoltzmanBot
+                    </li>
+                    <img class="change-color" src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+                  </a>
+                </div>
+                <div class="login-links">
+                  <a style="display: flex;" class="d-flex" href="http://monet.gaiansolutions.com/" target="_blank">
+                    <li style="width: 100%;" class="" type="button" class="text-lg"> Monet
+                    </li>
+                    <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+                  </a>
+                </div>
+                <div class="login-links">
+                  <a style="display: flex;" class="d-flex" href="https://marketplace.gaiansolutions.com/" target="_blank">
+                    <li style="width: 100%;" class="" type="button" class="text-lg"> Holacracy
+                    </li>
+                    <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+                  </a>
+                </div>
+              </ul>
+            </aside>
+          </div>
             <li>
               <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
             </li>
             <li>
-              <a class="btn" href="signin">
+              <a class="btn login_class" onClick="loginEvent(event)">
                 <span>Login</span>
+                <i id="login_select_toggle" class="fa fa-chevron-down" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -257,13 +299,13 @@
               <a
                 class="nav-link text-royal-gray-900 py-6 inline-block"
                 href="#cases"
-                >Usecases</a
+                >Case Study</a
               >
             </li>
             <li class="mr-16">
               <a
                 class="nav-link text-royal-gray-900 py-6 inline-block"
-                href="#app-swiper"
+                href="#apps"
                 >You may also like</a
               >
             </li>
@@ -279,18 +321,17 @@
       </header>
 
       <!-- Features-->
-      <section class="mt-11" id="product_section">
-        <article
+      <section class="mt-32" id="product_section">
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
           <img
-            style="max-height: 320px"
             class="inline-block"
             src="../../public/images/products/Automations.svg"
             alt="Web Development"
           />
-          <div class="mt-8 md:mt-0">
+          <div class="max-W-533 mt-8 md:mt-0">
             <h2 class="heading-article">Intelligent Pulse Surveys</h2>
             <p class="body-text mt-3">
               Our platform leverages AI to generate insightful pulse surveys
@@ -300,11 +341,11 @@
             </p>
           </div>
         </article>
-        <article
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
-          <div class="order-1 md:order-none mt-8 md:mt-0">
+          <div class="order-1 md:order-none mt-8 md:mt-0 max-W-533">
             <h2 class="heading-article">Personalized Content Delivery</h2>
             <p class="body-text mt-3">
               With our personalized content delivery system, you can create
@@ -314,15 +355,14 @@
             </p>
           </div>
           <img
-            style="max-height: 320px"
             class="inline-block"
             src="../../public/images/products/19.svg"
             alt="Web Development"
           />
         </article>
-        <article
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
           <img
             class="inline-block"
@@ -330,7 +370,7 @@
             style="max-height: 320px"
             alt="Web Development"
           />
-          <div class="mt-8 md:mt-0">
+          <div class="max-W-533 mt-8 md:mt-0">
             <h2 class="heading-article">Dynamic Rewards & Recognition</h2>
             <p class="body-text mt-3">
               Our dynamic rewards and recognition system allows you to create
@@ -341,11 +381,11 @@
             </p>
           </div>
         </article>
-        <article
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
-          <div class="order-1 md:order-none mt-8 md:mt-0">
+          <div class="order-1 md:order-none mt-8 md:mt-0 max-W-533">
             <h2 class="heading-article">Multi-Channel Engagement</h2>
             <p class="body-text mt-3">
               Our multi-channel engagement platform enables seamless
@@ -369,7 +409,7 @@
         class="mt-16 bg-gradient-purple py-20 text-white"
         id="ben"
       >
-        <div class="container mx-auto px-4">
+        <div class=" px-6-custom mx-auto px-4">
           <header class="mb-10 md:mb-24 relative">
             <h3 class="heading-section text-white text-center relative z-10">
               Benefits
@@ -381,7 +421,7 @@
             />
           </header>
           <div id="benifits" class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
-            <article>
+            <article class="max-W-400">
               <img
                 src="../../public/images/products/24.svg"
                 alt="Information Icon"
@@ -425,11 +465,11 @@
 
       <section
         data-aos="fade-up"
-        class="mt-16 bg-gradient-pink py-10"
+        class="bg-gradient-pink py-10"
         id="cases"
       >
-        <article class="container ml-auto lg:flex items-center">
-          <div class="lg:mr-24 px-4 lg:px-0 max-w-xl">
+       <article id="caseStudy">
+          <div >
             <h3 class="heading-section">
               Boosting Employee Productivity and Retention with Mobius Employee
               Engagement Solution
@@ -453,8 +493,9 @@
         </article>
       </section>
       <!-- Related Products -->
+      <div id="apps"></div>
       <section data-aos="fade-up" class="py-16">
-        <header class="flex justify-between items-center px-4 mb-16">
+        <header class="flex justify-between items-center px-4 mb-16 pt-10 ">
           <img
             id="nav-left"
             src="../../public/images/icons/arrow-left-circled.svg"
@@ -1248,7 +1289,7 @@
         </div>
       </section> -->
       <!-- Call to Action Section -->
-      <section data-aos="fade-up" class="px-custom md:px-0">
+      <section data-aos="fade-up" class="my-16 px-6-custom md:px-0">
         <article
           class=" mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >

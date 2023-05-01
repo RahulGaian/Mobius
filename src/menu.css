@@ -2,14 +2,17 @@
 #top-navbar {
   z-index: 9999;
 }
+
 .mega-menu {
   top: 104px;
   z-index: 99999 !important;
 }
+
 .active-mega-link {
   --tw-bg-opacity: 1;
   background-color: rgb(235 207 207 / var(--tw-bg-opacity));
 }
+
 .mobile-menu {
   background: linear-gradient(108.56deg, #FFFFFF 0%, #FFCECE 100%);
   position: fixed;
@@ -20,6 +23,7 @@
   z-index: 100;
   padding: 28px 32px 0 32px;
 }
+
 .menu-action {
   position: fixed;
   border-top: 1px solid #C4C4C4;
@@ -29,24 +33,29 @@
   z-index: 1000;
   padding: 20px 24px;
 }
+
 .menu-action .btn {
   width: 100%;
   text-align: center;
   margin: 12px 0;
 }
+
 .mobile-menu li {
   margin-left: 0;
   margin: 32px 0;
   background: url(../public/images/icons/chevron-right.svg) no-repeat;
   background-position: center right;
 }
+
 .mobile-menu li span {
   display: block;
   width: 100%;
 }
+
 .back {
   display: none;
 }
+
 @media screen and (max-width: 1024px) {
   .back {
     display: block;
@@ -57,31 +66,40 @@
     text-align: left;
     padding-left: 24px;
   }
+
   .mega-menu {
     top: 86px;
   }
+
   .mobile-menu li .nav-link {
     color: #1A1A1A !important;
     font-weight: 400 !important;
   }
+
   .mobile-menu li img {
     display: none !important;
   }
+
   .mega-menu-link {
     background: url(../public/images/icons/chevron-right.svg) no-repeat;
     background-position: center right;
     display: block;
     width: 100%;
   }
+
   .mega-menu-link:hover {
     background-color: transparent;
   }
+
   .active-mega-link {
     background-color: transparent;
   }
-  .column-two, .column-three {
+
+  .column-two,
+  .column-three {
     display: none;
   }
+
   .activate {
     display: block;
     position: absolute;
@@ -91,11 +109,161 @@
     right: 0;
     background: linear-gradient(108.56deg, #FFFFFF 0%, #FFCECE 100%);
   }
+
   .mega-menu {
     height: auto !important;
   }
+
   .close-mega-menu {
     display: none;
   }
 }
 
+
+
+.remove-space>article {
+  flex-direction: row !important;
+  max-height: 332px !important;
+}
+
+
+
+#fixed-footer li {
+  border-right: 1px solid rgba(255, 255, 255, 0.33);
+  padding: 1rem;
+}
+
+/* #fixed-footer li::after {
+  content:'';
+  border: 1px solid rgba(255, 255, 255, 0.33);
+  height: calc(100% - 2rem);
+
+} */
+
+#fixed-footer li:last-child {
+  border-right: none !important;
+}
+
+
+#fixed-footer ul {
+  border-right: none;
+}
+
+
+
+#fixed-footer li h2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 47px;
+}
+
+
+#fixed-footer{
+  max-width: 100% !important;
+}
+
+#fixed-footer li h4 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 23px;
+  text-align: center;
+}
+
+
+@media all and (max-width:850px) {
+  /* #fixed-footer li h2 {
+    font-size: 2rem !important;
+  } */
+
+  /* #fixed-footer li h4 {
+
+    font-size: 0.6rem !important;
+    line-height: 14px !important;
+     
+  } */
+  
+  #fixed-footer li {
+    /* padding: 1rem;
+    width: 12rem;
+    margin-bottom: 1rem; */
+    padding: 1rem;
+    width: 50%;
+  }
+
+
+  #fixed-footer ul{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    /* padding-left: 0px; */
+    /* grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%; */
+  }
+
+  #fixed-footer li:nth-child(even) {
+    border-right: none;
+  }
+
+}
+
+
+/* @media all and (max-width:430px) {
+
+  #fixed-footer li {
+    border-right: none;
+  }
+
+} */
+    
+@media all and (max-width:500px) {
+
+  #journey > aside > div > div:last-child {
+    margin-left: 0.5rem;
+  }
+  
+}
+
+#journey > aside > div > div:last-child  > figure{
+    
+  width: 7rem;
+  }
+
+
+  @media all and (min-width:860px) {
+    #journey > article {
+      grid-template-columns: 60% 40%;
+      width: 100%;
+    }
+  
+    #journey > article > div{
+      justify-self: center
+    }
+  
+    #journey > article > div > h2 {
+      text-align: center;
+    }
+    #journey > article > div:last-child  {
+     justify-self: end;
+    }
+  
+  }
+
+
+  @media all and (width<1000px){
+    #journey article {
+      flex-direction: column;  
+    }
+
+    #journey article div:last-child{
+      min-width: 321px;
+      max-width: 321px;
+    }
+  }
+  #journey article div:last-child{
+    min-width: 321px;
+    max-width: 35px;
+  }

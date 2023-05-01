@@ -332,7 +332,7 @@ const menu = [
                       heading: "Recruiting",
                       description:
                         "Transform your hiring process with Mobius Smart Recruiting Solution, an AI-powered recruitment platform that streamlines your end-to-end recruiting process. ",
-                      url: "../products/Employees/Recruiting.html",
+                      url: "/products/Employees/Recruiting.html",
                       coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
@@ -467,7 +467,7 @@ const menu = [
                       heading: "Smart City as a Service",
                       description:
                         "Mobius DTasS is the cutting-edge Smart City as a Service (SCaaS) platform designed to help cities become more efficient, sustainable, and livable. ",
-                      url: "/products/Phygital/SmartCity.html",
+                      url: "products/Phygital/SmartCity.html",
                       coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
@@ -531,7 +531,7 @@ const menu = [
                       heading: "Automation DevOps",
                       description:
                         "Mobius DTasS is the next-generation DevOps automation platform that streamlines software development, testing, and deployment processes. With advanced automation features and intelligent workflows, we help businesses accelerate software delivery and reduce time-to-market",
-                      url: "../products/Technology/AutomationDevops.html",
+                      url: "/products/Technology/AutomationDevops.html",
                       coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
@@ -563,7 +563,7 @@ const menu = [
               heading: "ZoomBot",
               description:
                 "Experience seamless meeting scheduling, reminders, real-time transcription and translation, and customizable controls with our Zoom Bot powered by Mobius DTasS. ",
-              url: "../products/ZoomBot.html",
+              url: "/products/ZoomBot.html",
               coverImage: "/public/images/navbar/9.jpg",
             },
           },
@@ -579,7 +579,7 @@ const menu = [
               heading: "Dashboard as a Service",
               description:
                 " Unlock real-time insights with our customizable dashboards, seamless integrations, and collaborative tools. Join the revolution of intelligent business decision making with Mobius DTasS.",
-              url: "../products/Dashboard.html",
+              url: "/products/Dashboard.html",
               coverImage: "/public/images/navbar/9.jpg",
             },
           },
@@ -595,7 +595,7 @@ const menu = [
               heading: "OpsMax",
               description:
                 "  OpsMax is a futuristic ESOP management tool that simplifies the process of managing employee stock options. With automated management, comprehensive reporting, and robust security, OpsMax helps you future-proof your ESOPs.",
-              url: "../products/OpsMax.html",
+              url: "/products/OpsMax.html",
               coverImage: "/public/images/navbar/9.jpg",
             },
           },
@@ -675,7 +675,7 @@ const menu = [
               description:
                 "Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit.",
               url: "",
-              coverImage: "/public/images/smart-city-placeholder.png",
+              coverImage: "//public/images/smart-city-placeholder.png",
             },
           },
           {
@@ -712,7 +712,7 @@ const menu = [
               description:
                 "Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit.",
               url: "",
-              coverImage: "/public/images/smart-city-placeholder.png",
+              coverImage: "//public/images/smart-city-placeholder.png",
             },
           },
           {
@@ -972,7 +972,7 @@ const menu = [
               description:
                 "Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit.",
               url: "",
-              coverImage: "/public/images/smart-city-placeholder.png",
+              coverImage: "//public/images/smart-city-placeholder.png",
             },
           },
           {
@@ -1009,7 +1009,7 @@ const menu = [
               description:
                 "Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit Lorem ipsum dolor sit amet consectetur. Amet diam egestas nibh commodo duis gravida ornare nisi hendrerit.",
               url: "",
-              coverImage: "/public/images/smart-city-placeholder.png",
+              coverImage: "//public/images/smart-city-placeholder.png",
             },
           },
           {

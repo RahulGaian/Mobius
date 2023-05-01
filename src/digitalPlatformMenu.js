@@ -31,7 +31,7 @@ function renderDigitalPlatformMenu(index = 0) {
     {
       name: "Vinci",
       heading: "Vinci",
-      image: "../public/images/Landing_logos/vinci.svg",
+      image: "../public/images/Landing_logos/Vinci.png",
       description:
         "Vinci is a cloud-native, multi-tenant SaaS tool that provides omnichannel engagement as a service. The platform empowers users to create real-time engagements that connect them with customers, employees, partners, and stakeholders in real-time, driving unbeatable ROI.",
     },
@@ -40,7 +40,7 @@ function renderDigitalPlatformMenu(index = 0) {
       heading: "Hola Verse",
       image: "../public/images/Landing_logos/marketplace.svg",
       description:
-        "HolaVerse is a cutting-edge, multi-tenant SaaS platform that offers a collaborative marketplace as a service. The platform provides businesses with the raw materials for digital transformation, including technology providers, content providers, infrastructure providers, and monetization partners. HolaVerse is the ultimate destination for businesses looking to take their phygital transformation to the next level and drive success through collaborative partnerships.",
+        "Holacracy is a cutting-edge, multi-tenant SaaS platform that offers a collaborative marketplace as a service. The platform provides businesses with the raw materials for digital transformation, including technology providers, content providers, infrastructure providers, and monetization partners. Holacracy is the ultimate destination for businesses looking to take their phygital transformation to the next level and drive success through collaborative partnerships.",
     },
   ];
 

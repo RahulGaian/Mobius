@@ -206,7 +206,7 @@ let data = `
       <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
 
         <article
-          class=" ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32"
+          class=" ml-auto md:grid md:grid-cols-2 items-center md:gap-20 lg:gap-32 justify-end"
         >
           <div class="px-4 lg:pl-4 lg:px-0">
             <header class="relative">
@@ -329,7 +329,7 @@ let data = `
         class="bg-gradient-purple-graphics pb-10 text-white smart-city feature pt-10"
       >
         <article class="container ml-auto lg:flex items-center mt-11">
-          <div class="lg:mr-24 px-4 lg:pl-4 lg:px-0 max-w-3xl">
+          <div class="lg:mr-24 px-4 lg:pl-4 lg:px-0 max-w-3xl pt-10">
             <h3 class="heading-section !text-white">
               ${Second_heading} 
                 </h3>
@@ -469,7 +469,7 @@ let data = `
       </section>
       <!-- Apps Powered -->
       <section data-aos="fade-up" class="py-16">
-        <header class="flex justify-between items-center px-4 mb-16">
+        <header class="flex justify-between items-center px-4 mb-16 pt-10 ">
           <img
             id="nav-left"
             src="../public/images/icons/arrow-left-circled.svg"

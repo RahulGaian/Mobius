@@ -312,9 +312,9 @@ const generator = (arr) => {
 
       <!-- Features-->
       <section class="mt-11" id="product_section" >
-        <article
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
                 <img
                 style="max-height:320px"
@@ -322,18 +322,18 @@ const generator = (arr) => {
                 src='${Base_Image_path + cap1_img}'
                 alt="Web Development"
             />
-          <div class="mt-8 md:mt-0">
+          <div class="max-W-533 mt-8 md:mt-0">
             <h2 class="heading-article">${cap1_heading}</h2>
             <p class="body-text mt-3">
                 ${cap1_content}
             </p>
           </div>
         </article>
-        <article
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
-          <div class="order-1 md:order-none mt-8 md:mt-0">
+          <div class="order-1 md:order-none mt-8 md:mt-0 max-W-533">
             <h2 class="heading-article">
                 ${cap2_heading}
             </h2>
@@ -350,9 +350,9 @@ const generator = (arr) => {
           alt="Web Development"
       />
           </article>
-        <article
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
         <img
         class="inline-block"
@@ -361,7 +361,7 @@ const generator = (arr) => {
 
         alt="Web Development"
           />
-          <div class="mt-8 md:mt-0">
+          <div class="max-W-533 mt-8 md:mt-0">
             <h2 class="heading-article">
             ${cap3_heading}
 
@@ -372,11 +372,11 @@ const generator = (arr) => {
             </p>
           </div>
         </article>
-        <article
+       <article
           data-aos="fade-up"
-          class="container mx-auto px-4 py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36"
+          class="px-6-custom py-12 md:py-16 lg:py-24 grid md:grid-cols-2 items-center md:gap-20 lg:gap-36 justify-items-center "
         >
-          <div class="order-1 md:order-none mt-8 md:mt-0">
+          <div class="order-1 md:order-none mt-8 md:mt-0 max-W-533">
             <h2 class="heading-article">      
             ${cap4_heading}
             </h2>
@@ -412,7 +412,7 @@ const generator = (arr) => {
             />
           </header>
           <div id="benifits" class="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-20">
-            <article>
+            <article class="max-W-400">
               <img
                 src='${Base_Image_path + ben1_img}'
                 alt="Information Icon"
@@ -453,8 +453,8 @@ const generator = (arr) => {
       </section>
 
       <section data-aos="fade-up" class="mt-16 bg-gradient-pink py-10" id="cases">
-        <article class="container ml-auto lg:flex items-center">
-          <div class="lg:mr-24 px-4 lg:px-0 max-w-xl">
+       <article id="caseStudy">
+          <div >
             <h3 class="heading-section"> ${third_heading} </h3>
             <p class="body-text !text-lg mt-4">
                 ${third_content}
@@ -1072,7 +1072,7 @@ const generator = (arr) => {
         </div>
       </section>
       <!-- Call to Action Section -->
-      <section data-aos="fade-up" class="px-custom md:px-0">
+      <section data-aos="fade-up" class="my-16 px-6-custom md:px-0">
         <article
           class=" mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >

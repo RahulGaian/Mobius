@@ -19,31 +19,31 @@ function renderPlatformMenu(index = 0) {
       name: "SaaSifying Digital Transformation",
       image: "../public/images/home/77.png",
       description:
-        "Mobius DTaaS is committed to Sassifying Digital Transformation through its suite of advanced SaaS tools that enable businesses to achieve digital transformation at lightning speed. By leveraging the power of low-code philosophies and XaaS phygital transformation, Mobius DTaaS empowers businesses to streamline operations, enhance customer experiences, and create new value in weeks rather than years. With its platform designed around the concept of agility, innovation, and cost-effectiveness, Mobius DTaaS enables businesses to scale their usage up or down as needed, respond quickly to market conditions, and avoid unexpected costs associated with traditional software deployment models.",
+        "Our advanced SaaS tools enable lightning-speed digital transformation through low-code and XaaS phygital transformation. Streamline operations, enhance customer experiences, and create new value in weeks. Our platform is agile, innovative, cost-effective, and scalable to meet market needs.",
     },
     {
       name: "Phygital Transformation",
       image: "../public/images/home/78.png",
       description:
-        "Mobius DTaaS is dedicated to achieving true convergence between physical and digital worlds through its platform philosophy of Phygital Transformation. With its suite of SaaS tools - Pascal Intelligence, BoltzmannBot, Monet, Vinci, and HolaVerse - Mobius DTaaS empowers businesses to streamline operations, enhance customer experiences, and drive innovation in the phygital realm. By bringing together the best of human and machine capabilities, Mobius DTaaS enables businesses to transform their operations, create new revenue streams, and unlock new possibilities in the phygital age.",
+"Mobius DTaaS achieves convergence between physical and digital worlds through Phygital Transformation. Its SaaS tools - Pascal Intelligence, BoltzmannBot, Monet, Vinci, and HolaVerse - empower businesses to streamline operations, enhance customer experiences, and drive phygital innovation. By combining human and machine capabilities, Mobius DTaaS transforms operations, creates new revenue streams, and unlocks new possibilities.",
     },
     {
       name: "Accountable Transformation",
       image: "../public/images/home/79.png",
       description:
-        "The Mobius DTaaS philosophy is to provide businesses with a comprehensive suite of SaaS tools that enable them to achieve accountable, responsible, and monetizable digital transformation. By offering tools that measure the effectiveness of DT initiatives and enhance digital capabilities, businesses can transform their operations, improve customer experiences, and achieve measurable business outcomes such as increased revenue and reduced operational costs.",
+"Mobius DTaaS provides businesses with a suite of SaaS tools for accountable, responsible, and monetizable digital transformation. These tools measure effectiveness, enhance digital capabilities, and enable businesses to improve customer experiences and achieve measurable outcomes such as increased revenue and reduced costs.",
     },
     {
       name: "SaaS Factory",
       image: "../public/images/home/80.png",
       description:
-        "Mobius DTaaS is a SaaS factory that empowers businesses to rapidly achieve digital transformation at scale by providing access to cutting-edge SaaS tools. With its constantly improving services, Mobius DTaaS ensures that businesses always receive the best possible solutions for their digital transformation needs, providing greater scalability, flexibility, cost-effectiveness, security, and reliability compared to traditional software deployment models",
+"Mobius DTaaS is a SaaS factory that enables scalable digital transformation with cutting-edge tools. With constantly improving services, Mobius DTaaS delivers flexible, cost-effective, and reliable solutions compared to traditional software deployment models.",
     },
     {
       name: "Inter-org Digital Transformation",
       image: "../public/images/home/81.png",
       description:
-        "Mobius DTaaS enables digital transformation as a service between organizations through API-to-API integrations, creating a unified digital ecosystem that streamlines operations and reduces the need for manual interventions. With its secure platform and API-first approach, Mobius DTaaS ensures that businesses can achieve greater agility, scalability, and efficiency, accelerating their digital transformation journeys and achieving better business outcome",
+        "Mobius DTaaS enables digital transformation between organizations through API integrations, streamlining operations and reducing manual interventions. Its secure platform and API-first approach provide greater agility, scalability, and efficiency, accelerating digital transformation journeys and achieving better business outcomes.",
     },
   ];
 
@@ -61,8 +61,8 @@ function renderPlatformMenu(index = 0) {
         alt="select dropdown"
         />
          </div>
-      <div  id="collapseOne${i}" class="accordion-collapse collapse ${i == 0 ? ' show ' : ''}" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-         <div class="accordion-body default-font">
+      <div   id="collapseOne${i}" class="accordion-collapse collapse ${i == 0 ? ' show ' : ''}" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+         <div style='margin-top:0px' class="accordion-body default-font">
            ${menu[i]['description']}
         </div>
     </div> 
@@ -245,7 +245,7 @@ window.addEventListener('resize', function (event) {
 //       name: "Phygital Transformation",
 //       image: "../public/images/home/78.png",
 //       description:
-//         "Mobius DTaaS is dedicated to achieving true convergence between physical and digital worlds through its platform philosophy of Phygital Transformation. With its suite of SaaS tools - Pascal Intelligence, BoltzmannBot, Monet, Vinci, and HolaVerse - Mobius DTaaS empowers businesses to streamline operations, enhance customer experiences, and drive innovation in the phygital realm. By bringing together the best of human and machine capabilities, Mobius DTaaS enables businesses to transform their operations, create new revenue streams, and unlock new possibilities in the phygital age.",
+//         "Mobius DTaaS is dedicated to achieving true convergence between physical and digital worlds through its platform philosophy of Phygital Transformation. With its suite of SaaS tools - Pascal Intelligence, BoltzmannBot, Monet, Vinci, and Holacracy - Mobius DTaaS empowers businesses to streamline operations, enhance customer experiences, and drive innovation in the phygital realm. By bringing together the best of human and machine capabilities, Mobius DTaaS enables businesses to transform their operations, create new revenue streams, and unlock new possibilities in the phygital age.",
 //     },
 //     {
 //       name: "Accountable Transformation",
@@ -313,54 +313,83 @@ window.addEventListener('resize', function (event) {
 })()
 
 
+// var widerScreenWidth2 = window.matchMedia("(max-width: 1023px)");
 
 
-var flag = false
-function loginEvent(event) {
-  // event.stopPropagation();
-  flag = true
-    let ele = document.getElementById('login_popup');
-    let ele2 = document.getElementById('login_select_toggle');
-    if(ele.classList.contains('hide_popup')) {
-      ele.classList.remove('hide_popup')
-      ele2.classList.add('rotate-icon')
-    }
-    else {
-      ele.classList.add('hide_popup');
-      ele2.classList.remove('rotate-icon');
-    }
-}
+// var flag = false
+// function loginEvent(event) {
+//   // event.stopPropagation();
 
+//   // small-screen-view-header
 
-// document.getElementById('login_popup').addEventListener('click',
-// () => {
-//   if(ele.classList.contains('hide_popup')) {
-//     ele.classList.remove('hide_popup')
-//   }
-//   else {
-//     ele.classList.add('hide_popup');
-//   }
-// },true)
+ 
+//   flag = true
+//     let ele = document.getElementById('login_popup');
+//     let ele2 = document.getElementById('login_select_toggle');
+
+//     if(widerScreenWidth2.matches) {
+//          ele.classList.add('small-size');
+//         //  if( document.getElementById('small-screen-view-header')) {
+//             document.getElementById('small-screen-view-header').classList.remove('display-icon');
+//         //  }
+//         //  document.getElementById('small-screen-view-header').
+//     }
+//     else if(ele.classList.contains('small-size')){
+//               ele.classList.remove('small-size');
+//         document.getElementById('small-screen-view-header').classList.add('display-icon');
+//     }
 
 
 
+//     if(ele.classList.contains('hide_popup')) {
+//       ele.classList.remove('hide_popup')
+//       ele2.classList.add('rotate-icon')
+//     }
+//     else {
+//       ele.classList.add('hide_popup');
+//       ele2.classList.remove('rotate-icon');
+//     }
+// }
 
-window.addEventListener('click', function (event) {
+
+// // document.getElementById('login_popup').addEventListener('click',
+// // () => {
+// //   if(ele.classList.contains('hide_popup')) {
+// //     ele.classList.remove('hide_popup')
+// //   }
+// //   else {
+// //     ele.classList.add('hide_popup');
+// //   }
+// // },true)
+
+
+
+
+// window.addEventListener('click', function (event) {
   
-  if(!flag) {
+//   if(!flag) {
 
-    let ele = document.getElementById('login_popup');
-    let ele2 = document.getElementById('login_select_toggle');
-    if(!ele.classList.contains('hide_popup')) {
-      ele.classList.add('hide_popup');
-      ele2.classList.remove('rotate-icon');
-    }
+//     let ele = document.getElementById('login_popup');
+//     let ele2 = document.getElementById('login_select_toggle');
+//     if(!ele.classList.contains('hide_popup')) {
+//       ele.classList.add('hide_popup');
+//       ele2.classList.remove('rotate-icon');
+//     }
 
-  }
+//   }
 
-  
+// })
 
-})
+
+// function closeLogin() {
+//   let ele = document.getElementById('login_popup');
+//   let ele2 = document.getElementById('login_select_toggle');
+//    if(!ele.classList.add('hide_popup')) {
+//      ele.classList.add('hide_popup');
+//      ele2.classList.remove('rotate-icon');
+//    }
+   
+// }
 
 
 

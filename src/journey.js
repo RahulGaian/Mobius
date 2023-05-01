@@ -8,63 +8,63 @@ function renderJourneyMenu(index = 0) {
   // Data
   const menu = [
     {
-      name: "2023 April 23",
+      name: "April 23 2023",
       image: "12.jpg",
       heading: "Won Product of the year award at NAB Show",
       description:
         "",
     },
     {
-      name: "2023 Jan 22",
+      name: "Jan 22 2023 ",
       image: "",
       heading: "Presented Mobius Products at CES 2023",
       description:
         "",
     },
     {
-      name: "2019",
+      name: "April 23 2019",
       image: "",
       heading: "Launched Gaitav3.0 in US Market",
       description:
         "",
     },
     {
-      name: "2016",
+      name: "April 23 2016",
       image: "",
       heading: "Entered US Broadcast Market",
       description:
         "",
     },
     {
-      name: "2016",
+      name: "April 23 2016",
       image: "",
       heading: "Selection in Indian Railway Project",
       description:
         "",
     },
     {
-      name: "2015",
+      name: "April 23 2015",
       image: "",
       heading: "7 Patents Filed",
       description:
         "",
     },
     {
-      name: "2012",
+      name: "April 23 2012",
       image: "",
       heading: "Founded Seelamsetty Ramaroa Foundation & Trained 5000 people",
       description:
         "",
     },
     {
-      name: "2011",
+      name: "April 23 2011",
       image: "",
       heading: "100 Employees in the Team",
       description:
         "",
     },
     {
-      name: "2010",
+      name: "April 23 2010",
       image: "",
       heading: "Foundation and Office Establishment in LA",
       description:
@@ -92,49 +92,49 @@ function renderJourneyMenu(index = 0) {
                   ${listItems}
                 </div>
                 <div
-                  class="h-full  max-w-min flex flex-col justify-between ml-8"
+                  class="h-full  max-w-min flex flex-col justify-between ml-4"
                 >
                 <figure class="">
-                <h4 class="text-base  text-royal-purple-600 font-bold">2023 </h4>
+                <h4 class="text-base  text-royal-purple-600 font-bold">April 23 2023 </h4>
               </figure>
               <figure class="">
-                <h4 class="text-base text-royal-gray-400">2023 </h4>
+                <h4 class="text-base text-royal-gray-400">April 23  2023 </h4>
               </figure>
                   <figure class="">
                     <h4 class="text-base text-royal-gray-400 ">
-                      2019
+                    April 23 2019
                     </h4>
                   </figure>
                   <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2016</h4>
+                    <h4 class="text-base text-royal-gray-400">April 23 2016</h4>
                   </figure>
                   <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2016</h4>
+                    <h4 class="text-base text-royal-gray-400">April 23 2016</h4>
                   </figure>
                   <figure class="">
-                    <h4 class="text-base text-royal-gray-400">2015</h4>
+                    <h4 class="text-base text-royal-gray-400">April 23 2015</h4>
                   </figure>
                   <figure class="">
-                  <h4 class="text-base text-royal-gray-400">2012</h4>
+                  <h4 class="text-base text-royal-gray-400">April 23 2012</h4>
                 </figure>
                 <figure class="">
-                  <h4 class="text-base text-royal-gray-400">2011</h4>
+                  <h4 class="text-base text-royal-gray-400">April 23 2011</h4>
                 </figure>
                 <figure class="">
-                  <h4 class="text-base text-royal-gray-400">2010</h4>
+                  <h4 class="text-base text-royal-gray-400">April 23 2010</h4>
                 </figure>
                 </div>
               </div>
             </aside>
 
-            <article data-aos="fade-up" class="grid md:grid-cols-2 gap-16 items-center">
-              <div class="">
+            <article  data-aos="fade-up" class="flex items-center">
+              <div style="flex:2">
                 <h2 class="heading-section">${menu[index].heading}</h2>
                 <p class="body-text mt-2">
                 ${menu[index].description}
                 </p>
               </div>
-              ${menu[index].image != "" ? `<div class=" h-96 rounded-3xl"><img style="height:auto;width:300px;" src="../public/images/Overview/${menu[index].image }"></img></div>`:`<div class="bg-royal-gray-100 h-96 rounded-3xl"></div>` }
+              ${menu[index].image != "" ? `<div style="flex:1" ><img   src="../public/images/Overview/${menu[index].image }"></img></div>`:`<div class="bg-royal-gray-100 h-96 rounded-3xl"></div>` }
               
             </article>
 `;

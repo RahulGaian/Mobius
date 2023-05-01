@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="../public/changes.css" />
 
   <link rel="stylesheet" href="./src/menu.css" />
+  <!-- <link rel="shortcut icon" href="./public/images/brand-logo.svg" type="image/x-icon"> -->
   <title>Mobius Marketing Website</title>
 </head>
 
@@ -51,7 +52,7 @@
             <img class="lg:hidden" src="../public/images/icons/menu.svg" alt="Menu" id="openmenu" />
             <img class="hidden" src="public/images/icons/close-outline.svg" alt="Menu" id="close-menu" />
           </div>
-          <ul class="hidden lg:flex items-center mega-menu-container">
+          <ul class="hidden lg:flex items-center mega-menu-container" id="menu-action2">
             <li class="ml-14 relative mega-menu-item mega-menu-one" data-id="0">
               <span class="nav-link top-nav-link">Solutions</span>
               <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
@@ -99,7 +100,7 @@
         <div>
 
 
-          <ul class="hidden lg:flex items-center" id="menu-action">
+          <ul class="hidden lg:flex items-center small-view-padding" id="menu-action">
             <!-- <li>
                 <a
                 class="text-royal-purple-600 text-lg font-medium mr-7"
@@ -107,6 +108,47 @@
                 >+1 1800 123 1234</a
                 >
               </li> -->
+
+              <div style="position: relative;">
+                <aside id="login_popup" class="aside-link hide_popup small-size " data-aos-duration="1000"
+                class="lg:col-span-2 border-royal-gray-300 rounded-3xl">
+                <ul class="platform-features ">
+                  <div id="small-screen-view-header" class="login-links display-icon">
+                    <li  class="login_text" type="button" class="text-lg"> Login
+                    </li>
+                    <img onClick="closeLogin()" style="cursor: pointer;"  class="" src="../public/images/icons/close-outline.svg" alt="Menu" id="close-menu" />
+                  </div>
+                  <div class="login-links">
+                    <a class="d-flex" href="https://pi.gaiansolutions.com/" target="_blank">
+                      <li style="width: 100%;" class="" type="button" class="text-lg"> Pascal Intelligence
+                      </li>
+                      <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+                    </a>
+                  </div>
+                  <div class="login-links">
+                    <a  class="d-flex" href="http://bob.gaiansolutions.com/" target="_blank">
+                      <li style="width: 100%;" class="" type="button" class="text-lg"> BoltzmanBot
+                      </li>
+                      <img class="change-color" src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+                    </a>
+                  </div>
+                  <div class="login-links">
+                    <a class="d-flex" href="http://monet.gaiansolutions.com/" target="_blank">
+                      <li style="width: 100%;" class="" type="button" class="text-lg"> Monet
+                      </li>
+                      <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+                    </a>
+                  </div>
+                  <div class="login-links">
+                    <a class="d-flex" href="https://marketplace.gaiansolutions.com/" target="_blank">
+                      <li style="width: 100%;" class="" type="button" class="text-lg"> Holacracy
+                      </li>
+                      <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
+                    </a>
+                  </div>
+                </ul>
+              </aside>
+            </div>
             <li>
               <a class="btn btn-filled mr-4" href="/singup">Get Started</a>
             </li>
@@ -115,8 +157,8 @@
                 <span>Login</span>
                 <i id="login_select_toggle" class="fa fa-chevron-down" aria-hidden="true"></i>
               </a>
-
             </li>
+            
 
           </ul>
 
@@ -130,45 +172,7 @@
       </nav>
 
 
-      <aside id="login_popup" class="aside-link hide_popup" data-aos-duration="10000"
-        class="lg:col-span-2 border-royal-gray-300 rounded-3xl">
-        <ul class="platform-features ">
-          <!-- <div class="login-links">
-            <li  class="" type="button" class="text-lg"> aaaaaaaa
-            </li>
-            <a class="d-flex"  href="https://pi.gaiansolutions.com/" target="_blank" > <img src="../public/images/Landing_logos/link-icon.svg"
-              alt="select dropdown" /></a> 
-          </div> -->
-          <div class="login-links">
-            <a class="d-flex" href="https://pi.gaiansolutions.com/" target="_blank">
-              <li style="width: 100%;" class="" type="button" class="text-lg"> Pascal Intelligence
-              </li>
-              <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
-            </a>
-          </div>
-          <div class="login-links">
-            <a  class="d-flex" href="http://bob.gaiansolutions.com/" target="_blank">
-              <li style="width: 100%;" class="" type="button" class="text-lg"> BoltzmanBot
-              </li>
-              <img class="change-color" src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
-            </a>
-          </div>
-          <div class="login-links">
-            <a class="d-flex" href="http://monet.gaiansolutions.com/" target="_blank">
-              <li style="width: 100%;" class="" type="button" class="text-lg"> Monet
-              </li>
-              <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
-            </a>
-          </div>
-          <div class="login-links">
-            <a class="d-flex" href="https://marketplace.gaiansolutions.com/" target="_blank">
-              <li style="width: 100%;" class="" type="button" class="text-lg"> Holacracy
-              </li>
-              <img src="../public/images/Landing_logos/link-icon.svg" alt="select dropdown" />
-            </a>
-          </div>
-        </ul>
-      </aside>
+     
     </div>
     <!-- Mega Menu One -->
     <div id="navbar" class=" fixed z-20 w-full bg-black bg-opacity-30 h-screen hidden mega-menu">
@@ -197,7 +201,7 @@
   <main>
     <!-- Banner -->
     <section id="banner-section" class="banner-bg-pink pt-36 pb-16 md:pt-44 md:pb-16">
-      <article style="padding-left:0px" class="container   items-center md:gap-20 lg:gap-32">
+      <article class="   items-center md:gap-20 lg:gap-32">
         <div id="header-text" class="mt-32 lg:px-0">
           <header class="relative inline-block">
             <h1 class="!text-6xl text-darkblue-600"><strong>
@@ -233,12 +237,11 @@
               Simplify your digital transformation journey and achieve your
               goals with our user-friendly digital transformation software.
             </p> -->
-          <footer id="main-footer"
-            class="mt-16 text-blue-600 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-10">
+          <footer id="main-footer" class="mt-4 flex flex-wrap items-start md:items-center flex-col md:flex-row gap-6">
             <a class="btn btn-filled text-xl font-bold " href="/signup">
               Get Started
             </a>
-            <a style=" padding: 1rem 4.4rem;" class="btn text-xl add-paddng-a font-bold md:mr-20"
+            <a  class="btn text-xl add-paddng-a font-bold md:mr-20"
               href="./contact/ContactForDemo.html">
               Book a Demo
             </a>
@@ -271,7 +274,7 @@
               />
             </div>
           </header> -->
-        <div class="header-class">
+        <div style=" align-items: baseline;" class="header-class">
           <h1>Mobius DTaaS</h1>
           <p>The Platform of Platforms</p>
         </div>
@@ -286,7 +289,7 @@
 
     <!-- Mobius Data -->
     <section class="m-1 h-500 items-center justify-center remove-margin ">
-      <article class="lg:flex flex-col flex-wrap justify-center items-center ">
+      <article class="lg:flex flex-col flex-wrap justify-center  ">
         <!-- 
           <div class="container mx-auto px-4">
             <header class="mb-10 md:mb-24 text-center">
@@ -360,7 +363,7 @@
     <!-- Digital Platform Transformation -->
     <section class="py-12 bg-gradient-pink">
       <div class="container change-container mx-auto px-4">
-        <header class="text-center mb-10 lg:mb-24">
+        <header class="text-center custom-padding">
           <div data-aos="fade-up" class="inline-block relative">
             <h3 class="heading-section text-center relative z-10">
               The One Platform for End-to-End
@@ -376,8 +379,8 @@
 
     <!-- Apps Supported -->
     <section data-aos="fade-up" class="py-28 bg-apps">
-      <article class="container mx-auto px-4">
-        <header class="max-w-xl">
+      <article class=" mx-auto px-4">
+        <header class="max-w-xxl px-6-custom">
           <h2 data-aos="fade-up" class="heading-article">
             Prebuilt Integrations with thousands of Apps & Workflows
           </h2>
@@ -387,7 +390,7 @@
             globe
           </p>
         </header>
-        <footer class="mt-8">
+        <footer class="mt-16">
           <div class="swiper" id="strip-slider-2">
             <div class="swiper-wrapper flex items-center">
               <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
@@ -405,9 +408,7 @@
               <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
                 <img src="../public/images/apps/playstore.svg" alt="Playstore Logo" />
               </figure>
-              <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
-                <img data-aos="fade-up" src="public/images/apps/12.svg" alt="Zoom Logo" />
-              </figure>
+            
               <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
                 <img src="public/images/apps/slack.svg" alt="Slack Logo" />
               </figure>
@@ -436,7 +437,7 @@
                 <img src="../public/images/apps/playstore.svg" alt="Playstore Logo" />
               </figure>
               <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
-                <img src="../public/images/apps/appstore.svg" alt="Appstore Logo" />
+                <img src="../public/images/apps/slack.svg" alt="Appstore Logo" />
               </figure>
               <figure data-aos="fade-up" class="swiper-slide swiper-slide2 text-center">
                 <img src="../public/images/apps/playstore.svg" alt="Playstore Logo" />
@@ -777,6 +778,9 @@
         </div>
       </div>
     </section>
+    <!-- apps -->
+
+    
     <!-- 
       <section data-aos="fade-up" class="mt-20 relative py-28">
         <div
@@ -804,286 +808,129 @@
 
 
 
-        <div class="slider">
-          <div class="slides">
-            <!-- radio buttons start
-            <input type="radio" name="radio-btn" id="radio11" />
-            <input type="radio" name="radio-btn" id="radio21" />
-            <input type="radio" name="radio-btn" id="radio31" />
-            <input type="radio" name="radio-btn" id="radio41" />
-            <!--radio buttons end-->
-    <!--slide images start-->
-    <!-- <div class="slide first images">
-              <img
-                class="w-full"
-                id="slide_image"
-                src="../public/images/city.svg"
-                alt=""
-              />
+  
+
+      <footer class=" w-full mt-16 px-4" style="width: 100%;">
+        <h4 class="text-xxl font-bold text-center mb-12">
+          Our Customer Relationships
+        </h4>
+        <div class="swiper flex flex-col " id="strip-slider">
+          <div class="swiper-wrapper ">
+            <div class="  swiper-slide items-center flex " > 
+              <img src="../public/images/Landing_logos/abp.png" style="aspect-ratio: 3/1;"  class="h-14   " alt="">
             </div>
-            <div class="slide">
-              <img
-                class="w-full"
-                id="slide_image"
-                src="../public/images/city2.jpg"
-                alt=""
-              />
+     
+        
+         
+          
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
             </div>
-            <div class="slide">
-              <img
-                class="w-full"
-                id="slide_image"
-                src="../public/images/city3.jpg"
-                alt=""
-              />
+            <div class="  swiper-slide flex"> 
+              <img src="../public/images/Landing_logos/l14.png"  class="h-14   " alt="">
             </div>
-            <div class="slide">
-              <img
-                class="w-full"
-                id="slide_image"
-                src="../public/images/digital-smart-city.png"
-                alt=""
-              />
-            </div> -->
-    <!--slide images end-->
-    <!--automatic navigation start-->
-    <!-- <div class="navigation-auto">
-              <div hidden class="auto-btn1"></div>
-              <div hidden class="auto-btn2"></div>
-              <div hidden class="auto-btn3"></div>
-              <div hidden class="auto-btn4"></div>
-            </div> -->
-    <!--automatic navigation end-->
-    <!-- </div> -->
-    <!--manual navigation start-->
-    <!-- <div
-            class="container flex justify-between w-full"
-            style="width: 82px"
-          > -->
-    <!-- <div class="navigation-manual">
-              <label for="radio11" class="manual-btn"></label>
-              <label for="radio21" class="manual-btn"></label>
-              <label for="radio31" class="manual-btn"></label>
-              <label for="radio41" class="manual-btn"></label>
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
             </div>
-          </div> -->
-    <!--manual navigation end-->
-    <!-- </div>
-        </div>
-      </section>  -->
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
+            </div>
+            <div class="  swiper-slide flex"> 
+              <img src="../public/images/Landing_logos/l17.png"  class="h-14   " alt="">
+            </div>
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/l22.png" class="h-14" alt="">
+            </div>
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/incois-min.jpg" class="h-14" alt="">
+            </div>
+            <div class="  swiper-slide flex"> 
+              <img src="../public/images/Landing_logos/Logo-whut-min.jpg"  class="h-14   " alt="">
+            </div>
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/WKAR-min.jpg" class="h-14" alt="">
+            </div>
+            <div class="  swiper-slide items-center flex " > 
+              <img src="../public/images/Landing_logos/abp.png" style="aspect-ratio: 3/1;"  class="h-14   " alt="">
+            </div>
+     
+        
+         
+    
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
+            </div>
 
-    <footer class=" w-full mt-32 px-4" style="width: 100%;">
-      <h4 class="text-xxl font-bold text-center mb-7">
-        Our Customer Relationships
-      </h4>
-      <div class="swiper flex flex-col " id="strip-slider">
-        <div class="swiper-wrapper ">
-          <div class="  swiper-slide items-center flex ">
-            <img src="../public/images/Landing_logos/abp.png" style="aspect-ratio: 3/1;" class="h-14   " alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/channei7.png" style="aspect-ratio: 3/1;" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/dfc.png" style="aspect-ratio: 3/1" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide flex">
-            <img src="../public/images/Landing_logos/l11.png" class="h-14   " alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/l12.png" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/l13.png" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide flex">
-            <img src="../public/images/Landing_logos/l14.png" class="h-14   " alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide flex">
-            <img src="../public/images/Landing_logos/l17.png" class="h-14   " alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/l22.png" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/incois-min.jpg" class="h-14" alt="">
-          </div>
-          <div class="  swiper-slide flex">
-            <img src="../public/images/Landing_logos/Logo-whut-min.jpg" class="h-14   " alt="">
-          </div>
-          <div class="  swiper-slide items-center flex">
-            <img src="../public/images/Landing_logos/WKAR-min.jpg" class="h-14" alt="">
-          </div>
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/l15.png" class="h-14" alt="">
+            </div>
+            <div class="  swiper-slide items-center flex">
+              <img src="../public/images/Landing_logos/l16.png" class="h-14" alt="">
+            </div>
+            <div class="  swiper-slide flex"> 
+              <img src="../public/images/Landing_logos/l17.png"  class="h-14   " alt="">
+            </div>
 
-        </div>
-      </div>
-    </footer>
-
-
-
-    <!-- Resources -->
-    <!-- <section data-aos="fade-up" class="mt-20">
-        <div class="container mx-auto px-4">
-          <header class="flex justify-between items-center">
-            <h3 class="heading-section">Resources</h3>
-            <a class="btn btn-sm" href="#">See all</a>
-          </header>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
-            <article
-              data-aos="fade-up"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="500"
-              class="border border-royal-gray-300 rounded-3xl"
-            >
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
-            <article
-              data-aos="fade-up"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="800"
-              class="border border-royal-gray-300 rounded-3xl"
-            >
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
-            <article
-              data-aos="fade-up"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              class="border border-royal-gray-300 rounded-3xl"
-            >
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
-            <article
-              data-aos="fade-up"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1500"
-              class="border border-royal-gray-300 rounded-3xl"
-            >
-              <div>
-                <img
-                  class="rounded-t-3xl"
-                  src="public/images/resources.jpeg"
-                  alt="Resources"
-                />
-              </div>
-              <div class="py-7 px-5">
-                <h5 class="font-bold text-sm text-royal-purple-700 mb-1">
-                  BLOG
-                </h5>
-                <h4 class="heading-card mt-2">Mobius Smart City Solution</h4>
-                <p class="text-base text-royal-gray-400 font-medium mt-3">
-                  A read about how Mobius DTasS enabled Smart City deployments
-                  in Boston, California
-                  <a class="text-royal-purple-600" href="">(read more)</a>
-                </p>
-              </div>
-            </article>
           </div>
         </div>
-      </section> -->
-    <!-- Enterprise -->
-    <section class="bg-royal-gray-100 my-20 py-14 lg:bg-bg-enterprise bg-no-repeat bg-right">
-      <article class="container ml-auto px-4 lg:px-0">
-        <div data-aos="fade-up" class="max-w-lg">
-          <h2 class="heading-section">Enterprise grade Trust & Security</h2>
-          <p class="body-text mt-3">
-            Lorem ipsum dolor sit amet consectetur. Eget arcu fringilla
-            tincidunt magna sit aliquam sed.
+      </footer>
+
+
+
+     
+        <!-- Enterprise -->
+        <section
+        class="bg-royal-gray-100 my-20 py-14 lg:bg-bg-enterprise bg-no-repeat bg-right"
+      >
+        <article class="px-custom  ml-auto px-4 lg:px-0">
+          <div data-aos="fade-up" class="max-w-lg">
+            <h2 class="heading-section">Enterprise grade Trust & Security</h2>
+            <p class="body-text mt-3">
+              Experience unparalleled trust and security with our enterprise-grade DTaaS platform, safeguarding your data and infrastructure while ensuring compliance with industry standards and regulations.
+            </p>
+          </div>
+          <div data-aos="fade-up" class="flex items-center mt-10">
+            <img
+              class="mr-8"
+              src="../public/images/badges/gdpr.svg"
+              alt="Gdpr Badge"
+            />
+            <img src="../public/images/badges/aicpa.svg" alt="Aicpa Badge" />
+          </div>
+
+          <a data-aos="fade-up" class="flex items-center mt-12" href="#">
+            <span>Read More</span>
+            <img
+              class="ml-5"
+              src="../public/images/icons/arrow-right.svg"
+              alt="Arrow Right"
+            />
+          </a>
+        </article>
+      </section>
+      <!-- Call to Action Section -->
+      <section data-aos="fade-up" class="px-4 lg:px-0 px-custom">
+        <article
+          class=" py-12 mx-auto px-8 text-center cta-wrapper rounded-3xl"
+        >
+          <h3 class="text-4xl font-bold text-royal-purple-500">
+            Discover Mobius DTaaS,
+          </h3>
+          <h2 class="text-4xl font-bold text-royal-purple-500">
+            Your Ultimate Accelerator for Business Success!
+          </h2>
+          <p class="text-xl leading-8 mx-auto mt-4 mb-12" style="width: 70%">
+            Revolutionize your business with Mobius DTaaS, the all-in-one
+            platform for rapid digital transformation. Harness the synergy of
+            five cutting-edge tools to drive innovation, efficiency, and growth
           </p>
-        </div>
-        <div data-aos="fade-up" class="flex items-center mt-10">
-          <img class="mr-8" src="../public/images/badges/gdpr.svg" alt="Gdpr Badge" />
-          <img src="../public/images/badges/aicpa.svg" alt="Aicpa Badge" />
-        </div>
-
-        <a data-aos="fade-up" class="flex items-center mt-12" href="#">
-          <span>Read More</span>
-          <img class="ml-5" src="../public/images/icons/arrow-right.svg" alt="Arrow Right" />
-        </a>
-      </article>
-    </section>
-    <!-- Call to Action Section -->
-    <section data-aos="fade-up" class="px-4 lg:px-0">
-      <article class="container mx-auto px-8 text-center cta-wrapper rounded-3xl">
-        <h3 class="text-4xl font-bold text-royal-purple-500">
-          Discover Mobius DTaaS,
-        </h3>
-        <h2 class="text-4xl font-bold text-royal-purple-500">
-          Your Ultimate Accelerator for Business Success!
-        </h2>
-        <p class="text-xl leading-8 mx-auto mt-4 mb-12" style="width: 70%">
-          Revolutionize your business with Mobius DTaaS, the all-in-one
-          platform for rapid digital transformation. Harness the synergy of
-          five cutting-edge tools to drive innovation, efficiency, and growth
-        </p>
-        <button data-aos="fade-up" class="btn btn-filled">Get Started</button>
-      </article>
-    </section>
-    <div data-aos="fade-up" class="px-4 lg:px-11 mt-28">
-      <hr class="hr-graphic" />
-    </div>
-  </main>
+          <button data-aos="fade-up" class="btn btn-filled">Get Started</button>
+        </article>
+      </section>
+      <div data-aos="fade-up" class="px-4 lg:px-11 mt-28">
+        <hr class="hr-graphic" />
+      </div>
+    </main>
   <footer data-aos="fade-up" class="mt-16 md:mt-20 pb-14">
     <div class="container mx-auto px-4">
       <div id="footer-flex"">

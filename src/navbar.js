@@ -126,6 +126,7 @@ function renderMegaMenu2(menuId) {
       const li = document.createElement("li");
       const atag = document.createElement("a");
       atag.setAttribute("href", listItem.article.url)
+      console.log(listItem);
       li.classList.add("mega-menu-link");
       li.setAttribute("data-subId", i);
       li.textContent = listItem.name;
@@ -401,7 +402,7 @@ function createColumnThree(
       a.style.textDecoration = "none"
       a.style.cursor = "pointer"
       a.style.display = "block"
-      a.setAttribute("href" ,"../ComingSoon/index.html")
+      a.setAttribute("href", "../../ComingSoon/index.html")
       div3.appendChild(a)
     })
   }
@@ -416,5 +417,41 @@ function createColumnThree(
 
 
 
+
+// favIcon Injection
+
+const head = document.querySelector("head")
+const favIcon = document.createElement("link")
+
+favIcon.rel = "shortcut icon"
+favIcon.type = "image/x-icon"
+
+let level = window.location.pathname.split("/").length - 2
+let dir = "public/images/brand-logo.svg"
+while (level--) {
+ dir = `../${dir}`
+}
+
+favIcon.href = dir
+
+head.append(favIcon)
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+
+
+const login_links = document.querySelectorAll("#login_popup > ul > div > a > img") 
+
+
+let iconDir = "public/images/Landing_logos/link-icon.svg"
+
+let lvl = window.location.pathname.split("/").length - 2
+
+while (lvl--) {
+  iconDir = `../${iconDir}`
+ }
+ 
+ login_links.forEach(i=>{
+  i.setAttribute("src",iconDir)
+ })
 
 
