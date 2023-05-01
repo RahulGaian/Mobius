@@ -1305,7 +1305,9 @@ a.swiper-slide > article > div > div > p:nth-child(1){
   -webkit-line-clamp: 4;
 }
 
-
+.login{
+  width: 150px;
+}
 #seealso:hover{
   cursor: pointer;
   background-color: #c0c0c0ca;

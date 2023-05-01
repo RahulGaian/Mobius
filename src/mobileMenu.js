@@ -75,6 +75,7 @@ window.onclick = function (event) {
 };
 
 for (let i of a_tags) {
+  
   if (i.innerText == "Sign Up for a Free Trail") {
     i.href = "../../contact/ContactForDemo.html"
   }
@@ -90,13 +91,22 @@ for (let i of a_tags) {
   if (i.innerText == "Get Started") {
     i.innerText = "Sign Up for a Free Trail"
     i.href = "/contact/ContactForDemo.html"
+    i.style = "width:250px"
 
+  }
+  if(i.innerText == "Login"){
+    console.log("hello there")
+    
+  
   }
   if (i.innerText == "You may also like") {
     i.innerText = "Related Products"
   }
   if (i.innerText == "Resources") {
     i.parentElement.remove(i)
+  }
+  if(i.innerText == "Book a Demo"){
+    i.style = "width:250px;"
   }
 
 

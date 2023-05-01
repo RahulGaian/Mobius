@@ -467,7 +467,7 @@ const menu = [
                       heading: "Smart City as a Service",
                       description:
                         "Mobius DTasS is the cutting-edge Smart City as a Service (SCaaS) platform designed to help cities become more efficient, sustainable, and livable. ",
-                      url: "products/Phygital/SmartCity.html",
+                      url: "/products/Phygital/SmartCity.html",
                       coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
