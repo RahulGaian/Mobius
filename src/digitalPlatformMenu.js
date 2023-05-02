@@ -74,7 +74,7 @@ function renderDigitalPlatformMenu(index = 0) {
   />
 </div>
     <div class="lg:col-span-2 addMargin">
-      <h3 class="heading-section">${menu[index].heading}</h3>
+      <h4 class="heading-section">${menu[index].heading}</h4>
       <p class="body-text mt-4">
       ${menu[index].description}
       </p>

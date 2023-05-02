@@ -163,7 +163,7 @@ function content_changer2(index) {
   >
 
   <h1 class="text-3xl">${testimonails[index][0]}</h1>
-  <h2 class="body-text">${testimonails[index][1]}</h2>
+  <h5 class="body-text">${testimonails[index][1]}</h5>
 </div>`;
   second_slider[1].innerHTML = `              
   <div data-aos="fade-left"

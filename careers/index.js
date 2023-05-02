@@ -71,7 +71,7 @@ function renderDigitalPlatformMenu(index = 0) {
     class="lg:col-span-8 grid lg:grid-cols-3 justify-between    lg:border-l border-t px-4 lg:border-t-0  border-royal-gray-300"
   >
     <div class="lg:col-span-2 mx-auto px-4 ">
-      <h3 class="heading-section">${menu[index].heading}</h3>
+      <h5 class="heading-section">${menu[index].heading}</h5>
       <p class="body-text mt-4">
       ${menu[index].description}
       </p>

@@ -116,7 +116,7 @@ function animationAccordian() {
         document.getElementById(descClassName).click();
       }
       flag = false;
-    }, 2000)
+    }, 5000)
 }
 animationAccordian();
 

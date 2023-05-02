@@ -852,6 +852,20 @@ top: 978px; */
 }
 
 
+@media all and (min-width:501px) and (max-width:1200px) {
+  .bg-dtash {
+    height: 58rem !important;
+  }
+}
+
+
+@media all and (min-width:300px) and (max-width:500px) {
+  .bg-dtash {
+    height: 70rem !important;
+  }
+}
+
+
 
 
 @media all and (min-width:300px) and (max-width:1200px) {
@@ -904,9 +918,7 @@ top: 978px; */
 
 
 
-  .bg-dtash {
-    min-height: 90rem !important;
-  }
+ 
 
   @media all and (min-width:300px) and (max-width:500px) {
 
@@ -918,7 +930,7 @@ top: 978px; */
     .slide01 {
       font-size: 1.2rem !important;
     }
-
+   
 
 
 
@@ -1081,7 +1093,7 @@ top: 978px; */
 
 
 .set-height {
-  min-height: 200vh;
+  /* min-height: 200vh; */
 }
 
 

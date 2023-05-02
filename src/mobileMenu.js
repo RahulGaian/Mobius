@@ -75,7 +75,7 @@ window.onclick = function (event) {
 };
 
 for (let i of a_tags) {
-  
+
   if (i.innerText == "Sign Up for a Free Trail") {
     i.href = "../../contact/ContactForDemo.html"
   }
@@ -88,29 +88,17 @@ for (let i of a_tags) {
 
 
   }
-  if (i.innerText == "Get Started") {
-    i.innerText = "Sign Up for a Free Trail"
-    i.href = "/contact/ContactForDemo.html"
-    i.style = "width:250px"
 
-  }
-  if(i.innerText == "Login"){
-    console.log("hello there")
-    
-  
-  }
+
   if (i.innerText == "You may also like") {
     i.innerText = "Related Products"
   }
   if (i.innerText == "Resources") {
     i.parentElement.remove(i)
   }
-  if(i.innerText == "Book a Demo"){
-    i.style = "width:250px;"
-  }
-
 
 }
+
 
 
 
@@ -594,32 +582,33 @@ function init() {
   }
 
   window_resizing();
- 
+
 
 }
 
 init();
 
 
-window.addEventListener('resize',function(){
+window.addEventListener('resize', function () {
   window_resizing();
-  
+
 });
 
 
-function window_resizing(){
+function window_resizing() {
   var widerScreenWidth4 = window.matchMedia("(max-width: 500px)");
   const product_section_articles = document.querySelectorAll("#product_section > article");
-  if(widerScreenWidth4.matches) {
-   product_section_articles?product_section_articles.forEach(ele => {
-         ele.classList.remove('px-6-custom');
-         ele.classList.contains('px-4')?'':ele.classList.add('px-4');
-        }):'';
+  if (widerScreenWidth4.matches) {
+    product_section_articles ? product_section_articles.forEach(ele => {
+      ele.classList.remove('px-6-custom');
+      ele.classList.contains('px-4') ? '' : ele.classList.add('px-4');
+    }) : '';
   }
   else {
-   product_section_articles?product_section_articles.forEach(ele => {
-     ele.classList.contains('px-6-custom')?'':ele.classList.add('px-6-custom');
-     ele.classList.remove('px-4');}):'';
+    product_section_articles ? product_section_articles.forEach(ele => {
+      ele.classList.contains('px-6-custom') ? '' : ele.classList.add('px-6-custom');
+      ele.classList.remove('px-4');
+    }) : '';
   }
 }
 
