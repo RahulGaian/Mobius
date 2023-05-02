@@ -37,7 +37,7 @@ function renderDigitalPlatformMenu(index = 0) {
     },
     {
       name: "HolaCracy",
-      heading: "Hola Verse",
+      heading: "HolaCracy",
       image: "../public/images/Landing_logos/marketplace.svg",
       description:
         "Holacracy is a cutting-edge, multi-tenant SaaS platform that offers a collaborative marketplace as a service. The platform provides businesses with the raw materials for digital transformation, including technology providers, content providers, infrastructure providers, and monetization partners. Holacracy is the ultimate destination for businesses looking to take their phygital transformation to the next level and drive success through collaborative partnerships.",

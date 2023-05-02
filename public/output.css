@@ -1,3 +1,13 @@
+
+
+/* font sizing */
+
+
+
+
+
+
+
 /*
 ! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
 */
@@ -72,6 +82,7 @@ body {
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
+
 
 hr {
   height: 0;
@@ -3507,4 +3518,87 @@ body {
    padding-right: 0.5rem !important;
  }
 }
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:1250px) {
+  h1{
+    font-size: 60px !important;
+  }
+  h2{
+    font-size: 40px !important;
+  }
+  h3{
+    font-size: 28px !important;
+  }
+  h4{
+    font-size: 24px !important
+  }
+  h5{
+    font-size: 20px !important;
+  }
+  p,a{
+    font-size: 18px !important;
+  }
+  button{
+    font-size: 18px !important;
+  }
+
+}
+
+@media all and (min-width:501px) and (max-width:1249px){
+h1{
+  font-size: 60px !important;
+}
+h2{
+  font-size: 32px !important;
+}
+h3{
+  font-size: 24px !important;
+}
+h4{
+  font-size: 21px !important
+}
+h5{
+  font-size: 18px !important;
+}
+p,a,button{
+  font-size: 16px !important;
+}
+
+}
+
+@media all and (max-width:500px){
+h1{
+  font-size: 40px !important;
+}
+h2{
+  font-size: 28px !important;
+}
+h3{
+  font-size: 24px !important;
+}
+h4{
+  font-size: 21px !important
+}
+h5{
+  font-size: 18px !important;
+}
+p,a,button{
+  font-size: 16px !important;
+}
+
+}
+
+
+
+
+
 

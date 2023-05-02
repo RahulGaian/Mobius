@@ -48,7 +48,8 @@ let testimonails = [
     "Ever since I joined GAIAN, it has been a learning session each day. It has created extremely rewarding experience in terms of knowledge enhancement and skills acquisition. Its pleasant work environment allows me to contribute to the best of my abilities. ",
     "Manjusha.jpg"],
     ["",
-    "At Gaian, I believe I have climbed the ladder of success that has taken me higher in my career. A flexible, friendly and helpful environment is what I have enjoyed here... Looking forward to continuing this wonderful journey "]
+    "At Gaian, I believe I have climbed the ladder of success that has taken me higher in my career. A flexible, friendly and helpful environment is what I have enjoyed here... Looking forward to continuing this wonderful journey ",
+    "syed-mudassir-ahmed.png"]
 
 ]
 
@@ -114,9 +115,9 @@ function call2() {
   } else if (button_id == "3a") {
     content_changer2(2);
   } else if (button_id == "4a") {
-    content_changer2(0);
+    content_changer2(3);
   }
-  clearInterval(z);
+  clearInterval(p);
 }
 
 
@@ -169,7 +170,7 @@ function content_changer2(index) {
   
   
   >
-  <img style="height:200px;border-radius:50%;"  src="../public/images/careers/${testimonails[index][2]}" alt="">
+  <img style="min-height:150px;min-width:150px;max-height:200px;width:auto;border-radius:50%;"  src="../public/images/careers/${testimonails[index][2]}" alt="">
 </div>`;
 }
 
