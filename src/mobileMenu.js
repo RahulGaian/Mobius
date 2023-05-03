@@ -157,7 +157,7 @@ function footer_changer() {
         
         ele.setAttribute("class","mb-4")
         a.setAttribute("class","nav-link")
-        a.href = "/PrivacePolicy/index.html"
+        a.href = "/PrivacyPolicy/index.html"
         a.innerText = "Privacy Policy"
         ele.appendChild(a)
         i.parentElement.parentElement.appendChild(ele)
