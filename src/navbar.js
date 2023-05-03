@@ -126,7 +126,7 @@ function renderMegaMenu2(menuId) {
       const li = document.createElement("li");
       const atag = document.createElement("a");
       atag.setAttribute("href", listItem.article.url)
-      console.log(listItem);
+      // //console.log(listItem);
       li.classList.add("mega-menu-link");
       li.setAttribute("data-subId", i);
       li.textContent = listItem.name;
@@ -253,6 +253,8 @@ function createColumnTwo(activeMenuId, id = 0, subId = 0) {
   createColumnThree(activeMenuId, id, subId, 0, true);
 }
 
+
+
 // Mega Menu 2 Column two
 function createColumnThree2(activeMenuId, id = 0, subId = 0) {
   const articleInfo = menu2[activeMenuId].menuItems[id].list[subId].article;
@@ -339,6 +341,7 @@ function createColumnThree(
   img.setAttribute("src", getImageUrl("/public/images/icons/close.svg"));
   img.setAttribute("alt", "Close Icon");
   img.addEventListener("click", () => {
+    //console.log("click");
     megaMenuOne.style.display = "none";
     navbar.classList.add("nav-transparent");
     navbar.classList.remove("nav-colored");
@@ -396,7 +399,7 @@ function createColumnThree(
 
 
     menu[activeMenuId].menus[id].items[subId].subitems[0].items[2].content.extra.forEach(item => {
-      // console.log(item);
+      // //console.log(item);
       const a = document.createElement("a")
       a.textContent = item;
       a.style.textDecoration = "none"
@@ -454,4 +457,48 @@ while (lvl--) {
   i.setAttribute("src",iconDir)
  })
 
+
+
+
+ function init2(){
+  setTimeout(() => {
+    if(document.querySelector("#menu-action2 > li:nth-child(5)")){
+      document.querySelector("#menu-action2 > li:nth-child(5)").innerHTML = `
+      <span class="nav-link" onclick="window.location='/contact'">Contact</span>
+      <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+      src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
+      
+      `;
+    }
+  },);
+  
+ }
+
+ init2();
+
+ const terms  = document.querySelectorAll("small")
+ const conditions  = document.querySelectorAll("a")
+
+ terms.forEach(e=>{
+  if(e.innerText == "All Rights Reserved. 2023 Copyright Gaian Solutions"){
+    e.id = "terms"
+  }
+ })
+
+ conditions.forEach(e=>{
+  if(e.innerText == "Gaian Solutions"){
+    e.id = "terms"
+  }
+ })
+
+const a_btn = document.querySelectorAll("a")
+
+a_btn.forEach(e=>{
+  if(e.innerText == "Book a Demo"){
+    e.style.width = "203px"
+  } 
+})
+
+
+console.log(window.location.pathname);
 

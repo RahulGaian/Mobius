@@ -214,10 +214,10 @@ let data_Changer = (img,heading,content) => {
 let data_handler = (data) => {
     let HTML = ''
     for(let i of data){
-        console.log(i)
+        //console.log(i)
         let article  = data_Changer(i["image"],i["heading"],i["content"])
         HTML += article;
         con_section.innerHTML = HTML
-        console.log(HTML)
+        //console.log(HTML)
     }
 }

@@ -74,7 +74,7 @@ function renderJourneyMenu(index = 0) {
 
   const listItems = menu
     .map((item, i) => {
-      console.log(i)
+      //console.log(i)
       return `<figure class=""><div class="w-4 h-4  rounded-full  ${
         index == i ? "bg-royal-purple-500" : "bg-white"
       }" onclick="changeJourneyMenu(${i})"></div></figure>`;

@@ -80,13 +80,13 @@ let p = setInterval(function () {
 }, 5500);
 
 function call() {
-  console.log("hello");
+  // //console.log("hello");
 
   button = event.target;
   button_id = button.getAttribute("id");
-  console.log(button.style);
+  //console.log(button.style);
 
-  button.style = "color:white;background-color:white ;";
+  button?.style = "color:white;background-color:white ;";
 
   first_slider = document.getElementsByClassName("first");
   second_slider = document.getElementsByClassName("images");
@@ -106,7 +106,7 @@ function call() {
 function call2() {
   button = event.target;
   button_id = button.getAttribute("id");
-  console.log("hello");
+  //console.log("hello");
 
   if (button_id == "1a") {
     content_changer2(0);
@@ -126,7 +126,7 @@ function call2() {
 
 
 function content_changer(index) {
-  console.log(index)
+  //console.log(index)
   first_slider[0].innerHTML = `
   <div data-aos="fade-up" >
  <h3 class="heading-section">${perks[index][0]}</h3>
@@ -156,7 +156,7 @@ function content_changer(index) {
 }
 
 function content_changer2(index) {
-  console.log(index,"index of 2")
+  //console.log(index,"index of 2")
   first_slider[2].innerHTML = `
   <div data-aos="fade-up"
 

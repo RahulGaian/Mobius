@@ -67,9 +67,9 @@ button_tags = document.getElementsByTagName("button")
 let span = document.getElementById("close1");
 span.onclick = function () {
   modal.style.display = "none";
-  console.log("hello therer")
+  //console.log("hello therer")
 };
-console.log(span)
+//console.log(span)
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -78,7 +78,8 @@ window.onclick = function (event) {
 
 for (let i of a_tags) {
 
-  if (i.innerText == "Sign Up for a Free Trail") {
+  if (i.innerText == "Get Started") {
+    i.innerText = "Sign Up for a Free Trail"
     i.href = "../../contact/ContactForDemo.html"
   }
   if (i.innerText == "Book a Demo") {
@@ -110,7 +111,7 @@ for (let j of button_tags) {
 
 
 
-    // console.log(j,j.onClick)
+    // //console.log(j,j.onClick)
   }
 }
 
@@ -149,8 +150,18 @@ function footer_changer() {
       }
 
       case "Terms & Conditions": {
-        i.href = "../platform/Holacracy.html";
+        i.href = "/Terms&Conditions/index.html";
 
+        ele = document.createElement("li")
+        a = document.createElement("a")
+        
+        ele.setAttribute("class","mb-4")
+        a.setAttribute("class","nav-link")
+        a.href = "/PrivacePolicy/index.html"
+        a.innerText = "Privacy Policy"
+        ele.appendChild(a)
+        i.parentElement.parentElement.appendChild(ele)
+        console.log(i.parentElement,"he",ele)
         break;
       }
 
@@ -234,9 +245,9 @@ function footer_changer() {
         i.href = "/platform/vinci.html";
         break;
       }
-      case "Hola Verse": {
+      case "Hola Cracy": {
 
-        i.innerText = "Hola Cracy"
+        // i.innerText = "Hola Cracy"
         i.href = "/platform/Holacracy.html";
 
         break;
@@ -258,7 +269,7 @@ function google_analytics() {
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date()); gtag('config', 'G-VLXJ0TS5N0');
-  console.log("done")
+  //console.log("done")
 }
 
 google_analytics();
@@ -273,7 +284,7 @@ ids.map((i) => {
     div.setAttribute("id", i)
     ele.parentElement.insertBefore(div, ele)
 
-    console.log("done");
+    //console.log("done");
 
   }
   else {
@@ -414,7 +425,7 @@ function addPopup() {
   fontAsw.crossorigin = 'anonymous';
   head.appendChild(fontAsw);
 
-  console.log('length', document.getElementsByClassName('login_class').length);
+  //console.log('length', document.getElementsByClassName('login_class').length);
 
 
   //  setTimeout(() => {
@@ -440,7 +451,7 @@ function addPopup() {
   class="lg:col-span-2 border-royal-gray-300 rounded-3xl">
   <ul class="platform-features ">
     <div id="small-screen-view-header" class="login-links display-icon">
-      <li  class="login_text" type="button" class="text-lg"> Login
+      <li  class="login_text" type="button" class="!text-lg"> Login
       </li>
       <img onClick="closeLogin()" style="cursor: pointer;"  class="" src="${l <= 1 ? '' : '../'}../public/images/icons/close-outline.svg" alt="Menu" id="close-menu" />
     </div>
@@ -480,7 +491,7 @@ function addPopup() {
 
     const login = `
   <li>
-  <a class="btn login_class" onClick="loginEvent(event)">
+  <a class="btn-login login_class" onClick="loginEvent(event)">
     <span>Login</span>
     <i id="login_select_toggle" class="fa fa-chevron-down" aria-hidden="true"></i>
   </a>
@@ -548,9 +559,10 @@ addPopup();
 
 
 
-function init() {
+function init() {  
 
 
+  
 
   var capabilities = document.querySelector("#cap2");
   var problems_article = document.querySelector("#problem > article");
@@ -571,7 +583,7 @@ function init() {
     enterprise_article.classList.remove('items-center');
 
 
-    // console.log(enterprise_article.lastChild,enterprise_article.children);
+    // //console.log(enterprise_article.lastChild,enterprise_article.children);
     enterprise_article.children.length > 1 ? enterprise_article.children[1].classList.remove('lg:px-0') : '';
     enterprise_article.children.length > 1 ? enterprise_article.children[1].classList.remove('lg:py-0') : '';
 

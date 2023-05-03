@@ -4,7 +4,7 @@
 }
 
 .mega-menu {
-  top: 104px;
+  top: 87px;
   z-index: 1 !important;
 }
 
@@ -12,6 +12,7 @@
   .mega-menu {
     z-index: 99999 !important;
   }
+ 
 }
 
 .active-mega-link {
@@ -62,6 +63,12 @@
   display: none;
 }
 
+@media all and (width<600px){
+  .mega-menu,.mobile-menu {
+    top: 70px !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .back {
     display: block;
@@ -74,7 +81,7 @@
   }
 
   .mega-menu {
-    top: 86px;
+    top: 80px;
   }
 
   .mobile-menu li .nav-link {

@@ -13,16 +13,16 @@ let z = setInterval(function(){
 }, 5000);
 
 function call(){
-  console.log("hello")
+  //console.log("hello")
   button = event.target.getAttribute("for")
   radio = document.getElementById(button + "1")
   radio.checked = true
-  console.log(button+"1")
-  console.log(radio,radio.checked)
+  //console.log(button+"1")
+  //console.log(radio,radio.checked)
   first_ele = document.getElementsByClassName("images")
   first_slider = document.getElementsByClassName('first');
 
-  console.log(first_ele[0])
+  //console.log(first_ele[0])
   if(button == "radio1"){
     first_slider[0].style.marginLeft = "0px"
 

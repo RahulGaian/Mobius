@@ -237,7 +237,7 @@ window.addEventListener('resize', function (event) {
     // renderPlatformMenu();
     animationAccordian();
     toggleInterval = false;
-    // console.log( document.getElementsByClassName('display-icons'));
+    // //console.log( document.getElementsByClassName('display-icons'));
     var elements = document.getElementsByClassName("display-icons");
     for (var i = 0; i < elements.length; i++) {
       elements[i].classList.add('display-icon');
@@ -284,7 +284,7 @@ window.addEventListener('resize', function (event) {
 //     },
 //   ];
 
-//   console.log('hello', menu[0]['description']);
+//   //console.log('hello', menu[0]['description']);
 //   let i=0;
 //   if(this.document.getElementById('select-accordian')){
 //     i = parseInt(this.document.getElementById('select-accordian').value);
@@ -309,7 +309,7 @@ window.addEventListener('resize', function (event) {
 //   </div>
 // `;
 
-// console.log(platformMenu);
+// //console.log(platformMenu);
 //   platformMenu.innerHTML = html2;
 // }
 

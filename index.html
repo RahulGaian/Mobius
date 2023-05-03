@@ -45,7 +45,7 @@
 <body id="main_body">
   <!-- Navigation Bar -->
   <header class="sticky top-0 z-50" id="top-navbar">
-    <div class="absolute z-20 top-0 w-full navbar" id="mynav">
+    <div class="absolute z-20 top-0 w-full " id="mynav">
       <nav id="nav-bar" class="  mx-auto lg:flex justify-between items-center py-6 lg:pt-10 lg:pb-8">
         <div class="lg:flex items-center">
           <div class="flex justify-between items-center">
@@ -95,11 +95,12 @@
                 src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
             </li>
             <li class="ml-11">
-              <a class="nav-link" href="/contact">Contact</a>
+              <span class="nav-link" onclick="window.location='/contact'">Contact</span>
+              <img class="absolute left-2/4 -translate-x-2/4 hidden top-8 cheveron-down"
+              src="../public/images/icons/chevron-down.svg" alt="Arrow Down Icon" />
             </li>
           </ul>
         </div>
-
         <div>
 
 
@@ -312,7 +313,7 @@
             </header>
           </div> -->
 
-        <div class="grid add-gap lg:grid-cols-3  text-center ">
+        <div class="grid add-gap pad-1 lg:grid-cols-3  text-center ">
           <div class="add-padding bg-gradient-purple-graphics flex flex-col items-center justify-center">
             <img class="w-16 pb-6" src="../public/images/icons/Quick.svg" alt="Curve Line" />
             <h3 class="text-xl text-white">Faster Time to Value</h3>
@@ -885,7 +886,7 @@
         <section
         class="bg-royal-gray-100 my-20 py-14 lg:bg-bg-enterprise bg-no-repeat bg-right"
       >
-        <article class="px-6-custom  ml-auto px-4 lg:px-0">
+        <article class="px-6-custom  ml-auto lg:px-0">
           <div data-aos="fade-up" class="max-w-lg">
             <h3 class="heading-section">Enterprise grade Trust & Security</h3>
             <p class="body-text mt-3">
@@ -912,7 +913,7 @@
         </article>
       </section>
       <!-- Call to Action Section -->
-      <section data-aos="fade-up" class="px-4 lg:px-0 px-6-custom">
+      <section data-aos="fade-up" class=" lg:px-0 px-6-custom">
         <article
           class=" py-12 lg:mx-auto px-8 text-center cta-wrapper rounded-3xl"
         >
@@ -922,7 +923,7 @@
           <h3 class="text-4xl font-bold text-royal-purple-500">
             Your Ultimate Accelerator for Business Success!
           </h3>
-          <p class="text-xl leading-8 mx-auto mt-4 mb-12" style="width: 70%">
+          <p class="text-xl leading-8 mx-auto mt-4 mb-12 width-change">
             Revolutionize your business with Mobius DTaaS, the all-in-one
             platform for rapid digital transformation. Harness the synergy of
             five cutting-edge tools to drive innovation, efficiency, and growth
@@ -1049,7 +1050,7 @@
         </nav>
         <div class="mt-11">
           <small class="text-sm">All Rights Reserved. 2023 Copyright
-            <a class="underline" href="#">Gaian Solutions</a>
+            <a  class="underline" href="#">Gaian Solutions</a>
           </small>
         </div>
       </div>

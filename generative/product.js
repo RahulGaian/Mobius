@@ -17,13 +17,13 @@ let html_Data = ""
 //             data_arr.push(i[j].toString())
 //         }
 //         let name = data_arr.shift()
-//         console.log(data_arr,name)
-//         console.log("/////////////////////////////")
+//         //console.log(data_arr,name)
+//         //console.log("/////////////////////////////")
 //         let string = gen.gen(data_arr);
-//         // console.log(string)
+//         // //console.log(string)
 //         fs.writeFile("../generated_products/"+ name, string, (err) => {
 //             if (err) throw err;
-//             console.log('The file  '+ name+' has been saved  to output!');
+//             //console.log('The file  '+ name+' has been saved  to output!');
 //       })
 
 //     }
@@ -47,12 +47,12 @@ let html_Data = ""
 //             data.push(row);
 //         })
 //         .on("error", function (error) {
-//             console.log(error.message);
+//             //console.log(error.message);
 //         })
 //         .on("end", function () {
 //         // Here log the result array
-//         console.log("parsed csv data");
-//         console.log("///////////////////////////qqqqq///////////////////////")
+//         //console.log("parsed csv data");
+//         //console.log("///////////////////////////qqqqq///////////////////////")
 //         save(data);
 //     });
     

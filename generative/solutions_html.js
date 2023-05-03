@@ -1,6 +1,6 @@
 
 const generator = (arr) => {
-  console.log(arr[0])
+  //console.log(arr[0])
   Main_heading =arr[0],
   Main_heading_content=arr[1],
   Main_image=arr[2],

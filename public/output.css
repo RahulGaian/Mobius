@@ -1856,6 +1856,34 @@ body {
   color: rgb(45 34 170 / var(--tw-text-opacity));
 }
 
+.btn-login {
+  display: inline-block;
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(45 34 170 / var(--tw-border-opacity));
+  /* padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; */
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+
+  --tw-text-opacity: 1;
+  color: rgb(45 34 170 / var(--tw-text-opacity));
+}
+
+.btn-login:hover {
+  background-color: rgb(45 34 170 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  color: white;
+  cursor: pointer;
+
+}
+
 .btn:hover {
   background-color: rgb(45 34 170 / var(--tw-bg-opacity));
   --tw-bg-opacity: 1;
@@ -2012,7 +2040,11 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-transparent {
@@ -2304,7 +2336,9 @@ body {
     height: auto;
   }
 
-
+  .nav-colored{
+    height: 70px;
+  }
 
   .banner-bg-pink {
     height: auto;
@@ -2770,14 +2804,14 @@ body {
   
 
 
-
+/* 
   .max-W-400>h4 {
     font-size: 1.5rem !important;
   }
 
   .max-W-400>p {
     font-size: 1rem !important;
-  }
+  } */
 
 
 }
@@ -3493,7 +3527,7 @@ body {
 
 #terms {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.7rem !important;
   padding-bottom: 1rem;
   color: rgba(138, 138, 138, 1);
 
@@ -3554,29 +3588,36 @@ body {
 @media all and (min-width:1250px) {
   h1 {
     font-size: 60px !important;
+    line-height: 62px !important;
   }
 
   h2 {
     font-size: 40px !important;
+    line-height: 42px !important;
   }
 
   h3 {
     font-size: 28px !important;
+    line-height: 30px !important;
   }
 
   h4 {
-    font-size: 24px !important
+    font-size: 24px !important;
+    line-height: 26px !important;
   }
 
-  h5 {
+  h5,figcaption {
     font-size: 20px !important;
+    line-height: 24px !important;
   }
   p,a,li{
     font-size: 18px !important;
+    line-height: 26px !important;
   }
 
   button {
     font-size: 18px !important;
+    line-height: 26px !important;
   }
 
 }
@@ -3585,42 +3626,54 @@ body {
 @media all and (min-width:501px) and (max-width:1249px){
 h1{
   font-size: 60px !important;
+  line-height: 62px !important;
 }
 h2{
   font-size: 32px !important;
+  line-height: 34px !important;
 }
 h3{
   font-size: 24px !important;
+  line-height: 26px !important;
 }
 h4{
-  font-size: 21px !important
+  font-size: 21px !important;
+  line-height: 23px !important;
 }
-h5{
+h5,figcaption{
   font-size: 18px !important;
+  line-height: 22px !important;
 }
 p,a,button,li{
   font-size: 16px !important;
+  line-height: 22px !important;
 }
 }
 
 @media all and (max-width:500px){
 h1{
   font-size: 40px !important;
+  line-height: 42px !important;
 }
 h2{
   font-size: 28px !important;
+  line-height: 30px !important;
 }
 h3{
   font-size: 24px !important;
+  line-height: 26px !important;
 }
 h4{
-  font-size: 21px !important
+  font-size: 21px !important;
+  line-height: 23px !important;
 }
-h5{
+h5,figcaption{
   font-size: 18px !important;
+  line-height: 22px !important;
 }
 p,a,button,li{
   font-size: 16px !important;
+  line-height: 22px !important;
 }
 
 }
@@ -3653,3 +3706,56 @@ p,a,button,li{
    min-width: 5rem;
 }  
 
+
+
+@media all and (max-width:1023px) {
+
+  #small-screen-view-header > li{
+    font-size: 20px !important;
+  }
+  
+}
+
+.width-change{
+  width: 70% !important;
+}
+
+@media all and (max-width:500px) {
+  .width-change{
+    width: 100% !important;
+  }
+  #footer > nav > ul > li{
+     margin-bottom: 0.5rem !important;
+  }
+  #footer > nav > ul{
+    margin-top: 0.5rem !important;
+ }
+
+ .p-career-value{
+    padding-top: 4rem !important;
+    padding-bottom:0px  !important;
+ }
+ 
+}
+
+@media all and (max-width:1023px) {
+
+  .padding-value{
+    padding-top: 1rem !important;
+   }
+
+}
+
+
+
+#mega-menu-one-container > div.col-span-2.border-r.border-royal-gray-300.py-2.py-2.pr-6.column-one{
+  height: 100vh;
+}
+
+#mega-menu-one-container > div{
+  height: 100vh;
+}
+
+#mega-menu-one-container > div.col-span-2.border-r.border-royal-gray-300.py-2.px-6 > div > button {
+  padding-bottom: 2rem;
+}

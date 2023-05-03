@@ -17,13 +17,13 @@ function save(dat)  {
             data_arr.push(i[j].toString())
         }
         let name = data_arr.shift()
-        console.log(data_arr)
-        console.log("/////////////////////////////")
+        //console.log(data_arr)
+        //console.log("/////////////////////////////")
         let string = gen.gen(data_arr);
-        // console.log(string)
+        // //console.log(string)
         fs.writeFile("../generated_solutions/"+name, string, (err) => {
             if (err) throw err;
-            console.log('The file has been saved  to output!');
+            //console.log('The file has been saved  to output!');
       })
 
     }
@@ -46,12 +46,12 @@ let Csv_reader = () => {
             data.push(row);
         })
         .on("error", function (error) {
-            console.log(error.message);
+            //console.log(error.message);
         })
         .on("end", function () {
         // Here log the result array
-        console.log("parsed csv data");
-        console.log("///////////////////////////")
+        //console.log("parsed csv data");
+        //console.log("///////////////////////////")
         save(data);
     });
     

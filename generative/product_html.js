@@ -1,10 +1,10 @@
 const generator = (arr) => {
-  console.log(arr[0]);
+  //console.log(arr[0]);
   (Main_heading = arr[0]),
     (Main_heading_content = arr[1]),
     (Main_image = arr[2]),
     (cap1_img = arr[3]),
-    console.log(cap1_img);
+    //console.log(cap1_img);
   (cap1_heading = arr[4]),
     (cap1_content = arr[5]),
     (cap2_img = arr[6]),

@@ -202,7 +202,7 @@ const menu = [
                         " Quickly launch a range of training programs, create customized learning paths, and track employee progress, all in one place. Enhance employee engagement, satisfaction, and retention. ",
                       url: "/solutions/hr&peopletech/LearningDevelopment.html",
                       coverImage:
-                        "/public/images/navbar/learningdevelopment.jpg",
+                        "/public/images/navbar/learningDevelopment.jpg",
                     },
                   },
                   {
