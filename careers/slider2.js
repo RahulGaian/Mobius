@@ -86,7 +86,7 @@ function call() {
   button_id = button.getAttribute("id");
   //console.log(button.style);
 
-  button?.style = "color:white;background-color:white ;";
+  button.style = "color:white;background-color:white ;";
 
   first_slider = document.getElementsByClassName("first");
   second_slider = document.getElementsByClassName("images");

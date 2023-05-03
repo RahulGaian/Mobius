@@ -2017,6 +2017,7 @@ body {
 
 .mega-menu-link:hover {
   --tw-bg-opacity: 1;
+  transition: 0.4s;
   background-color: rgb(235 207 207 / var(--tw-bg-opacity));
 }
 

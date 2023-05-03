@@ -17,7 +17,7 @@ const menu = [
                       heading: "Smart Cities",
                       description:
                         "With Smart City as a Service, you can leverage the power of Mobius DTaaS to unlock the full potential of your city's infrastructure and resources, creating a thriving ecosystem that drives innovation and growth. ",
-                      url: "/solutions/government&publicsector/SmartCity.html",
+                      url: "/solutions/government&publicsector/smart-city-as-a-service.html",
                       coverImage: "/public/images/navbar/smart.jpg",
                     },
                   },
@@ -27,7 +27,7 @@ const menu = [
                       heading: "Citizen Engagement",
                       description:
                         "By facilitating real-time communication and data-driven decision-making, Mobius Citizen Engagement Services empower local governments and NextGen TV broadcasters to drive positive change and foster thriving communities.",
-                      url: "/solutions/government&publicsector/CitizenEngagement.html",
+                      url: "/solutions/government&publicsector/citizen-engagement.html",
                       coverImage: "/public/images/navbar/citizen.jpg",
                     },
                   },
@@ -54,7 +54,7 @@ const menu = [
                       heading: "5G Network Orchestration",
                       description:
                         "Mobius DTaaS's private 5G network implementation empowers businesses to drive innovation and create value. With low-code tools, businesses can build apps for a 5G marketplace that offers connectivity as a service, enabling growth, remote monitoring, tracking, and safety. Mobius enables collaboration and value creation for stakeholders. ",
-                      url: "/solutions/private5g&Telco/5gOrcheastration.html",
+                      url: "/solutions/private5g&Telco/5g-network-orcheastration.html",
                       coverImage: "/public/images/navbar/5g.jpg",
                     },
                   },
@@ -64,7 +64,7 @@ const menu = [
                       heading: "Private 5G",
                       description:
                         "Transform your business with Mobius DTaaS-powered Private 5G Network solutions. Our low-code platform enables rapid development and deployment of custom applications, and our automated network tools reduce costs and enhance efficiency. Experience the full potential of 5G technology with our smart connectivity solutions. ",
-                      url: "/solutions/private5g&Telco/Private5g.html",
+                      url: "/solutions/private5g&Telco/private-5g.html",
                       coverImage: "/public/images/navbar/5g2.jpg",
                     },
                   },
@@ -74,7 +74,7 @@ const menu = [
                       heading: "5G Marketplaces",
                       description:
                         "Mobius 5G Marketplace Solution is a collaborative ecosystem that enables businesses to leverage 5G technology and smart infrastructure for innovation and growth. ",
-                      url: "/solutions/private5g&Telco/5gMarketPlace.html",
+                      url: "/solutions/private5g&Telco/5g-market-place.html",
                       coverImage: "/public/images/navbar/5g.jpg",
                     },
                   },
@@ -101,7 +101,7 @@ const menu = [
                       heading: "NextGen TV",
                       description:
                         "Empowering NextGen TV broadcasters with Mobius' low-code platform to create immersive viewing experiences. Deploy applications and services faster than ever before, creating new value and driving innovation across the industry. Stay ahead of the competition with Mobius. ",
-                      url: "/solutions/media&entertainment/NextGenTv.html",
+                      url: "/solutions/media&entertainment/nextgen-tv.html",
                       coverImage: "/public/images/navbar/nextGenTv.jpg",
                     },
                   },
@@ -111,7 +111,7 @@ const menu = [
                       heading: "OTT Platforms",
                       description:
                         "Our OTT Platform Solution provides a scalable, personalized, and comprehensive video streaming infrastructure that allows content owners to monetize their content efficiently while providing viewers with an immersive viewing experience.",
-                      url: "/solutions/media&entertainment/Ott.html",
+                      url: "/solutions/media&entertainment/ott-platforms.html",
                       coverImage: "/public/images/navbar/ott.jpg",
                     },
                   },
@@ -170,7 +170,7 @@ const menu = [
                       heading: "Smart Recruiting",
                       description:
                         "All-in-one HR solution that streamlines talent acquisition, employee engagement, learning & development, compensation & benefits, and employer branding workflows.",
-                      url: "/solutions/hr&peopletech/SmartRecruiting.html",
+                      url: "/solutions/hr&people-tech/smart-recruiting.html",
                       coverImage: "/public/images/navbar/recruiting.jpg",
                     },
                   },
@@ -180,7 +180,7 @@ const menu = [
                       heading: "Employee Delight",
                       description:
                         "Mobius offer an AI-driven HR Tech solution designed to elevate employee experience by streamlining HR processes and providing personalized employee engagement. With innovative features such as sentiment analysis, personalized career pathing, and rewards and recognition programs, our solutions empowers organizations to attract, retain, and engage top talent. Employee Delight is the all-in-one solution for organizations looking to create a positive and engaging work culture. ",
-                      url: "/solutions/hr&peopletech/EmployeeDelight.html",
+                      url: "/solutions/hr&people-tech/employee-delight.html",
                       coverImage: "/public/images/navbar/employeeDel.jpg",
                     },
                   },
@@ -190,7 +190,7 @@ const menu = [
                       heading: "Org. Modelling ",
                       description:
                         "Visualize, optimize, and transform your organization with ease using our intuitive platform. Boost productivity, drive innovation, and stay ahead of the competition with Modulus. ",
-                      url: "/solutions/hr&peopletech/OrganisationModelling.html",
+                      url: "/solutions/hr&people-tech/org-modelling.html",
                       coverImage: "/public/images/navbar/organiztion.jpg",
                     },
                   },
@@ -200,7 +200,7 @@ const menu = [
                       heading: "Learning & Development",
                       description:
                         " Quickly launch a range of training programs, create customized learning paths, and track employee progress, all in one place. Enhance employee engagement, satisfaction, and retention. ",
-                      url: "/solutions/hr&peopletech/LearningDevelopment.html",
+                      url: "/solutions/hr&people-tech/learning&development.html",
                       coverImage:
                         "/public/images/navbar/learningDevelopment.jpg",
                     },
@@ -211,7 +211,7 @@ const menu = [
                       heading: "Comp & Benefits",
                       description:
                         "Comp & Benefits offer a groundbreaking HR Tech solution that revolutionizes employee compensation and benefits management. Our AI-based platform provides end-to-end solutions to help organizations streamline and optimize their compensation and benefits programs. With our solution, organizations can create personalized compensation plans, design and manage benefits programs, and gain powerful insights into compensation data, all in real-time. Say goodbye to outdated compensation and benefits management practices and embrace the future with Mobius. ",
-                      url: "/solutions/hr&peopletech/CompBenefits.html",
+                      url: "/solutions/hr&people-tech/comp&benefits.html",
                       coverImage: "/public/images/navbar/companyBenefits.jpg",
                     },
                   },
@@ -238,7 +238,7 @@ const menu = [
                       heading: "Run-Run",
                       description:
                         " Mobius automated DevOps empowers your IT operations with the latest in automated DevOps. With tools for monitoring, app development, engagement, and collaboration, it helps modern enterprises deliver high-quality IT services and unlock new opportunities. ",
-                      url: "/solutions/ItAutomation/DevOps.html",
+                      url: "/solutions/ItAutomation/run-run.html",
                       coverImage: "/public/images/navbar/It.jpg",
                     },
                   },
@@ -275,7 +275,7 @@ const menu = [
                       heading: "Customer Data Platform",
                       description:
                         "Powering the future of customer engagement with our AI-driven and privacy-first Customer Data Platform built using Mobius DTasS tools. ",
-                      url: "/products/Customer/CustomerData.html",
+                      url: "/products/Customer/customer-data-platform.html",
                       coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
@@ -285,7 +285,7 @@ const menu = [
                       heading: "Customer Relationship Management",
                       description:
                         " Harness the power of AI and machine learning to optimize your marketing campaigns and improve customer acquisition and retention",
-                      url: "/products/Customer/CustomerRelationship.html",
+                      url: "/products/Customer/customer-relationship-management.html",
                       coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
@@ -295,7 +295,7 @@ const menu = [
                       heading: "Customer Success Management",
                       description:
                         "Unlock the power of AI and automation to drive customer satisfaction and retention. ",
-                      url: "/products/Customer/CustomerSuccess.html",
+                      url: "/products/Customer/customer-success-management.html",
                       coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
@@ -305,7 +305,7 @@ const menu = [
                       heading: "Marketing Automation",
                       description:
                         "Automate your marketing campaigns across multiple channels with Mobius Marketing Automation. Our AI-powered targeting and predictive analytics will help you reach your customers with personalized messages and identify new opportunities. ",
-                      url: "/products/Customer/MarketingAutomation.html",
+                      url: "/products/Customer/marketing-automation.html",
                       coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
@@ -342,7 +342,7 @@ const menu = [
                       heading: "Employee Engagement",
                       description:
                         "Personalized content, intelligent surveys, dynamic rewards, and seamless communication channels, all combined in one platform. Keep your employees happy, engaged, and loyal.",
-                      url: "/products/Employees/EmployeeEngagement.html",
+                      url: "/products/Employees/recruiting.html",
                       coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
@@ -352,7 +352,7 @@ const menu = [
                       heading: "Org. Dev & Planning",
                       description:
                         "Personalized content, intelligent surveys, dynamic rewards, and seamless communication channels, all combined in one platform. Keep your employees happy, engaged, and loyal. ",
-                      url: "/products/Employees/Planning.html",
+                      url: "products/Employees/org-dev-planning.html",
                       coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
@@ -362,7 +362,7 @@ const menu = [
                       heading: "Learning & Development",
                       description:
                         "LearnX is a cutting-edge Learning and Development and Planning product built by Mobius DTasS, designed to revolutionize the way organizations train and develop their workforce. With advanced features and an intuitive user interface, LearnX is the ultimate solution for optimizing employee performance and achieving business goals. ",
-                      url: "/products/Employees/LearningDevelopment.html",
+                      url: "/products/Employees/learning&development.html",
                       coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
@@ -372,7 +372,7 @@ const menu = [
                       heading: "Comp & Benefits",
                       description:
                         "CompX is a futuristic Comp and Benefits product built by Mobius DTasS, designed to revolutionize the way organizations manage their compensation and benefits programs. With advanced features and an intuitive user interface, CompX is the ultimate solution for optimizing employee compensation and benefits ",
-                      url: "/products/Employees/Compensation.html",
+                      url: "/products/Employees/comp&benefits.html",
                       coverImage: "/public/images/navbar/8.jpg",
                     },
                   },
@@ -399,7 +399,7 @@ const menu = [
                       heading: "Citizen Safety",
                       description:
                         "With Mobius Citizen Engagement, we're revolutionizing how local governments connect with their citizens. Our multichannel engagement platform delivers personalized content and real-time analytics, empowering smart communities to connect and engage with their citizens like never before. ",
-                      url: "/products/Citizens/CitizenGuardian.html",
+                      url: "/products/Citizen/citizen-safety.html",
                       coverImage: "/public/images/navbar/12.jpg",
                     },
                   },
@@ -409,7 +409,7 @@ const menu = [
                       heading: "Citizen Engagements",
                       description:
                         "CitizenConnect is a futuristic Citizen Engagements product built by Mobius DTasS that helps citizens connect with their local government, stay informed, and participate in decision-making processes. With its advanced features and intuitive user interface, CitizenConnect puts you ahead of the competition ",
-                      url: "/products/Citizens/CitizenEngagement.html",
+                      url: "/products/Citizen/citizen-engagement.html",
                       coverImage: "/public/images/navbar/12.jpg",
                     },
                   },
@@ -420,7 +420,7 @@ const menu = [
                       heading: "Community Engagements",
                       description:
                         "CommunityX is the ultimate tool for community engagement, providing a comprehensive solution for live news, digital signage, metro integration, and traffic monitoring.",
-                      url: "/products/Citizens/CommunityEngagement.html",
+                      url: "/products/Citizen/community-engagements.html",
                       coverImage: "/public/images/navbar/12.jpg",
                     },
                   },
@@ -447,7 +447,7 @@ const menu = [
                       heading: "Phygital Monetization",
                       description:
                         "Mobius DTasS is the revolutionary Phygital Monetization platform designed to help businesses monetize their physical and digital assets effectively and efficiently. ",
-                      url: "/products/Phygital/PhygitalMonetization.html",
+                      url: "/products/Phygital/phygital-monetization.html",
                       coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
@@ -457,7 +457,7 @@ const menu = [
                       heading: "Data Monetization",
                       description:
                         "Mobius DTasS is the innovative Data Monetization platform designed to help businesses monetize their data assets effectively and efficiently.",
-                      url: "/products/Phygital/DataMonetization.html",
+                      url: "/products/Phygital/data-monetization.html",
                       coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
@@ -467,7 +467,7 @@ const menu = [
                       heading: "Smart City as a Service",
                       description:
                         "Mobius DTasS is the cutting-edge Smart City as a Service (SCaaS) platform designed to help cities become more efficient, sustainable, and livable. ",
-                      url: "/products/Phygital/SmartCity.html",
+                      url: "/products/Phygital/smart-city-as-a-service.html",
                       coverImage: "/public/images/navbar/13.jpg",
                     },
                   },
@@ -494,7 +494,7 @@ const menu = [
                       heading: "Public Marketplace as a Service ",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
-                      url: "/products/Partners/MarketPlace.html",
+                      url: "/products/Partners/public-marketplace-as-a-service.html",
                       coverImage: "/public/images/navbar/14.jpg",
                     },
                   },
@@ -504,7 +504,7 @@ const menu = [
                       heading: "Partnership Relationship Management",
                       description:
                         "Maximize the potential of strategic collaborations, streamline partnership processes, and harness the power of collective expertise to drive innovation and business growth.",
-                      url: "/products/Partners/PartnerShip.html",
+                      url: "/products/Partners/partnership-relationship-management.html",
                       coverImage: "/public/images/navbar/14.jpg",
                     },
                   },
@@ -531,7 +531,7 @@ const menu = [
                       heading: "Automation DevOps",
                       description:
                         "Mobius DTasS is the next-generation DevOps automation platform that streamlines software development, testing, and deployment processes. With advanced automation features and intelligent workflows, we help businesses accelerate software delivery and reduce time-to-market",
-                      url: "/products/Technology/AutomationDevops.html",
+                      url: "products/Technology/automation-devops.html",
                       coverImage: "/public/images/navbar/9.jpg",
                     },
                   },
@@ -563,7 +563,7 @@ const menu = [
               heading: "ZoomBot",
               description:
                 "Experience seamless meeting scheduling, reminders, real-time transcription and translation, and customizable controls with our Zoom Bot powered by Mobius DTasS. ",
-              url: "/products/ZoomBot.html",
+              url: "/products/zoom-bot.html",
               coverImage: "/public/images/navbar/9.jpg",
             },
           },
@@ -579,7 +579,7 @@ const menu = [
               heading: "Dashboard as a Service",
               description:
                 " Unlock real-time insights with our customizable dashboards, seamless integrations, and collaborative tools. Join the revolution of intelligent business decision making with Mobius DTasS.",
-              url: "/products/Dashboard.html",
+              url: "/products/dashboard-as-a-service.html",
               coverImage: "/public/images/navbar/9.jpg",
             },
           },
@@ -595,7 +595,7 @@ const menu = [
               heading: "OpsMax",
               description:
                 "  OpsMax is a futuristic ESOP management tool that simplifies the process of managing employee stock options. With automated management, comprehensive reporting, and robust security, OpsMax helps you future-proof your ESOPs.",
-              url: "/products/OpsMax.html",
+              url: "/products/opsmax.html",
               coverImage: "/public/images/navbar/9.jpg",
             },
           },

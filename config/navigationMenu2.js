@@ -121,7 +121,7 @@ const menu2 = [
               description:
                 "At Mobius, we are committed to staying at the forefront of the industry, delivering innovative enterprise data solutions that meet the evolving needs of businesses worldwide. Our 'In the News' page highlights our latest achievements, partnerships, and thought leadership in the field of digital transformation & NoCode. Stay up to date with our latest news and discover why Mobius is a trusted name in the industry.",
               coverImage: "/public/images/contact/in-the-news-min.jpg",
-              url:"/InTheNews/index.html"
+              url:"/ComingSoon/index.html"
             },
           },
           {

@@ -107,7 +107,7 @@ for (let i of a_tags) {
 
 for (let j of button_tags) {
   if (j.innerText = "Get Started") {
-    j.onclick = function () { location.href = '/contact/ContactForDemo.html' }
+    j.onclick = function () { location.href = '/contact/contact-for-demo.html' }
 
 
 
@@ -150,14 +150,14 @@ function footer_changer() {
       }
 
       case "Terms & Conditions": {
-        i.href = "/Terms&Conditions/index.html";
+        i.href = "/terms&conditions.html";
 
         ele = document.createElement("li")
         a = document.createElement("a")
         
         ele.setAttribute("class","mb-4")
         a.setAttribute("class","nav-link")
-        a.href = "/PrivacyPolicy/index.html"
+        a.href = "/privacy-policy.html"
         a.innerText = "Privacy Policy"
         ele.appendChild(a)
         i.parentElement.parentElement.appendChild(ele)
@@ -174,42 +174,42 @@ function footer_changer() {
 
       case "Telecom & 5G": {
         i.innerText = "5G Market Place";
-        i.href = "/solutions/private5g&Telco/5gMarketPlace.html";
+        i.href = "/solutions/private5g&Telco/5g-market-place.html";
         break;
       }
 
       case "Media & Broadcasting": {
         i.innerText = "NextGen TV";
-        i.href = "/solutions/media&entertainment/NextGenTv.html";
+        i.href = "/solutions/media&entertainment/nextgen-tv.html";
         break;
       }
 
       case "Smartcities & Government": {
         i.innerText = "Smart City";
-        i.href = "/solutions/government&publicsector/SmartCity.html";
+        i.href = "/solutions/government&publicsector/smart-city-as-a-service.html";
         break;
       }
 
       case "IT Solutions & Automation": {
         i.innerText = "DevOps";
-        i.href = "/solutions/ItAutomation/DevOps.html";
+        i.href = "/solutions/ItAutomation/run-run.html";
         break;
       }
 
       case "HR Tech": {
         i.innerText = "Smart Recruiting";
-        i.href = "/solutions/hr&peopletech/SmartRecruiting.html";
+        i.href = "/solutions/hr&people-tech/smart-recruiting.html";
         break;
       }
 
       // Products 
 
       case "OpsMax": {
-        i.href = "/products/OpsMax.html";
+        i.href = "/products/opsmax.html";
         break;
       }
       case "AI Zoom Bot": {
-        i.href = "/products/ZoomBot.html";
+        i.href = "/products/zoom-bot.html";
         break;
       }
       case "Antara": {
@@ -221,7 +221,7 @@ function footer_changer() {
         break;
       }
       case "Marketplace": {
-        i.href = "/products/Partners/MarketPlace.html";
+        i.href = "/products/Partners/public-marketplace-as-a-service.html";
         break;
       }
 
