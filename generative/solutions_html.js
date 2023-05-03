@@ -108,7 +108,7 @@ let data = `
                 <span class="nav-link top-nav-link">Company</span>
               </li>
               <li class="ml-11">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact.html">Contact</a>
               </li>
             </ul>
           </div>

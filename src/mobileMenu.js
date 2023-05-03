@@ -80,7 +80,7 @@ for (let i of a_tags) {
 
   if (i.innerText == "Get Started") {
     i.innerText = "Sign Up for a Free Trail"
-    i.href = "../../contact/ContactForDemo.html"
+    i.href = "/contact/contact-for-demo.html"
   }
   if (i.innerText == "Book a Demo") {
     i.href = "#"
@@ -98,6 +98,11 @@ for (let i of a_tags) {
   }
   if (i.innerText == "Resources") {
     i.parentElement.remove(i)
+  }
+
+  if (i.innerText == "Sign Up for a Free Trail") {
+    i.setAttribute("href","/contact/contact-for-demo.html")
+    console.log('hello')
   }
 
 }
@@ -124,7 +129,7 @@ function footer_changer() {
 
       case "About": {
         i.innerText = "Overview"
-        i.href = "/overview/index.html";
+        i.href = "/company/overview.html";
         break;
       }
 
@@ -135,17 +140,17 @@ function footer_changer() {
 
       case "Leadership": {
         i.innerText = "People"
-        i.href = "/people/index.html";
+        i.href = "/company/people.html";
         break;
       }
 
       case "Careers": {
-        i.href = "/careers/index.html";
+        i.href = "/company/careers.html";
         break;
       }
 
       case "Contact": {
-        i.href = "/contact/index.html";
+        i.href = "/contact.html";
         break;
       }
 
@@ -230,11 +235,11 @@ function footer_changer() {
       //Platform
 
       case "Pascal Intelligence(PI)": {
-        i.href = "/platform/Pascal Intelligence.html";
+        i.href = "/platform/pascal-intelligence.html";
         break;
       }
       case "BoltzmanBot(BOB)": {
-        i.href = "/platform/BoltzmanBot.html";
+        i.href = "/platform/boltzman-bot.html";
         break;
       }
       case "Monet": {
@@ -248,7 +253,7 @@ function footer_changer() {
       case "Hola Cracy": {
 
         // i.innerText = "Hola Cracy"
-        i.href = "/platform/Holacracy.html";
+        i.href = "/platform/holacracy.html";
 
         break;
       }

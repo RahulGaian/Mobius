@@ -156,7 +156,7 @@ const generator = (arr) => {
                 />
               </li>
               <li class="ml-11">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact.html">Contact</a>
               </li>
             </ul>
           </div>
