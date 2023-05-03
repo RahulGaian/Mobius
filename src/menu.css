@@ -5,7 +5,13 @@
 
 .mega-menu {
   top: 104px;
-  z-index: 99999 !important;
+  z-index: 1 !important;
+}
+
+@media all and (max-width:1023px) {
+  .mega-menu {
+    z-index: 99999 !important;
+  }
 }
 
 .active-mega-link {

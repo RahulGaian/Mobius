@@ -141,6 +141,7 @@ function removeInterval(i) {
 
 
 function tggleIcon(i) {
+  removeIcon();
   let liClassName = 'collapseOne00' + i;
   let descClassName = 'collapseOne0' + i;
   const ele = document.getElementById(descClassName);
@@ -150,6 +151,22 @@ function tggleIcon(i) {
   }
   else {
     ele2.classList.remove('rotate-icon');
+
+  }
+}
+
+function removeIcon() {
+  for (let i = 0; i < 5; i++) {
+    let liClassName = 'collapseOne00' + i;
+    let descClassName = 'collapseOne0' + i;
+    const ele = document.getElementById(descClassName);
+    const ele2 = document.getElementById(liClassName);
+    if (!ele.classList.contains('collapsed')) {
+      ele2.classList.add('rotate-icon');
+    }
+    else {
+      ele2.classList.remove('rotate-icon');
+    }
 
   }
 }

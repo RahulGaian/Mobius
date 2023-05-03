@@ -1372,7 +1372,7 @@ let data = `
                 <a class="nav-link" href="#">Vinci</a>
               </li>
               <li class="mb-4">
-                <a class="nav-link" href="#">Hola Verse</a>
+                <a class="nav-link" href="#">Hola Cracy</a>
               </li>
             </ul>
           </nav>

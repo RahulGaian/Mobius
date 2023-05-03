@@ -19,8 +19,10 @@ openMenu.addEventListener("click", () => {
   topNavbar.style.backgroundColor = "white";
   openMenu.style.display = "none";
   closeMenu.style.display = "inline-block";
+  closeLogin();
 });
 closeMenu.addEventListener("click", () => {
+  document.body.style.overflow = "scroll"
   megaMenu.style.display = "none";
   megaMenu.classList.remove("mobile-menu");
   actions.style.display = "none";
@@ -232,9 +234,10 @@ function footer_changer() {
         i.href = "/platform/vinci.html";
         break;
       }
-      case "Hola Cracy": {
+      case "Hola Verse": {
 
-        i.href = "../../platform/Holacracy.html";
+        i.innerText = "Hola Cracy"
+        i.href = "/platform/Holacracy.html";
 
         break;
       }
@@ -531,9 +534,10 @@ addPopup();
 // var enter = document.getElementById("enter2");
 
 // window.addEventListener('resize',function (event) {
-//   var widerScreenWidth = window.matchMedia("(max-width: 50px)");
+//   var widerScreenWidth = window.matchMedia("(max-width: 1023px)");
 
 //   if(widerScreenWidth.matches) {
+//     closeLogin();
 
 
 //   }

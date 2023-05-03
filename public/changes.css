@@ -1178,8 +1178,8 @@ top: 978px; */
   /* top: 105px;
     /* right: 90px;  */
   top: 3rem;
-  right: -22rem;
-  z-index: 1000;
+  right: -32rem;
+  z-index: 1000 !important;
 }
 
 
@@ -1190,6 +1190,7 @@ top: 978px; */
   /* padding: 0 1rem; */
   padding-right: 1.5rem;
   border-bottom: 1px solid #C8C8C8;
+  
 
 
 }

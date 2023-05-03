@@ -3646,3 +3646,10 @@ p,a,button,li{
   padding-left: 2rem !important;
 
 }
+
+
+
+#nav-bar > div:first-child > div:first-child > a:first-child > img[alt="Mobius Brand Logo"]{
+   min-width: 5rem;
+}  
+
